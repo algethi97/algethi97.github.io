@@ -37,7 +37,7 @@ a {
 }
 
 /* =========================================
-   상단 3칸짜리 탭 네비게이션 (Navigation Tabs)
+   상단 네비게이션 및 3칸 탭 (Navigation)
    ========================================= */
 .nav-header {
   position: sticky;
@@ -48,10 +48,41 @@ a {
   border-bottom: 1px solid var(--border-color);
 }
 
-.tabs-container {
-  max-width: 960px;
+.nav-inner {
+  max-width: 1080px;
   margin: 0 auto;
   padding: 0.75rem 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+/* 좌측 상단 홈으로 돌아가기 버튼 */
+.home-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.85rem 1.15rem;
+  background-color: var(--surface-color);
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: var(--text-main);
+  transition: var(--transition);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.home-button:hover {
+  background-color: var(--surface-hover);
+  border-color: var(--primary-color);
+  transform: translateY(-2px);
+  color: var(--primary-color);
+}
+
+.tabs-container {
+  flex: 1;
 }
 
 /* 정확히 3칸으로 분할되는 탭 그리드 */
@@ -305,8 +336,19 @@ a {
   margin-top: auto;
 }
 
-/* 반응형 모바일 탭 처리 */
-@media (max-width: 600px) {
+/* 반응형 모바일 처리 */
+@media (max-width: 720px) {
+  .nav-inner {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.6rem;
+    padding: 0.6rem 0.75rem;
+  }
+  .home-button {
+    align-self: flex-start;
+    padding: 0.55rem 0.85rem;
+    font-size: 0.85rem;
+  }
   .tabs-grid {
     gap: 0.4rem;
   }
@@ -319,3 +361,4 @@ a {
     text-align: center;
   }
 }
+
