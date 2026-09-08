@@ -1,25 +1,90 @@
 // =========================================
 // 공통 자바스크립트 로직 (script.js)
+// 데스크테리어 줌인 & 인터랙티브 기능
 // =========================================
 
 document.addEventListener('DOMContentLoaded', () => {
-  console.log('Portfolio Site loaded successfully.');
+  console.log('Deskterior Portfolio loaded.');
 
-  // 1. 비어있는 우측 탭 클릭 시 안내 피드백
-  const emptyTab = document.querySelector('.tab-item.empty-tab');
-  if (emptyTab) {
-    emptyTab.addEventListener('click', (e) => {
+  // 1. 데스크테리어 모니터 줌인/줌아웃 시스템 초기화
+  initDeskZoom();
+
+  // 2. 비어있는 우측 탭 클릭 시 안내 피드백
+  const emptyTabs = document.querySelectorAll('.tab-item.empty-tab');
+  emptyTabs.forEach(tab => {
+    tab.addEventListener('click', (e) => {
       e.preventDefault();
       showToast('준비 중인 탭입니다. 곧 새로운 콘텐츠로 찾아올게요!', '⏳');
     });
-  }
+  });
 
-  // 2. 스크롤 인터랙션 (IntersectionObserver 기반 Fade-in)
+  // 3. 스크롤 인터랙션 (IntersectionObserver)
   initScrollAnimation();
 
-  // 3. 원클릭 클립보드 복사 및 토스트 알림 연동
+  // 4. 원클릭 클립보드 복사 및 토스트 알림
   initCopyFeature();
 });
+
+/* =========================================
+   데스크테리어 모니터 줌인 / 줌아웃 시스템
+   ========================================= */
+function initDeskZoom() {
+  const viewport = document.querySelector('.desk-viewport');
+  if (!viewport) return; // index.html 이외의 단독 서브페이지 예외 처리
+
+  const canvas = document.querySelector('.desk-canvas');
+  const overlay = document.querySelector('.monitor-hint-overlay');
+  const zoomoutBtn = document.querySelector('.desk-zoomout-btn');
+  const scrollable = document.querySelector('.monitor-scrollable');
+
+  // 줌인 함수
+  function zoomIn() {
+    if (viewport.classList.contains('is-zoomed')) return;
+    viewport.classList.add('is-zoomed');
+    showToast('모니터 화면에 진입했습니다. 자유롭게 둘러보세요!', '🖥️');
+  }
+
+  // 줌아웃 함수
+  function zoomOut() {
+    if (!viewport.classList.contains('is-zoomed')) return;
+    viewport.classList.remove('is-zoomed');
+    if (scrollable) {
+      scrollable.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+    showToast('데스크 전체 뷰로 전환되었습니다.', '🔍');
+  }
+
+  // 모니터 오버레이 또는 캔버스 클릭 시 줌인 (줌아웃 상태일 때만)
+  if (overlay) {
+    overlay.addEventListener('click', (e) => {
+      e.stopPropagation();
+      zoomIn();
+    });
+  }
+
+  if (canvas) {
+    canvas.addEventListener('click', (e) => {
+      if (!viewport.classList.contains('is-zoomed')) {
+        zoomIn();
+      }
+    });
+  }
+
+  // 줌아웃 버튼 클릭 시 복귀
+  if (zoomoutBtn) {
+    zoomoutBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      zoomOut();
+    });
+  }
+
+  // ESC 키 누르면 데스크 뷰로 줌아웃
+  window.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && viewport.classList.contains('is-zoomed')) {
+      zoomOut();
+    }
+  });
+}
 
 /* =========================================
    토스트 알림 시스템 (Toast Notification)
@@ -62,6 +127,7 @@ function initCopyFeature() {
     if (!copyTarget) return;
 
     e.preventDefault();
+    e.stopPropagation();
     const textToCopy = copyTarget.getAttribute('data-copy');
     const customMessage = copyTarget.getAttribute('data-message') || `"${textToCopy}" 클립보드에 복사되었습니다!`;
 
@@ -71,7 +137,6 @@ function initCopyFeature() {
       if (navigator.clipboard && window.isSecureContext) {
         await navigator.clipboard.writeText(textToCopy);
       } else {
-        // Fallback for older browsers or non-secure contexts
         const textArea = document.createElement('textarea');
         textArea.value = textToCopy;
         textArea.style.position = 'fixed';
@@ -94,18 +159,15 @@ function initCopyFeature() {
    스크롤 인터랙션 초기화 (Scroll Fade-in)
    ========================================= */
 function initScrollAnimation() {
-  // 관찰 대상 요소들 선택 (카드, 섹션 등)
   const targets = document.querySelectorAll('.card, .project-card, .quick-link-card, .hero-section, .page-header');
 
   targets.forEach((target, index) => {
     target.classList.add('fade-in');
-    // 약간의 순차적(stagger) 딜레이 효과 추가
-    const delay = (index % 4) * 0.08;
+    const delay = (index % 4) * 0.06;
     target.style.transitionDelay = `${delay}s`;
   });
 
   if (!('IntersectionObserver' in window)) {
-    // IntersectionObserver 미지원 브라우저는 바로 노출
     targets.forEach(target => target.classList.add('visible'));
     return;
   }
@@ -114,13 +176,13 @@ function initScrollAnimation() {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         entry.target.classList.add('visible');
-        obs.unobserve(entry.target); // 한 번 노출된 요소는 계속 유지
+        obs.unobserve(entry.target);
       }
     });
   }, {
     root: null,
-    rootMargin: '0px 0px -40px 0px',
-    threshold: 0.1
+    rootMargin: '0px 0px -30px 0px',
+    threshold: 0.08
   });
 
   targets.forEach(target => observer.observe(target));
