@@ -98,10 +98,73 @@ button {
   cursor: zoom-in;
 }
 
-/* 줌 인 되었을 때: 모니터 프레임 전체가 화면에 완벽하게 다 담길 정도로 확대 (scale 1.95) */
+/* 줌 인 되었을 때: 모니터 프레임 전체가 화면에 완벽하게 다 담길 정도로 확대 (scale 2.35) */
 .desk-viewport.is-zoomed .desk-canvas {
   transform: scale(2.35);
   cursor: default;
+}
+
+/* 안쪽 페이지에서 홈으로 복귀 시: 줌 애니메이션 없이 즉시 모니터 홈페이지를 노출 */
+html.instant-zoomed .desk-canvas {
+  transform: scale(2.35) !important;
+  transition: none !important;
+}
+
+html.instant-zoomed .monitor-hint-overlay {
+  display: none !important;
+}
+
+html.instant-zoomed .desk-zoomout-btn {
+  opacity: 1 !important;
+  pointer-events: auto !important;
+  transform: translateY(0) !important;
+}
+
+html.instant-zoomed .monitor-scrollable {
+  pointer-events: auto !important;
+}
+
+/* ==========================================================================
+   화면 속으로 들어가는 시네마틱 전환 연출 (안정적인 직선 줌 & 페이드)
+   화면 흔들림 없이 모니터 속으로 깔끔하게 페이드인
+   ========================================================================== */
+.desk-viewport.warp-in .desk-canvas {
+  transform: scale(3.4) !important;
+  transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1) !important;
+}
+
+.screen-warp-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background-color: var(--window-bg);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.desk-viewport.warp-in .screen-warp-overlay {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* 서브 페이지(About, Portfolio) 진입/퇴장: 흔들림 없는 부드러운 페이드 트랜지션 */
+body.standalone-page {
+  background-color: var(--window-bg);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  opacity: 1;
+  transition: opacity 0.3s ease-out;
+}
+
+body.page-entering {
+  opacity: 0;
+}
+
+body.page-leaving {
+  opacity: 0;
+  pointer-events: none;
 }
 
 /* ==========================================================================
@@ -123,7 +186,7 @@ button {
   box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.35);
 }
 
-/* 줌아웃 상태일 때 모니터 클릭 유도 오버레이 */
+/* 줌아웃(방 전체 뷰) 상태일 때: 모니터 화면을 꺼진 모니터 액정 같은 깊은 검은색으로 표시 */
 .monitor-hint-overlay {
   position: absolute;
   inset: 0;
@@ -132,13 +195,15 @@ button {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: radial-gradient(circle at 50% 50%, rgba(245, 242, 235, 0.25), rgba(41, 37, 36, 0.35));
-  backdrop-filter: blur(1.5px);
+  background: radial-gradient(circle at 50% 35%, #1c1917 0%, #0c0a09 100%);
   cursor: zoom-in;
-  transition: opacity 0.4s ease, visibility 0.4s ease;
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.55s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.55s ease;
   user-select: none;
 }
 
+/* 줌인 시: 검은 화면이 걷히며 모니터 전원이 켜지듯 홈페이지가 부드럽게 밝아짐 */
 .desk-viewport.is-zoomed .monitor-hint-overlay {
   opacity: 0;
   visibility: hidden;
@@ -150,9 +215,9 @@ button {
   align-items: center;
   gap: 0.6rem;
   padding: 0.75rem 1.4rem;
-  background-color: rgba(28, 25, 23, 0.88);
-  backdrop-filter: blur(12px);
-  color: #f5f2eb;
+  background-color: rgba(184, 184, 184, 0.75);
+  backdrop-filter: blur(15px);
+  color: #151515;
   border: 1px solid rgba(234, 88, 12, 0.6);
   border-radius: 9999px;
   font-size: 0.95rem;
@@ -178,9 +243,9 @@ button {
   align-items: center;
   gap: 0.5rem;
   padding: 0.65rem 1.15rem;
-  background-color: rgba(41, 37, 36, 0.85);
-  backdrop-filter: blur(10px);
-  color: #f5f2eb;
+  background-color: rgba(184, 184, 184, 0.75);
+  backdrop-filter: blur(12px);
+  color: #151515;
   border: 1px solid rgba(255, 255, 255, 0.15);
   border-radius: 9999px;
   font-size: 0.85rem;
@@ -661,9 +726,9 @@ button {
   display: flex;
   align-items: center;
   gap: 0.65rem;
-  background-color: rgba(41, 37, 36, 0.95);
-  backdrop-filter: blur(10px);
-  color: #f5f2eb;
+  background-color: rgba(200, 200, 200, 0.75);
+  backdrop-filter: blur(12px);
+  color: #151515;
   border: 1px solid rgba(234, 88, 12, 0.5);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
   padding: 0.75rem 1.3rem;
@@ -680,14 +745,6 @@ button {
   opacity: 1;
   transform: translateY(0) scale(1);
   pointer-events: auto;
-}
-
-/* 서브 페이지(단독 페이지)를 위한 독립 레이아웃 래퍼 */
-body.standalone-page {
-  background-color: var(--window-bg);
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
 }
 
 /* ==========================================================================
