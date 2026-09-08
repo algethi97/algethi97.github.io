@@ -57,28 +57,37 @@ a {
   gap: 1.25rem;
 }
 
-/* 좌측 상단 홈으로 돌아가기 버튼 */
+/* 좌측 상단 홈으로 돌아가기 버튼 (픽토그램 아이콘) */
 .home-button {
   display: inline-flex;
   align-items: center;
-  gap: 0.4rem;
-  padding: 0.85rem 1.15rem;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
   background-color: var(--surface-color);
   border: 1px solid var(--border-color);
   border-radius: 10px;
-  font-weight: 700;
-  font-size: 0.95rem;
   color: var(--text-main);
   transition: var(--transition);
-  white-space: nowrap;
   flex-shrink: 0;
+  cursor: pointer;
+}
+
+.home-button .home-icon {
+  width: 22px;
+  height: 22px;
+  stroke: var(--text-main);
+  transition: var(--transition);
 }
 
 .home-button:hover {
   background-color: var(--surface-hover);
   border-color: var(--primary-color);
   transform: translateY(-2px);
-  color: var(--primary-color);
+}
+
+.home-button:hover .home-icon {
+  stroke: var(--primary-color);
 }
 
 .tabs-container {
@@ -346,8 +355,12 @@ a {
   }
   .home-button {
     align-self: flex-start;
-    padding: 0.55rem 0.85rem;
-    font-size: 0.85rem;
+    width: 40px;
+    height: 40px;
+  }
+  .home-button .home-icon {
+    width: 18px;
+    height: 18px;
   }
   .tabs-grid {
     gap: 0.4rem;
