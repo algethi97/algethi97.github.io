@@ -3,57 +3,69 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>안녕하세요 | algethi97</title>
-  <style>
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-      margin: 0;
-      background-color: #f8fafc;
-      color: #334155;
-    }
-    .card {
-      text-align: center;
-      padding: 2.5rem;
-      background: white;
-      border-radius: 12px;
-      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
-      max-width: 400px;
-      width: 90%;
-    }
-    h1 {
-      margin-top: 0;
-      color: #0f172a;
-      font-size: 1.75rem;
-    }
-    p {
-      line-height: 1.6;
-      color: #64748b;
-    }
-    a {
-      display: inline-block;
-      margin-top: 1rem;
-      padding: 0.6rem 1.2rem;
-      color: white;
-      background-color: #2563eb;
-      text-decoration: none;
-      border-radius: 6px;
-      font-weight: 500;
-    }
-    a:hover {
-      background-color: #1d4ed8;
-    }
-  </style>
+  <title>홈 | algethi97 포트폴리오</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="card">
-    <h1>안녕하세요! 👋</h1>
-    <p>algethi97의 GitHub Pages에 오신 것을 환영합니다.<br>간단한 첫 번째 웹페이지입니다.</p>
-    <a href="https://github.com/algethi97" target="_blank" rel="noopener noreferrer">GitHub 프로필 보기</a>
-  </div>
+
+  <!-- 상단 3칸짜리 탭 네비게이션 -->
+  <header class="nav-header">
+    <div class="tabs-container">
+      <nav class="tabs-grid">
+        <!-- 왼쪽 칸: 자기소개 -->
+        <a href="about.html" class="tab-item" id="tab-about">
+          👤 자기소개
+        </a>
+        <!-- 중앙 칸: 포트폴리오 -->
+        <a href="portfolio.html" class="tab-item" id="tab-portfolio">
+          💼 포트폴리오
+        </a>
+        <!-- 우측 칸: 일단 비워둠 -->
+        <div class="tab-item empty-tab" id="tab-empty" title="준비 중인 탭입니다">
+          (비어 있음)
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- 메인 콘텐츠 영역 -->
+  <main class="main-content">
+    <section class="hero-section">
+      <h1 class="page-title">Welcome to My Space ✨</h1>
+      <p class="page-subtitle">
+        안녕하세요! 웹 개발과 데이터 분석에 열정을 가진 개발자 공간입니다.<br>
+        상단 탭을 클릭하여 자기소개와 포트폴리오를 둘러보세요.
+      </p>
+    </section>
+
+    <!-- 바로가기 카드 섹션 -->
+    <section class="home-links-grid">
+      <div class="quick-link-card">
+        <div>
+          <h2>👤 자기소개</h2>
+          <p style="color: var(--text-muted); margin-top: 0.75rem;">
+            저의 경험, 다룰 수 있는 기술 스택, 그리고 개발 철학을 소개합니다.
+          </p>
+        </div>
+        <a href="about.html" class="btn">자기소개 보러가기 &rarr;</a>
+      </div>
+
+      <div class="quick-link-card">
+        <div>
+          <h2>💼 포트폴리오</h2>
+          <p style="color: var(--text-muted); margin-top: 0.75rem;">
+            지금까지 진행해 온 다양한 웹 서비스 및 프로젝트 결과물들을 확인하세요.
+          </p>
+        </div>
+        <a href="portfolio.html" class="btn">프로젝트 둘러보기 &rarr;</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 algethi97. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
-
