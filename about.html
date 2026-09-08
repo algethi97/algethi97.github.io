@@ -8,23 +8,32 @@
 </head>
 <body>
 
-  <!-- 상단 3칸짜리 탭 네비게이션 -->
+  <!-- 상단 네비게이션 헤더 -->
   <header class="nav-header">
-    <div class="tabs-container">
-      <nav class="tabs-grid">
-        <!-- 왼쪽 칸: 자기소개 (현재 활성화된 탭) -->
-        <a href="about.html" class="tab-item active" id="tab-about">
-          👤 자기소개
-        </a>
-        <!-- 중앙 칸: 포트폴리오 -->
-        <a href="portfolio.html" class="tab-item" id="tab-portfolio">
-          💼 포트폴리오
-        </a>
-        <!-- 우측 칸: 일단 비워둠 -->
-        <div class="tab-item empty-tab" id="tab-empty" title="준비 중인 탭입니다">
-          (비어 있음)
-        </div>
-      </nav>
+    <div class="nav-inner">
+      <!-- 좌측 상단: 홈페이지로 돌아오도록 하는 버튼 -->
+      <a href="index.html" class="home-button" title="홈페이지로 돌아가기">
+        <span>🏠</span>
+        <span>Home</span>
+      </a>
+
+      <!-- 3칸짜리 탭 네비게이션 -->
+      <div class="tabs-container">
+        <nav class="tabs-grid">
+          <!-- 왼쪽 칸: 자기소개 (현재 활성화된 탭) -->
+          <a href="about.html" class="tab-item active" id="tab-about">
+            👤 자기소개
+          </a>
+          <!-- 중앙 칸: 포트폴리오 -->
+          <a href="portfolio.html" class="tab-item" id="tab-portfolio">
+            💼 포트폴리오
+          </a>
+          <!-- 우측 칸: 일단 비워둠 -->
+          <div class="tab-item empty-tab" id="tab-empty" title="준비 중인 탭입니다">
+            (비어 있음)
+          </div>
+        </nav>
+      </div>
     </div>
   </header>
 
@@ -86,3 +95,4 @@
   <script src="script.js"></script>
 </body>
 </html>
+

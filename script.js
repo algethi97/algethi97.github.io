@@ -17,3 +17,4 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // 카드 호버 시 인터랙션 등 추가 가능
 });
+
