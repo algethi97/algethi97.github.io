@@ -1,117 +1,58 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Algethi's GitHub Pages</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>안녕하세요 | algethi97</title>
   <style>
-    :root {
-      --bg-color: #0f172a;
-      --card-bg: #1e293b;
-      --text-main: #f8fafc;
-      --text-muted: #94a3b8;
-      --accent: #38bdf8;
-      --accent-hover: #0ea5e9;
-    }
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
     body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-      background: radial-gradient(circle at 50% 20%, #1e293b, var(--bg-color));
-      color: var(--text-main);
-      min-height: 100vh;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
       display: flex;
-      flex-direction: column;
-      align-items: center;
       justify-content: center;
-      padding: 2rem;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+      background-color: #f8fafc;
+      color: #334155;
     }
-    .container {
-      max-width: 680px;
-      width: 100%;
-      background: rgba(30, 41, 59, 0.7);
-      backdrop-filter: blur(12px);
-      border: 1px solid rgba(255, 255, 255, 0.1);
-      border-radius: 1.25rem;
-      padding: 3rem 2.5rem;
+    .card {
       text-align: center;
-      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
-    }
-    .badge {
-      display: inline-block;
-      padding: 0.35rem 0.85rem;
-      font-size: 0.85rem;
-      font-weight: 600;
-      color: var(--accent);
-      background: rgba(56, 189, 248, 0.12);
-      border: 1px solid rgba(56, 189, 248, 0.25);
-      border-radius: 9999px;
-      margin-bottom: 1.5rem;
+      padding: 2.5rem;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+      max-width: 400px;
+      width: 90%;
     }
     h1 {
-      font-size: 2.5rem;
-      font-weight: 800;
-      letter-spacing: -0.025em;
-      margin-bottom: 1rem;
-      background: linear-gradient(135deg, #ffffff 0%, #cbd5e1 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-    p.description {
-      font-size: 1.1rem;
-      line-height: 1.7;
-      color: var(--text-muted);
-      margin-bottom: 2.25rem;
-    }
-    .action-group {
-      display: flex;
-      justify-content: center;
-      gap: 1rem;
-      flex-wrap: wrap;
-    }
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.5rem;
-      padding: 0.75rem 1.5rem;
-      font-size: 0.95rem;
-      font-weight: 600;
-      text-decoration: none;
-      border-radius: 0.75rem;
-      transition: all 0.2s ease;
-    }
-    .btn-primary {
-      background: var(--accent);
+      margin-top: 0;
       color: #0f172a;
+      font-size: 1.75rem;
     }
-    .btn-primary:hover {
-      background: var(--accent-hover);
-      transform: translateY(-2px);
-    }
-    footer {
-      margin-top: 2.5rem;
-      font-size: 0.85rem;
+    p {
+      line-height: 1.6;
       color: #64748b;
+    }
+    a {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.6rem 1.2rem;
+      color: white;
+      background-color: #2563eb;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: 500;
+    }
+    a:hover {
+      background-color: #1d4ed8;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <div class="badge">🚀 GitHub Pages Connected</div>
-    <h1>Welcome to My Page</h1>
-    <p class="description">
-      GitHub Pages 저장소 연결이 완료되었습니다.<br />
-      이제 이곳에 멋진 블로그, 포트폴리오, 프로젝트 웹사이트를 구축해 보세요!
-    </p>
-    <div class="action-group">
-      <a href="https://github.com/algethi97/algethi97.github.io" class="btn btn-primary" target="_blank" rel="noopener noreferrer">GitHub 저장소 방문</a>
-    </div>
-    <footer>
-      &copy; 2026 Algethi. Hosted on GitHub Pages.
-    </footer>
+  <div class="card">
+    <h1>안녕하세요! 👋</h1>
+    <p>algethi97의 GitHub Pages에 오신 것을 환영합니다.<br>간단한 첫 번째 웹페이지입니다.</p>
+    <a href="https://github.com/algethi97" target="_blank" rel="noopener noreferrer">GitHub 프로필 보기</a>
   </div>
 </body>
 </html>
