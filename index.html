@@ -5,6 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>algethi97 | Personal Space</title>
   <link rel="stylesheet" href="style.css">
+  <script>
+    // 안쪽 페이지에서 홈으로 복귀했을 때 줌인 애니메이션 없이 즉시 홈페이지를 보여주기 위한 사전 감지
+    if (sessionStorage.getItem('return_to_monitor') === 'true') {
+      document.documentElement.classList.add('instant-zoomed');
+    }
+  </script>
 </head>
 <body>
 
@@ -16,6 +22,9 @@
       <span>🖥️</span>
       <span>데스크 뷰로 축소</span>
     </button>
+
+    <!-- 모니터 속으로 들어갈 때 자연스러운 페이드를 만들어주는 오버레이 -->
+    <div class="screen-warp-overlay"></div>
 
     <!-- 16:9 데스크테리어 캔버스 (배경 이미지 & 모니터 위치 기준) -->
     <div class="desk-canvas">
