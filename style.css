@@ -100,7 +100,7 @@ button {
 
 /* 줌 인 되었을 때: 모니터 프레임 전체가 화면에 완벽하게 다 담길 정도로 확대 (scale 1.95) */
 .desk-viewport.is-zoomed .desk-canvas {
-  transform: scale(1.95);
+  transform: scale(2.35);
   cursor: default;
 }
 
