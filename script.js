@@ -129,19 +129,20 @@ function initDeskZoom() {
     showToast('데스크 전체 뷰로 전환되었습니다.', '🔍');
   }
 
-  // 모니터 오버레이 또는 캔버스 클릭 시 줌인 (줌아웃 상태일 때만)
+  // 모니터 화면 또는 오버레이 클릭 시에만 줌인 (줌아웃 상태일 때만)
+  const monitorScreen = document.querySelector('.monitor-screen');
+  if (monitorScreen) {
+    monitorScreen.addEventListener('click', (e) => {
+      if (!viewport.classList.contains('is-zoomed')) {
+        zoomIn();
+      }
+    });
+  }
+
   if (overlay) {
     overlay.addEventListener('click', (e) => {
       e.stopPropagation();
       zoomIn();
-    });
-  }
-
-  if (canvas) {
-    canvas.addEventListener('click', (e) => {
-      if (!viewport.classList.contains('is-zoomed')) {
-        zoomIn();
-      }
     });
   }
 

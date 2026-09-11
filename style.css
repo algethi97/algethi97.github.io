@@ -93,8 +93,13 @@ button {
   will-change: transform;
 }
 
-/* 줌 아웃(기본 데스크 뷰) 상태일 때 커서 */
+/* 줌 아웃(기본 데스크 뷰) 상태일 때 커서: 방 전체 캔버스는 기본 화살표 커서 */
 .desk-viewport:not(.is-zoomed) .desk-canvas {
+  cursor: default;
+}
+
+/* 줌 아웃 상태에서 모니터 화면 위에 올렸을 때만 확대 커서 적용 */
+.desk-viewport:not(.is-zoomed) .monitor-screen {
   cursor: zoom-in;
 }
 
