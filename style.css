@@ -872,3 +872,348 @@ body.page-leaving {
     font-size: 0.75rem;
   }
 }
+
+/* ==========================================================================
+   9. 방명록 (Guestbook) 컴포넌트 & 인터랙션 스타일
+   ========================================================================== */
+
+/* 카드 헤더 공통 행 */
+.card-header-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.2rem;
+}
+
+.card-header-row h2 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text-main);
+}
+
+.safe-badge {
+  font-size: 0.75rem;
+  color: #166534;
+  background-color: #dcfce7;
+  padding: 0.25rem 0.6rem;
+  border-radius: 9999px;
+  font-weight: 600;
+  border: 1px solid #bbf7d0;
+}
+
+.count-pill {
+  font-size: 0.82rem;
+  color: var(--text-sub);
+  background-color: var(--surface-subtle);
+  border: 1px solid var(--border-color);
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+}
+
+.count-pill strong {
+  color: var(--accent-orange);
+}
+
+/* 폼 그룹 및 인풋 */
+.guestbook-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.label-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form-label {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--text-main);
+}
+
+.required-star {
+  color: var(--accent-orange);
+}
+
+.char-count {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+}
+
+.form-input,
+.form-textarea {
+  width: 100%;
+  font-family: inherit;
+  font-size: 0.95rem;
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  background-color: var(--surface-subtle);
+  color: var(--text-main);
+  outline: none;
+  transition: var(--transition-smooth);
+}
+
+.form-input:focus,
+.form-textarea:focus {
+  background-color: var(--surface-card);
+  border-color: var(--accent-orange);
+  box-shadow: 0 0 0 3px rgba(234, 88, 12, 0.12);
+}
+
+.form-textarea {
+  resize: vertical;
+  min-height: 100px;
+  line-height: 1.6;
+}
+
+/* 공통 버튼 스타일 (.btn) */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.7rem 1.4rem;
+  font-size: 0.92rem;
+  font-weight: 600;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: var(--transition-smooth);
+  user-select: none;
+}
+
+.btn-primary {
+  background-color: var(--accent-orange);
+  color: #ffffff;
+  border: 1px solid var(--accent-orange);
+  box-shadow: 0 4px 12px rgba(234, 88, 12, 0.25);
+}
+
+.btn-primary:hover:not(:disabled) {
+  background-color: var(--accent-orange-hover);
+  border-color: var(--accent-orange-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(234, 88, 12, 0.35);
+}
+
+.btn:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+  transform: none !important;
+  box-shadow: none !important;
+}
+
+.btn-loader {
+  width: 14px;
+  height: 14px;
+  border: 2px solid rgba(255, 255, 255, 0.35);
+  border-top-color: #ffffff;
+  border-radius: 50%;
+  animation: spin-loader 0.75s linear infinite;
+}
+
+@keyframes spin-loader {
+  to { transform: rotate(360deg); }
+}
+
+.form-footer {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 0.4rem;
+}
+
+/* 도배 방지 쿨다운 배너 */
+.cooldown-banner {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  background-color: #fffbeb;
+  border: 1px solid #fef3c7;
+  color: #92400e;
+  padding: 0.75rem 1rem;
+  border-radius: 10px;
+  font-size: 0.85rem;
+  animation: fadeInDown 0.3s ease;
+}
+
+.cooldown-text strong {
+  color: var(--accent-orange);
+}
+
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* 방명록 목록 및 카드 */
+.guestbook-list-section {
+  margin-top: 1.5rem;
+}
+
+.guestbook-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.guestbook-card {
+  background-color: var(--surface-card);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 1.1rem 1.3rem;
+  transition: var(--transition-smooth);
+}
+
+.guestbook-card:hover {
+  border-color: #d1c8bb;
+  box-shadow: 0 4px 15px rgba(41, 37, 36, 0.04);
+}
+
+.guestbook-card.just-added {
+  border-color: var(--accent-orange);
+  background-color: #fffbf7;
+  animation: popIn 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes popIn {
+  0% { opacity: 0; transform: translateY(-12px) scale(0.98); }
+  100% { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+.card-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.65rem;
+  padding-bottom: 0.55rem;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.meta-left {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.entry-badge {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--accent-orange);
+  background-color: var(--accent-orange-light);
+  padding: 0.15rem 0.5rem;
+  border-radius: 6px;
+  border: 1px solid rgba(234, 88, 12, 0.2);
+}
+
+.entry-author {
+  font-size: 0.95rem;
+  color: var(--text-main);
+}
+
+.meta-right {
+  display: flex;
+  align-items: center;
+}
+
+.entry-time {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+}
+
+.card-content p {
+  color: var(--text-sub);
+  font-size: 0.92rem;
+  line-height: 1.65;
+  word-break: break-word;
+  white-space: pre-line;
+}
+
+/* 방명록 Empty State */
+.guestbook-empty {
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.empty-icon {
+  font-size: 2.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.empty-title {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--text-main);
+  margin-bottom: 0.3rem;
+}
+
+.empty-desc {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+}
+
+/* 더보기 버튼 래퍼 */
+.load-more-wrap {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.load-more-btn {
+  background-color: var(--surface-subtle);
+  border: 1px solid var(--border-color);
+  color: var(--text-main);
+  padding: 0.6rem 1.3rem;
+}
+
+.load-more-btn:hover:not(:disabled) {
+  background-color: var(--surface-hover);
+  border-color: var(--accent-orange);
+  color: var(--accent-orange);
+}
+
+.load-more-btn .btn-loader {
+  border: 2px solid rgba(41, 37, 36, 0.2);
+  border-top-color: var(--accent-orange);
+}
+
+/* 로딩 스켈레톤 */
+.guestbook-skeleton-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.skeleton-card {
+  height: 90px;
+  background: linear-gradient(90deg, #f3efe6 25%, #e9e4d8 50%, #f3efe6 75%);
+  background-size: 200% 100%;
+  border-radius: 12px;
+  animation: skeleton-pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes skeleton-pulse {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+/* 스크린 리더/봇 접근성 숨김 */
+.visually-hidden {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
