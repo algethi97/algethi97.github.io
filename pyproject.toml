@@ -1,0 +1,19 @@
+[project]
+name = "algethi97-github-io"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Algethi", email = "algethi97@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "supabase>=2.31.0",
+]
+
+[project.scripts]
+algethi97-github-io = "algethi97_github_io:main"
+
+[build-system]
+requires = ["uv_build>=0.12.5,<0.13.0"]
+build-backend = "uv_build"
