@@ -50,7 +50,7 @@ function initWarpTransitions() {
     }
 
     // 모니터 내부의 모든 서브페이지 이동 링크 감지
-    const navLinks = document.querySelectorAll('a[href*="about.html"], a[href*="portfolio.html"], a[href*="guestbook.html"]');
+    const navLinks = document.querySelectorAll('a[href*="about.html"], a[href*="portfolio.html"], a[href*="guestbook.html"], a[href*="game.html"]');
 
     navLinks.forEach(link => {
       link.addEventListener('click', (e) => {
