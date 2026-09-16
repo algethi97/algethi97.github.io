@@ -88,7 +88,7 @@ button {
   background-repeat: no-repeat;
   
   /* 모니터 중심축 기준 (GPT_Gen.png 측정: X 49.91%, Y 43.62%) */
-  transform-origin: 49.91% 43.62%;
+  transform-origin: 49.91% 41.5%;
   transition: var(--zoom-transition);
   will-change: transform;
 }
@@ -105,13 +105,13 @@ button {
 
 /* 줌 인 되었을 때: 모니터 프레임 전체가 화면에 완벽하게 다 담길 정도로 확대 (scale 2.35) */
 .desk-viewport.is-zoomed .desk-canvas {
-  transform: scale(2.35);
+  transform: scale(2.22);
   cursor: default;
 }
 
 /* 안쪽 페이지에서 홈으로 복귀 시: 줌 애니메이션 없이 즉시 모니터 홈페이지를 노출 */
 html.instant-zoomed .desk-canvas {
-  transform: scale(2.35) !important;
+  transform: scale(2.22) !important;
   transition: none !important;
 }
 
