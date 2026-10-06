@@ -4,7 +4,7 @@
 > 16:9 데스크테리어 캔버스와 웜 모더니스트(Warm Minimalist Aesthetic) 디자인, 시네마틱 줌인 인터랙션, 실시간 방명록 및 Supabase 연동 웹 퍼즐 게임을 제공합니다.
 
 - **라이브 사이트**: [https://algethi97.github.io](https://algethi97.github.io)
-- **최신 버전**: `v1.5.0`
+- **최신 버전**: `v1.6.0`
 
 ---
 
@@ -21,12 +21,13 @@
 - 보유 기술 스택(Core Stack) 및 협업 철학 소개
 
 ### 3. 💼 프로젝트 포트폴리오 (`portfolio.html`)
-엄선된 5개의 주요 프로젝트를 카드 형태로 소개하며, 각 저장소 및 게임 플레이 링크를 제공합니다:
+엄선된 6개의 주요 프로젝트를 카드 형태로 소개하며, 각 저장소 및 게임 플레이 링크를 제공합니다:
 1. **🌐 Personal Portfolio Website**: HTML5, CSS3, JavaScript만을 활용하여 구현한 데스크테리어 반응형 웹사이트
-2. **⚾ KBO 야구 AI 브리핑 & 구장 기상 분석**: 네이버 스포츠 뉴스 크롤링, OpenAI LLM 심층 보고서 자동 생성, 기상청 API 연동 11개 구장 실시간 기상 및 우천 취소 지수 분석 데스크톱 플랫폼 (`Python`, `pywebview`, `OpenAI API`, `Pandas`)
-3. **🏠 NaJakHome - 풀스택 반응형 웹 서비스**: FastAPI & ngrok 기반 풀스택 웹 플랫폼. 비동기 실시간 방명록(SQLite/허니팟), 개인정보 보호 사진 갤러리(EXIF GPS 위치 영구 삭제 & 2048px 리사이징), 원클릭 런처 (`Python`, `FastAPI`, `SQLite`, `Pillow`, `ngrok`)
-4. **🍊 만다린 게임 (Mandarin Puzzle)**: 사과게임(Fruit Box)을 모티브로 제작한 17×10 드래그 웹 퍼즐 게임. Web Audio API 기반 Pop 사운드 신디사이저, 120초 타이머, Supabase Cloud DB 연동 실시간 Top 5 명예의 전당 (`HTML5`, `CSS3`, `JavaScript`, `Web Audio API`, `Supabase`)
-5. **🌊 Ocean AI Chat - 오션 테마 Streamlit 챗봇**: Streamlit과 OpenAI 최신 모델(GPT-5.6)을 연동한 감성 오션 테마 챗봇. 해수면↔심해 어비스 원클릭 테마 전환, 20개 S자 곡선 상승 기포 파티클, API 키 세션 메모리 전용 격리 보안, SQLite 멀티세션 FIFO 관리 (`Python`, `Streamlit`, `OpenAI API`, `SQLite`, `Glassmorphism`)
+2. **🛡️ SafeJeonse (세이프전세)**: 공공데이터(실거래가 8종·건축물대장·공시가격) 실시간 교차 검증 및 매물 탐색부터 계약, 거주, 만기·퇴거까지 8 Core Moments 임대차 전 생애주기를 보호하는 청년 주거 안심 통합 플랫폼 (`Python`, `Streamlit`, `SQLite`, `Pandas`, `Folium`, `Plotly`, `OpenAI API`)
+3. **🍊 만다린 게임 (Mandarin Puzzle)**: 사과게임(Fruit Box)을 모티브로 제작한 17×10 드래그 웹 퍼즐 게임. Web Audio API 기반 Pop 사운드 신디사이저, 120초 타이머, Supabase Cloud DB 연동 실시간 Top 5 명예의 전당 (`HTML5`, `CSS3`, `JavaScript`, `Web Audio API`, `Supabase`)
+4. **⚾ KBO 야구 AI 브리핑 & 구장 기상 분석**: 네이버 스포츠 뉴스 크롤링, OpenAI LLM 심층 보고서 자동 생성, 기상청 API 연동 11개 구장 실시간 기상 및 우천 취소 지수 분석 데스크톱 플랫폼 (`Python`, `pywebview`, `OpenAI API`, `Pandas`)
+5. **🏠 NaJakHome - 풀스택 반응형 웹 서비스**: FastAPI & ngrok 기반 풀스택 웹 플랫폼. 비동기 실시간 방명록(SQLite/허니팟), 개인정보 보호 사진 갤러리(EXIF GPS 위치 영구 삭제 & 2048px 리사이징), 원클릭 런처 (`Python`, `FastAPI`, `SQLite`, `Pillow`, `ngrok`)
+6. **🌊 Ocean AI Chat - 오션 테마 Streamlit 챗봇**: Streamlit과 OpenAI 최신 모델(GPT-5.6)을 연동한 감성 오션 테마 챗봇. 해수면↔심해 어비스 원클릭 테마 전환, 20개 S자 곡선 상승 기포 파티클, API 키 세션 메모리 전용 격리 보안, SQLite 멀티세션 FIFO 관리 (`Python`, `Streamlit`, `OpenAI API`, `SQLite`, `Glassmorphism`)
 
 ### 4. 🍊 만다린 게임 (`game.html`, `game.js`)
 - **과일 상자(Fruit Box) 모티브**: 17열 × 10행(총 170개) 감귤 타일에서 드래그한 영역 내 숫자의 합이 **10**이 되면 귤이 터지는 중독성 퍼즐
@@ -72,6 +73,12 @@ algethi97.github.io/
 
 ## 📜 버전 이력 (Changelog)
 
+### `v1.6.0` (2026-10-06)
+- **Feature**: 포트폴리오 신규 프로젝트 `SafeJeonse (세이프전세)` 추가 및 노출 순서 재정렬
+  - `SafeJeonse (세이프전세) - 청년 임대차 전주기 솔루션` 프로젝트 카드 및 저장소 연동 추가
+  - 포트폴리오 6개 프로젝트 정렬 순서 조정 (포트폴리오 페이지 ➔ 세이프전세 ➔ 만다린 게임 ➔ KBO 야구 브리핑 ➔ NaJakHome ➔ Ocean AI Chat)
+- **Docs**: `README.md` 프로젝트 목록 및 버전 정보 갱신
+
 ### `v1.5.0` (2026-09-17)
 - **Feature**: 포트폴리오 신규 프로젝트 3종 추가 및 개편
   - `NaJakHome - 풀스택 반응형 웹 서비스` (FastAPI & ngrok) 카드 추가
@@ -100,3 +107,4 @@ algethi97.github.io/
 
 ### `v1.0.0` (2026-09-15)
 - **Launch**: 데스크테리어 웜 미니멀리스트 개인 포트폴리오 웹사이트 최초 릴리즈
+
