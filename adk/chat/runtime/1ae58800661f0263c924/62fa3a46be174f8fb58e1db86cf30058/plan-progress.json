@@ -1,0 +1,45 @@
+{
+    "project_root":  "c:\\projects\\algethi97.github.io",
+    "proposal_id":  "016f3889a084453c9ef53e52cacfd375",
+    "request_id":  "62fa3a46be174f8fb58e1db86cf30058",
+    "run_id":  "3a92e4c10c27441cb080e6cd2b90c2e9",
+    "approval_id":  "488b1589a1134daea9b761763439052f",
+    "execution_plan_hash":  "75ec24029df6258edc7fdfc1a3987024a2663c62e32456d2d551792de2404464",
+    "format_version":  1,
+    "sequence":  3,
+    "steps":  [
+                  {
+                      "key":  "1",
+                      "note":  "자동 검증은 모두 재통과했습니다. 기존 브라우저 도구 제한으로 실제 화면 검증 결과 또는 브라우저 접근 복구 여부에 대한 답변을 기다립니다.",
+                      "checks":  [
+                                     {
+                                         "detail":  "8개 테스트가 통과했습니다.",
+                                         "name":  "node --test tests/static-site.test.mjs",
+                                         "passed":  true
+                                     },
+                                     {
+                                         "detail":  "루트 JavaScript 전체와 테스트 파일의 구문 검사가 통과했습니다.",
+                                         "name":  "node --check",
+                                         "passed":  true
+                                     },
+                                     {
+                                         "detail":  "javascript-syntax와 static-site-tests가 통과했습니다.",
+                                         "name":  "ADesk verify_changes.py",
+                                         "passed":  true
+                                     },
+                                     {
+                                         "detail":  "이전 실행의 브라우저 호스트 비활성과 Windows URL 확인 제한이 해결되었다는 근거가 없어 사용자 확인이 필요합니다.",
+                                         "name":  "실제 브라우저 확인",
+                                         "passed":  null
+                                     }
+                                 ],
+                      "state":  "blocked"
+                  }
+              ],
+    "issues":  [
+                   {
+                       "key":  "browser-confirmation-needed",
+                       "text":  "실제 방명록 브라우저 확인 결과 또는 브라우저 도구 접근 복구 여부에 대한 답변이 필요합니다."
+                   }
+               ]
+}

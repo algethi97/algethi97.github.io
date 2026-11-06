@@ -1,0 +1,161 @@
+{
+  "binding": {
+    "project_root": "c:\\projects\\algethi97.github.io",
+    "proposal_id": "016f3889a084453c9ef53e52cacfd375",
+    "request_id": "2f92f4608a7148a99d6e06508cbc9dee",
+    "run_id": "2fd916142d8a4a98bb8681882139bb4e",
+    "approval_id": "488b1589a1134daea9b761763439052f",
+    "execution_plan_hash": "75ec24029df6258edc7fdfc1a3987024a2663c62e32456d2d551792de2404464"
+  },
+  "file": "plan-progress.json",
+  "max_bytes": 65536,
+  "target_step": {
+    "number": "1",
+    "key": "1",
+    "title": "공통 모듈 신설과 방명록 스코프 정리",
+    "read_files": [
+      "guestbook.js",
+      "guestbook.html",
+      "game.js",
+      "script.js"
+    ],
+    "files": [
+      "common.js",
+      "guestbook.js",
+      "guestbook.html",
+      "adk/mapping.adesk.md"
+    ],
+    "keep_tests": [],
+    "difficulty": "standard",
+    "depends_on": []
+  },
+  "steps": [
+    {
+      "number": "1",
+      "key": "1",
+      "title": "공통 모듈 신설과 방명록 스코프 정리",
+      "read_files": [
+        "guestbook.js",
+        "guestbook.html",
+        "game.js",
+        "script.js"
+      ],
+      "files": [
+        "common.js",
+        "guestbook.js",
+        "guestbook.html",
+        "adk/mapping.adesk.md"
+      ],
+      "keep_tests": [],
+      "difficulty": "standard",
+      "depends_on": []
+    },
+    {
+      "number": "2",
+      "key": "2",
+      "title": "게임 코드 중복 제거와 분할",
+      "read_files": [
+        "game.js",
+        "game.html",
+        "common.js",
+        "MANDARIN_GAME_PLAN.md"
+      ],
+      "files": [
+        "game.js",
+        "game.html",
+        "game/board.js",
+        "game/input.js",
+        "game/sound.js",
+        "game/ranking.js",
+        "game/ui.js",
+        "adk/mapping.adesk.md"
+      ],
+      "keep_tests": [],
+      "difficulty": "complex",
+      "depends_on": [
+        "1"
+      ]
+    },
+    {
+      "number": "3",
+      "key": "3",
+      "title": "스타일시트 분리와 죽은 규칙 정리",
+      "read_files": [
+        "style.css",
+        "index.html",
+        "about.html",
+        "portfolio.html",
+        "guestbook.html",
+        "game.html",
+        "script.js",
+        "guestbook.js",
+        "game.js"
+      ],
+      "files": [
+        "style.css",
+        "css/pages.css",
+        "css/guestbook.css",
+        "css/game.css",
+        "index.html",
+        "about.html",
+        "portfolio.html",
+        "guestbook.html",
+        "game.html",
+        "adk/mapping.adesk.md"
+      ],
+      "keep_tests": [],
+      "difficulty": "standard",
+      "depends_on": [
+        "2"
+      ]
+    },
+    {
+      "number": "4",
+      "key": "4",
+      "title": "미사용 파일 정리",
+      "read_files": [
+        ".gitignore",
+        "README.md",
+        "index.html",
+        "about.html",
+        "portfolio.html",
+        "guestbook.html",
+        "game.html"
+      ],
+      "files": [
+        "images/2222.png",
+        "images/Gemini_Generated_Image_913j29913j29913j.png",
+        "images/mandarin_slice_bg.png",
+        "pyproject.toml",
+        "uv.lock",
+        ".python-version",
+        "src/algethi97_github_io/__init__.py",
+        ".gitignore"
+      ],
+      "keep_tests": [],
+      "difficulty": "mechanical",
+      "depends_on": [
+        "3"
+      ]
+    },
+    {
+      "number": "5",
+      "key": "5",
+      "title": "README 정합성과 맵 정리",
+      "read_files": [
+        "README.md",
+        "portfolio.html",
+        "adk/mapping.adesk.md"
+      ],
+      "files": [
+        "README.md",
+        "adk/mapping.adesk.md"
+      ],
+      "keep_tests": [],
+      "difficulty": "small",
+      "depends_on": [
+        "4"
+      ]
+    }
+  ]
+}

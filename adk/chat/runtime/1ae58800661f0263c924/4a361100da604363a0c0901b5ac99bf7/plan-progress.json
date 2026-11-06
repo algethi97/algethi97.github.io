@@ -1,0 +1,35 @@
+{
+    "project_root":  "c:\\projects\\algethi97.github.io",
+    "proposal_id":  "016f3889a084453c9ef53e52cacfd375",
+    "request_id":  "4a361100da604363a0c0901b5ac99bf7",
+    "run_id":  "bd0240db7d6442f1a7d4faec1dc5655f",
+    "approval_id":  "488b1589a1134daea9b761763439052f",
+    "execution_plan_hash":  "75ec24029df6258edc7fdfc1a3987024a2663c62e32456d2d551792de2404464",
+    "format_version":  1,
+    "sequence":  2,
+    "steps":  [
+                  {
+                      "key":  "1",
+                      "note":  "기존 테스트 체계와 검증 설정이 없어 테스트 추가 및 설정 변경에 대한 사용자 승인을 기다립니다. 제품 파일은 수정하지 않았습니다.",
+                      "checks":  [
+                                     {
+                                         "detail":  "v24.19.0을 확인했습니다.",
+                                         "name":  "node --version",
+                                         "passed":  true
+                                     },
+                                     {
+                                         "detail":  "종료 코드 0입니다. JSON 구문 검사 5개가 통과했으며 JavaScript 구문 검사와 Python 구문 검사는 변경 없음으로 건너뛰었습니다. 동작 검증 결과는 아닙니다.",
+                                         "name":  "verify_changes.py --root c:\\projects\\algethi97.github.io --task 016f3889a084453c9ef53e52cacfd375",
+                                         "passed":  true
+                                     }
+                                 ],
+                      "state":  "blocked"
+                  }
+              ],
+    "issues":  [
+                   {
+                       "key":  "test-setup-approval",
+                       "text":  "테스트 체계 신규 생성과 .adesk/verify.json의 exit 파서 검증 단계 추가에 대한 승인이 필요합니다."
+                   }
+               ]
+}

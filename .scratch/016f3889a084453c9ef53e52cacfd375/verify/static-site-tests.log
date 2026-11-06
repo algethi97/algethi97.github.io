@@ -1,0 +1,16 @@
+✔ relative time preserves boundaries, page date formats and invalid dates (2.1366ms)
+✔ button loading preserves both modes and accepts absent elements (0.7641ms)
+✔ client waits for SDK and reuses one instance (0.7736ms)
+✔ guestbook loads, escapes cards, pages and keeps internals private (5.0911ms)
+✔ guestbook submits once, prepends result and restores/expires cooldown (2.1518ms)
+✔ guestbook restores saved cooldown and blocks invalid input and honeypot (1.7648ms)
+✔ guestbook handles query/insert errors and allows retry (2.0062ms)
+✔ guestbook reports missing SDK without requests or event binding (1.8181ms)
+ℹ tests 8
+ℹ suites 0
+ℹ pass 8
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 74.192

@@ -1,0 +1,28 @@
+{
+  "version": 1,
+  "steps": [
+    {
+      "name": "javascript-syntax",
+      "command": [
+        "node",
+        "--check",
+        "{file}"
+      ],
+      "parser": "exit",
+      "per_file": true,
+      "when": [
+        "*.js",
+        "tests/*.mjs"
+      ]
+    },
+    {
+      "name": "static-site-tests",
+      "command": [
+        "node",
+        "--test",
+        "tests/static-site.test.mjs"
+      ],
+      "parser": "exit"
+    }
+  ]
+}

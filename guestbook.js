@@ -3,10 +3,7 @@
 // Supabase Cloud 연동, RLS 보안 방어, XSS 차단, 쿨다운(도배 방지), 페이징
 // ==========================================================================
 
-const SUPABASE_CONFIG = {
-  url: 'https://fspkdczsrfoyebznfkwr.supabase.co',
-  key: 'sb_publishable_oZWWsYIiUzSB6-9F5I5bdw_sLakHhyW'
-};
+import { getSupabaseClient, formatTimeAgo, setButtonLoading } from './common.js';
 
 const COOLDOWN_SECONDS = 30;
 const PAGE_SIZE = 15;
@@ -23,9 +20,8 @@ let cooldownInterval = null;
 // ==========================================================================
 document.addEventListener('DOMContentLoaded', () => {
   // 1. Supabase 클라이언트 초기화
-  if (window.supabase && window.supabase.createClient) {
-    supabaseClient = window.supabase.createClient(SUPABASE_CONFIG.url, SUPABASE_CONFIG.key);
-  } else {
+  supabaseClient = getSupabaseClient();
+  if (!supabaseClient) {
     console.error('Supabase SDK 로드 실패');
     showNotification('데이터베이스 모듈을 불러오지 못했습니다. 페이지를 새로고침 해주세요.', '❌');
     return;
@@ -90,7 +86,7 @@ async function loadGuestbookMessages(isInitial = false) {
     emptyState.style.display = 'none';
     loadMoreBtn.style.display = 'none';
   } else {
-    setButtonLoading(loadMoreBtn, true);
+    setButtonLoading(loadMoreBtn, true, { textMode: 'dim' });
   }
 
   try {
@@ -135,7 +131,7 @@ async function loadGuestbookMessages(isInitial = false) {
     isFetching = false;
     skeleton.style.display = 'none';
     if (!isInitial) {
-      setButtonLoading(loadMoreBtn, false);
+      setButtonLoading(loadMoreBtn, false, { textMode: 'dim' });
     }
   }
 }
@@ -187,7 +183,7 @@ async function handleFormSubmit(e) {
 
   // 4. 전송 시작 (더블 서브밋 방지)
   isSubmitting = true;
-  setButtonLoading(submitBtn, true);
+  setButtonLoading(submitBtn, true, { textMode: 'dim' });
 
   try {
     const { data, error } = await supabaseClient
@@ -234,7 +230,7 @@ async function handleFormSubmit(e) {
     showNotification('방명록 저장에 실패했습니다. 잠시 후 다시 시도해주세요.', '⚠️');
   } finally {
     isSubmitting = false;
-    setButtonLoading(submitBtn, false);
+    setButtonLoading(submitBtn, false, { textMode: 'dim' });
   }
 }
 
@@ -249,7 +245,7 @@ function createMessageCardElement(entry) {
   const safeNickname = escapeHtml(entry.nickname);
   const safeMessage = escapeHtml(entry.message).replace(/\n/g, '<br>');
   const formattedTime = formatDateTime(entry.created_at);
-  const relativeTime = getRelativeTimeString(entry.created_at);
+  const relativeTime = formatTimeAgo(entry.created_at, { includeTime: true, invalidAsEmpty: true });
 
   card.innerHTML = `
     <div class="card-meta">
@@ -360,41 +356,6 @@ function formatDateTime(isoString) {
   const mm = pad(date.getMinutes());
 
   return `${y}.${m}.${d} ${hh}:${mm}`;
-}
-
-function getRelativeTimeString(isoString) {
-  if (!isoString) return '';
-  const date = new Date(isoString);
-  if (isNaN(date.getTime())) return '';
-
-  const diffMs = Date.now() - date.getTime();
-  const diffSec = Math.floor(diffMs / 1000);
-  const diffMin = Math.floor(diffSec / 60);
-  const diffHour = Math.floor(diffMin / 60);
-  const diffDay = Math.floor(diffHour / 24);
-
-  if (diffSec < 60) return '방금 전';
-  if (diffMin < 60) return `${diffMin}분 전`;
-  if (diffHour < 24) return `${diffHour}시간 전`;
-  if (diffDay < 7) return `${diffDay}일 전`;
-
-  return formatDateTime(isoString);
-}
-
-function setButtonLoading(button, isLoading) {
-  if (!button) return;
-  const textSpan = button.querySelector('.btn-text');
-  const loaderSpan = button.querySelector('.btn-loader');
-
-  if (isLoading) {
-    button.disabled = true;
-    if (textSpan) textSpan.style.opacity = '0.5';
-    if (loaderSpan) loaderSpan.style.display = 'inline-block';
-  } else {
-    button.disabled = false;
-    if (textSpan) textSpan.style.opacity = '1';
-    if (loaderSpan) loaderSpan.style.display = 'none';
-  }
 }
 
 function showNotification(message, icon = '💬') {
