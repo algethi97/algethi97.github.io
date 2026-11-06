@@ -233,3 +233,214 @@ test('guestbook reports missing SDK without requests or event binding', async t 
   assert.equal(g.errors.length, 1);
   assert.equal(g.els['guestbook-form'].listeners.submit, undefined);
 });
+
+function gameElement() {
+  const classes = new Set();
+  let html = '';
+  return {
+    style: {}, dataset: {}, children: [], listeners: {}, attrs: {}, textContent: '', value: '', disabled: false, parentNode: null,
+    get className() { return [...classes].join(' '); },
+    set className(value) { classes.clear(); value.split(/\s+/).filter(Boolean).forEach(x => classes.add(x)); },
+    get innerHTML() { return html; },
+    set innerHTML(value) { html = value; if (value === '') this.children = []; },
+    classList: { add: (...x) => x.forEach(c => classes.add(c)), remove: (...x) => x.forEach(c => classes.delete(c)), contains: x => classes.has(x) },
+    addEventListener(name, fn) { (this.listeners[name] ??= []).push(fn); },
+    dispatch(name, event = {}) { return Promise.all((this.listeners[name] ?? []).map(fn => fn({ type: name, preventDefault() {}, ...event }))); },
+    appendChild(child) {
+      for (const kid of child.isFragment ? child.children.splice(0) : [child]) { kid.parentNode = this; this.children.push(kid); }
+      return child;
+    },
+    removeChild(child) { this.children = this.children.filter(x => x !== child); child.parentNode = null; },
+    setAttribute(key, value) { this.attrs[key] = value; },
+    querySelector(selector) { return this.parts?.[selector] ?? null; },
+    focus() { this.focused = true; },
+    // 타일은 40px 격자, 그 밖의 요소(보드 컨테이너)는 원점에 둔다
+    getBoundingClientRect() {
+      const left = Number(this.dataset.col ?? 0) * 40, top = Number(this.dataset.row ?? 0) * 40;
+      const size = this.dataset.col === undefined ? 1000 : 40;
+      return { left, top, right: left + size, bottom: top + size, width: size, height: size };
+    }
+  };
+}
+
+test('game module plays, judges sums, ranks scores and keeps state private', async t => {
+  const now = new Date(2026, 0, 20, 12, 0).getTime();
+  t.mock.timers.enable({ apis: ['setTimeout', 'setInterval', 'Date'], now });
+  t.mock.method(Math, 'random', () => 0.45); // 모든 타일 값 5
+  const els = {};
+  const el = id => (els[id] ??= Object.assign(gameElement(), id === 'btn-submit-score' ? { parts: { '.btn-text': gameElement(), '.btn-loader': gameElement() } } : {}));
+  const storage = new Map([['mandarin_player_nickname', 'saved']]);
+  const calls = [], responses = [], errors = [], windowListeners = {};
+  const next = () => Promise.resolve(responses.length ? responses.shift() : { data: [], error: null });
+  const client = { from(table) {
+    const call = { table, order: [] };
+    calls.push(call);
+    const query = {
+      select(...args) { call.select = args; return call.insert ? next() : query; },
+      order(...args) { call.order.push(args); return query; },
+      limit(n) { call.limit = n; return next(); },
+      insert(values) { call.insert = values; return query; }
+    };
+    return query;
+  } };
+  let ready;
+  browserGlobals(t, {
+    window: { supabase: { createClient: () => client }, addEventListener: (name, fn) => { (windowListeners[name] ??= []).push(fn); } },
+    document: {
+      getElementById: el,
+      querySelector: selector => {
+        if (selector === '.timer-box') return el('.timer-box');
+        const id = selector.match(/data-record-id="(.+)"/)?.[1];
+        return el('top5-list').children.find(li => String(li.dataset.recordId) === id) ?? null;
+      },
+      createElement: () => gameElement(),
+      createDocumentFragment: () => Object.assign(gameElement(), { isFragment: true }),
+      addEventListener: (event, fn) => { assert.equal(event, 'DOMContentLoaded'); ready = fn; }
+    },
+    localStorage: { getItem: key => storage.get(key) ?? null, setItem: (key, value) => storage.set(key, String(value)), removeItem: key => storage.delete(key) },
+    requestAnimationFrame: fn => fn(),
+    confirm: () => false
+  });
+  t.mock.method(console, 'error', (...args) => errors.push(args));
+  responses.push({ data: [{ id: 7, nickname: '<b>top</b>', score: 30, created_at: new Date(now - 30 * 60000).toISOString() }], error: null });
+  await import(new URL('../game.js', import.meta.url));
+  ready();
+  await settle();
+
+  const board = el('mandarin-board');
+  const container = el('board-container');
+  const fire = (name, x, y) => name === 'mousedown'
+    ? container.dispatch(name, { clientX: x, clientY: y })
+    : Promise.all((windowListeners[name] ?? []).map(fn => fn({ type: name, clientX: x, clientY: y, preventDefault() {} })));
+  const drag = (x1, y1, x2, y2) => { fire('mousedown', x1, y1); fire('mousemove', x2, y2); return fire('mouseup', x2, y2); };
+  const toasts = () => el('game-toast-container').children.map(x => x.textContent);
+  const unit = (value, suffix) => `${value}<span class="stat-unit">${suffix}</span>`;
+
+  // 초기화: 보드 사전 생성, Top 5 조회 계약, textContent 렌더링, 닉네임 복원
+  assert.equal(board.children.length, 170);
+  assert.deepEqual(calls[0], { table: 'mandarin-game_scores', select: ['id, nickname, score, remaining_count, play_time, created_at'], order: [['score', { ascending: false }], ['created_at', { ascending: true }]], limit: 5 });
+  const info = el('top5-list').children[0].children[0].children[1];
+  assert.equal(info.children[0].textContent, '<b>top</b>');
+  assert.equal(info.children[1].textContent, '30분 전');
+  assert.equal(el('player-nickname').value, 'saved');
+  assert.equal(el('sound-icon').textContent, '🔊');
+  for (const key of ['supabaseClient', 'getSupabaseClient', 'soundManager', 'SoundManager', 'score', 'isGameRunning', 'tilesData', 'timeLeft', 'startGame', 'handleScoreSubmit']) {
+    assert.equal(key in globalThis, false, key);
+    assert.equal(key in window, false, key);
+  }
+
+  // 시작 전 드래그는 무시되고, 시작하면 HUD가 초기화된다
+  await drag(5, 5, 75, 30);
+  assert.equal(el('selection-box').style.display, undefined);
+  await el('btn-overlay-start').dispatch('click');
+  assert.equal(el('game-start-overlay').style.display, 'none');
+  assert.equal(el('btn-action-text').textContent, '🔄 다시 시작');
+  assert.equal(el('hud-score').innerHTML, unit(0, '점'));
+  assert.equal(el('hud-timer').innerHTML, unit(120, 's'));
+
+  // 합계 10: 두 타일 선택 시 배지 표시 후 수확, 점수·남은 귤·플로팅 점수 갱신
+  fire('mousedown', 5, 5);
+  fire('mousemove', 75, 30);
+  assert.equal(el('sum-badge-val').textContent, '10 ✨');
+  assert.equal(el('selection-box').classList.contains('is-ten'), true);
+  assert.equal(board.children[0].classList.contains('is-ten'), true);
+  await fire('mouseup', 75, 30);
+  assert.equal(el('selection-box').style.display, 'none');
+  assert.equal(board.children[0].classList.contains('clearing-pop'), true);
+  assert.equal(el('hud-score').innerHTML, unit(2, '점'));
+  assert.equal(el('hud-remaining').innerHTML, unit(168, '개'));
+  assert.equal(container.children.at(-1).textContent, '+2');
+  t.mock.timers.tick(300);
+  assert.equal(board.children[0].classList.contains('cleared'), true);
+
+  // 합계 15는 흔들림 후 선택 해제, 수확한 타일은 다시 선택되지 않는다
+  await drag(85, 5, 195, 30);
+  assert.equal(board.children[2].classList.contains('shake-fail'), true);
+  t.mock.timers.tick(300);
+  assert.equal(board.children[2].classList.contains('shake-fail'), false);
+  assert.equal(board.children[2].classList.contains('selected'), false);
+  fire('mousedown', 5, 5);
+  fire('mousemove', 75, 30);
+  assert.equal(el('sum-badge-val').textContent, 0);
+  await fire('mouseup', 75, 30);
+  assert.equal(el('hud-score').innerHTML, unit(2, '점'));
+
+  // 진행 중 재시작은 확인 창에서 취소하면 유지된다
+  await el('btn-start-restart').dispatch('click');
+  assert.equal(el('hud-remaining').innerHTML, unit(168, '개'));
+
+  // 사운드 토글은 아이콘·저장값·토스트를 바꾼다
+  await el('btn-sound-toggle').dispatch('click');
+  assert.equal(el('sound-icon').textContent, '🔇');
+  assert.equal(storage.get('mandarin_muted'), 'true');
+  assert.equal(toasts().at(-1), '🔇 효과음이 꺼졌습니다.');
+
+  // 타이머: 1초마다 게이지·표시 갱신, 10초 이하 경고, 시간 종료 시 결과 모달
+  t.mock.timers.tick(1000);
+  assert.equal(el('hud-timer').innerHTML, unit(119, 's'));
+  assert.equal(el('timer-gauge-bar').style.width, `${119 / 120 * 100}%`);
+  t.mock.timers.tick(110000);
+  assert.equal(el('.timer-box').classList.contains('time-warning'), true);
+  t.mock.timers.tick(10000);
+  assert.equal(el('game-modal').style.display, 'flex');
+  assert.equal(el('modal-result-title').textContent, 'TIME OVER!');
+  assert.equal(el('modal-final-score').textContent, '2점');
+  assert.equal(el('modal-harvested-count').textContent, '2개');
+  assert.equal(el('modal-play-time').textContent, '120초');
+  assert.equal(el('my-last-score').textContent, '2');
+  assert.equal(el('my-last-score-card').style.display, 'block');
+  assert.equal(el('btn-action-text').textContent, '🎮 게임 시작');
+  await drag(85, 5, 195, 30);
+  assert.equal(el('selection-box').style.display, 'none');
+
+  // 점수 등록: 닉네임 검증, 등록 계약, 로딩 상태, Top 5 갱신·하이라이트
+  const form = el('score-submit-form');
+  el('player-nickname').value = '  ';
+  await form.dispatch('submit');
+  assert.equal(toasts().at(-1), '닉네임을 1글자 이상 입력해 주세요.');
+  el('player-nickname').value = 'x'.repeat(21);
+  await form.dispatch('submit');
+  assert.equal(toasts().at(-1), '닉네임은 최대 20자까지 가능합니다.');
+  assert.equal(calls.length, 1);
+  el('player-nickname').value = ' player ';
+  let finish;
+  responses.push(new Promise(resolve => { finish = resolve; }));
+  responses.push({ data: [{ id: 99, nickname: 'player', score: 2, created_at: new Date(now).toISOString() }], error: null });
+  const pending = form.dispatch('submit');
+  assert.deepEqual(calls[1].insert, [{ nickname: 'player', score: 2, remaining_count: 168, play_time: 120 }]);
+  assert.equal(el('btn-submit-score').disabled, true);
+  assert.equal(el('btn-submit-score').parts['.btn-text'].style.display, 'none');
+  finish({ data: [{ id: 99 }], error: null });
+  await pending;
+  assert.equal(el('btn-submit-score').disabled, false);
+  assert.equal(el('btn-submit-score').parts['.btn-loader'].style.display, 'none');
+  assert.equal(storage.get('mandarin_player_nickname'), 'player');
+  assert.equal(el('game-modal').style.display, 'none');
+  assert.equal(calls[2].limit, 5);
+  t.mock.timers.tick(200);
+  assert.equal(el('top5-list').children[0].classList.contains('newly-ranked'), true);
+  assert.equal(toasts().includes('🎉 player님의 점수(2점)가 명예의 전당에 등록되었습니다!'), true);
+
+  // 같은 게임 재등록·허니팟·쿨다운은 요청 없이 차단된다
+  await form.dispatch('submit');
+  assert.equal(toasts().at(-1), '이미 이번 게임의 점수가 등록되었습니다. 새 게임에 도전해 보세요!');
+  t.mock.method(console, 'warn', () => {});
+  el('honeypot-game-website').value = 'bot';
+  el('game-modal').style.display = 'flex';
+  await form.dispatch('submit');
+  assert.equal(el('game-modal').style.display, 'none');
+  el('honeypot-game-website').value = '';
+  await el('btn-modal-restart').dispatch('click');
+  await form.dispatch('submit');
+  assert.match(toasts().at(-1), /^도배 방지를 위해 \d+초 후에 다시 시도해 주세요\.$/);
+  assert.equal(calls.length, 3);
+
+  // 등록 오류는 알림 후 버튼을 복구한다
+  t.mock.timers.tick(10000);
+  responses.push({ data: null, error: new Error('insert failed') });
+  await form.dispatch('submit');
+  assert.equal(calls.length, 4);
+  assert.equal(toasts().at(-1), '점수 등록 중 오류가 발생했습니다. 잠시 후 다시 시도해 주세요.');
+  assert.equal(el('btn-submit-score').disabled, false);
+  assert.equal(errors.length, 1);
+});
