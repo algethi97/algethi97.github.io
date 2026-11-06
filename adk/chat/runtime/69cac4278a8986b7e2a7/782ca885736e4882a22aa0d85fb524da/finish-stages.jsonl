@@ -1,0 +1,11 @@
+{"stage": "cli_exit", "at": "2026-11-06T06:39:35.211+00:00", "ms": 0}
+{"stage": "job_scope_checked", "at": "2026-11-06T06:39:35.212+00:00", "ms": 1}
+{"stage": "readers_done", "at": "2026-11-06T06:39:35.212+00:00", "ms": 1}
+{"stage": "report_parsed", "at": "2026-11-06T06:39:35.229+00:00", "ms": 18}
+{"stage": "finish_checks:start", "at": "2026-11-06T06:39:35.907+00:00", "ms": 696}
+{"stage": "finish_checks:end", "at": "2026-11-06T06:39:36.855+00:00", "ms": 1644}
+{"stage": "delegation_reconcile", "at": "2026-11-06T06:39:36.856+00:00", "ms": 1645}
+{"stage": "plan_progress", "at": "2026-11-06T06:39:42.979+00:00", "ms": 7768}
+{"stage": "state_committed", "at": "2026-11-06T06:39:43.308+00:00", "ms": 8098}
+{"stage": "host_commit:start", "at": "2026-11-06T06:39:43.309+00:00", "ms": 8098}
+{"stage": "host_commit:end", "at": "2026-11-06T06:39:44.121+00:00", "ms": 8910}

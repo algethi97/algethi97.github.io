@@ -1,6 +1,6 @@
 {
   "schema_version": 5,
-  "revision": 247,
+  "revision": 276,
   "path_format": 1,
   "active_room_id": "80ad30c7cfa74f009f0ff46416095f50",
   "locks": [],
@@ -15,7 +15,8 @@
       "execution_plan_hash": "75ec24029df6258edc7fdfc1a3987024a2663c62e32456d2d551792de2404464",
       "status": "question",
       "plan_file": {
-        "status": "saved"
+        "status": "cleaned",
+        "error": null
       },
       "approval_id": "488b1589a1134daea9b761763439052f",
       "run_id": "3a92e4c10c27441cb080e6cd2b90c2e9",
@@ -297,8 +298,355 @@
         "auto_resume_count": 0
       },
       "plan_lifecycle": {
-        "state": "question",
-        "at": "2026-11-05T05:10:50.282987+00:00"
+        "state": "discarded",
+        "at": "2026-11-06T06:24:43.440433+00:00"
+      }
+    },
+    {
+      "id": "ce81e47142bb422684d9a1639e25d448",
+      "room_id": "80ad30c7cfa74f009f0ff46416095f50",
+      "agent_id": "Claude(ed4adade2415fecf43e4bd956a00113d6cc9cc219c2d9daf9c14383117aa6889)",
+      "project_root": ".",
+      "plan_path": "adk/plans/refactor-static-site-part2.md",
+      "card_hash": "f091b44463513a42ecda8c5dd48c7049c568892f64297f5b362903a62fcb2dbf",
+      "execution_plan_hash": "2201b773a9830231d16df6583b613c1a044268a13cb2495c8f64976ca41fe6c3",
+      "status": "completed",
+      "plan_file": {
+        "status": "saved"
+      },
+      "approval_id": "838553ac0e5e48bc8eb3e753f52bd31e",
+      "run_id": "7f9663336cee445dbb8e9372fa304cf5",
+      "executor": {
+        "choice": "first",
+        "reason": "1순위",
+        "source": "벤치 추천",
+        "cli": "claude",
+        "model": "claude-opus-5-5",
+        "effort": "high"
+      },
+      "error": null,
+      "created_at": "2026-11-06T06:26:14.264186+00:00",
+      "updated_at": "2026-11-06T06:39:42.979893+00:00",
+      "retain_plan_file": false,
+      "model": "claude-sonnet-5-5",
+      "effort": "medium",
+      "verification": "reported",
+      "source_message_id": "712885ecb50246a996676d75de9b2abd",
+      "executor_pick": {
+        "difficulty": "complex",
+        "first": {
+          "cli": "claude",
+          "model": "claude-opus-5-5",
+          "effort": "high",
+          "context_cap": null
+        },
+        "second": {
+          "cli": "codex",
+          "model": "gpt-6.1-sol",
+          "effort": "xhigh",
+          "context_cap": null
+        },
+        "chosen": "first",
+        "reason": "J $0.70 = $3.85 × 0.18 × 1.00 · 1순위",
+        "source": "벤치 추천",
+        "fetched_at": "2026-10-27T11:36:57+00:00"
+      },
+      "plan_step_reviews": [
+        {
+          "key": "2",
+          "number": "2",
+          "warnings": [],
+          "executor_pick": {
+            "difficulty": "complex",
+            "first": {
+              "cli": "claude",
+              "model": "claude-opus-5-5",
+              "effort": "high",
+              "context_cap": null
+            },
+            "second": {
+              "cli": "codex",
+              "model": "gpt-6.1-sol",
+              "effort": "xhigh",
+              "context_cap": null
+            },
+            "chosen": "first",
+            "reason": "J $0.70 = $3.85 × 0.18 × 1.00 · 1순위",
+            "source": "벤치 추천",
+            "fetched_at": "2026-10-27T11:36:57+00:00"
+          }
+        },
+        {
+          "key": "3",
+          "number": "3",
+          "warnings": [],
+          "executor_pick": {
+            "difficulty": "standard",
+            "first": {
+              "cli": "claude",
+              "model": "claude-opus-5-5",
+              "effort": "medium",
+              "context_cap": null
+            },
+            "second": {
+              "cli": "codex",
+              "model": "gpt-6.1-sol",
+              "effort": "medium",
+              "context_cap": null
+            },
+            "chosen": "first",
+            "reason": "J $0.52 = $2.84 × 0.18 × 1.00 · 1순위",
+            "source": "벤치 추천",
+            "fetched_at": "2026-10-27T11:36:57+00:00"
+          }
+        },
+        {
+          "key": "4",
+          "number": "4",
+          "warnings": [],
+          "executor_pick": {
+            "difficulty": "mechanical",
+            "first": {
+              "cli": "claude",
+              "model": "claude-haiku-5-5",
+              "effort": "low",
+              "context_cap": 80000
+            },
+            "second": {
+              "cli": "codex",
+              "model": "gpt-6-luna",
+              "effort": "max",
+              "context_cap": 230000
+            },
+            "chosen": "first",
+            "reason": "J $0.03 = $0.11 × 0.18 × 1.44 · 아래 c 0.99 · 1순위",
+            "source": "벤치 추천",
+            "fetched_at": "2026-10-27T11:36:57+00:00"
+          }
+        },
+        {
+          "key": "5",
+          "number": "5",
+          "warnings": [],
+          "executor_pick": {
+            "difficulty": "small",
+            "first": {
+              "cli": "claude",
+              "model": "claude-sonnet-5-5",
+              "effort": "high",
+              "context_cap": null
+            },
+            "second": {
+              "cli": "codex",
+              "model": "gpt-6.1-sol",
+              "effort": "low",
+              "context_cap": null
+            },
+            "chosen": "first",
+            "reason": "J $0.21 = $1.18 × 0.18 × 1.00 · 1순위",
+            "source": "벤치 추천",
+            "fetched_at": "2026-10-27T11:36:57+00:00"
+          }
+        }
+      ],
+      "approval_note": "",
+      "approved_at": "2026-11-06T06:30:23.085371+00:00",
+      "board_preparation": {
+        "approval_id": "838553ac0e5e48bc8eb3e753f52bd31e",
+        "execution_plan_hash": "2201b773a9830231d16df6583b613c1a044268a13cb2495c8f64976ca41fe6c3",
+        "state": "ready",
+        "request_id": "7393218ccf5f4e79abad018d1702ddcf",
+        "message_id": "5dc17c55852d42c38ae99ebeb46a8d59",
+        "error": null
+      },
+      "plan_progress": {
+        "format_version": 1,
+        "execution_plan_hash": "2201b773a9830231d16df6583b613c1a044268a13cb2495c8f64976ca41fe6c3",
+        "sequence": 4,
+        "binding": {
+          "project_root": "c:\\projects\\algethi97.github.io",
+          "proposal_id": "ce81e47142bb422684d9a1639e25d448",
+          "request_id": "782ca885736e4882a22aa0d85fb524da",
+          "run_id": "7f9663336cee445dbb8e9372fa304cf5",
+          "approval_id": "838553ac0e5e48bc8eb3e753f52bd31e",
+          "execution_plan_hash": "2201b773a9830231d16df6583b613c1a044268a13cb2495c8f64976ca41fe6c3"
+        },
+        "steps": {
+          "2": {
+            "state": "verified",
+            "note": "구현·검증 완료 후 최종 보고",
+            "checks": [
+              {
+                "name": "node --test tests/static-site.test.mjs",
+                "passed": true,
+                "detail": "9개 테스트 통과(게임 모듈 테스트 1개 추가)"
+              },
+              {
+                "name": "node --input-type=module --check (게임·공통 모듈 8개)",
+                "passed": true,
+                "detail": "모든 파일 통과"
+              },
+              {
+                "name": "verify_changes.py",
+                "passed": true,
+                "detail": "javascript-syntax, static-site-tests 통과"
+              },
+              {
+                "name": "헤드리스 Chrome 게임 페이지 확인",
+                "passed": true,
+                "detail": "타일 170개, 전역 비노출, 시작·드래그 수확·타이머·Top 5 로딩 확인, 새 오류 없음"
+              }
+            ],
+            "review_message_id": "45e01ac9b40642dcbe5eb13355ac9533",
+            "reviewed_at": "2026-11-06T06:39:43.205862+00:00"
+          },
+          "3": {
+            "state": "pending",
+            "note": "",
+            "checks": []
+          },
+          "4": {
+            "state": "pending",
+            "note": "",
+            "checks": []
+          },
+          "5": {
+            "state": "pending",
+            "note": "",
+            "checks": []
+          }
+        },
+        "issues": [],
+        "report_error": null,
+        "last_report_at": "2026-11-06T06:38:50.136998+00:00",
+        "execution": "completed",
+        "target_step": "2"
+      },
+      "plan_sessions": [
+        {
+          "engine": "Claude",
+          "session_id": "09927887-7d6c-4638-bf3b-57389993334a",
+          "pc_id": "46ca914a9621465a",
+          "shared": false
+        }
+      ],
+      "board_editor": {
+        "confirmed_by": "auto"
+      },
+      "step_boundary": {
+        "token": "c39d87f0a682432f8414c6853f88f2e4",
+        "state": "waiting",
+        "run_id": "7f9663336cee445dbb8e9372fa304cf5",
+        "execution_plan_hash": "2201b773a9830231d16df6583b613c1a044268a13cb2495c8f64976ca41fe6c3",
+        "target_step": "3",
+        "auto": false,
+        "pick": {
+          "difficulty": "standard",
+          "first": {
+            "cli": "codex",
+            "model": "gpt-6.1-sol",
+            "effort": "medium",
+            "context_cap": null
+          },
+          "second": {
+            "cli": "claude",
+            "model": "claude-opus-5-5",
+            "effort": "medium",
+            "context_cap": null
+          },
+          "chosen": "first",
+          "reason": "J $0.55 = $0.65 × 0.85 × 1.00 · 1순위",
+          "source": "벤치 추천",
+          "fetched_at": "2026-10-27T11:36:57+00:00"
+        },
+        "recommended": {
+          "cli": "codex",
+          "model": "gpt-6.1-sol",
+          "effort": "medium"
+        },
+        "previous": {
+          "cli": "claude",
+          "model": "claude-opus-5-5",
+          "effort": "high"
+        },
+        "direct": {
+          "cli": "claude",
+          "model": "claude-sonnet-5-5",
+          "effort": "medium"
+        },
+        "target_number": "3",
+        "target_title": "스타일시트 분리와 죽은 규칙 정리",
+        "target_work": "",
+        "checks": {
+          "recommended": {
+            "allowed": true,
+            "reason": "5시간 남은 양 99% / 기준 5% (재설정 2026-11-06T11:31:56+00:00) · 주간 남은 양 87% / 기준 5% (재설정 2026-11-11T07:09:11+00:00)",
+            "windows": {
+              "five_hour": 99.0,
+              "weekly": 87.0,
+              "five_hour_window": {
+                "duration_mins": 300,
+                "has_data": true,
+                "status": "fresh",
+                "remaining_percent": 99.0,
+                "used_percent": 1.0,
+                "resets_at": "2026-11-06T11:31:56+00:00",
+                "resets_at_kst": "2026-11-06 20:31 KST",
+                "is_exceeded": false,
+                "is_ambiguous": false,
+                "is_null": false
+              },
+              "weekly_window": {
+                "duration_mins": 10080,
+                "has_data": true,
+                "status": "fresh",
+                "remaining_percent": 87.0,
+                "used_percent": 13.0,
+                "resets_at": "2026-11-11T07:09:11+00:00",
+                "resets_at_kst": "2026-11-11 16:09 KST",
+                "is_exceeded": false,
+                "is_ambiguous": false,
+                "is_null": false
+              }
+            }
+          },
+          "previous": {
+            "allowed": true,
+            "reason": "5시간 남은 양 60% / 기준 5% (재설정 2026-11-06T09:49:00+00:00) · 주간 남은 양 82% / 기준 5% (재설정 2026-11-06T09:59:00+00:00)",
+            "windows": {
+              "five_hour": 60.0,
+              "weekly": 82.0,
+              "five_hour_window": {
+                "duration_mins": 300,
+                "has_data": true,
+                "status": "fresh",
+                "remaining_percent": 60.0,
+                "used_percent": 40.0,
+                "resets_at": "2026-11-06T09:49:00+00:00",
+                "resets_at_kst": "2026-11-06 18:49 KST",
+                "is_exceeded": false,
+                "is_ambiguous": false,
+                "is_null": false
+              },
+              "weekly_window": {
+                "duration_mins": 10080,
+                "has_data": true,
+                "status": "fresh",
+                "remaining_percent": 82.0,
+                "used_percent": 18.0,
+                "resets_at": "2026-11-06T09:59:00+00:00",
+                "resets_at_kst": "2026-11-06 18:59 KST",
+                "is_exceeded": false,
+                "is_ambiguous": false,
+                "is_null": false
+              }
+            }
+          }
+        },
+        "reason": "Auto 꺼짐 · 5시간 남은 양 99% / 기준 5% (재설정 2026-11-06T11:31:56+00:00) · 주간 남은 양 87% / 기준 5% (재설정 2026-11-11T07:09:11+00:00)",
+        "blocked_reason": null,
+        "usage_warning": null,
+        "text": "단계 2 완료, 다음 단계 대기 — 사유: Auto 꺼짐 · 5시간 남은 양 99% / 기준 5% (재설정 2026-11-06T11:31:56+00:00) · 주간 남은 양 87% / 기준 5% (재설정 2026-11-11T07:09:11+00:00)"
       }
     }
   ],
@@ -311,7 +659,8 @@
     "plan_retention_migrated": true,
     "qa_recorded": {
       "reports": {
-        "dd4ada285f5f48edb3c75af07469c1d8": "a775f79f1d4a89a39841ed4d8c2c3711479d1e2f"
+        "dd4ada285f5f48edb3c75af07469c1d8": "a775f79f1d4a89a39841ed4d8c2c3711479d1e2f",
+        "45e01ac9b40642dcbe5eb13355ac9533": "ec13dcb93906833a6c74ab06f18b0ad0788bcfdc"
       },
       "plans": {}
     },
@@ -753,5 +1102,5 @@
       "session_cwd": "c:\\projects\\algethi97.github.io"
     }
   ],
-  "storage_commit": "dcb4124030844f23b64e7a9d747b979e"
+  "storage_commit": "88d0430cb09544fbac96ce0d19a436e8"
 }
