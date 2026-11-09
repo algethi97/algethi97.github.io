@@ -402,6 +402,11 @@ body.page-leaving {
   flex: 1;
 }
 
+/* 이모지 래퍼가 데스크톱 탭의 문자 흐름을 나누지 않도록 유지 */
+.monitor-scrollable .tab-emoji {
+  display: contents;
+}
+
 /* 네비게이션 탭 그리드 (열 개수는 아래 .tabs-grid.four-tabs에서 지정) */
 .tabs-grid {
   display: grid;
@@ -711,8 +716,13 @@ body.page-leaving {
   /* 홈의 확대 배율을 고려한 탭 크기 */
   .monitor-scrollable .tab-item {
     padding: 0.35rem 0.2rem;
-    font-size: 0.5rem;
+    font-size: 0.35rem;
+    white-space: nowrap;
     word-break: normal;
+  }
+
+  .monitor-scrollable .tab-emoji {
+    display: none;
   }
   .page-title {
     font-size: 1.6rem;
