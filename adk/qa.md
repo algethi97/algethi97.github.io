@@ -35,3 +35,11 @@
   - 절차: macOS Safari와 Windows Edge에서 game.html을 열어 시작 오버레이, 타이머 게이지, 10초 이하 경고, 결과 모달 모양이 이전과 같은지 확인한다.
   - 절차: 각 브라우저 콘솔에 새 오류가 없는지 확인한다.
   - 기록: 2026-11-06T06:39:42.969644+00:00
+
+## 로컬 브라우저 실화면
+
+- [ ] 프로젝트 루트에서 `python -m http.server`를 실행합니다. <!-- adesk:qa id=report-7ca98c3792d95826 -->
+  - 출처: report · 정적 사이트 구조 리팩토링 마무리 (스타일 분리 검증·파일 정리·문서 정합) · sha256:d79fb6b6b9cf27608e353619c8a06b886e7e06a2c1d992f01414757f0dad0db9 · 15f07df69ee347569e08322ccbef221d
+  - 절차: 프로젝트 루트에서 `python -m http.server`를 실행합니다.
+  - 절차: index.html, about.html, portfolio.html, guestbook.html, game.html을 열어 이미지가 깨지지 않고 404가 없는지 확인합니다.
+  - 기록: 2026-11-09T01:50:18.416112+00:00
