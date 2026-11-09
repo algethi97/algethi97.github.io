@@ -4,7 +4,7 @@
 > 16:9 데스크테리어 캔버스와 웜 모더니스트(Warm Minimalist Aesthetic) 디자인, 시네마틱 줌인 인터랙션, 실시간 방명록 및 Supabase 연동 웹 퍼즐 게임을 제공합니다.
 
 - **라이브 사이트**: [https://algethi97.github.io](https://algethi97.github.io)
-- **최신 버전**: `v1.6.0`
+- **최신 버전**: `v1.6.1`
 
 ---
 
@@ -47,17 +47,24 @@
 algethi97.github.io/
 ├── index.html                 # 메인 홈 (16:9 데스크테리어 캔버스 & 모니터 뷰)
 ├── about.html                 # 자기소개 페이지
-├── portfolio.html             # 프로젝트 포트폴리오 (5개 프로젝트 명세)
+├── portfolio.html             # 프로젝트 포트폴리오 (6개 프로젝트 명세)
 ├── guestbook.html             # 실시간 방명록 페이지
 ├── game.html                  # 만다린 퍼즐 웹게임 페이지
 ├── script.js                  # 공통 인터랙션 (데스크 줌인/줌아웃, 시네마틱 워프)
+├── common.js                  # Supabase 클라이언트 및 공통 표시 유틸
 ├── guestbook.js               # 방명록 Supabase 통신 및 렌더링 모듈
-├── game.js                    # 만다린 게임 코어 엔진, Web Audio Pop 사운드 & 랭킹 모듈
-├── style.css                  # 통합 테마 스타일시트 (Warm Minimalist Aesthetic)
+├── game.js                    # 만다린 게임 상태 및 생명주기 진입 모듈
+├── game/                      # 보드·입력·사운드·랭킹·UI 모듈
+├── style.css                  # 공통 테마·레이아웃 스타일시트
+├── css/                       # 페이지별 스타일시트
+├── tests/                     # Node 내장 회귀 테스트
+├── pyproject.toml, uv.lock    # Python 프로젝트 및 uv 잠금 파일
+├── .python-version, src/      # Python 버전 및 패키지 골격
 ├── MANDARIN_GAME_PLAN.md      # 만다린 게임 종합 기획/설계 문서
 ├── images/                    # 비주얼 에셋 디렉토리
 │   ├── GPT_Gen.png            # 데스크테리어 배경 원본 캔버스
-│   └── mandarin.png           # 만다린 퍼즐 귤 일러스트
+│   ├── mandarin.png           # 만다린 퍼즐 귤 일러스트
+│   └── mandarin_slice_bg.png  # 보존 중인 감귤 이미지
 └── README.md                  # 프로젝트 종합 가이드 문서
 ```
 
@@ -72,6 +79,10 @@ algethi97.github.io/
 ---
 
 ## 📜 버전 이력 (Changelog)
+
+### `v1.6.1` (2026-11-09)
+- **Refactor**: 공통 유틸리티, 게임 모듈과 페이지별 스타일시트를 분리하고 회귀 테스트를 정리했습니다.
+- **Docs**: 프로젝트 구조와 파일 맵을 현재 저장소에 맞췄습니다.
 
 ### `v1.6.0` (2026-10-06)
 - **Feature**: 포트폴리오 신규 프로젝트 `SafeJeonse (세이프전세)` 추가 및 노출 순서 재정렬

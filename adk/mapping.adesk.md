@@ -8,6 +8,16 @@ AI가 파일을 추가·이동·삭제하면 이 파일의 행도 함께 고친�
 
 | 경로 | 기능 | 관련 테스트 |
 | --- | --- | --- |
+| `.gitignore` | Git 추적 제외 규칙 | 해당 없음 |
+| `.python-version` | Python 버전 지정 | 해당 없음 |
+| `pyproject.toml` | Python 프로젝트 메타데이터 | 해당 없음 |
+| `uv.lock` | uv 의존성 잠금 | 해당 없음 |
+| `index.html` | 홈 화면과 진입점 | 로컬 정적 서버 브라우저 확인 |
+| `about.html` | 자기소개 화면 | 로컬 정적 서버 브라우저 확인 |
+| `portfolio.html` | 프로젝트 카드 화면 | 로컬 정적 서버 브라우저 확인 |
+| `script.js` | 홈 줌 및 공통 인터랙션 | 로컬 정적 서버 브라우저 확인 |
+| `README.md` | 프로젝트 소개 및 구조 | 문서와 실제 파일 대조 |
+| `MANDARIN_GAME_PLAN.md` | 만다린 게임 기획 문서 | 해당 없음 |
 | `common.js` | Supabase와 공통 표시 유틸 | `tests/static-site.test.mjs` |
 | `guestbook.js` | 방명록 조회·작성 ES 모듈 | `tests/static-site.test.mjs` |
 | `guestbook.html` | 방명록 화면과 모듈 로딩 | 로컬 정적 서버 브라우저 확인 |
@@ -44,3 +54,31 @@ AI가 파일을 추가·이동·삭제하면 이 파일의 행도 함께 고친�
 | 경로 | 기능 | 관련 대상 |
 | --- | --- | --- |
 | `.adesk/verify.json` | 구문·동작 검사 실행 설정 | JavaScript 파일, `tests/static-site.test.mjs` |
+
+## images
+
+| 경로 | 기능 | 관련 테스트 |
+| --- | --- | --- |
+| `images/GPT_Gen.png` | 데스크테리어 배경 이미지 | 홈 화면 브라우저 확인 |
+| `images/mandarin.png` | 게임 감귤 타일 이미지 | 게임 화면 브라우저 확인 |
+| `images/mandarin_slice_bg.png` | 보존 중인 감귤 이미지 | 해당 없음 |
+
+## src/algethi97_github_io
+
+| 경로 | 기능 | 관련 테스트 |
+| --- | --- | --- |
+| `src/algethi97_github_io/__init__.py` | Python 패키지 골격 | 해당 없음 |
+
+## .scratch
+
+| 경로 | 기능 | 관련 테스트 |
+| --- | --- | --- |
+| `.scratch/server.log` | 정적 서버 출력 기록 | 해당 없음 |
+| `.scratch/server_err.log` | 정적 서버 오류 기록 | 해당 없음 |
+
+## .scratch/016f3889a084453c9ef53e52cacfd375/verify
+
+| 경로 | 기능 | 관련 테스트 |
+| --- | --- | --- |
+| `.scratch/016f3889a084453c9ef53e52cacfd375/verify/javascript-syntax.log` | 구문 검사 실행 기록 | 해당 없음 |
+| `.scratch/016f3889a084453c9ef53e52cacfd375/verify/static-site-tests.log` | 회귀 테스트 실행 기록 | 해당 없음 |
