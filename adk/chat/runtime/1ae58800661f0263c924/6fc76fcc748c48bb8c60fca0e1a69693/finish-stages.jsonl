@@ -1,7 +1,0 @@
-{"stage": "cli_exit", "at": "2026-11-05T05:09:31.106+00:00", "ms": 0}
-{"stage": "job_scope_checked", "at": "2026-11-05T05:09:31.107+00:00", "ms": 1}
-{"stage": "readers_done", "at": "2026-11-05T05:09:31.114+00:00", "ms": 8}
-{"stage": "report_parsed", "at": "2026-11-05T05:09:31.116+00:00", "ms": 10}
-{"stage": "delegation_reconcile", "at": "2026-11-05T05:09:31.608+00:00", "ms": 502}
-{"stage": "plan_progress", "at": "2026-11-05T05:09:31.613+00:00", "ms": 507}
-{"stage": "state_committed", "at": "2026-11-05T05:09:31.850+00:00", "ms": 744}

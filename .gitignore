@@ -24,3 +24,8 @@ Thumbs.db
 .vscode/
 .idea/
 
+# ADesk 로컬 실행 임시 파일
+adk/chat/runtime/
+adk/chat/attachments/
+adk/chat/*.lock*
+adk/*.lock

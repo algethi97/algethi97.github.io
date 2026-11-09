@@ -1,2 +1,0 @@
-[2m2026-11-05T05:07:33.782256Z[0m [31mERROR[0m [2mcodex_app_server[0m[2m:[0m Codex is ignoring 1 unrecognized configuration setting. Check for typos or deprecated settings.
-  user (C:\Users\Admin\.codex\config.toml): `computer_use.windows.always_allowed_app_ids` is ignored.

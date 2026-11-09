@@ -1,0 +1,77 @@
+# adk 폴더 커밋 차단 정리
+
+## 현재 문제
+
+adk/chat/runtime/ 아래에 임시 Chrome 프로필 등 약 275MB(1,822개 파일)가 쌓여 있고, 일부 경로는 275자로 Windows 기본 한도(260자)를 넘어 git add가 막힌다. .gitignore에 adk 항목이 없어 runtime 74개, attachments 4개, lock 파일 4개가 이미 추적 중이거나 추적 대상이 되었다.
+
+## 수정할 것
+
+1. .gitignore에 adk/chat/runtime/, adk/chat/attachments/, lock 파일(adk/chat/*.lock*, adk/*.lock)을 제외 항목으로 추가한다.
+2. 이미 추적 중인 해당 파일을 git rm -r --cached로 인덱스에서만 뺀다. 디스크 파일은 지우지 않는다.
+3. 이 저장소에 core.longpaths를 true로 설정한다.
+4. adk/plans/, adk/qa.md, adk/mapping.adesk.md는 계속 추적한다.
+
+## 기대 효과
+
+- git add -A와 커밋이 긴 경로 오류 없이 끝난다.
+- 커밋 대상에서 약 275MB의 임시 파일이 빠진다.
+- 다른 환경에서도 adk/plans/의 계획서로 작업을 이어갈 수 있다.
+
+## 완료 기준
+
+| 확인 | 방법 |
+| --- | --- |
+| 제외 적용 | git check-ignore -v로 runtime, attachments, lock 경로가 무시됨을 확인 |
+| 추적 해제 | git ls-files adk/chat/runtime adk/chat/attachments 결과가 비어 있음 |
+| 디스크 보존 | adk/chat/runtime 폴더와 파일이 그대로 남아 있음 |
+| 커밋 가능 | git add -A --dry-run이 Filename too long 오류 없이 끝남 |
+| 계획서 유지 | git status에서 adk/plans/가 추적 대상으로 보임 |
+
+## 지킬 것
+
+- .gitignore의 기존 한글 주석을 깨뜨리지 않는다. UTF-8로 읽고 쓰며 끝에 항목만 덧붙인다.
+- 디스크의 파일은 삭제하지 않는다. 인덱스에서만 뺀다.
+- 커밋은 하지 않는다. 사용자가 요청할 때만 한다.
+- .env와 인증 정보는 건드리지 않는다.
+- adk/chat/state.json과 대화 기록(chat.md, board.md, setting.json)의 추적 여부는 D1 결정을 따른다.
+- core.longpaths는 이 저장소(.git/config)에만 설정한다. 전역 설정은 바꾸지 않는다. 다른 환경에서도 .gitignore 덕분에 동작하므로 이 설정에 의존하지 않는다.
+
+## 단계 1. 제외 항목 추가와 추적 해제
+
+- 작업: .gitignore 끝에 adk 제외 항목을 추가하고, 이미 추적 중인 adk/chat/runtime, adk/chat/attachments, lock 파일을 git rm -r --cached로 인덱스에서 뺀다. D1에서 대화 기록 제외를 고르면 해당 경로도 같은 방식으로 처리한다.
+- 완료 기준: git check-ignore -v가 대상 경로를 무시한다고 보고하고, git ls-files에 runtime과 attachments가 남지 않으며 디스크 파일은 그대로다. .gitignore를 UTF-8로 다시 읽어 한글 주석이 깨지지 않았다.
+- 읽을 파일: .gitignore, adk/mapping.adesk.md
+- 고칠 파일: .gitignore
+- 지킬 테스트: 없음
+- 난이도: small
+- 선행 단계: 없음
+
+## 단계 2. 긴 경로 설정과 커밋 가능 여부 확인
+
+- 작업: git config core.longpaths true를 이 저장소에 설정하고, git add -A --dry-run으로 오류 없이 끝나는지와 git status 결과를 확인한다. D2에서 삭제를 고르면 ADesk가 쓰지 않는 상태에서 adk/chat/runtime을 지운다.
+- 완료 기준: git add -A --dry-run이 Filename too long 오류 없이 끝나고, git status에 adk/plans/와 의도한 변경만 나타난다.
+- 읽을 파일: .gitignore
+- 고칠 파일: 없음
+- 지킬 테스트: 없음
+- 난이도: mechanical
+- 선행 단계: 1
+
+## 결정
+
+### D1. 대화 기록(adk/chat/<id>/chat.md, board.md, setting.json)과 state.json을 어떻게 하는가
+
+- 필수
+- 사용자 결정: A
+
+### D2. adk/chat/runtime 폴더를 디스크에서 삭제하는가
+
+- 사용자 결정: A
+
+## 근거
+
+- adk 용량: adk/chat 277.3MB(1,847개), 그중 runtime 274.6MB(1,822개), attachments 0.7MB, plan-approvals 0MB, plans 0MB.
+- 가장 큰 파일: model.tflite 35MB 두 개, bindings_main.wasm 24MB, Safe Browsing 저장소 16MB 두 개, ko-3-0.bdic 11MB 두 개.
+- 가장 긴 경로는 275자로 chrome-profile\Default\Extensions\...\content_scripts 아래에 있다.
+- .git/hooks에는 커밋 훅이 없고 core.longpaths는 비어 있으며, .gitignore에 adk 항목이 없다.
+- 현재 추적 중인 adk 파일은 90개이고 runtime 74, attachments 4, lock 4, 대화 기록 3, plan-approvals 2, mapping 1, qa 1, state.json 1 등이다.
+- adk/plans/는 아직 추적되지 않은 상태이므로 정리 후 커밋에 포함되는지 확인해야 한다.
