@@ -82,3 +82,26 @@ AI가 파일을 추가·이동·삭제하면 이 파일의 행도 함께 고친�
 | --- | --- | --- |
 | `.scratch/016f3889a084453c9ef53e52cacfd375/verify/javascript-syntax.log` | 구문 검사 실행 기록 | 해당 없음 |
 | `.scratch/016f3889a084453c9ef53e52cacfd375/verify/static-site-tests.log` | 회귀 테스트 실행 기록 | 해당 없음 |
+
+## .scratch/tab-verify
+
+| 경로 | 기능 | 관련 테스트 |
+| --- | --- | --- |
+| `.scratch/tab-verify/measure.mjs` | 폭별 탭 렌더링 측정 | 로컬 Chrome DevTools 측정 |
+| `.scratch/tab-verify/results-before.json` | 수정 전 측정 수치 | 최초 15개 화면 조건 |
+| `.scratch/tab-verify/results.json` | 수정 후 측정 수치 | 최종 15개 화면 조건 |
+| `.scratch/tab-verify/about-360.png` | 소개 360px 렌더링 | Chrome 스크린샷 |
+| `.scratch/tab-verify/about-400.png` | 소개 400px 렌더링 | Chrome 스크린샷 |
+| `.scratch/tab-verify/about-700.png` | 소개 700px 렌더링 | Chrome 스크린샷 |
+| `.scratch/tab-verify/portfolio-360.png` | 포트폴리오 360px 렌더링 | Chrome 스크린샷 |
+| `.scratch/tab-verify/portfolio-400.png` | 포트폴리오 400px 렌더링 | Chrome 스크린샷 |
+| `.scratch/tab-verify/portfolio-700.png` | 포트폴리오 700px 렌더링 | Chrome 스크린샷 |
+| `.scratch/tab-verify/guestbook-360.png` | 방명록 360px 렌더링 | Chrome 스크린샷 |
+| `.scratch/tab-verify/guestbook-400.png` | 방명록 400px 렌더링 | Chrome 스크린샷 |
+| `.scratch/tab-verify/guestbook-700.png` | 방명록 700px 렌더링 | Chrome 스크린샷 |
+| `.scratch/tab-verify/game-360.png` | 게임 360px 렌더링 | Chrome 스크린샷 |
+| `.scratch/tab-verify/game-400.png` | 게임 400px 렌더링 | Chrome 스크린샷 |
+| `.scratch/tab-verify/game-700.png` | 게임 700px 렌더링 | Chrome 스크린샷 |
+| `.scratch/tab-verify/index-360.png` | 홈 확대 360px 렌더링 | Chrome 스크린샷 |
+| `.scratch/tab-verify/index-400.png` | 홈 확대 400px 렌더링 | Chrome 스크린샷 |
+| `.scratch/tab-verify/index-700.png` | 홈 확대 700px 렌더링 | Chrome 스크린샷 |

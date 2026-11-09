@@ -1,0 +1,2693 @@
+{
+  "rows": [
+    {
+      "page": "about",
+      "width": 360,
+      "screenshot": "about-360.png",
+      "passed": true,
+      "viewportWidth": 360,
+      "zoomed": false,
+      "header": {
+        "box": {
+          "left": 0,
+          "right": 360,
+          "top": 0,
+          "bottom": 64.5625,
+          "width": 360,
+          "height": 64.5625
+        },
+        "overflow": "hidden",
+        "visibility": "visible",
+        "opacity": "1"
+      },
+      "main": {
+        "left": 0,
+        "right": 360,
+        "top": 64.5625,
+        "bottom": 1526.484375,
+        "width": 360,
+        "height": 1461.921875
+      },
+      "scrollY": 0,
+      "container": {
+        "left": 45.59375,
+        "right": 350.40625,
+        "top": 7.1875,
+        "bottom": 56.375,
+        "width": 304.8125,
+        "height": 49.1875
+      },
+      "tabs": [
+        {
+          "id": "tab-about",
+          "fontSize": 12.48,
+          "displayedFontSize": 12.48000426211458,
+          "box": {
+            "left": 45.59375,
+            "right": 118.796875,
+            "top": 7.1875,
+            "bottom": 56.375,
+            "width": 73.203125,
+            "height": 49.1875
+          },
+          "text": [
+            {
+              "left": 73.625,
+              "right": 90.765625,
+              "top": 15.1875,
+              "bottom": 31.1875,
+              "width": 17.140625,
+              "height": 16
+            },
+            {
+              "left": 59.21875,
+              "right": 105.15625,
+              "top": 30.78125,
+              "bottom": 46.78125,
+              "width": 45.9375,
+              "height": 16
+            }
+          ],
+          "scrollWidth": 71,
+          "clientWidth": 71,
+          "clipping": [],
+          "visibleInAncestors": true,
+          "noOverflow": true,
+          "insideContainer": true,
+          "textInside": true
+        },
+        {
+          "id": "tab-portfolio",
+          "fontSize": 12.48,
+          "displayedFontSize": 12.48000426211458,
+          "box": {
+            "left": 122.796875,
+            "right": 196,
+            "top": 7.1875,
+            "bottom": 56.375,
+            "width": 73.203125,
+            "height": 49.1875
+          },
+          "text": [
+            {
+              "left": 150.828125,
+              "right": 167.96875,
+              "top": 15.1875,
+              "bottom": 31.1875,
+              "width": 17.140625,
+              "height": 16
+            },
+            {
+              "left": 130.6875,
+              "right": 188.109375,
+              "top": 30.78125,
+              "bottom": 46.78125,
+              "width": 57.421875,
+              "height": 16
+            }
+          ],
+          "scrollWidth": 71,
+          "clientWidth": 71,
+          "clipping": [],
+          "visibleInAncestors": true,
+          "noOverflow": true,
+          "insideContainer": true,
+          "textInside": true
+        },
+        {
+          "id": "tab-guestbook",
+          "fontSize": 12.48,
+          "displayedFontSize": 12.48000426211458,
+          "box": {
+            "left": 200,
+            "right": 273.203125,
+            "top": 14.984375,
+            "bottom": 48.578125,
+            "width": 73.203125,
+            "height": 33.59375
+          },
+          "text": [
+            {
+              "left": 209.09375,
+              "right": 264.109375,
+              "top": 22.984375,
+              "bottom": 38.984375,
+              "width": 55.015625,
+              "height": 16
+            }
+          ],
+          "scrollWidth": 71,
+          "clientWidth": 71,
+          "clipping": [],
+          "visibleInAncestors": true,
+          "noOverflow": true,
+          "insideContainer": true,
+          "textInside": true
+        },
+        {
+          "id": "tab-game",
+          "fontSize": 12.48,
+          "displayedFontSize": 12.48000426211458,
+          "box": {
+            "left": 277.203125,
+            "right": 350.40625,
+            "top": 7.1875,
+            "bottom": 56.375,
+            "width": 73.203125,
+            "height": 49.1875
+          },
+          "text": [
+            {
+              "left": 286.296875,
+              "right": 341.3125,
+              "top": 15.1875,
+              "bottom": 31.1875,
+              "width": 55.015625,
+              "height": 16
+            },
+            {
+              "left": 302.3125,
+              "right": 325.28125,
+              "top": 30.78125,
+              "bottom": 46.78125,
+              "width": 22.96875,
+              "height": 16
+            }
+          ],
+          "scrollWidth": 71,
+          "clientWidth": 71,
+          "clipping": [],
+          "visibleInAncestors": true,
+          "noOverflow": true,
+          "insideContainer": true,
+          "textInside": true
+        }
+      ]
+    },
+    {
+      "page": "portfolio",
+      "width": 360,
+      "screenshot": "portfolio-360.png",
+      "passed": true,
+      "viewportWidth": 360,
+      "zoomed": false,
+      "header": {
+        "box": {
+          "left": 0,
+          "right": 360,
+          "top": 0,
+          "bottom": 64.5625,
+          "width": 360,
+          "height": 64.5625
+        },
+        "overflow": "hidden",
+        "visibility": "visible",
+        "opacity": "1"
+      },
+      "main": {
+        "left": 0,
+        "right": 360,
+        "top": 64.5625,
+        "bottom": 3363.421875,
+        "width": 360,
+        "height": 3298.859375
+      },
+      "scrollY": 0,
+      "container": {
+        "left": 45.59375,
+        "right": 350.40625,
+        "top": 7.1875,
+        "bottom": 56.375,
+        "width": 304.8125,
+        "height": 49.1875
+      },
+      "tabs": [
+        {
+          "id": "tab-about",
+          "fontSize": 12.48,
+          "displayedFontSize": 12.48000426211458,
+          "box": {
+            "left": 45.59375,
+            "right": 118.796875,
+            "top": 7.1875,
+            "bottom": 56.375,
+            "width": 73.203125,
+            "height": 49.1875
+          },
+          "text": [
+            {
+              "left": 73.625,
+              "right": 90.765625,
+              "top": 15.1875,
+              "bottom": 31.1875,
+              "width": 17.140625,
+              "height": 16
+            },
+            {
+              "left": 59.21875,
+              "right": 105.15625,
+              "top": 30.78125,
+              "bottom": 46.78125,
+              "width": 45.9375,
+              "height": 16
+            }
+          ],
+          "scrollWidth": 71,
+          "clientWidth": 71,
+          "clipping": [],
+          "visibleInAncestors": true,
+          "noOverflow": true,
+          "insideContainer": true,
+          "textInside": true
+        },
+        {
+          "id": "tab-portfolio",
+          "fontSize": 12.48,
+          "displayedFontSize": 12.48000426211458,
+          "box": {
+            "left": 122.796875,
+            "right": 196,
+            "top": 7.1875,
+            "bottom": 56.375,
+            "width": 73.203125,
+            "height": 49.1875
+          },
+          "text": [
+            {
+              "left": 150.828125,
+              "right": 167.96875,
+              "top": 15.1875,
+              "bottom": 31.1875,
+              "width": 17.140625,
+              "height": 16
+            },
+            {
+              "left": 130.6875,
+              "right": 188.109375,
+              "top": 30.78125,
+              "bottom": 46.78125,
+              "width": 57.421875,
+              "height": 16
+            }
+          ],
+          "scrollWidth": 71,
+          "clientWidth": 71,
+          "clipping": [],
+          "visibleInAncestors": true,
+          "noOverflow": true,
+          "insideContainer": true,
+          "textInside": true
+        },
+        {
+          "id": "tab-guestbook",
+          "fontSize": 12.48,
+          "displayedFontSize": 12.48000426211458,
+          "box": {
+            "left": 200,
+            "right": 273.203125,
+            "top": 14.984375,
+            "bottom": 48.578125,
+            "width": 73.203125,
+            "height": 33.59375
+          },
+          "text": [
+            {
+              "left": 209.09375,
+              "right": 264.109375,
+              "top": 22.984375,
+              "bottom": 38.984375,
+              "width": 55.015625,
+              "height": 16
+            }
+          ],
+          "scrollWidth": 71,
+          "clientWidth": 71,
+          "clipping": [],
+          "visibleInAncestors": true,
+          "noOverflow": true,
+          "insideContainer": true,
+          "textInside": true
+        },
+        {
+          "id": "tab-game",
+          "fontSize": 12.48,
+          "displayedFontSize": 12.48000426211458,
+          "box": {
+            "left": 277.203125,
+            "right": 350.40625,
+            "top": 7.1875,
+            "bottom": 56.375,
+            "width": 73.203125,
+            "height": 49.1875
+          },
+          "text": [
+            {
+              "left": 286.296875,
+              "right": 341.3125,
+              "top": 15.1875,
+              "bottom": 31.1875,
+              "width": 55.015625,
+              "height": 16
+            },
+            {
+              "left": 302.3125,
+              "right": 325.28125,
+              "top": 30.78125,
+              "bottom": 46.78125,
+              "width": 22.96875,
+              "height": 16
+            }
+          ],
+          "scrollWidth": 71,
+          "clientWidth": 71,
+          "clipping": [],
+          "visibleInAncestors": true,
+          "noOverflow": true,
+          "insideContainer": true,
+          "textInside": true
+        }
+      ]
+    },
+    {
+      "page": "guestbook",
+      "width": 360,
+      "screenshot": "guestbook-360.png",
+      "passed": true,
+      "viewportWidth": 360,
+      "zoomed": false,
+      "header": {
+        "box": {
+          "left": 0,
+          "right": 360,
+          "top": 0,
+          "bottom": 64.5625,
+          "width": 360,
+          "height": 64.5625
+        },
+        "overflow": "hidden",
+        "visibility": "visible",
+        "opacity": "1"
+      },
+      "main": {
+        "left": 0,
+        "right": 360,
+        "top": 64.5625,
+        "bottom": 1651.21875,
+        "width": 360,
+        "height": 1586.65625
+      },
+      "scrollY": 0,
+      "container": {
+        "left": 45.59375,
+        "right": 350.40625,
+        "top": 7.1875,
+        "bottom": 56.375,
+        "width": 304.8125,
+        "height": 49.1875
+      },
+      "tabs": [
+        {
+          "id": "tab-about",
+          "fontSize": 12.48,
+          "displayedFontSize": 12.48000426211458,
+          "box": {
+            "left": 45.59375,
+            "right": 118.796875,
+            "top": 7.1875,
+            "bottom": 56.375,
+            "width": 73.203125,
+            "height": 49.1875
+          },
+          "text": [
+            {
+              "left": 73.625,
+              "right": 90.765625,
+              "top": 15.1875,
+              "bottom": 31.1875,
+              "width": 17.140625,
+              "height": 16
+            },
+            {
+              "left": 59.21875,
+              "right": 105.15625,
+              "top": 30.78125,
+              "bottom": 46.78125,
+              "width": 45.9375,
+              "height": 16
+            }
+          ],
+          "scrollWidth": 71,
+          "clientWidth": 71,
+          "clipping": [],
+          "visibleInAncestors": true,
+          "noOverflow": true,
+          "insideContainer": true,
+          "textInside": true
+        },
+        {
+          "id": "tab-portfolio",
+          "fontSize": 12.48,
+          "displayedFontSize": 12.48000426211458,
+          "box": {
+            "left": 122.796875,
+            "right": 196,
+            "top": 7.1875,
+            "bottom": 56.375,
+            "width": 73.203125,
+            "height": 49.1875
+          },
+          "text": [
+            {
+              "left": 150.828125,
+              "right": 167.96875,
+              "top": 15.1875,
+              "bottom": 31.1875,
+              "width": 17.140625,
+              "height": 16
+            },
+            {
+              "left": 130.6875,
+              "right": 188.109375,
+              "top": 30.78125,
+              "bottom": 46.78125,
+              "width": 57.421875,
+              "height": 16
+            }
+          ],
+          "scrollWidth": 71,
+          "clientWidth": 71,
+          "clipping": [],
+          "visibleInAncestors": true,
+          "noOverflow": true,
+          "insideContainer": true,
+          "textInside": true
+        },
+        {
+          "id": "tab-guestbook",
+          "fontSize": 12.48,
+          "displayedFontSize": 12.48000426211458,
+          "box": {
+            "left": 200,
+            "right": 273.203125,
+            "top": 14.984375,
+            "bottom": 48.578125,
+            "width": 73.203125,
+            "height": 33.59375
+          },
+          "text": [
+            {
+              "left": 209.09375,
+              "right": 264.109375,
+              "top": 22.984375,
+              "bottom": 38.984375,
+              "width": 55.015625,
+              "height": 16
+            }
+          ],
+          "scrollWidth": 71,
+          "clientWidth": 71,
+          "clipping": [],
+          "visibleInAncestors": true,
+          "noOverflow": true,
+          "insideContainer": true,
+          "textInside": true
+        },
+        {
+          "id": "tab-game",
+          "fontSize": 12.48,
+          "displayedFontSize": 12.48000426211458,
+          "box": {
+            "left": 277.203125,
+            "right": 350.40625,
+            "top": 7.1875,
+            "bottom": 56.375,
+            "width": 73.203125,
+            "height": 49.1875
+          },
+          "text": [
+            {
+              "left": 286.296875,
+              "right": 341.3125,
+              "top": 15.1875,
+              "bottom": 31.1875,
+              "width": 55.015625,
+              "height": 16
+            },
+            {
+              "left": 302.3125,
+              "right": 325.28125,
+              "top": 30.78125,
+              "bottom": 46.78125,
+              "width": 22.96875,
+              "height": 16
+            }
+          ],
+          "scrollWidth": 71,
+          "clientWidth": 71,
+          "clipping": [],
+          "visibleInAncestors": true,
+          "noOverflow": true,
+          "insideContainer": true,
+          "textInside": true
+        }
+      ]
+    },
+    {
+      "page": "game",
+      "width": 360,
+      "screenshot": "game-360.png",
+      "passed": true,
+      "viewportWidth": 360,
+      "zoomed": false,
+      "header": {
+        "box": {
+          "left": 0,
+          "right": 360,
+          "top": 0,
+          "bottom": 64.5625,
+          "width": 360,
+          "height": 64.5625
+        },
+        "overflow": "hidden",
+        "visibility": "visible",
+        "opacity": "1"
+      },
+      "main": {
+        "left": 0,
+        "right": 360,
+        "top": 64.5625,
+        "bottom": 1678.546875,
+        "width": 360,
+        "height": 1613.984375
+      },
+      "scrollY": 0,
+      "container": {
+        "left": 45.59375,
+        "right": 350.40625,
+        "top": 7.1875,
+        "bottom": 56.375,
+        "width": 304.8125,
+        "height": 49.1875
+      },
+      "tabs": [
+        {
+          "id": "tab-about",
+          "fontSize": 12.48,
+          "displayedFontSize": 12.48000426211458,
+          "box": {
+            "left": 45.59375,
+            "right": 118.796875,
+            "top": 7.1875,
+            "bottom": 56.375,
+            "width": 73.203125,
+            "height": 49.1875
+          },
+          "text": [
+            {
+              "left": 73.625,
+              "right": 90.765625,
+              "top": 15.1875,
+              "bottom": 31.1875,
+              "width": 17.140625,
+              "height": 16
+            },
+            {
+              "left": 59.21875,
+              "right": 105.15625,
+              "top": 30.78125,
+              "bottom": 46.78125,
+              "width": 45.9375,
+              "height": 16
+            }
+          ],
+          "scrollWidth": 71,
+          "clientWidth": 71,
+          "clipping": [],
+          "visibleInAncestors": true,
+          "noOverflow": true,
+          "insideContainer": true,
+          "textInside": true
+        },
+        {
+          "id": "tab-portfolio",
+          "fontSize": 12.48,
+          "displayedFontSize": 12.48000426211458,
+          "box": {
+            "left": 122.796875,
+            "right": 196,
+            "top": 7.1875,
+            "bottom": 56.375,
+            "width": 73.203125,
+            "height": 49.1875
+          },
+          "text": [
+            {
+              "left": 150.828125,
+              "right": 167.96875,
+              "top": 15.1875,
+              "bottom": 31.1875,
+              "width": 17.140625,
+              "height": 16
+            },
+            {
+              "left": 130.6875,
+              "right": 188.109375,
+              "top": 30.78125,
+              "bottom": 46.78125,
+              "width": 57.421875,
+              "height": 16
+            }
+          ],
+          "scrollWidth": 71,
+          "clientWidth": 71,
+          "clipping": [],
+          "visibleInAncestors": true,
+          "noOverflow": true,
+          "insideContainer": true,
+          "textInside": true
+        },
+        {
+          "id": "tab-guestbook",
+          "fontSize": 12.48,
+          "displayedFontSize": 12.48000426211458,
+          "box": {
+            "left": 200,
+            "right": 273.203125,
+            "top": 14.984375,
+            "bottom": 48.578125,
+            "width": 73.203125,
+            "height": 33.59375
+          },
+          "text": [
+            {
+              "left": 209.09375,
+              "right": 264.109375,
+              "top": 22.984375,
+              "bottom": 38.984375,
+              "width": 55.015625,
+              "height": 16
+            }
+          ],
+          "scrollWidth": 71,
+          "clientWidth": 71,
+          "clipping": [],
+          "visibleInAncestors": true,
+          "noOverflow": true,
+          "insideContainer": true,
+          "textInside": true
+        },
+        {
+          "id": "tab-game",
+          "fontSize": 12.48,
+          "displayedFontSize": 12.48000426211458,
+          "box": {
+            "left": 277.203125,
+            "right": 350.40625,
+            "top": 7.1875,
+            "bottom": 56.375,
+            "width": 73.203125,
+            "height": 49.1875
+          },
+          "text": [
+            {
+              "left": 286.296875,
+              "right": 341.3125,
+              "top": 15.1875,
+              "bottom": 31.1875,
+              "width": 55.015625,
+              "height": 16
+            },
+            {
+              "left": 302.3125,
+              "right": 325.28125,
+              "top": 30.78125,
+              "bottom": 46.78125,
+              "width": 22.96875,
+              "height": 16
+            }
+          ],
+          "scrollWidth": 71,
+          "clientWidth": 71,
+          "clipping": [],
+          "visibleInAncestors": true,
+          "noOverflow": true,
+          "insideContainer": true,
+          "textInside": true
+        }
+      ]
+    },
+    {
+      "page": "index",
+      "width": 360,
+      "screenshot": "index-360.png",
+      "passed": true,
+      "viewportWidth": 360,
+      "zoomed": true,
+      "header": {
+        "box": {
+          "left": 16.462173461914062,
+          "right": 343.39186096191406,
+          "top": 386.961181640625,
+          "bottom": 510.03240966796875,
+          "width": 326.9296875,
+          "height": 123.07122802734375
+        },
+        "overflow": "hidden",
+        "visibility": "visible",
+        "opacity": "1"
+      },
+      "main": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0,
+        "width": 0,
+        "height": 0
+      },
+      "scrollY": 0,
+      "container": {
+        "left": 97.38809204101562,
+        "right": 326.36029052734375,
+        "top": 399.7261657714844,
+        "bottom": 495.04742431640625,
+        "width": 228.97219848632812,
+        "height": 95.32125854492188
+      },
+      "tabs": [
+        {
+          "id": "tab-about",
+          "fontSize": 8,
+          "displayedFontSize": 14.207998570688959,
+          "box": {
+            "left": 97.38809204101562,
+            "right": 149.3153076171875,
+            "top": 408.6061706542969,
+            "bottom": 486.16741943359375,
+            "width": 51.927215576171875,
+            "height": 77.56124877929688
+          },
+          "text": [
+            {
+              "left": 113.587158203125,
+              "right": 133.11624145507812,
+              "top": 418.52679443359375,
+              "bottom": 438.50677490234375,
+              "width": 19.529083251953125,
+              "height": 19.97998046875
+            },
+            {
+              "left": 110.25717163085938,
+              "right": 136.41152954101562,
+              "top": 436.28680419921875,
+              "bottom": 456.26678466796875,
+              "width": 26.15435791015625,
+              "height": 19.97998046875
+            },
+            {
+              "left": 110.25717163085938,
+              "right": 136.41152954101562,
+              "top": 454.0467834472656,
+              "bottom": 474.02679443359375,
+              "width": 26.15435791015625,
+              "height": 19.980010986328125
+            }
+          ],
+          "scrollWidth": 27,
+          "clientWidth": 27,
+          "clipping": [],
+          "visibleInAncestors": true,
+          "noOverflow": true,
+          "insideContainer": true,
+          "textInside": true
+        },
+        {
+          "id": "tab-portfolio",
+          "fontSize": 8,
+          "displayedFontSize": 14.207990220660914,
+          "box": {
+            "left": 156.39154052734375,
+            "right": 208.3187255859375,
+            "top": 399.7261657714844,
+            "bottom": 495.04742431640625,
+            "width": 51.92718505859375,
+            "height": 95.32125854492188
+          },
+          "text": [
+            {
+              "left": 172.59060668945312,
+              "right": 192.11965942382812,
+              "top": 409.64678955078125,
+              "bottom": 429.62677001953125,
+              "width": 19.529052734375,
+              "height": 19.97998046875
+            },
+            {
+              "left": 169.2606201171875,
+              "right": 195.41497802734375,
+              "top": 427.40679931640625,
+              "bottom": 447.38677978515625,
+              "width": 26.15435791015625,
+              "height": 19.97998046875
+            },
+            {
+              "left": 169.2606201171875,
+              "right": 195.41497802734375,
+              "top": 445.16680908203125,
+              "bottom": 465.14678955078125,
+              "width": 26.15435791015625,
+              "height": 19.97998046875
+            },
+            {
+              "left": 175.8165283203125,
+              "right": 188.89373779296875,
+              "top": 462.9267883300781,
+              "bottom": 482.90679931640625,
+              "width": 13.07720947265625,
+              "height": 19.980010986328125
+            }
+          ],
+          "scrollWidth": 27,
+          "clientWidth": 27,
+          "clipping": [],
+          "visibleInAncestors": true,
+          "noOverflow": true,
+          "insideContainer": true,
+          "textInside": true
+        },
+        {
+          "id": "tab-guestbook",
+          "fontSize": 8,
+          "displayedFontSize": 14.207990220660914,
+          "box": {
+            "left": 215.39498901367188,
+            "right": 267.3221740722656,
+            "top": 408.6061706542969,
+            "bottom": 486.16741943359375,
+            "width": 51.92718505859375,
+            "height": 77.56124877929688
+          },
+          "text": [
+            {
+              "left": 231.59405517578125,
+              "right": 251.12310791015625,
+              "top": 418.52679443359375,
+              "bottom": 438.50677490234375,
+              "width": 19.529052734375,
+              "height": 19.97998046875
+            },
+            {
+              "left": 228.2640380859375,
+              "right": 254.41842651367188,
+              "top": 436.28680419921875,
+              "bottom": 456.26678466796875,
+              "width": 26.154388427734375,
+              "height": 19.97998046875
+            },
+            {
+              "left": 234.81997680664062,
+              "right": 247.89715576171875,
+              "top": 454.0467834472656,
+              "bottom": 474.02679443359375,
+              "width": 13.077178955078125,
+              "height": 19.980010986328125
+            }
+          ],
+          "scrollWidth": 27,
+          "clientWidth": 27,
+          "clipping": [],
+          "visibleInAncestors": true,
+          "noOverflow": true,
+          "insideContainer": true,
+          "textInside": true
+        },
+        {
+          "id": "tab-game",
+          "fontSize": 8,
+          "displayedFontSize": 14.208008406625755,
+          "box": {
+            "left": 274.3984069824219,
+            "right": 326.36029052734375,
+            "top": 399.7261657714844,
+            "bottom": 495.04742431640625,
+            "width": 51.961883544921875,
+            "height": 95.32125854492188
+          },
+          "text": [
+            {
+              "left": 290.59747314453125,
+              "right": 310.12652587890625,
+              "top": 409.64678955078125,
+              "bottom": 429.62677001953125,
+              "width": 19.529052734375,
+              "height": 19.97998046875
+            },
+            {
+              "left": 287.3021545410156,
+              "right": 313.45654296875,
+              "top": 427.40679931640625,
+              "bottom": 447.38677978515625,
+              "width": 26.154388427734375,
+              "height": 19.97998046875
+            },
+            {
+              "left": 285.3249816894531,
+              "right": 315.3990478515625,
+              "top": 445.16680908203125,
+              "bottom": 465.14678955078125,
+              "width": 30.074066162109375,
+              "height": 19.97998046875
+            },
+            {
+              "left": 293.82342529296875,
+              "right": 306.900634765625,
+              "top": 462.9267883300781,
+              "bottom": 482.90679931640625,
+              "width": 13.07720947265625,
+              "height": 19.980010986328125
+            }
+          ],
+          "scrollWidth": 27,
+          "clientWidth": 27,
+          "clipping": [],
+          "visibleInAncestors": true,
+          "noOverflow": true,
+          "insideContainer": true,
+          "textInside": true
+        }
+      ]
+    },
+    {
+      "page": "about",
+      "width": 400,
+      "screenshot": "about-400.png",
+      "passed": true,
+      "viewportWidth": 400,
+      "zoomed": false,
+      "header": {
+        "box": {
+          "left": 0,
+          "right": 400,
+          "top": 0,
+          "bottom": 64.5625,
+          "width": 400,
+          "height": 64.5625
+        },
+        "overflow": "hidden",
+        "visibility": "visible",
+        "opacity": "1"
+      },
+      "main": {
+        "left": 0,
+        "right": 400,
+        "top": 64.5625,
+        "bottom": 1424.296875,
+        "width": 400,
+        "height": 1359.734375
+      },
+      "scrollY": 0,
+      "container": {
+        "left": 45.59375,
+        "right": 390.40625,
+        "top": 7.1875,
+        "bottom": 56.375,
+        "width": 344.8125,
+        "height": 49.1875
+      },
+      "tabs": [
+        {
+          "id": "tab-about",
+          "fontSize": 12.48,
+          "displayedFontSize": 12.48000374986028,
+          "box": {
+            "left": 45.59375,
+            "right": 128.796875,
+            "top": 14.984375,
+            "bottom": 48.578125,
+            "width": 83.203125,
+            "height": 33.59375
+          },
+          "text": [
+            {
+              "left": 53.9375,
+              "right": 120.4375,
+              "top": 22.984375,
+              "bottom": 38.984375,
+              "width": 66.5,
+              "height": 16
+            }
+          ],
+          "scrollWidth": 81,
+          "clientWidth": 81,
+          "clipping": [],
+          "visibleInAncestors": true,
+          "noOverflow": true,
+          "insideContainer": true,
+          "textInside": true
+        },
+        {
+          "id": "tab-portfolio",
+          "fontSize": 12.48,
+          "displayedFontSize": 12.48000374986028,
+          "box": {
+            "left": 132.796875,
+            "right": 216,
+            "top": 7.1875,
+            "bottom": 56.375,
+            "width": 83.203125,
+            "height": 49.1875
+          },
+          "text": [
+            {
+              "left": 165.828125,
+              "right": 182.96875,
+              "top": 15.1875,
+              "bottom": 31.1875,
+              "width": 17.140625,
+              "height": 16
+            },
+            {
+              "left": 145.6875,
+              "right": 203.109375,
+              "top": 30.78125,
+              "bottom": 46.78125,
+              "width": 57.421875,
+              "height": 16
+            }
+          ],
+          "scrollWidth": 81,
+          "clientWidth": 81,
+          "clipping": [],
+          "visibleInAncestors": true,
+          "noOverflow": true,
+          "insideContainer": true,
+          "textInside": true
+        },
+        {
+          "id": "tab-guestbook",
+          "fontSize": 12.48,
+          "displayedFontSize": 12.48000374986028,
+          "box": {
+            "left": 220,
+            "right": 303.203125,
+            "top": 14.984375,
+            "bottom": 48.578125,
+            "width": 83.203125,
+            "height": 33.59375
+          },
+          "text": [
+            {
+              "left": 234.09375,
+              "right": 289.109375,
+              "top": 22.984375,
+              "bottom": 38.984375,
+              "width": 55.015625,
+              "height": 16
+            }
+          ],
+          "scrollWidth": 81,
+          "clientWidth": 81,
+          "clipping": [],
+          "visibleInAncestors": true,
+          "noOverflow": true,
+          "insideContainer": true,
+          "textInside": true
+        },
+        {
+          "id": "tab-game",
+          "fontSize": 12.48,
+          "displayedFontSize": 12.48000374986028,
+          "box": {
+            "left": 307.203125,
+            "right": 390.40625,
+            "top": 7.1875,
+            "bottom": 56.375,
+            "width": 83.203125,
+            "height": 49.1875
+          },
+          "text": [
+            {
+              "left": 321.296875,
+              "right": 376.3125,
+              "top": 15.1875,
+              "bottom": 31.1875,
+              "width": 55.015625,
+              "height": 16
+            },
+            {
+              "left": 337.3125,
+              "right": 360.28125,
+              "top": 30.78125,
+              "bottom": 46.78125,
+              "width": 22.96875,
+              "height": 16
+            }
+          ],
+          "scrollWidth": 81,
+          "clientWidth": 81,
+          "clipping": [],
+          "visibleInAncestors": true,
+          "noOverflow": true,
+          "insideContainer": true,
+          "textInside": true
+        }
+      ]
+    },
+    {
+      "page": "portfolio",
+      "width": 400,
+      "screenshot": "portfolio-400.png",
+      "passed": true,
+      "viewportWidth": 400,
+      "zoomed": false,
+      "header": {
+        "box": {
+          "left": 0,
+          "right": 400,
+          "top": 0,
+          "bottom": 64.5625,
+          "width": 400,
+          "height": 64.5625
+        },
+        "overflow": "hidden",
+        "visibility": "visible",
+        "opacity": "1"
+      },
+      "main": {
+        "left": 0,
+        "right": 400,
+        "top": 64.5625,
+        "bottom": 3161.421875,
+        "width": 400,
+        "height": 3096.859375
+      },
+      "scrollY": 0,
+      "container": {
+        "left": 45.59375,
+        "right": 390.40625,
+        "top": 7.1875,
+        "bottom": 56.375,
+        "width": 344.8125,
+        "height": 49.1875
+      },
+      "tabs": [
+        {
+          "id": "tab-about",
+          "fontSize": 12.48,
+          "displayedFontSize": 12.48000374986028,
+          "box": {
+            "left": 45.59375,
+            "right": 128.796875,
+            "top": 14.984375,
+            "bottom": 48.578125,
+            "width": 83.203125,
+            "height": 33.59375
+          },
+          "text": [
+            {
+              "left": 53.9375,
+              "right": 120.4375,
+              "top": 22.984375,
+              "bottom": 38.984375,
+              "width": 66.5,
+              "height": 16
+            }
+          ],
+          "scrollWidth": 81,
+          "clientWidth": 81,
+          "clipping": [],
+          "visibleInAncestors": true,
+          "noOverflow": true,
+          "insideContainer": true,
+          "textInside": true
+        },
+        {
+          "id": "tab-portfolio",
+          "fontSize": 12.48,
+          "displayedFontSize": 12.48000374986028,
+          "box": {
+            "left": 132.796875,
+            "right": 216,
+            "top": 7.1875,
+            "bottom": 56.375,
+            "width": 83.203125,
+            "height": 49.1875
+          },
+          "text": [
+            {
+              "left": 165.828125,
+              "right": 182.96875,
+              "top": 15.1875,
+              "bottom": 31.1875,
+              "width": 17.140625,
+              "height": 16
+            },
+            {
+              "left": 145.6875,
+              "right": 203.109375,
+              "top": 30.78125,
+              "bottom": 46.78125,
+              "width": 57.421875,
+              "height": 16
+            }
+          ],
+          "scrollWidth": 81,
+          "clientWidth": 81,
+          "clipping": [],
+          "visibleInAncestors": true,
+          "noOverflow": true,
+          "insideContainer": true,
+          "textInside": true
+        },
+        {
+          "id": "tab-guestbook",
+          "fontSize": 12.48,
+          "displayedFontSize": 12.48000374986028,
+          "box": {
+            "left": 220,
+            "right": 303.203125,
+            "top": 14.984375,
+            "bottom": 48.578125,
+            "width": 83.203125,
+            "height": 33.59375
+          },
+          "text": [
+            {
+              "left": 234.09375,
+              "right": 289.109375,
+              "top": 22.984375,
+              "bottom": 38.984375,
+              "width": 55.015625,
+              "height": 16
+            }
+          ],
+          "scrollWidth": 81,
+          "clientWidth": 81,
+          "clipping": [],
+          "visibleInAncestors": true,
+          "noOverflow": true,
+          "insideContainer": true,
+          "textInside": true
+        },
+        {
+          "id": "tab-game",
+          "fontSize": 12.48,
+          "displayedFontSize": 12.48000374986028,
+          "box": {
+            "left": 307.203125,
+            "right": 390.40625,
+            "top": 7.1875,
+            "bottom": 56.375,
+            "width": 83.203125,
+            "height": 49.1875
+          },
+          "text": [
+            {
+              "left": 321.296875,
+              "right": 376.3125,
+              "top": 15.1875,
+              "bottom": 31.1875,
+              "width": 55.015625,
+              "height": 16
+            },
+            {
+              "left": 337.3125,
+              "right": 360.28125,
+              "top": 30.78125,
+              "bottom": 46.78125,
+              "width": 22.96875,
+              "height": 16
+            }
+          ],
+          "scrollWidth": 81,
+          "clientWidth": 81,
+          "clipping": [],
+          "visibleInAncestors": true,
+          "noOverflow": true,
+          "insideContainer": true,
+          "textInside": true
+        }
+      ]
+    },
+    {
+      "page": "guestbook",
+      "width": 400,
+      "screenshot": "guestbook-400.png",
+      "passed": true,
+      "viewportWidth": 400,
+      "zoomed": false,
+      "header": {
+        "box": {
+          "left": 0,
+          "right": 400,
+          "top": 0,
+          "bottom": 64.5625,
+          "width": 400,
+          "height": 64.5625
+        },
+        "overflow": "hidden",
+        "visibility": "visible",
+        "opacity": "1"
+      },
+      "main": {
+        "left": 0,
+        "right": 400,
+        "top": 64.5625,
+        "bottom": 1597.9375,
+        "width": 400,
+        "height": 1533.375
+      },
+      "scrollY": 0,
+      "container": {
+        "left": 45.59375,
+        "right": 390.40625,
+        "top": 7.1875,
+        "bottom": 56.375,
+        "width": 344.8125,
+        "height": 49.1875
+      },
+      "tabs": [
+        {
+          "id": "tab-about",
+          "fontSize": 12.48,
+          "displayedFontSize": 12.48000374986028,
+          "box": {
+            "left": 45.59375,
+            "right": 128.796875,
+            "top": 14.984375,
+            "bottom": 48.578125,
+            "width": 83.203125,
+            "height": 33.59375
+          },
+          "text": [
+            {
+              "left": 53.9375,
+              "right": 120.4375,
+              "top": 22.984375,
+              "bottom": 38.984375,
+              "width": 66.5,
+              "height": 16
+            }
+          ],
+          "scrollWidth": 81,
+          "clientWidth": 81,
+          "clipping": [],
+          "visibleInAncestors": true,
+          "noOverflow": true,
+          "insideContainer": true,
+          "textInside": true
+        },
+        {
+          "id": "tab-portfolio",
+          "fontSize": 12.48,
+          "displayedFontSize": 12.48000374986028,
+          "box": {
+            "left": 132.796875,
+            "right": 216,
+            "top": 7.1875,
+            "bottom": 56.375,
+            "width": 83.203125,
+            "height": 49.1875
+          },
+          "text": [
+            {
+              "left": 165.828125,
+              "right": 182.96875,
+              "top": 15.1875,
+              "bottom": 31.1875,
+              "width": 17.140625,
+              "height": 16
+            },
+            {
+              "left": 145.6875,
+              "right": 203.109375,
+              "top": 30.78125,
+              "bottom": 46.78125,
+              "width": 57.421875,
+              "height": 16
+            }
+          ],
+          "scrollWidth": 81,
+          "clientWidth": 81,
+          "clipping": [],
+          "visibleInAncestors": true,
+          "noOverflow": true,
+          "insideContainer": true,
+          "textInside": true
+        },
+        {
+          "id": "tab-guestbook",
+          "fontSize": 12.48,
+          "displayedFontSize": 12.48000374986028,
+          "box": {
+            "left": 220,
+            "right": 303.203125,
+            "top": 14.984375,
+            "bottom": 48.578125,
+            "width": 83.203125,
+            "height": 33.59375
+          },
+          "text": [
+            {
+              "left": 234.09375,
+              "right": 289.109375,
+              "top": 22.984375,
+              "bottom": 38.984375,
+              "width": 55.015625,
+              "height": 16
+            }
+          ],
+          "scrollWidth": 81,
+          "clientWidth": 81,
+          "clipping": [],
+          "visibleInAncestors": true,
+          "noOverflow": true,
+          "insideContainer": true,
+          "textInside": true
+        },
+        {
+          "id": "tab-game",
+          "fontSize": 12.48,
+          "displayedFontSize": 12.48000374986028,
+          "box": {
+            "left": 307.203125,
+            "right": 390.40625,
+            "top": 7.1875,
+            "bottom": 56.375,
+            "width": 83.203125,
+            "height": 49.1875
+          },
+          "text": [
+            {
+              "left": 321.296875,
+              "right": 376.3125,
+              "top": 15.1875,
+              "bottom": 31.1875,
+              "width": 55.015625,
+              "height": 16
+            },
+            {
+              "left": 337.3125,
+              "right": 360.28125,
+              "top": 30.78125,
+              "bottom": 46.78125,
+              "width": 22.96875,
+              "height": 16
+            }
+          ],
+          "scrollWidth": 81,
+          "clientWidth": 81,
+          "clipping": [],
+          "visibleInAncestors": true,
+          "noOverflow": true,
+          "insideContainer": true,
+          "textInside": true
+        }
+      ]
+    },
+    {
+      "page": "game",
+      "width": 400,
+      "screenshot": "game-400.png",
+      "passed": true,
+      "viewportWidth": 400,
+      "zoomed": false,
+      "header": {
+        "box": {
+          "left": 0,
+          "right": 400,
+          "top": 0,
+          "bottom": 64.5625,
+          "width": 400,
+          "height": 64.5625
+        },
+        "overflow": "hidden",
+        "visibility": "visible",
+        "opacity": "1"
+      },
+      "main": {
+        "left": 0,
+        "right": 400,
+        "top": 64.5625,
+        "bottom": 1678.546875,
+        "width": 400,
+        "height": 1613.984375
+      },
+      "scrollY": 0,
+      "container": {
+        "left": 45.59375,
+        "right": 390.40625,
+        "top": 7.1875,
+        "bottom": 56.375,
+        "width": 344.8125,
+        "height": 49.1875
+      },
+      "tabs": [
+        {
+          "id": "tab-about",
+          "fontSize": 12.48,
+          "displayedFontSize": 12.48000374986028,
+          "box": {
+            "left": 45.59375,
+            "right": 128.796875,
+            "top": 14.984375,
+            "bottom": 48.578125,
+            "width": 83.203125,
+            "height": 33.59375
+          },
+          "text": [
+            {
+              "left": 53.9375,
+              "right": 120.4375,
+              "top": 22.984375,
+              "bottom": 38.984375,
+              "width": 66.5,
+              "height": 16
+            }
+          ],
+          "scrollWidth": 81,
+          "clientWidth": 81,
+          "clipping": [],
+          "visibleInAncestors": true,
+          "noOverflow": true,
+          "insideContainer": true,
+          "textInside": true
+        },
+        {
+          "id": "tab-portfolio",
+          "fontSize": 12.48,
+          "displayedFontSize": 12.48000374986028,
+          "box": {
+            "left": 132.796875,
+            "right": 216,
+            "top": 7.1875,
+            "bottom": 56.375,
+            "width": 83.203125,
+            "height": 49.1875
+          },
+          "text": [
+            {
+              "left": 165.828125,
+              "right": 182.96875,
+              "top": 15.1875,
+              "bottom": 31.1875,
+              "width": 17.140625,
+              "height": 16
+            },
+            {
+              "left": 145.6875,
+              "right": 203.109375,
+              "top": 30.78125,
+              "bottom": 46.78125,
+              "width": 57.421875,
+              "height": 16
+            }
+          ],
+          "scrollWidth": 81,
+          "clientWidth": 81,
+          "clipping": [],
+          "visibleInAncestors": true,
+          "noOverflow": true,
+          "insideContainer": true,
+          "textInside": true
+        },
+        {
+          "id": "tab-guestbook",
+          "fontSize": 12.48,
+          "displayedFontSize": 12.48000374986028,
+          "box": {
+            "left": 220,
+            "right": 303.203125,
+            "top": 14.984375,
+            "bottom": 48.578125,
+            "width": 83.203125,
+            "height": 33.59375
+          },
+          "text": [
+            {
+              "left": 234.09375,
+              "right": 289.109375,
+              "top": 22.984375,
+              "bottom": 38.984375,
+              "width": 55.015625,
+              "height": 16
+            }
+          ],
+          "scrollWidth": 81,
+          "clientWidth": 81,
+          "clipping": [],
+          "visibleInAncestors": true,
+          "noOverflow": true,
+          "insideContainer": true,
+          "textInside": true
+        },
+        {
+          "id": "tab-game",
+          "fontSize": 12.48,
+          "displayedFontSize": 12.48000374986028,
+          "box": {
+            "left": 307.203125,
+            "right": 390.40625,
+            "top": 7.1875,
+            "bottom": 56.375,
+            "width": 83.203125,
+            "height": 49.1875
+          },
+          "text": [
+            {
+              "left": 321.296875,
+              "right": 376.3125,
+              "top": 15.1875,
+              "bottom": 31.1875,
+              "width": 55.015625,
+              "height": 16
+            },
+            {
+              "left": 337.3125,
+              "right": 360.28125,
+              "top": 30.78125,
+              "bottom": 46.78125,
+              "width": 22.96875,
+              "height": 16
+            }
+          ],
+          "scrollWidth": 81,
+          "clientWidth": 81,
+          "clipping": [],
+          "visibleInAncestors": true,
+          "noOverflow": true,
+          "insideContainer": true,
+          "textInside": true
+        }
+      ]
+    },
+    {
+      "page": "index",
+      "width": 400,
+      "screenshot": "index-400.png",
+      "passed": true,
+      "viewportWidth": 400,
+      "zoomed": true,
+      "header": {
+        "box": {
+          "left": 18.295120239257812,
+          "right": 381.5426788330078,
+          "top": 376.2283935546875,
+          "bottom": 481.5396423339844,
+          "width": 363.24755859375,
+          "height": 105.31124877929688
+        },
+        "overflow": "hidden",
+        "visibility": "visible",
+        "opacity": "1"
+      },
+      "main": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0,
+        "width": 0,
+        "height": 0
+      },
+      "scrollY": 0,
+      "container": {
+        "left": 99.22108459472656,
+        "right": 364.51112365722656,
+        "top": 388.9933776855469,
+        "bottom": 466.55462646484375,
+        "width": 265.2900390625,
+        "height": 77.56124877929688
+      },
+      "tabs": [
+        {
+          "id": "tab-about",
+          "fontSize": 8,
+          "displayedFontSize": 14.20798167551411,
+          "box": {
+            "left": 99.22108459472656,
+            "right": 160.2363739013672,
+            "top": 397.8733825683594,
+            "bottom": 457.67462158203125,
+            "width": 61.015289306640625,
+            "height": 59.801239013671875
+          },
+          "text": [
+            {
+              "left": 111.46577453613281,
+              "right": 147.95701599121094,
+              "top": 407.79400634765625,
+              "bottom": 427.77398681640625,
+              "width": 36.491241455078125,
+              "height": 19.97998046875
+            },
+            {
+              "left": 110.11296081542969,
+              "right": 149.34449768066406,
+              "top": 425.55401611328125,
+              "bottom": 445.53399658203125,
+              "width": 39.231536865234375,
+              "height": 19.97998046875
+            }
+          ],
+          "scrollWidth": 32,
+          "clientWidth": 32,
+          "clipping": [],
+          "visibleInAncestors": true,
+          "noOverflow": true,
+          "insideContainer": true,
+          "textInside": true
+        },
+        {
+          "id": "tab-portfolio",
+          "fontSize": 8,
+          "displayedFontSize": 14.20798878181805,
+          "box": {
+            "left": 167.31263732910156,
+            "right": 228.3279571533203,
+            "top": 388.9933776855469,
+            "bottom": 466.55462646484375,
+            "width": 61.01531982421875,
+            "height": 77.56124877929688
+          },
+          "text": [
+            {
+              "left": 179.5573272705078,
+              "right": 216.04856872558594,
+              "top": 398.91400146484375,
+              "bottom": 418.8940124511719,
+              "width": 36.491241455078125,
+              "height": 19.980010986328125
+            },
+            {
+              "left": 178.2045135498047,
+              "right": 217.4360809326172,
+              "top": 416.67401123046875,
+              "bottom": 436.65399169921875,
+              "width": 39.2315673828125,
+              "height": 19.97998046875
+            },
+            {
+              "left": 191.2816925048828,
+              "right": 204.35890197753906,
+              "top": 434.43402099609375,
+              "bottom": 454.41400146484375,
+              "width": 13.07720947265625,
+              "height": 19.97998046875
+            }
+          ],
+          "scrollWidth": 32,
+          "clientWidth": 32,
+          "clipping": [],
+          "visibleInAncestors": true,
+          "noOverflow": true,
+          "insideContainer": true,
+          "textInside": true
+        },
+        {
+          "id": "tab-guestbook",
+          "fontSize": 8,
+          "displayedFontSize": 14.207999441273959,
+          "box": {
+            "left": 235.40419006347656,
+            "right": 296.4195556640625,
+            "top": 397.8733825683594,
+            "bottom": 457.67462158203125,
+            "width": 61.01536560058594,
+            "height": 59.801239013671875
+          },
+          "text": [
+            {
+              "left": 247.6488800048828,
+              "right": 284.14013671875,
+              "top": 407.79400634765625,
+              "bottom": 427.77398681640625,
+              "width": 36.49125671386719,
+              "height": 19.97998046875
+            },
+            {
+              "left": 252.8173370361328,
+              "right": 278.97174072265625,
+              "top": 425.55401611328125,
+              "bottom": 445.53399658203125,
+              "width": 26.154403686523438,
+              "height": 19.97998046875
+            }
+          ],
+          "scrollWidth": 32,
+          "clientWidth": 32,
+          "clipping": [],
+          "visibleInAncestors": true,
+          "noOverflow": true,
+          "insideContainer": true,
+          "textInside": true
+        },
+        {
+          "id": "tab-game",
+          "fontSize": 8,
+          "displayedFontSize": 14.20798878181805,
+          "box": {
+            "left": 303.49578857421875,
+            "right": 364.5111083984375,
+            "top": 388.9933776855469,
+            "bottom": 466.55462646484375,
+            "width": 61.01531982421875,
+            "height": 77.56124877929688
+          },
+          "text": [
+            {
+              "left": 315.740478515625,
+              "right": 352.231689453125,
+              "top": 398.91400146484375,
+              "bottom": 418.8940124511719,
+              "width": 36.4912109375,
+              "height": 19.980010986328125
+            },
+            {
+              "left": 312.41046142578125,
+              "right": 355.56170654296875,
+              "top": 416.67401123046875,
+              "bottom": 436.65399169921875,
+              "width": 43.1512451171875,
+              "height": 19.97998046875
+            },
+            {
+              "left": 327.46484375,
+              "right": 340.54205322265625,
+              "top": 434.43402099609375,
+              "bottom": 454.41400146484375,
+              "width": 13.07720947265625,
+              "height": 19.97998046875
+            }
+          ],
+          "scrollWidth": 32,
+          "clientWidth": 32,
+          "clipping": [],
+          "visibleInAncestors": true,
+          "noOverflow": true,
+          "insideContainer": true,
+          "textInside": true
+        }
+      ]
+    },
+    {
+      "page": "about",
+      "width": 700,
+      "screenshot": "about-700.png",
+      "passed": true,
+      "viewportWidth": 700,
+      "zoomed": false,
+      "header": {
+        "box": {
+          "left": 0,
+          "right": 700,
+          "top": 0,
+          "bottom": 48.96875,
+          "width": 700,
+          "height": 48.96875
+        },
+        "overflow": "hidden",
+        "visibility": "visible",
+        "opacity": "1"
+      },
+      "main": {
+        "left": 0,
+        "right": 700,
+        "top": 48.96875,
+        "bottom": 944.8125,
+        "width": 700,
+        "height": 895.84375
+      },
+      "scrollY": 0,
+      "container": {
+        "left": 45.59375,
+        "right": 690.40625,
+        "top": 7.1875,
+        "bottom": 40.78125,
+        "width": 644.8125,
+        "height": 33.59375
+      },
+      "tabs": [
+        {
+          "id": "tab-about",
+          "fontSize": 12.48,
+          "displayedFontSize": 12.48,
+          "box": {
+            "left": 45.59375,
+            "right": 202.59375,
+            "top": 7.1875,
+            "bottom": 40.78125,
+            "width": 157,
+            "height": 33.59375
+          },
+          "text": [
+            {
+              "left": 90.84375,
+              "right": 157.34375,
+              "top": 15.1875,
+              "bottom": 31.1875,
+              "width": 66.5,
+              "height": 16
+            }
+          ],
+          "scrollWidth": 155,
+          "clientWidth": 155,
+          "clipping": [],
+          "visibleInAncestors": true,
+          "noOverflow": true,
+          "insideContainer": true,
+          "textInside": true
+        },
+        {
+          "id": "tab-portfolio",
+          "fontSize": 12.48,
+          "displayedFontSize": 12.479970194120346,
+          "box": {
+            "left": 208.1875,
+            "right": 365.203125,
+            "top": 7.1875,
+            "bottom": 40.78125,
+            "width": 157.015625,
+            "height": 33.59375
+          },
+          "text": [
+            {
+              "left": 247.703125,
+              "right": 325.6875,
+              "top": 15.1875,
+              "bottom": 31.1875,
+              "width": 77.984375,
+              "height": 16
+            }
+          ],
+          "scrollWidth": 155,
+          "clientWidth": 155,
+          "clipping": [],
+          "visibleInAncestors": true,
+          "noOverflow": true,
+          "insideContainer": true,
+          "textInside": true
+        },
+        {
+          "id": "tab-guestbook",
+          "fontSize": 12.48,
+          "displayedFontSize": 12.48,
+          "box": {
+            "left": 370.796875,
+            "right": 527.796875,
+            "top": 7.1875,
+            "bottom": 40.78125,
+            "width": 157,
+            "height": 33.59375
+          },
+          "text": [
+            {
+              "left": 421.78125,
+              "right": 476.796875,
+              "top": 15.1875,
+              "bottom": 31.1875,
+              "width": 55.015625,
+              "height": 16
+            }
+          ],
+          "scrollWidth": 155,
+          "clientWidth": 155,
+          "clipping": [],
+          "visibleInAncestors": true,
+          "noOverflow": true,
+          "insideContainer": true,
+          "textInside": true
+        },
+        {
+          "id": "tab-game",
+          "fontSize": 12.48,
+          "displayedFontSize": 12.479970194120346,
+          "box": {
+            "left": 533.390625,
+            "right": 690.40625,
+            "top": 7.1875,
+            "bottom": 40.78125,
+            "width": 157.015625,
+            "height": 33.59375
+          },
+          "text": [
+            {
+              "left": 571.1875,
+              "right": 652.59375,
+              "top": 15.1875,
+              "bottom": 31.1875,
+              "width": 81.40625,
+              "height": 16
+            }
+          ],
+          "scrollWidth": 155,
+          "clientWidth": 155,
+          "clipping": [],
+          "visibleInAncestors": true,
+          "noOverflow": true,
+          "insideContainer": true,
+          "textInside": true
+        }
+      ]
+    },
+    {
+      "page": "portfolio",
+      "width": 700,
+      "screenshot": "portfolio-700.png",
+      "passed": true,
+      "viewportWidth": 700,
+      "zoomed": false,
+      "header": {
+        "box": {
+          "left": 0,
+          "right": 700,
+          "top": 0,
+          "bottom": 48.96875,
+          "width": 700,
+          "height": 48.96875
+        },
+        "overflow": "hidden",
+        "visibility": "visible",
+        "opacity": "1"
+      },
+      "main": {
+        "left": 0,
+        "right": 700,
+        "top": 48.96875,
+        "bottom": 1868.515625,
+        "width": 700,
+        "height": 1819.546875
+      },
+      "scrollY": 0,
+      "container": {
+        "left": 45.59375,
+        "right": 690.40625,
+        "top": 7.1875,
+        "bottom": 40.78125,
+        "width": 644.8125,
+        "height": 33.59375
+      },
+      "tabs": [
+        {
+          "id": "tab-about",
+          "fontSize": 12.48,
+          "displayedFontSize": 12.48,
+          "box": {
+            "left": 45.59375,
+            "right": 202.59375,
+            "top": 7.1875,
+            "bottom": 40.78125,
+            "width": 157,
+            "height": 33.59375
+          },
+          "text": [
+            {
+              "left": 90.84375,
+              "right": 157.34375,
+              "top": 15.1875,
+              "bottom": 31.1875,
+              "width": 66.5,
+              "height": 16
+            }
+          ],
+          "scrollWidth": 155,
+          "clientWidth": 155,
+          "clipping": [],
+          "visibleInAncestors": true,
+          "noOverflow": true,
+          "insideContainer": true,
+          "textInside": true
+        },
+        {
+          "id": "tab-portfolio",
+          "fontSize": 12.48,
+          "displayedFontSize": 12.479970194120346,
+          "box": {
+            "left": 208.1875,
+            "right": 365.203125,
+            "top": 7.1875,
+            "bottom": 40.78125,
+            "width": 157.015625,
+            "height": 33.59375
+          },
+          "text": [
+            {
+              "left": 247.703125,
+              "right": 325.6875,
+              "top": 15.1875,
+              "bottom": 31.1875,
+              "width": 77.984375,
+              "height": 16
+            }
+          ],
+          "scrollWidth": 155,
+          "clientWidth": 155,
+          "clipping": [],
+          "visibleInAncestors": true,
+          "noOverflow": true,
+          "insideContainer": true,
+          "textInside": true
+        },
+        {
+          "id": "tab-guestbook",
+          "fontSize": 12.48,
+          "displayedFontSize": 12.48,
+          "box": {
+            "left": 370.796875,
+            "right": 527.796875,
+            "top": 7.1875,
+            "bottom": 40.78125,
+            "width": 157,
+            "height": 33.59375
+          },
+          "text": [
+            {
+              "left": 421.78125,
+              "right": 476.796875,
+              "top": 15.1875,
+              "bottom": 31.1875,
+              "width": 55.015625,
+              "height": 16
+            }
+          ],
+          "scrollWidth": 155,
+          "clientWidth": 155,
+          "clipping": [],
+          "visibleInAncestors": true,
+          "noOverflow": true,
+          "insideContainer": true,
+          "textInside": true
+        },
+        {
+          "id": "tab-game",
+          "fontSize": 12.48,
+          "displayedFontSize": 12.479970194120346,
+          "box": {
+            "left": 533.390625,
+            "right": 690.40625,
+            "top": 7.1875,
+            "bottom": 40.78125,
+            "width": 157.015625,
+            "height": 33.59375
+          },
+          "text": [
+            {
+              "left": 571.1875,
+              "right": 652.59375,
+              "top": 15.1875,
+              "bottom": 31.1875,
+              "width": 81.40625,
+              "height": 16
+            }
+          ],
+          "scrollWidth": 155,
+          "clientWidth": 155,
+          "clipping": [],
+          "visibleInAncestors": true,
+          "noOverflow": true,
+          "insideContainer": true,
+          "textInside": true
+        }
+      ]
+    },
+    {
+      "page": "guestbook",
+      "width": 700,
+      "screenshot": "guestbook-700.png",
+      "passed": true,
+      "viewportWidth": 700,
+      "zoomed": false,
+      "header": {
+        "box": {
+          "left": 0,
+          "right": 700,
+          "top": 0,
+          "bottom": 48.96875,
+          "width": 700,
+          "height": 48.96875
+        },
+        "overflow": "hidden",
+        "visibility": "visible",
+        "opacity": "1"
+      },
+      "main": {
+        "left": 0,
+        "right": 700,
+        "top": 48.96875,
+        "bottom": 1533.5,
+        "width": 700,
+        "height": 1484.53125
+      },
+      "scrollY": 0,
+      "container": {
+        "left": 45.59375,
+        "right": 690.40625,
+        "top": 7.1875,
+        "bottom": 40.78125,
+        "width": 644.8125,
+        "height": 33.59375
+      },
+      "tabs": [
+        {
+          "id": "tab-about",
+          "fontSize": 12.48,
+          "displayedFontSize": 12.48,
+          "box": {
+            "left": 45.59375,
+            "right": 202.59375,
+            "top": 7.1875,
+            "bottom": 40.78125,
+            "width": 157,
+            "height": 33.59375
+          },
+          "text": [
+            {
+              "left": 90.84375,
+              "right": 157.34375,
+              "top": 15.1875,
+              "bottom": 31.1875,
+              "width": 66.5,
+              "height": 16
+            }
+          ],
+          "scrollWidth": 155,
+          "clientWidth": 155,
+          "clipping": [],
+          "visibleInAncestors": true,
+          "noOverflow": true,
+          "insideContainer": true,
+          "textInside": true
+        },
+        {
+          "id": "tab-portfolio",
+          "fontSize": 12.48,
+          "displayedFontSize": 12.479970194120346,
+          "box": {
+            "left": 208.1875,
+            "right": 365.203125,
+            "top": 7.1875,
+            "bottom": 40.78125,
+            "width": 157.015625,
+            "height": 33.59375
+          },
+          "text": [
+            {
+              "left": 247.703125,
+              "right": 325.6875,
+              "top": 15.1875,
+              "bottom": 31.1875,
+              "width": 77.984375,
+              "height": 16
+            }
+          ],
+          "scrollWidth": 155,
+          "clientWidth": 155,
+          "clipping": [],
+          "visibleInAncestors": true,
+          "noOverflow": true,
+          "insideContainer": true,
+          "textInside": true
+        },
+        {
+          "id": "tab-guestbook",
+          "fontSize": 12.48,
+          "displayedFontSize": 12.48,
+          "box": {
+            "left": 370.796875,
+            "right": 527.796875,
+            "top": 7.1875,
+            "bottom": 40.78125,
+            "width": 157,
+            "height": 33.59375
+          },
+          "text": [
+            {
+              "left": 421.78125,
+              "right": 476.796875,
+              "top": 15.1875,
+              "bottom": 31.1875,
+              "width": 55.015625,
+              "height": 16
+            }
+          ],
+          "scrollWidth": 155,
+          "clientWidth": 155,
+          "clipping": [],
+          "visibleInAncestors": true,
+          "noOverflow": true,
+          "insideContainer": true,
+          "textInside": true
+        },
+        {
+          "id": "tab-game",
+          "fontSize": 12.48,
+          "displayedFontSize": 12.479970194120346,
+          "box": {
+            "left": 533.390625,
+            "right": 690.40625,
+            "top": 7.1875,
+            "bottom": 40.78125,
+            "width": 157.015625,
+            "height": 33.59375
+          },
+          "text": [
+            {
+              "left": 571.1875,
+              "right": 652.59375,
+              "top": 15.1875,
+              "bottom": 31.1875,
+              "width": 81.40625,
+              "height": 16
+            }
+          ],
+          "scrollWidth": 155,
+          "clientWidth": 155,
+          "clipping": [],
+          "visibleInAncestors": true,
+          "noOverflow": true,
+          "insideContainer": true,
+          "textInside": true
+        }
+      ]
+    },
+    {
+      "page": "game",
+      "width": 700,
+      "screenshot": "game-700.png",
+      "passed": true,
+      "viewportWidth": 700,
+      "zoomed": false,
+      "header": {
+        "box": {
+          "left": 0,
+          "right": 700,
+          "top": 0,
+          "bottom": 48.96875,
+          "width": 700,
+          "height": 48.96875
+        },
+        "overflow": "hidden",
+        "visibility": "visible",
+        "opacity": "1"
+      },
+      "main": {
+        "left": 0,
+        "right": 700,
+        "top": 48.96875,
+        "bottom": 1582.234375,
+        "width": 700,
+        "height": 1533.265625
+      },
+      "scrollY": 0,
+      "container": {
+        "left": 45.59375,
+        "right": 690.40625,
+        "top": 7.1875,
+        "bottom": 40.78125,
+        "width": 644.8125,
+        "height": 33.59375
+      },
+      "tabs": [
+        {
+          "id": "tab-about",
+          "fontSize": 12.48,
+          "displayedFontSize": 12.48,
+          "box": {
+            "left": 45.59375,
+            "right": 202.59375,
+            "top": 7.1875,
+            "bottom": 40.78125,
+            "width": 157,
+            "height": 33.59375
+          },
+          "text": [
+            {
+              "left": 90.84375,
+              "right": 157.34375,
+              "top": 15.1875,
+              "bottom": 31.1875,
+              "width": 66.5,
+              "height": 16
+            }
+          ],
+          "scrollWidth": 155,
+          "clientWidth": 155,
+          "clipping": [],
+          "visibleInAncestors": true,
+          "noOverflow": true,
+          "insideContainer": true,
+          "textInside": true
+        },
+        {
+          "id": "tab-portfolio",
+          "fontSize": 12.48,
+          "displayedFontSize": 12.479970194120346,
+          "box": {
+            "left": 208.1875,
+            "right": 365.203125,
+            "top": 7.1875,
+            "bottom": 40.78125,
+            "width": 157.015625,
+            "height": 33.59375
+          },
+          "text": [
+            {
+              "left": 247.703125,
+              "right": 325.6875,
+              "top": 15.1875,
+              "bottom": 31.1875,
+              "width": 77.984375,
+              "height": 16
+            }
+          ],
+          "scrollWidth": 155,
+          "clientWidth": 155,
+          "clipping": [],
+          "visibleInAncestors": true,
+          "noOverflow": true,
+          "insideContainer": true,
+          "textInside": true
+        },
+        {
+          "id": "tab-guestbook",
+          "fontSize": 12.48,
+          "displayedFontSize": 12.48,
+          "box": {
+            "left": 370.796875,
+            "right": 527.796875,
+            "top": 7.1875,
+            "bottom": 40.78125,
+            "width": 157,
+            "height": 33.59375
+          },
+          "text": [
+            {
+              "left": 421.78125,
+              "right": 476.796875,
+              "top": 15.1875,
+              "bottom": 31.1875,
+              "width": 55.015625,
+              "height": 16
+            }
+          ],
+          "scrollWidth": 155,
+          "clientWidth": 155,
+          "clipping": [],
+          "visibleInAncestors": true,
+          "noOverflow": true,
+          "insideContainer": true,
+          "textInside": true
+        },
+        {
+          "id": "tab-game",
+          "fontSize": 12.48,
+          "displayedFontSize": 12.479970194120346,
+          "box": {
+            "left": 533.390625,
+            "right": 690.40625,
+            "top": 7.1875,
+            "bottom": 40.78125,
+            "width": 157.015625,
+            "height": 33.59375
+          },
+          "text": [
+            {
+              "left": 571.1875,
+              "right": 652.59375,
+              "top": 15.1875,
+              "bottom": 31.1875,
+              "width": 81.40625,
+              "height": 16
+            }
+          ],
+          "scrollWidth": 155,
+          "clientWidth": 155,
+          "clipping": [],
+          "visibleInAncestors": true,
+          "noOverflow": true,
+          "insideContainer": true,
+          "textInside": true
+        }
+      ]
+    },
+    {
+      "page": "index",
+      "width": 700,
+      "screenshot": "index-700.png",
+      "passed": true,
+      "viewportWidth": 700,
+      "zoomed": true,
+      "header": {
+        "box": {
+          "left": 32.025177001953125,
+          "right": 667.7429504394531,
+          "top": 295.95343017578125,
+          "bottom": 373.4106140136719,
+          "width": 635.7177734375,
+          "height": 77.45718383789062
+        },
+        "overflow": "hidden",
+        "visibility": "visible",
+        "opacity": "1"
+      },
+      "main": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0,
+        "width": 0,
+        "height": 0
+      },
+      "scrollY": 0,
+      "container": {
+        "left": 112.95111083984375,
+        "right": 650.7114868164062,
+        "top": 312.5340270996094,
+        "bottom": 354.5752868652344,
+        "width": 537.7603759765625,
+        "height": 42.041259765625
+      },
+      "tabs": [
+        {
+          "id": "tab-about",
+          "fontSize": 8,
+          "displayedFontSize": 14.208004519683541,
+          "box": {
+            "left": 112.95111083984375,
+            "right": 239.94207763671875,
+            "top": 312.5340270996094,
+            "bottom": 354.5752868652344,
+            "width": 126.990966796875,
+            "height": 42.041259765625
+          },
+          "text": [
+            {
+              "left": 138.585205078125,
+              "right": 214.3079833984375,
+              "top": 322.45465087890625,
+              "bottom": 342.4346618652344,
+              "width": 75.7227783203125,
+              "height": 19.980010986328125
+            }
+          ],
+          "scrollWidth": 69,
+          "clientWidth": 69,
+          "clipping": [],
+          "visibleInAncestors": true,
+          "noOverflow": true,
+          "insideContainer": true,
+          "textInside": true
+        },
+        {
+          "id": "tab-portfolio",
+          "fontSize": 8,
+          "displayedFontSize": 14.208004519683541,
+          "box": {
+            "left": 249.8626708984375,
+            "right": 376.8536376953125,
+            "top": 312.5340270996094,
+            "bottom": 354.5752868652344,
+            "width": 126.990966796875,
+            "height": 42.041259765625
+          },
+          "text": [
+            {
+              "left": 268.9407958984375,
+              "right": 357.74078369140625,
+              "top": 322.45465087890625,
+              "bottom": 342.4346618652344,
+              "width": 88.79998779296875,
+              "height": 19.980010986328125
+            }
+          ],
+          "scrollWidth": 69,
+          "clientWidth": 69,
+          "clipping": [],
+          "visibleInAncestors": true,
+          "noOverflow": true,
+          "insideContainer": true,
+          "textInside": true
+        },
+        {
+          "id": "tab-guestbook",
+          "fontSize": 8,
+          "displayedFontSize": 14.208004519683541,
+          "box": {
+            "left": 386.77423095703125,
+            "right": 513.7651977539062,
+            "top": 312.5340270996094,
+            "bottom": 354.5752868652344,
+            "width": 126.990966796875,
+            "height": 42.041259765625
+          },
+          "text": [
+            {
+              "left": 418.9295654296875,
+              "right": 481.5751953125,
+              "top": 322.45465087890625,
+              "bottom": 342.4346618652344,
+              "width": 62.6456298828125,
+              "height": 19.980010986328125
+            }
+          ],
+          "scrollWidth": 69,
+          "clientWidth": 69,
+          "clipping": [],
+          "visibleInAncestors": true,
+          "noOverflow": true,
+          "insideContainer": true,
+          "textInside": true
+        },
+        {
+          "id": "tab-game",
+          "fontSize": 8,
+          "displayedFontSize": 14.2080153684843,
+          "box": {
+            "left": 523.685791015625,
+            "right": 650.7114868164062,
+            "top": 312.5340270996094,
+            "bottom": 354.5752868652344,
+            "width": 127.02569580078125,
+            "height": 42.041259765625
+          },
+          "text": [
+            {
+              "left": 540.8561401367188,
+              "right": 633.5410766601562,
+              "top": 322.45465087890625,
+              "bottom": 342.4346618652344,
+              "width": 92.6849365234375,
+              "height": 19.980010986328125
+            }
+          ],
+          "scrollWidth": 69,
+          "clientWidth": 69,
+          "clipping": [],
+          "visibleInAncestors": true,
+          "noOverflow": true,
+          "insideContainer": true,
+          "textInside": true
+        }
+      ]
+    }
+  ],
+  "passed": true
+}

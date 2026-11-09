@@ -656,6 +656,7 @@ body.page-leaving {
 
   .nav-header {
     overflow: hidden;
+    flex-shrink: 0;
   }
 
   .nav-inner {
@@ -695,8 +696,8 @@ body.page-leaving {
   /* 탭 내부 줄바꿈 허용 및 컴팩트 중앙 정렬 */
   .tab-item {
     min-width: 0;
-    padding: 0.35rem 0.2rem;
-    font-size: 0.5rem;
+    padding: 0.5rem 0.35rem;
+    font-size: 0.78rem;
     line-height: 1.25;
     text-align: center;
     white-space: normal; /* 👈 줄바꿈 허용 */
@@ -705,6 +706,13 @@ body.page-leaving {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+  }
+
+  /* 홈의 확대 배율을 고려한 탭 크기 */
+  .monitor-scrollable .tab-item {
+    padding: 0.35rem 0.2rem;
+    font-size: 0.5rem;
+    word-break: normal;
   }
   .page-title {
     font-size: 1.6rem;
@@ -840,8 +848,4 @@ body.page-leaving {
     gap: 0.25rem;
   }
 
-  .tab-item {
-    padding: 0.5rem 0.35rem;
-    font-size: 0.78rem;
-  }
 }
