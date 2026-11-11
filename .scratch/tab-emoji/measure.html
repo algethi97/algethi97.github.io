@@ -1,0 +1,15 @@
+<!doctype html><html><body><pre id="out"></pre><script>
+const pages=['about','portfolio','guestbook','game'],widths=[360,400,700];
+const out=document.getElementById('out');let jobs=[];
+for(const p of pages)for(const w of widths)jobs.push([p,w]);
+function run(){const j=jobs.shift();if(!j){out.id='done';return;}
+const f=document.createElement('iframe');f.style.width=j[1]+'px';f.style.height='600px';f.src='../../'+j[0]+'.html';
+f.onload=()=>setTimeout(()=>{const d=f.contentDocument;const r=[...d.querySelectorAll('.tab-item')].map(t=>{
+const lh=parseFloat(getComputedStyle(t).lineHeight)||16;const range=d.createRange();range.selectNodeContents(t);
+const lines=new Set([...range.getClientRects()].map(x=>Math.round(x.top))).size;
+const e=t.querySelector('.tab-emoji');const ev=e?getComputedStyle(e).display:'-';
+const over=t.scrollWidth>t.clientWidth+1;return t.textContent.trim().replace(/\s+/g,' ')+'['+lines+'줄,'+(ev)+(over?',넘침':'')+']';});
+out.textContent+=j[0]+' '+j[1]+': '+r.join(' ')+'\n';f.remove();run();},300);
+document.body.appendChild(f);}
+run();
+</script></body></html>
