@@ -1,0 +1,110 @@
+{
+  "rows": [
+    {
+      "check": "cooldown-loading-focus",
+      "width": 1440,
+      "focusBefore": {
+        "documentFocused": false,
+        "active": true,
+        "selectorFocused": false,
+        "border": "rgb(220, 216, 210)"
+      },
+      "cooldown": "flex",
+      "skeleton": "grid",
+      "disabled": true,
+      "focusBorder": "rgb(200, 16, 46)",
+      "focusShadow": "rgb(255, 240, 237) 0px 0px 0px 3px",
+      "documentFocused": true,
+      "active": true,
+      "selectorFocused": true,
+      "runningTransitions": 0,
+      "scrollWidth": 1440,
+      "innerWidth": 1440,
+      "passed": true
+    },
+    {
+      "check": "guestbook-query-failure-feedback",
+      "width": 1440,
+      "passed": true
+    },
+    {
+      "check": "guestbook-live-recovery-home-return",
+      "width": 1440,
+      "passed": true
+    },
+    {
+      "check": "result-modal-focus-and-bounds",
+      "width": 1440,
+      "display": "flex",
+      "left": 500,
+      "right": 940,
+      "color": "rgb(250, 248, 244)",
+      "border": "rgb(17, 17, 17)",
+      "focused": "player-nickname",
+      "scrollWidth": 1440,
+      "innerWidth": 1440,
+      "passed": true
+    },
+    {
+      "check": "ranking-query-failure-feedback",
+      "width": 1440,
+      "passed": true
+    },
+    {
+      "check": "cooldown-loading-focus",
+      "width": 390,
+      "focusBefore": {
+        "documentFocused": true,
+        "active": true,
+        "selectorFocused": true,
+        "border": "rgb(220, 216, 210)"
+      },
+      "cooldown": "flex",
+      "skeleton": "grid",
+      "disabled": true,
+      "focusBorder": "rgb(200, 16, 46)",
+      "focusShadow": "rgb(255, 240, 237) 0px 0px 0px 3px",
+      "documentFocused": true,
+      "active": true,
+      "selectorFocused": true,
+      "runningTransitions": 0,
+      "scrollWidth": 390,
+      "innerWidth": 390,
+      "passed": true
+    },
+    {
+      "check": "guestbook-query-failure-feedback",
+      "width": 390,
+      "passed": true
+    },
+    {
+      "check": "guestbook-live-recovery-home-return",
+      "width": 390,
+      "passed": true
+    },
+    {
+      "check": "result-modal-focus-and-bounds",
+      "width": 390,
+      "display": "flex",
+      "left": 16,
+      "right": 374,
+      "color": "rgb(250, 248, 244)",
+      "border": "rgb(17, 17, 17)",
+      "focused": "player-nickname",
+      "scrollWidth": 390,
+      "innerWidth": 390,
+      "passed": true
+    },
+    {
+      "check": "ranking-query-failure-feedback",
+      "width": 390,
+      "passed": true
+    },
+    {
+      "check": "runtime-exceptions",
+      "errors": [],
+      "passed": true
+    }
+  ],
+  "passed": true
+}

@@ -16,9 +16,34 @@
 }
 
 .orange-badge {
-  background-color: #ffedd5;
-  color: #c2410c;
-  border-color: #fdba74;
+  background-color: var(--accent-orange-light);
+  color: var(--accent-text);
+  border-color: var(--accent-text);
+}
+
+.game-badge-row .safe-badge:not(.orange-badge) {
+  background-color: var(--surface-subtle);
+  color: var(--text-main);
+  border-color: var(--black);
+}
+
+.game-page .btn-primary {
+  background-color: var(--accent-text);
+  border-color: var(--accent-text);
+  box-shadow: none;
+}
+
+.game-page .btn-primary:hover:not(:disabled) {
+  background-color: var(--accent-orange-hover);
+  border-color: var(--accent-orange-hover);
+  box-shadow: none;
+}
+
+.game-card-wrapper:hover,
+.sidebar-leaderboard:hover,
+.game-modal-dialog:hover {
+  border-color: var(--black);
+  box-shadow: none;
 }
 
 /* 2열 레이아웃: 좌측 게임 + 우측 사이드 랭킹 */
@@ -34,9 +59,9 @@
 .game-card-wrapper {
   padding: 1.25rem 1.4rem;
   background-color: var(--surface-card);
-  border: 1px solid var(--border-color);
+  border: 1px solid var(--black);
   border-radius: 16px;
-  box-shadow: 0 4px 20px rgba(41, 37, 36, 0.05);
+  box-shadow: none;
 }
 
 /* 게임 대시보드 HUD */
@@ -47,7 +72,7 @@
   flex-wrap: wrap;
   gap: 1rem;
   padding-bottom: 0.9rem;
-  border-bottom: 1px solid var(--border-subtle);
+  border-bottom: 1px solid var(--black);
 }
 
 .hud-stats-group {
@@ -89,17 +114,17 @@
 }
 
 .score-box .hud-stat-value {
-  color: var(--accent-orange);
+  color: var(--accent-text);
 }
 
 .timer-box.time-warning {
-  background-color: #fef2f2;
-  border-color: #fca5a5;
+  background-color: var(--accent-orange-light);
+  border-color: var(--accent-text);
   animation: timerBlink 0.8s infinite alternate;
 }
 
 .timer-box.time-warning .hud-stat-value {
-  color: #dc2626;
+  color: var(--accent-text);
 }
 
 @keyframes timerBlink {
@@ -131,7 +156,7 @@
 
 .btn-hud-icon:hover {
   background-color: var(--surface-hover);
-  border-color: var(--accent-orange);
+  border-color: var(--accent-text);
   transform: translateY(-1px);
 }
 
@@ -142,10 +167,10 @@
   padding: 0 1.1rem;
   font-size: 0.9rem;
   font-weight: 600;
-  background-color: var(--text-main);
+  background-color: var(--black);
   color: #ffffff;
   border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(41, 37, 36, 0.15);
+  box-shadow: none;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -155,7 +180,7 @@
 }
 
 .btn-hud-action:hover {
-  background-color: var(--accent-orange);
+  background-color: var(--accent-text);
   transform: translateY(-1px);
 }
 
@@ -173,7 +198,7 @@
 .timer-gauge-fill {
   height: 100%;
   width: 100%;
-  background: linear-gradient(90deg, var(--accent-orange), #f97316);
+  background: var(--accent-text);
   border-radius: 3px;
   transition: width 1s linear;
 }
@@ -252,7 +277,7 @@
   padding: 0.75rem 2rem;
   font-size: 1.05rem;
   font-weight: 700;
-  box-shadow: 0 4px 15px rgba(234, 88, 12, 0.3);
+  box-shadow: none;
   border-radius: 12px;
 }
 
@@ -448,10 +473,10 @@
    ========================================================================== */
 .sidebar-leaderboard {
   background-color: var(--surface-card);
-  border: 1px solid var(--border-color);
+  border: 1px solid var(--black);
   border-radius: 16px;
   padding: 1.25rem;
-  box-shadow: 0 4px 20px rgba(41, 37, 36, 0.05);
+  box-shadow: none;
 }
 
 .sidebar-title-row {
@@ -460,7 +485,7 @@
   align-items: center;
   margin-bottom: 1rem;
   padding-bottom: 0.65rem;
-  border-bottom: 1px solid var(--border-subtle);
+  border-bottom: 1px solid var(--black);
 }
 
 .sidebar-title-wrap h2 {
@@ -472,7 +497,7 @@
 
 .sidebar-title-wrap .sub-label {
   font-size: 0.78rem;
-  color: var(--accent-orange);
+  color: var(--accent-text);
   font-weight: 600;
 }
 
@@ -492,7 +517,7 @@
 
 .btn-icon-refresh:hover {
   background-color: var(--surface-hover);
-  border-color: var(--accent-orange);
+  border-color: var(--accent-text);
 }
 
 .btn-icon-refresh.spinning {
@@ -512,7 +537,7 @@
 
 .skeleton-rank-item {
   height: 48px;
-  background: linear-gradient(90deg, #f3efe6 25%, #e9e4d8 50%, #f3efe6 75%);
+  background: linear-gradient(90deg, var(--surface-subtle) 25%, var(--border-color) 50%, var(--surface-subtle) 75%);
   background-size: 200% 100%;
   border-radius: 10px;
   animation: skeleton-pulse 1.5s ease-in-out infinite;
@@ -550,9 +575,9 @@
 
 @keyframes highlightRank {
   0% {
-    background-color: #fed7aa;
-    border-color: #ea580c;
-    box-shadow: 0 0 12px rgba(234, 88, 12, 0.5);
+    background-color: var(--accent-orange-light);
+    border-color: var(--accent-text);
+    box-shadow: 0 0 0 2px var(--accent-orange-light);
   }
   100% {
     background-color: var(--surface-subtle);
@@ -577,21 +602,21 @@
 }
 
 .rank-badge.gold {
-  background: #fef3c7;
-  color: #92400e;
-  border: 1px solid #fde68a;
+  background: var(--black);
+  color: var(--paper);
+  border: 1px solid var(--black);
 }
 
 .rank-badge.silver {
-  background: #f1f5f9;
-  color: #475569;
-  border: 1px solid #e2e8f0;
+  background: var(--surface-subtle);
+  color: var(--text-main);
+  border: 1px solid var(--black);
 }
 
 .rank-badge.bronze {
-  background: #ffedd5;
-  color: #9a3412;
-  border: 1px solid #fed7aa;
+  background: var(--accent-orange-light);
+  color: var(--accent-text);
+  border: 1px solid var(--accent-text);
 }
 
 .rank-badge.normal {
@@ -631,7 +656,7 @@
 .top5-score-col .score-val {
   font-size: 1.08rem;
   font-weight: 700;
-  color: var(--accent-orange);
+  color: var(--accent-text);
 }
 
 .top5-score-col .score-unit {
@@ -659,8 +684,8 @@
 .my-last-score-card {
   margin-top: 1rem;
   padding: 0.65rem 0.85rem;
-  background-color: #fff7ed;
-  border: 1px solid #fdba74;
+  background-color: var(--accent-orange-light);
+  border: 1px solid var(--accent-text);
   border-radius: 10px;
   display: flex;
   justify-content: space-between;
@@ -670,13 +695,13 @@
 .my-score-label {
   font-size: 0.82rem;
   font-weight: 600;
-  color: #c2410c;
+  color: var(--accent-text);
 }
 
 .my-score-val {
   font-size: 1.05rem;
   font-weight: 800;
-  color: var(--accent-orange);
+  color: var(--accent-text);
 }
 
 /* 사이드 미니 가이드 */
@@ -706,7 +731,7 @@
 .game-modal-backdrop {
   position: fixed;
   inset: 0;
-  background: rgba(28, 25, 23, 0.65);
+  background: rgba(17, 17, 17, 0.65);
   backdrop-filter: blur(6px);
   z-index: 1000;
   display: flex;
@@ -725,7 +750,7 @@
   width: 100%;
   max-width: 440px;
   background-color: var(--surface-card);
-  border: 1px solid var(--border-color);
+  border: 1px solid var(--black);
   border-radius: 18px;
   padding: 1.8rem;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
@@ -786,7 +811,7 @@
 }
 
 .summary-val.highlight {
-  color: var(--accent-orange);
+  color: var(--accent-text);
   font-size: 1.35rem;
 }
 
@@ -821,8 +846,8 @@
 
 .btn-secondary:hover {
   background: var(--surface-hover);
-  border-color: var(--accent-orange);
-  color: var(--accent-orange);
+  border-color: var(--accent-text);
+  color: var(--accent-text);
 }
 
 /* 플로팅 토스트 알림 */
@@ -839,7 +864,8 @@
 }
 
 .game-toast {
-  background: rgba(41, 37, 36, 0.92);
+  background: var(--black);
+  border: 1px solid var(--accent-text);
   color: #ffffff;
   padding: 0.75rem 1.4rem;
   border-radius: 30px;
@@ -864,7 +890,7 @@
 }
 
 .back-home-link {
-  color: var(--accent-orange);
+  color: var(--accent-text);
   font-weight: 600;
   font-size: 0.95rem;
   transition: var(--transition-smooth);

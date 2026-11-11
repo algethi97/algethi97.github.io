@@ -3,17 +3,48 @@
    style.css 뒤에 로드한다. 원래 style.css의 선언 순서를 유지한다.
    ========================================================================== */
 
+.guestbook-form-card,
+.guestbook-list-section {
+  border: 0;
+  border-top: 2px solid var(--black);
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.guestbook-form-card:hover,
+.guestbook-list-section:hover {
+  border-color: var(--black);
+  box-shadow: none;
+}
+
+.guestbook-form-card .safe-badge {
+  color: var(--text-main);
+  background-color: var(--surface-subtle);
+  border-color: var(--border-color);
+  border-radius: 0;
+}
+
+.guestbook-submit-btn {
+  background-color: var(--accent-text);
+  border-color: var(--accent-text);
+  box-shadow: none;
+}
+
+.guestbook-submit-btn:hover:not(:disabled) {
+  box-shadow: none;
+}
+
 .count-pill {
   font-size: 0.82rem;
   color: var(--text-sub);
   background-color: var(--surface-subtle);
   border: 1px solid var(--border-color);
   padding: 0.25rem 0.75rem;
-  border-radius: 9999px;
+  border-radius: 0;
 }
 
 .count-pill strong {
-  color: var(--accent-orange);
+  color: var(--accent-text);
 }
 
 /* 폼 그룹 및 인풋 */
@@ -36,7 +67,7 @@
 }
 
 .required-star {
-  color: var(--accent-orange);
+  color: var(--accent-text);
 }
 
 .char-count {
@@ -51,7 +82,7 @@
   font-size: 0.95rem;
   padding: 0.75rem 1rem;
   border: 1px solid var(--border-color);
-  border-radius: 10px;
+  border-radius: 0;
   background-color: var(--surface-subtle);
   color: var(--text-main);
   outline: none;
@@ -61,8 +92,8 @@
 .form-input:focus,
 .form-textarea:focus {
   background-color: var(--surface-card);
-  border-color: var(--accent-orange);
-  box-shadow: 0 0 0 3px rgba(234, 88, 12, 0.12);
+  border-color: var(--accent-text);
+  box-shadow: 0 0 0 3px var(--accent-orange-light);
 }
 
 .form-textarea {
@@ -82,17 +113,17 @@
   display: flex;
   align-items: center;
   gap: 0.6rem;
-  background-color: #fffbeb;
-  border: 1px solid #fef3c7;
-  color: #92400e;
+  background-color: var(--accent-orange-light);
+  border: 1px solid var(--accent-text);
+  color: var(--text-main);
   padding: 0.75rem 1rem;
-  border-radius: 10px;
+  border-radius: 0;
   font-size: 0.85rem;
   animation: fadeInDown 0.3s ease;
 }
 
 .cooldown-text strong {
-  color: var(--accent-orange);
+  color: var(--accent-text);
 }
 
 @keyframes fadeInDown {
@@ -114,19 +145,20 @@
 .guestbook-card {
   background-color: var(--surface-card);
   border: 1px solid var(--border-color);
-  border-radius: 12px;
+  border-top: 2px solid var(--black);
+  border-radius: 0;
   padding: 1.1rem 1.3rem;
   transition: var(--transition-smooth);
 }
 
 .guestbook-card:hover {
-  border-color: #d1c8bb;
-  box-shadow: 0 4px 15px rgba(41, 37, 36, 0.04);
+  border-top-color: var(--accent);
+  box-shadow: none;
 }
 
 .guestbook-card.just-added {
-  border-color: var(--accent-orange);
-  background-color: #fffbf7;
+  border-color: var(--accent-text);
+  background-color: var(--accent-orange-light);
   animation: popIn 0.5s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
@@ -153,11 +185,11 @@
 .entry-badge {
   font-size: 0.72rem;
   font-weight: 700;
-  color: var(--accent-orange);
+  color: var(--accent-text);
   background-color: var(--accent-orange-light);
   padding: 0.15rem 0.5rem;
-  border-radius: 6px;
-  border: 1px solid rgba(234, 88, 12, 0.2);
+  border-radius: 0;
+  border: 1px solid var(--accent-text);
 }
 
 .entry-author {
@@ -217,13 +249,13 @@
 
 .load-more-btn:hover:not(:disabled) {
   background-color: var(--surface-hover);
-  border-color: var(--accent-orange);
-  color: var(--accent-orange);
+  border-color: var(--accent-text);
+  color: var(--accent-text);
 }
 
 .load-more-btn .btn-loader {
-  border: 2px solid rgba(41, 37, 36, 0.2);
-  border-top-color: var(--accent-orange);
+  border: 2px solid var(--border-color);
+  border-top-color: var(--accent-text);
 }
 
 /* 로딩 스켈레톤 */
@@ -235,8 +267,8 @@
 
 .skeleton-card {
   height: 90px;
-  background: linear-gradient(90deg, #f3efe6 25%, #e9e4d8 50%, #f3efe6 75%);
+  background: linear-gradient(90deg, var(--surface-subtle) 25%, var(--border-color) 50%, var(--surface-subtle) 75%);
   background-size: 200% 100%;
-  border-radius: 12px;
+  border-radius: 0;
   animation: skeleton-pulse 1.5s ease-in-out infinite;
 }
