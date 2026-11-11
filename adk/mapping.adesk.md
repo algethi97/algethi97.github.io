@@ -174,18 +174,6 @@ AI가 파일을 추가·이동·삭제하면 이 파일의 행도 함께 고친�
 | `.scratch/mockup-b/capture.log` | 방향 B 캡처 실행 기록 | 해당 없음 |
 | `.scratch/mockup-b/capture-error.log` | 방향 B 캡처 오류 기록 | 해당 없음 |
 
-## .scratch/noir-remodel/step4-chrome-profile-jLb3uY
-
-| 경로 | 기능 | 관련 테스트 |
-| --- | --- | --- |
-| `.scratch/noir-remodel/step4-chrome-profile-jLb3uY/` | Git 추적에서 제외하고 사용자가 직접 정리할 이전 Chrome 임시 프로필 | 삭제 재시도 없이 존재·파일 수·바이트·Chrome 사용 프로세스와 제외 규칙 확인 |
-
-## .scratch/noir-remodel/step4-chrome-profile-K5funl
-
-| 경로 | 기능 | 관련 테스트 |
-| --- | --- | --- |
-| `.scratch/noir-remodel/step4-chrome-profile-K5funl/` | Git 추적에서 제외하고 사용자가 직접 정리할 재검증 Chrome 임시 프로필 | 삭제 재시도 없이 존재·파일 수·바이트·Chrome 사용 프로세스와 제외 규칙 확인 |
-
 ## .scratch
 
 | 경로 | 기능 | 관련 테스트 |
