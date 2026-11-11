@@ -1,11 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1672" height="941" viewBox="0 0 1672 941" role="img" aria-labelledby="title desc">
-  <title id="title">따뜻한 저녁의 우드 데스크와 웃는 귤 피규어</title>
+  <title id="title">따뜻한 저녁의 우드 데스크와 하드커버 책 더미</title>
   <desc id="desc">정면의 모니터, 오렌지 키캡 키보드, 왼쪽 조명과 오른쪽 식물이 놓인 정돈된 책상입니다.</desc>
   <defs>
     <linearGradient id="wall" x2="1" y2="1"><stop stop-color="#e8d1b2"/><stop offset="1" stop-color="#ab8467"/></linearGradient>
     <linearGradient id="wood" x2="0" y2="1"><stop stop-color="#bd8757"/><stop offset="1" stop-color="#855331"/></linearGradient>
     <radialGradient id="light"><stop stop-color="#ffe7b5" stop-opacity=".9"/><stop offset="1" stop-color="#ffe7b5" stop-opacity="0"/></radialGradient>
-    <linearGradient id="fruit" x2=".6" y2="1"><stop stop-color="#ffbd68"/><stop offset="1" stop-color="#da772f"/></linearGradient>
     <pattern id="keys" width="42" height="33" patternUnits="userSpaceOnUse"><rect x="3" y="3" width="35" height="26" rx="5" fill="#ede0c8" stroke="#b7a58c" stroke-width="2"/></pattern>
     <pattern id="grain" width="600" height="57" patternUnits="userSpaceOnUse"><path d="M0 14Q150 3 300 17T600 14M0 39Q160 53 320 40T600 39" fill="none" stroke="#71482f" opacity=".14" stroke-width="2"/></pattern>
   </defs>
@@ -44,14 +43,17 @@
   <g fill="#6c7e51" stroke="#596b43" stroke-width="3"><path d="M1424 433Q1357 357 1400 322Q1460 332 1424 433Z"/><path d="M1416 591Q1340 574 1324 518Q1391 492 1416 591Z"/><path d="M1441 511Q1440 435 1512 405Q1532 472 1441 511Z"/><path d="M1374 490Q1291 479 1290 427Q1364 416 1374 490Z"/><path d="M1431 443Q1430 358 1492 331Q1523 388 1431 443Z"/></g>
   <path d="M1349 609H1494L1477 730Q1420 752 1367 730Z" fill="#be7955" stroke="#a56949" stroke-width="4"/>
   <path d="M1356 625H1488" stroke="#d59b72" stroke-width="6"/>
-  <!-- 따뜻한 일러스트 귤 피규어 -->
-  <g transform="translate(1186 627)">
-    <ellipse cx="52" cy="103" rx="58" ry="10" fill="#674a35" opacity=".25"/>
-    <path d="M51 23Q45 0 74 3Q83 21 55 25" fill="#617748" stroke="#4c6138" stroke-width="3"/>
-    <path d="M48 28Q5 15 3 62Q2 102 51 104Q102 105 103 63Q102 16 56 28" fill="url(#fruit)" stroke="#a85d32" stroke-width="4"/>
-    <path d="M17 48Q25 32 39 35" fill="none" stroke="#ffdaa0" stroke-width="6" stroke-linecap="round"/>
-    <g fill="#51392a"><circle cx="35" cy="62" r="4"/><circle cx="72" cy="62" r="4"/></g>
-    <path d="M44 76Q54 87 64 76" fill="none" stroke="#51392a" stroke-width="4" stroke-linecap="round"/>
-    <g fill="#d77b42"><ellipse cx="24" cy="73" rx="8" ry="4"/><ellipse cx="83" cy="73" rx="8" ry="4"/></g>
+  <!-- 모니터 오른쪽 하드커버 책 세 권 -->
+  <g stroke-linejoin="round">
+    <ellipse cx="1240" cy="698" rx="67" ry="6" fill="#674a35" opacity=".25"/>
+    <path d="M1180 673H1301V696H1180Z" fill="#c9b395" stroke="#927b60" stroke-width="2"/>
+    <path d="M1185 678H1299V690H1185Z" fill="#f4ead7"/>
+    <path d="M1187 682H1298M1187 686H1298" stroke="#d7c9b0"/>
+    <path d="M1174 648H1293V672H1174Z" fill="#e6d7bd" stroke="#ac9575" stroke-width="2"/>
+    <path d="M1180 653H1291V667H1180Z" fill="#fff4df"/>
+    <path d="M1182 657H1290M1182 662H1290" stroke="#ddcfb7"/>
+    <path d="M1183 626H1300V647H1183Z" fill="#45433f" stroke="#34322f" stroke-width="2"/>
+    <path d="M1190 632H1298V641H1190Z" fill="#d9d0bf"/>
+    <path d="M1183 626L1192 623H1303L1300 626Z" fill="#56534e"/>
   </g>
 </svg>

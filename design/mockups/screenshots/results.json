@@ -1,0 +1,203 @@
+{
+  "rows": [
+    {
+      "direction": "a-deskterior",
+      "screen": "desk",
+      "width": 1440,
+      "height": 900,
+      "screenshot": "a-deskterior-desk-1440.png",
+      "scrollWidth": 1440,
+      "innerWidth": 1440,
+      "innerHeight": 900,
+      "passed": true
+    },
+    {
+      "direction": "a-deskterior",
+      "screen": "zoom",
+      "width": 1440,
+      "height": 900,
+      "screenshot": "a-deskterior-zoom-1440.png",
+      "scrollWidth": 1440,
+      "innerWidth": 1440,
+      "innerHeight": 900,
+      "passed": true
+    },
+    {
+      "direction": "a-deskterior",
+      "screen": "portfolio",
+      "width": 1440,
+      "height": 900,
+      "screenshot": "a-deskterior-portfolio-1440.png",
+      "scrollWidth": 1425,
+      "innerWidth": 1440,
+      "innerHeight": 900,
+      "passed": true
+    },
+    {
+      "direction": "b-editorial",
+      "screen": "desk",
+      "width": 1440,
+      "height": 900,
+      "screenshot": "b-editorial-desk-1440.png",
+      "scrollWidth": 1440,
+      "innerWidth": 1440,
+      "innerHeight": 900,
+      "passed": true
+    },
+    {
+      "direction": "b-editorial",
+      "screen": "zoom",
+      "width": 1440,
+      "height": 900,
+      "screenshot": "b-editorial-zoom-1440.png",
+      "scrollWidth": 1440,
+      "innerWidth": 1440,
+      "innerHeight": 900,
+      "passed": true
+    },
+    {
+      "direction": "b-editorial",
+      "screen": "portfolio",
+      "width": 1440,
+      "height": 900,
+      "screenshot": "b-editorial-portfolio-1440.png",
+      "scrollWidth": 1425,
+      "innerWidth": 1440,
+      "innerHeight": 900,
+      "passed": true
+    },
+    {
+      "direction": "c-terminal",
+      "screen": "desk",
+      "width": 1440,
+      "height": 900,
+      "screenshot": "c-terminal-desk-1440.png",
+      "scrollWidth": 1440,
+      "innerWidth": 1440,
+      "innerHeight": 900,
+      "passed": true
+    },
+    {
+      "direction": "c-terminal",
+      "screen": "zoom",
+      "width": 1440,
+      "height": 900,
+      "screenshot": "c-terminal-zoom-1440.png",
+      "scrollWidth": 1440,
+      "innerWidth": 1440,
+      "innerHeight": 900,
+      "passed": true
+    },
+    {
+      "direction": "c-terminal",
+      "screen": "portfolio",
+      "width": 1440,
+      "height": 900,
+      "screenshot": "c-terminal-portfolio-1440.png",
+      "scrollWidth": 1425,
+      "innerWidth": 1440,
+      "innerHeight": 900,
+      "passed": true
+    },
+    {
+      "direction": "a-deskterior",
+      "screen": "desk",
+      "width": 390,
+      "height": 844,
+      "screenshot": "a-deskterior-desk-390.png",
+      "scrollWidth": 390,
+      "innerWidth": 390,
+      "innerHeight": 844,
+      "passed": true
+    },
+    {
+      "direction": "a-deskterior",
+      "screen": "zoom",
+      "width": 390,
+      "height": 844,
+      "screenshot": "a-deskterior-zoom-390.png",
+      "scrollWidth": 390,
+      "innerWidth": 390,
+      "innerHeight": 844,
+      "passed": true
+    },
+    {
+      "direction": "a-deskterior",
+      "screen": "portfolio",
+      "width": 390,
+      "height": 844,
+      "screenshot": "a-deskterior-portfolio-390.png",
+      "scrollWidth": 390,
+      "innerWidth": 390,
+      "innerHeight": 844,
+      "passed": true
+    },
+    {
+      "direction": "b-editorial",
+      "screen": "desk",
+      "width": 390,
+      "height": 844,
+      "screenshot": "b-editorial-desk-390.png",
+      "scrollWidth": 390,
+      "innerWidth": 390,
+      "innerHeight": 844,
+      "passed": true
+    },
+    {
+      "direction": "b-editorial",
+      "screen": "zoom",
+      "width": 390,
+      "height": 844,
+      "screenshot": "b-editorial-zoom-390.png",
+      "scrollWidth": 390,
+      "innerWidth": 390,
+      "innerHeight": 844,
+      "passed": true
+    },
+    {
+      "direction": "b-editorial",
+      "screen": "portfolio",
+      "width": 390,
+      "height": 844,
+      "screenshot": "b-editorial-portfolio-390.png",
+      "scrollWidth": 390,
+      "innerWidth": 390,
+      "innerHeight": 844,
+      "passed": true
+    },
+    {
+      "direction": "c-terminal",
+      "screen": "desk",
+      "width": 390,
+      "height": 844,
+      "screenshot": "c-terminal-desk-390.png",
+      "scrollWidth": 390,
+      "innerWidth": 390,
+      "innerHeight": 844,
+      "passed": true
+    },
+    {
+      "direction": "c-terminal",
+      "screen": "zoom",
+      "width": 390,
+      "height": 844,
+      "screenshot": "c-terminal-zoom-390.png",
+      "scrollWidth": 390,
+      "innerWidth": 390,
+      "innerHeight": 844,
+      "passed": true
+    },
+    {
+      "direction": "c-terminal",
+      "screen": "portfolio",
+      "width": 390,
+      "height": 844,
+      "screenshot": "c-terminal-portfolio-390.png",
+      "scrollWidth": 390,
+      "innerWidth": 390,
+      "innerHeight": 844,
+      "passed": true
+    }
+  ],
+  "passed": true
+}

@@ -44,7 +44,7 @@ h1, h2, h3, p { margin: 0; }
   width: min(100vw, calc(100dvh * 1672 / 941));
   aspect-ratio: 1672 / 941;
   background: url('desk-bg.svg') center / 100% 100% no-repeat;
-  transform-origin: 49.91% 43.62%;
+  transform-origin: 49.91% 41.5%;
   transition: var(--zoom-transition);
 }
 .is-zoomed .desk-canvas { transform: scale(2.22); }
@@ -105,8 +105,7 @@ h1, h2, h3, p { margin: 0; }
 .hero-section { position: relative; padding: 2.4em 1.8em; margin-bottom: 2em; border-bottom: 1px solid var(--line); }
 .hero-tag { display: block; color: var(--accent); font-size: 0.85em; margin-bottom: 0.7em; font-weight: 650; letter-spacing: 0.06em; }
 .hero-section .page-title { margin-bottom: 0.6em; }
-.mandarin { width: 5.5em; height: 5em; float: right; margin-left: 1em; }
-.contact-link { display: inline-block; margin-top: 1em; color: var(--accent); }
+.copy-badge { display: inline-block; margin-top: 1em; color: var(--accent); font: inherit; cursor: pointer; }
 .home-links-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1em; }
 .quick-link-card { padding: 1.5em; border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); }
 .quick-link-card h2 { font-size: 1.2em; }
@@ -151,3 +150,5 @@ h1, h2, h3, p { margin: 0; }
 @media (prefers-reduced-motion: reduce) {
   .desk-canvas { transition: none; }
 }
+
+.toast { position: fixed; z-index: 20; bottom: 1.5rem; left: 50%; transform: translateX(-50%); width: max-content; max-width: calc(100% - 2rem); padding: 0.8rem 1.2rem; border: 1px solid var(--line); border-radius: var(--radius-small); background: var(--ink); color: var(--surface); text-align: center; }

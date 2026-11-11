@@ -98,10 +98,10 @@ AI가 파일을 추가·이동·삭제하면 이 파일의 행도 함께 고친�
 
 | 경로 | 기능 | 관련 테스트 |
 | --- | --- | --- |
-| `design/mockups/a-deskterior/index.html` | 방향 A 홈과 모니터 확대·축소 시안 | Chrome 1440·390px 확대·축소 확인 |
+| `design/mockups/a-deskterior/index.html` | 방향 A 홈과 확대·축소·이메일 복사 시안 | Chrome 1440·390px 확대·축소 확인 |
 | `design/mockups/a-deskterior/portfolio.html` | 방향 A 프로젝트 여섯 카드 시안 | Chrome 1440·390px 반응형 확인 |
 | `design/mockups/a-deskterior/style.css` | 방향 A 디자인 변수와 전용 스타일 | 홈·포트폴리오 가로 넘침 측정 |
-| `design/mockups/a-deskterior/desk-bg.svg` | 우드 책상과 귤 캐릭터 배경 | 화면 좌표 및 축소·확대 스크린샷 확인 |
+| `design/mockups/a-deskterior/desk-bg.svg` | 우드 책상과 하드커버 책 배경 | 화면 좌표 및 축소·확대 스크린샷 확인 |
 | `design/mockups/a-deskterior/bg-prompt.md` | 배경 재생성 한영 프롬프트 | 구도·좌표 확인 방법 대조 |
 
 ## design/mockups/b-editorial
@@ -180,3 +180,34 @@ AI가 파일을 추가·이동·삭제하면 이 파일의 행도 함께 고친�
 | `.scratch/tab-verify/index-360.png` | 홈 확대 360px 렌더링 | Chrome 스크린샷 |
 | `.scratch/tab-verify/index-400.png` | 홈 확대 400px 렌더링 | Chrome 스크린샷 |
 | `.scratch/tab-verify/index-700.png` | 홈 확대 700px 렌더링 | Chrome 스크린샷 |
+
+## design/mockups
+
+| 경로 | 기능 | 관련 테스트 |
+| --- | --- | --- |
+| `design/mockups/index.html` | 세 방향 시안과 대표 화면 비교 | 링크·이미지 파일과 1440·390px 확인 |
+| `design/mockups/capture.mjs` | 로컬 Chrome 18화면 캡처 | Node 구문·캡처·가로 넘침 측정 |
+
+## design/mockups/screenshots
+
+| 경로 | 기능 | 관련 테스트 |
+| --- | --- | --- |
+| `design/mockups/screenshots/a-deskterior-desk-1440.png` | A 홈 축소 1440px 화면 | Chrome 캡처와 가로 넘침 측정 |
+| `design/mockups/screenshots/a-deskterior-zoom-1440.png` | A 홈 확대 1440px 화면 | Chrome 캡처와 가로 넘침 측정 |
+| `design/mockups/screenshots/a-deskterior-portfolio-1440.png` | A 포트폴리오 1440px 화면 | Chrome 캡처와 가로 넘침 측정 |
+| `design/mockups/screenshots/a-deskterior-desk-390.png` | A 홈 축소 390px 화면 | Chrome 캡처와 가로 넘침 측정 |
+| `design/mockups/screenshots/a-deskterior-zoom-390.png` | A 홈 확대 390px 화면 | Chrome 캡처와 가로 넘침 측정 |
+| `design/mockups/screenshots/a-deskterior-portfolio-390.png` | A 포트폴리오 390px 화면 | Chrome 캡처와 가로 넘침 측정 |
+| `design/mockups/screenshots/b-editorial-desk-1440.png` | B 홈 축소 1440px 화면 | Chrome 캡처와 가로 넘침 측정 |
+| `design/mockups/screenshots/b-editorial-zoom-1440.png` | B 홈 확대 1440px 화면 | Chrome 캡처와 가로 넘침 측정 |
+| `design/mockups/screenshots/b-editorial-portfolio-1440.png` | B 포트폴리오 1440px 화면 | Chrome 캡처와 가로 넘침 측정 |
+| `design/mockups/screenshots/b-editorial-desk-390.png` | B 홈 축소 390px 화면 | Chrome 캡처와 가로 넘침 측정 |
+| `design/mockups/screenshots/b-editorial-zoom-390.png` | B 홈 확대 390px 화면 | Chrome 캡처와 가로 넘침 측정 |
+| `design/mockups/screenshots/b-editorial-portfolio-390.png` | B 포트폴리오 390px 화면 | Chrome 캡처와 가로 넘침 측정 |
+| `design/mockups/screenshots/c-terminal-desk-1440.png` | C 홈 축소 1440px 화면 | Chrome 캡처와 가로 넘침 측정 |
+| `design/mockups/screenshots/c-terminal-zoom-1440.png` | C 홈 확대 1440px 화면 | Chrome 캡처와 가로 넘침 측정 |
+| `design/mockups/screenshots/c-terminal-portfolio-1440.png` | C 포트폴리오 1440px 화면 | Chrome 캡처와 가로 넘침 측정 |
+| `design/mockups/screenshots/c-terminal-desk-390.png` | C 홈 축소 390px 화면 | Chrome 캡처와 가로 넘침 측정 |
+| `design/mockups/screenshots/c-terminal-zoom-390.png` | C 홈 확대 390px 화면 | Chrome 캡처와 가로 넘침 측정 |
+| `design/mockups/screenshots/c-terminal-portfolio-390.png` | C 포트폴리오 390px 화면 | Chrome 캡처와 가로 넘침 측정 |
+| `design/mockups/screenshots/results.json` | 18화면 폭과 넘침 측정 결과 | scrollWidth와 innerWidth 대조 |

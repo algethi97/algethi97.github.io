@@ -48,14 +48,6 @@
           </header>
 <main class="main-content">
             <section class="hero-section">
-              <svg class="mandarin" viewBox="0 0 100 90" role="img" aria-label="웃는 귤 캐릭터">
-  <path d="M51 22Q47 6 66 5Q76 16 55 23" fill="#657948"/>
-  <path d="M48 25Q16 14 12 49Q9 82 48 84Q87 85 88 51Q88 18 55 25" fill="#ec913e" stroke="#ad592d" stroke-width="3"/>
-  <path d="M22 42Q27 30 38 31" fill="none" stroke="#ffd49a" stroke-width="5" stroke-linecap="round"/>
-  <g fill="#513329"><circle cx="36" cy="51" r="3"/><circle cx="65" cy="51" r="3"/></g>
-  <path d="M43 61Q50 69 58 61" fill="none" stroke="#513329" stroke-width="3" stroke-linecap="round"/>
-  <g fill="#d9733b"><ellipse cx="28" cy="59" rx="6" ry="3"/><ellipse cx="73" cy="59" rx="6" ry="3"/></g>
-</svg>
               <span class="hero-tag">Architect & Developer</span>
               <h1 class="page-title">Welcome to My Space ✨</h1>
               <p class="page-subtitle">
@@ -63,7 +55,9 @@
                 상단 탭을 통해 자기소개, 프로젝트, 미니게임을 둘러보세요.
               </p>
               <div>
-                <a class="contact-link" href="mailto:algethi97@gmail.com">📧 algethi97@gmail.com</a>
+                <button type="button" class="copy-badge" data-copy="algethi97@gmail.com" data-message="이메일 주소(algethi97@gmail.com)가 복사되었습니다!" title="클릭하여 이메일 주소 복사">
+                  📧 algethi97@gmail.com <span class="copy-icon">📋</span>
+                </button>
               </div>
             </section>
             <section class="home-links-grid">
@@ -113,11 +107,15 @@
       </div>
     </div>
   </div>
+  <div class="toast" role="status" aria-live="polite" hidden></div>
   <script>
     const viewport = document.querySelector('.desk-viewport');
     const openButton = document.querySelector('.monitor-hint-overlay');
     const closeButton = document.querySelector('.desk-zoomout-btn');
     const content = document.querySelector('.monitor-scrollable');
+    const copyButton = document.querySelector('.copy-badge');
+    const toast = document.querySelector('.toast');
+    let toastTimeout;
 
     function setZoom(zoomed) {
       viewport.classList.toggle('is-zoomed', zoomed);
@@ -134,6 +132,40 @@
       if (event.key === 'Escape' && viewport.classList.contains('is-zoomed')) {
         setZoom(false);
       }
+    });
+
+    function fallbackCopy(text) {
+      const field = document.createElement('textarea');
+      field.value = text;
+      field.style.cssText = 'position:fixed;opacity:0;';
+      field.setAttribute('aria-label', '복사할 이메일 주소');
+      document.body.appendChild(field);
+      try {
+        field.focus();
+        field.select();
+        return document.execCommand('copy');
+      } finally {
+        field.remove();
+        copyButton.focus({ preventScroll: true });
+      }
+    }
+
+    copyButton.addEventListener('click', async () => {
+      let copied = false;
+      try {
+        await navigator.clipboard.writeText(copyButton.dataset.copy);
+        copied = true;
+      } catch {
+        try {
+          copied = fallbackCopy(copyButton.dataset.copy);
+        } catch {
+          copied = false;
+        }
+      }
+      toast.textContent = copied ? copyButton.dataset.message : '복사에 실패했습니다. 다시 시도해 주세요.';
+      toast.hidden = false;
+      clearTimeout(toastTimeout);
+      toastTimeout = setTimeout(() => { toast.hidden = true; }, 3000);
     });
   </script>
 </body>

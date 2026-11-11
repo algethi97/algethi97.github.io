@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>홈페이지 디자인 비교 | algethi97</title>
+<style>
+* { box-sizing: border-box; }
+body { margin: 0; background: #f4f2ed; color: #252b28; font-family: -apple-system, "Pretendard Variable", Pretendard, "Segoe UI", sans-serif; line-height: 1.7; }
+main { max-width: 1500px; margin: auto; padding: 48px 28px; }
+h1 { font-size: clamp(1.8rem, 4vw, 3rem); margin: 0 0 12px; }
+header { margin-bottom: 36px; }
+.grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; }
+article { min-width: 0; background: #fffefa; border: 1px solid #d9dcd4; padding: 22px; border-radius: 12px; }
+h2 { font-size: 1.25rem; margin-top: 0; }
+.swatches { display: flex; flex-wrap: wrap; gap: 12px; padding: 0; list-style: none; font-size: .8rem; }
+.swatches li { display: flex; align-items: center; gap: 5px; }
+.swatches span { width: 18px; height: 18px; border: 1px solid #888; border-radius: 50%; }
+nav { display: flex; flex-wrap: wrap; gap: 12px; margin: 22px 0; }
+a { color: #265c51; text-underline-offset: 4px; }
+a:focus-visible { outline: 2px solid #265c51; outline-offset: 4px; }
+figure { margin: 20px 0 0; }
+img { display: block; width: 100%; height: auto; border: 1px solid #d9dcd4; }
+figcaption { font-size: .85rem; color: #58625e; margin-top: 6px; }
+.mobile { max-width: 195px; margin-inline: auto; }
+section { margin-top: 48px; }
+.table-scroll { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; min-width: 700px; background: #fffefa; }
+caption { text-align: left; margin-bottom: 12px; color: #58625e; }
+th, td { padding: 16px; text-align: left; border: 1px solid #d9dcd4; vertical-align: top; }
+@media (max-width: 900px) { .grid { grid-template-columns: 1fr; } main { padding: 28px 16px; } }
+</style>
+</head>
+<body>
+<main>
+<header>
+<h1>어떤 공간으로 바꿀까요?</h1>
+<p>같은 소개와 프로젝트를 담은 세 가지 홈페이지 시안입니다. 홈에서 모니터를 클릭하면 확대되고, ESC나 축소 버튼으로 돌아옵니다.</p>
+</header>
+<div class="grid">
+<article>
+<h2>A. 데스크테리어 개선안</h2>
+<p>따뜻한 우드와 오렌지 포인트로 현재 공간의 분위기를 다듬었습니다.</p>
+<ul class="swatches" aria-label="배경·본문·강조 색상">
+<li>
+<span style="background:#f4eee4">
+</span>
+<code>#f4eee4</code>
+</li>
+<li>
+<span style="background:#3c3029">
+</span>
+<code>#3c3029</code>
+</li>
+<li>
+<span style="background:#a64c24">
+</span>
+<code>#a64c24</code>
+</li>
+</ul>
+<nav aria-label="A. 데스크테리어 개선안 시안">
+<a href="a-deskterior/index.html">홈 시안 열기 ↗</a>
+<a href="a-deskterior/portfolio.html">포트폴리오 열기 ↗</a>
+</nav>
+<figure>
+<img src="screenshots/a-deskterior-desk-1440.png" width="1440" height="900" alt="A. 데스크테리어 개선안 데스크톱 홈 축소 화면">
+<figcaption>홈 · 1440 × 900</figcaption>
+</figure>
+<figure class="mobile">
+<img src="screenshots/a-deskterior-zoom-390.png" width="390" height="844" alt="A. 데스크테리어 개선안 모바일 홈 확대 화면">
+<figcaption>홈 확대 · 390 × 844</figcaption>
+</figure>
+</article>
+<article>
+<h2>B. 에디토리얼안</h2>
+<p>밝은 종이색과 넓은 여백으로 프로젝트와 글에 집중합니다.</p>
+<ul class="swatches" aria-label="배경·본문·강조 색상">
+<li>
+<span style="background:#faf9f5">
+</span>
+<code>#faf9f5</code>
+</li>
+<li>
+<span style="background:#242c2a">
+</span>
+<code>#242c2a</code>
+</li>
+<li>
+<span style="background:#28665d">
+</span>
+<code>#28665d</code>
+</li>
+</ul>
+<nav aria-label="B. 에디토리얼안 시안">
+<a href="b-editorial/index.html">홈 시안 열기 ↗</a>
+<a href="b-editorial/portfolio.html">포트폴리오 열기 ↗</a>
+</nav>
+<figure>
+<img src="screenshots/b-editorial-desk-1440.png" width="1440" height="900" alt="B. 에디토리얼안 데스크톱 홈 축소 화면">
+<figcaption>홈 · 1440 × 900</figcaption>
+</figure>
+<figure class="mobile">
+<img src="screenshots/b-editorial-zoom-390.png" width="390" height="844" alt="B. 에디토리얼안 모바일 홈 확대 화면">
+<figcaption>홈 확대 · 390 × 844</figcaption>
+</figure>
+</article>
+<article>
+<h2>C. 터미널안</h2>
+<p>어두운 작업 공간과 고정폭 글꼴로 개발자 감성을 담았습니다.</p>
+<ul class="swatches" aria-label="배경·본문·강조 색상">
+<li>
+<span style="background:#0c141e">
+</span>
+<code>#0c141e</code>
+</li>
+<li>
+<span style="background:#e0edf1">
+</span>
+<code>#e0edf1</code>
+</li>
+<li>
+<span style="background:#8cf0b6">
+</span>
+<code>#8cf0b6</code>
+</li>
+</ul>
+<nav aria-label="C. 터미널안 시안">
+<a href="c-terminal/index.html">홈 시안 열기 ↗</a>
+<a href="c-terminal/portfolio.html">포트폴리오 열기 ↗</a>
+</nav>
+<figure>
+<img src="screenshots/c-terminal-desk-1440.png" width="1440" height="900" alt="C. 터미널안 데스크톱 홈 축소 화면">
+<figcaption>홈 · 1440 × 900</figcaption>
+</figure>
+<figure class="mobile">
+<img src="screenshots/c-terminal-zoom-390.png" width="390" height="844" alt="C. 터미널안 모바일 홈 확대 화면">
+<figcaption>홈 확대 · 390 × 844</figcaption>
+</figure>
+</article>
+</div>
+<section>
+<h2>세 방향 비교</h2>
+<div class="table-scroll" tabindex="0" role="region" aria-label="세 방향 비교표">
+<table>
+<caption>분위기와 가독성은 디자인 설명이며, 리모델링 때 바꿀 양은 [가설/임시] 상대적 예상입니다.</caption>
+<thead>
+<tr>
+<th scope="col">비교 항목</th>
+<th scope="col">A. 데스크테리어</th>
+<th scope="col">B. 에디토리얼</th>
+<th scope="col">C. 터미널</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th scope="row">분위기</th>
+<td>따뜻한 저녁 방, 우드와 둥근 카드.</td>
+<td>밝은 낮의 작업실, 종이와 얇은 구분선.</td>
+<td>야간 작업 공간, 민트 조명과 고정폭 글꼴.</td>
+</tr>
+<tr>
+<th scope="row">가독성</th>
+<td>크림 바탕과 갈색 본문, 익숙한 카드 격자입니다.</td>
+<td>넓은 여백과 목록형 배치로 읽는 흐름을 만듭니다.</td>
+<td>어두운 바탕과 밝은 글자로 대비를 줍니다.</td>
+</tr>
+<tr>
+<th scope="row">확대 연출과의 어울림</th>
+<td>현재 책상에서 모니터로 들어가는 흐름을 이어갑니다.</td>
+<td>정돈된 배경에서 잡지 지면 같은 본문으로 이어집니다.</td>
+<td>모니터의 빛과 명령창 형태의 본문이 연결됩니다.</td>
+</tr>
+<tr>
+<th scope="row">리모델링 때 바꿀 양</th>
+<td>[가설/임시] 적음. 현재 구조를 바탕으로 색과 간격을 조정합니다.</td>
+<td>[가설/임시] 중간. 여백·제목·프로젝트 목록 배치를 조정합니다.</td>
+<td>[가설/임시] 큼. 어두운 색 체계·글꼴·터미널 표현을 적용합니다.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</main>
+</body>
+</html>
