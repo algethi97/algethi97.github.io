@@ -1,0 +1,778 @@
+{
+  "rows": [
+    {
+      "check": "capture-and-horizontal-overflow",
+      "screen": "home-desk",
+      "width": 1440,
+      "height": 900,
+      "file": "step4-home-desk-1440.png",
+      "scrollWidth": 1440,
+      "innerWidth": 1440,
+      "passed": true
+    },
+    {
+      "check": "capture-and-horizontal-overflow",
+      "screen": "home-zoom",
+      "width": 1440,
+      "height": 900,
+      "file": "step4-home-zoom-1440.png",
+      "scrollWidth": 1440,
+      "innerWidth": 1440,
+      "passed": true
+    },
+    {
+      "check": "zoomed-monitor-geometry-and-background",
+      "width": 1440,
+      "monitor": {
+        "x": 65.88336181640625,
+        "y": 64.62435913085938,
+        "right": 1373.6714477539062,
+        "bottom": 775.8222351074219,
+        "width": 1307.7880859375,
+        "height": 711.1978759765625
+      },
+      "titlebar": {
+        "x": 65.88336181640625,
+        "y": 64.62435913085938,
+        "right": 1373.6714477539062,
+        "bottom": 103.12747192382812,
+        "width": 1307.7880859375,
+        "height": 38.50311279296875
+      },
+      "body": {
+        "x": 65.88336181640625,
+        "y": 103.12747192382812,
+        "right": 1373.6714477539062,
+        "bottom": 775.8221740722656,
+        "width": 1307.7880859375,
+        "height": 672.6947021484375
+      },
+      "contained": true,
+      "bodyOverflow": true,
+      "willChange": "auto",
+      "background": "url(\"http://127.0.0.1:10299/images/GPT_Gen.png\")",
+      "passed": true
+    },
+    {
+      "check": "escape-from-zoom",
+      "width": 1440,
+      "passed": true
+    },
+    {
+      "check": "home-tab-warp-and-navigation",
+      "width": 1440,
+      "page": "about.html",
+      "warp": true,
+      "passed": true
+    },
+    {
+      "check": "capture-and-horizontal-overflow",
+      "screen": "about",
+      "width": 1440,
+      "height": 900,
+      "file": "step4-about-1440.png",
+      "scrollWidth": 1440,
+      "innerWidth": 1440,
+      "passed": true
+    },
+    {
+      "check": "common-theme",
+      "width": 1440,
+      "page": "about.html",
+      "background": "rgb(250, 248, 244)",
+      "active": "rgb(200, 16, 46)",
+      "underline": "underline",
+      "passed": true
+    },
+    {
+      "check": "page-end-horizontal-overflow",
+      "width": 1440,
+      "page": "about.html",
+      "scrollWidth": 1440,
+      "innerWidth": 1440,
+      "passed": true
+    },
+    {
+      "check": "instant-home-return",
+      "width": 1440,
+      "page": "about.html",
+      "leaving": {
+        "flag": "true",
+        "leaving": true
+      },
+      "initial": {
+        "flag": "true",
+        "instant": true,
+        "transform": "matrix(2.22, 0, 0, 2.22, 0, 0)"
+      },
+      "consumed": true,
+      "zoomed": true,
+      "passed": true
+    },
+    {
+      "check": "escape-after-home-return",
+      "width": 1440,
+      "page": "about.html",
+      "scrollWidth": 1440,
+      "innerWidth": 1440,
+      "passed": true
+    },
+    {
+      "check": "home-tab-warp-and-navigation",
+      "width": 1440,
+      "page": "portfolio.html",
+      "warp": true,
+      "passed": true
+    },
+    {
+      "check": "capture-and-horizontal-overflow",
+      "screen": "portfolio",
+      "width": 1440,
+      "height": 900,
+      "file": "step4-portfolio-1440.png",
+      "scrollWidth": 1440,
+      "innerWidth": 1440,
+      "passed": true
+    },
+    {
+      "check": "common-theme",
+      "width": 1440,
+      "page": "portfolio.html",
+      "background": "rgb(250, 248, 244)",
+      "active": "rgb(200, 16, 46)",
+      "underline": "underline",
+      "passed": true
+    },
+    {
+      "check": "page-end-horizontal-overflow",
+      "width": 1440,
+      "page": "portfolio.html",
+      "scrollWidth": 1440,
+      "innerWidth": 1440,
+      "passed": true
+    },
+    {
+      "check": "portfolio-number-column",
+      "width": 1440,
+      "count": 6,
+      "column": "90px",
+      "passed": true
+    },
+    {
+      "check": "instant-home-return",
+      "width": 1440,
+      "page": "portfolio.html",
+      "leaving": {
+        "flag": "true",
+        "leaving": true
+      },
+      "initial": {
+        "flag": "true",
+        "instant": true,
+        "transform": "matrix(2.22, 0, 0, 2.22, 0, 0)"
+      },
+      "consumed": true,
+      "zoomed": true,
+      "passed": true
+    },
+    {
+      "check": "escape-after-home-return",
+      "width": 1440,
+      "page": "portfolio.html",
+      "scrollWidth": 1440,
+      "innerWidth": 1440,
+      "passed": true
+    },
+    {
+      "check": "home-tab-warp-and-navigation",
+      "width": 1440,
+      "page": "guestbook.html",
+      "warp": true,
+      "passed": true
+    },
+    {
+      "check": "capture-and-horizontal-overflow",
+      "screen": "guestbook",
+      "width": 1440,
+      "height": 900,
+      "file": "step4-guestbook-1440.png",
+      "scrollWidth": 1440,
+      "innerWidth": 1440,
+      "passed": true
+    },
+    {
+      "check": "common-theme",
+      "width": 1440,
+      "page": "guestbook.html",
+      "background": "rgb(250, 248, 244)",
+      "active": "rgb(200, 16, 46)",
+      "underline": "underline",
+      "passed": true
+    },
+    {
+      "check": "page-end-horizontal-overflow",
+      "width": 1440,
+      "page": "guestbook.html",
+      "scrollWidth": 1440,
+      "innerWidth": 1440,
+      "passed": true
+    },
+    {
+      "check": "instant-home-return",
+      "width": 1440,
+      "page": "guestbook.html",
+      "leaving": {
+        "flag": "true",
+        "leaving": true
+      },
+      "initial": {
+        "flag": "true",
+        "instant": true,
+        "transform": "matrix(2.22, 0, 0, 2.22, 0, 0)"
+      },
+      "consumed": true,
+      "zoomed": true,
+      "passed": true
+    },
+    {
+      "check": "escape-after-home-return",
+      "width": 1440,
+      "page": "guestbook.html",
+      "scrollWidth": 1440,
+      "innerWidth": 1440,
+      "passed": true
+    },
+    {
+      "check": "home-tab-warp-and-navigation",
+      "width": 1440,
+      "page": "game.html",
+      "warp": true,
+      "passed": true
+    },
+    {
+      "check": "capture-and-horizontal-overflow",
+      "screen": "game",
+      "width": 1440,
+      "height": 900,
+      "file": "step4-game-1440.png",
+      "scrollWidth": 1440,
+      "innerWidth": 1440,
+      "passed": true
+    },
+    {
+      "check": "common-theme",
+      "width": 1440,
+      "page": "game.html",
+      "background": "rgb(250, 248, 244)",
+      "active": "rgb(200, 16, 46)",
+      "underline": "underline",
+      "passed": true
+    },
+    {
+      "check": "page-end-horizontal-overflow",
+      "width": 1440,
+      "page": "game.html",
+      "scrollWidth": 1440,
+      "innerWidth": 1440,
+      "passed": true
+    },
+    {
+      "check": "game-start-and-playing-overflow",
+      "width": 1440,
+      "tiles": 170,
+      "remaining": 170,
+      "timer": 120,
+      "scrollWidth": 1440,
+      "innerWidth": 1440,
+      "passed": true
+    },
+    {
+      "check": "instant-home-return",
+      "width": 1440,
+      "page": "game.html",
+      "leaving": {
+        "flag": "true",
+        "leaving": true
+      },
+      "initial": {
+        "flag": "true",
+        "instant": true,
+        "transform": "matrix(2.22, 0, 0, 2.22, 0, 0)"
+      },
+      "consumed": true,
+      "zoomed": true,
+      "passed": true
+    },
+    {
+      "check": "escape-after-home-return",
+      "width": 1440,
+      "page": "game.html",
+      "scrollWidth": 1440,
+      "innerWidth": 1440,
+      "passed": true
+    },
+    {
+      "check": "zoomout-button",
+      "width": 1440,
+      "passed": true
+    },
+    {
+      "check": "capture-and-horizontal-overflow",
+      "screen": "home-desk",
+      "width": 390,
+      "height": 844,
+      "file": "step4-home-desk-390.png",
+      "scrollWidth": 390,
+      "innerWidth": 390,
+      "passed": true
+    },
+    {
+      "check": "capture-and-horizontal-overflow",
+      "screen": "home-zoom",
+      "width": 390,
+      "height": 844,
+      "file": "step4-home-zoom-390.png",
+      "scrollWidth": 390,
+      "innerWidth": 390,
+      "passed": true
+    },
+    {
+      "check": "zoomed-monitor-geometry-and-background",
+      "width": 390,
+      "monitor": {
+        "x": 17.828216552734375,
+        "y": 317.6056823730469,
+        "right": 372.02227783203125,
+        "bottom": 510.1907043457031,
+        "width": 354.1940612792969,
+        "height": 192.58502197265625
+      },
+      "titlebar": {
+        "x": 17.828216552734375,
+        "y": 317.6056823730469,
+        "right": 372.02227783203125,
+        "bottom": 350.90570068359375,
+        "width": 354.1940612792969,
+        "height": 33.300018310546875
+      },
+      "body": {
+        "x": 17.828216552734375,
+        "y": 350.90570068359375,
+        "right": 372.02227783203125,
+        "bottom": 510.1907043457031,
+        "width": 354.1940612792969,
+        "height": 159.28500366210938
+      },
+      "contained": true,
+      "bodyOverflow": true,
+      "willChange": "auto",
+      "background": "url(\"http://127.0.0.1:10299/images/GPT_Gen.png\")",
+      "passed": true
+    },
+    {
+      "check": "escape-from-zoom",
+      "width": 390,
+      "passed": true
+    },
+    {
+      "check": "home-tab-warp-and-navigation",
+      "width": 390,
+      "page": "about.html",
+      "warp": true,
+      "passed": true
+    },
+    {
+      "check": "capture-and-horizontal-overflow",
+      "screen": "about",
+      "width": 390,
+      "height": 844,
+      "file": "step4-about-390.png",
+      "scrollWidth": 390,
+      "innerWidth": 390,
+      "passed": true
+    },
+    {
+      "check": "common-theme",
+      "width": 390,
+      "page": "about.html",
+      "background": "rgb(250, 248, 244)",
+      "active": "rgb(200, 16, 46)",
+      "underline": "underline",
+      "passed": true
+    },
+    {
+      "check": "page-end-horizontal-overflow",
+      "width": 390,
+      "page": "about.html",
+      "scrollWidth": 390,
+      "innerWidth": 390,
+      "passed": true
+    },
+    {
+      "check": "instant-home-return",
+      "width": 390,
+      "page": "about.html",
+      "leaving": {
+        "flag": "true",
+        "leaving": true
+      },
+      "initial": {
+        "flag": "true",
+        "instant": true,
+        "transform": "matrix(2.22, 0, 0, 2.22, 0, 0)"
+      },
+      "consumed": true,
+      "zoomed": true,
+      "passed": true
+    },
+    {
+      "check": "escape-after-home-return",
+      "width": 390,
+      "page": "about.html",
+      "scrollWidth": 390,
+      "innerWidth": 390,
+      "passed": true
+    },
+    {
+      "check": "home-tab-warp-and-navigation",
+      "width": 390,
+      "page": "portfolio.html",
+      "warp": true,
+      "passed": true
+    },
+    {
+      "check": "capture-and-horizontal-overflow",
+      "screen": "portfolio",
+      "width": 390,
+      "height": 844,
+      "file": "step4-portfolio-390.png",
+      "scrollWidth": 390,
+      "innerWidth": 390,
+      "passed": true
+    },
+    {
+      "check": "common-theme",
+      "width": 390,
+      "page": "portfolio.html",
+      "background": "rgb(250, 248, 244)",
+      "active": "rgb(200, 16, 46)",
+      "underline": "underline",
+      "passed": true
+    },
+    {
+      "check": "page-end-horizontal-overflow",
+      "width": 390,
+      "page": "portfolio.html",
+      "scrollWidth": 390,
+      "innerWidth": 390,
+      "passed": true
+    },
+    {
+      "check": "portfolio-number-column",
+      "width": 390,
+      "count": 6,
+      "column": "36px",
+      "passed": true
+    },
+    {
+      "check": "instant-home-return",
+      "width": 390,
+      "page": "portfolio.html",
+      "leaving": {
+        "flag": "true",
+        "leaving": true
+      },
+      "initial": {
+        "flag": "true",
+        "instant": true,
+        "transform": "matrix(2.22, 0, 0, 2.22, 0, 0)"
+      },
+      "consumed": true,
+      "zoomed": true,
+      "passed": true
+    },
+    {
+      "check": "escape-after-home-return",
+      "width": 390,
+      "page": "portfolio.html",
+      "scrollWidth": 390,
+      "innerWidth": 390,
+      "passed": true
+    },
+    {
+      "check": "home-tab-warp-and-navigation",
+      "width": 390,
+      "page": "guestbook.html",
+      "warp": true,
+      "passed": true
+    },
+    {
+      "check": "capture-and-horizontal-overflow",
+      "screen": "guestbook",
+      "width": 390,
+      "height": 844,
+      "file": "step4-guestbook-390.png",
+      "scrollWidth": 390,
+      "innerWidth": 390,
+      "passed": true
+    },
+    {
+      "check": "common-theme",
+      "width": 390,
+      "page": "guestbook.html",
+      "background": "rgb(250, 248, 244)",
+      "active": "rgb(200, 16, 46)",
+      "underline": "underline",
+      "passed": true
+    },
+    {
+      "check": "page-end-horizontal-overflow",
+      "width": 390,
+      "page": "guestbook.html",
+      "scrollWidth": 390,
+      "innerWidth": 390,
+      "passed": true
+    },
+    {
+      "check": "instant-home-return",
+      "width": 390,
+      "page": "guestbook.html",
+      "leaving": {
+        "flag": "true",
+        "leaving": true
+      },
+      "initial": {
+        "flag": "true",
+        "instant": true,
+        "transform": "matrix(2.22, 0, 0, 2.22, 0, 0)"
+      },
+      "consumed": true,
+      "zoomed": true,
+      "passed": true
+    },
+    {
+      "check": "escape-after-home-return",
+      "width": 390,
+      "page": "guestbook.html",
+      "scrollWidth": 390,
+      "innerWidth": 390,
+      "passed": true
+    },
+    {
+      "check": "home-tab-warp-and-navigation",
+      "width": 390,
+      "page": "game.html",
+      "warp": true,
+      "passed": true
+    },
+    {
+      "check": "capture-and-horizontal-overflow",
+      "screen": "game",
+      "width": 390,
+      "height": 844,
+      "file": "step4-game-390.png",
+      "scrollWidth": 390,
+      "innerWidth": 390,
+      "passed": true
+    },
+    {
+      "check": "common-theme",
+      "width": 390,
+      "page": "game.html",
+      "background": "rgb(250, 248, 244)",
+      "active": "rgb(200, 16, 46)",
+      "underline": "underline",
+      "passed": true
+    },
+    {
+      "check": "page-end-horizontal-overflow",
+      "width": 390,
+      "page": "game.html",
+      "scrollWidth": 390,
+      "innerWidth": 390,
+      "passed": true
+    },
+    {
+      "check": "game-start-and-playing-overflow",
+      "width": 390,
+      "tiles": 170,
+      "remaining": 170,
+      "timer": 120,
+      "scrollWidth": 390,
+      "innerWidth": 390,
+      "passed": true
+    },
+    {
+      "check": "instant-home-return",
+      "width": 390,
+      "page": "game.html",
+      "leaving": {
+        "flag": "true",
+        "leaving": true
+      },
+      "initial": {
+        "flag": "true",
+        "instant": true,
+        "transform": "matrix(2.22, 0, 0, 2.22, 0, 0)"
+      },
+      "consumed": true,
+      "zoomed": true,
+      "passed": true
+    },
+    {
+      "check": "escape-after-home-return",
+      "width": 390,
+      "page": "game.html",
+      "scrollWidth": 390,
+      "innerWidth": 390,
+      "passed": true
+    },
+    {
+      "check": "zoomout-button",
+      "width": 390,
+      "passed": true
+    },
+    {
+      "check": "red-common-card-and-button-states",
+      "baseShadow": "rgba(200, 16, 46, 0.25) 0px 4px 12px 0px",
+      "border": "rgba(200, 16, 46, 0.4)",
+      "shadow": "rgba(200, 16, 46, 0.35) 0px 6px 16px 0px",
+      "passed": true
+    },
+    {
+      "check": "disabled-primary-button",
+      "disabled": true,
+      "cursor": "not-allowed",
+      "shadow": "none",
+      "passed": true
+    },
+    {
+      "check": "css-rule-syntax",
+      "path": "style.css",
+      "opening": 114,
+      "closing": 114,
+      "parsed": 114,
+      "passed": true
+    },
+    {
+      "check": "css-rule-syntax",
+      "path": "css/pages.css",
+      "opening": 48,
+      "closing": 48,
+      "parsed": 48,
+      "passed": true
+    },
+    {
+      "check": "css-rule-syntax",
+      "path": "css/guestbook.css",
+      "opening": 45,
+      "closing": 45,
+      "parsed": 45,
+      "passed": true
+    },
+    {
+      "check": "css-rule-syntax",
+      "path": "css/game.css",
+      "opening": 141,
+      "closing": 141,
+      "parsed": 141,
+      "passed": true
+    },
+    {
+      "check": "reduced-motion",
+      "duration": "0s",
+      "passed": true
+    },
+    {
+      "check": "small-red-text-contrast",
+      "foreground": "#c8102e",
+      "background": "#faf8f4",
+      "contrast": 5.54655383449854,
+      "passed": true
+    },
+    {
+      "check": "runtime-exceptions",
+      "errors": [],
+      "passed": true
+    },
+    {
+      "check": "twelve-captures",
+      "count": 12,
+      "passed": true
+    },
+    {
+      "check": "temporary-processes-stopped",
+      "chromePid": 4020,
+      "chromeExit": null,
+      "chromeSignal": "SIGTERM",
+      "chromeExitObserved": true,
+      "chromeProcessAbsent": true,
+      "serverListening": false,
+      "passed": true
+    }
+  ],
+  "screenshots": [
+    {
+      "file": "step4-home-desk-1440.png",
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "file": "step4-home-zoom-1440.png",
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "file": "step4-about-1440.png",
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "file": "step4-portfolio-1440.png",
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "file": "step4-guestbook-1440.png",
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "file": "step4-game-1440.png",
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "file": "step4-home-desk-390.png",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "file": "step4-home-zoom-390.png",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "file": "step4-about-390.png",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "file": "step4-portfolio-390.png",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "file": "step4-guestbook-390.png",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "file": "step4-game-390.png",
+      "width": 390,
+      "height": 844
+    }
+  ],
+  "profile": "C:\\Projects\\algethi97.github.io\\.scratch\\noir-remodel\\step4-chrome-profile-K5funl",
+  "passed": true
+}

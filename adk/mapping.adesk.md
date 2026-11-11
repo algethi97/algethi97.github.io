@@ -33,7 +33,7 @@ AI가 파일을 추가·이동·삭제하면 이 파일의 행도 함께 고친�
 
 | 경로 | 기능 | 관련 테스트 |
 | --- | --- | --- |
-| `.gitignore` | Git 추적 제외 규칙 | 해당 없음 |
+| `.gitignore` | Git 추적 제외 규칙과 4단계 Chrome 임시 프로필 제외 | `git check-ignore`로 두 프로필 제외·`git status --porcelain`에 프로필 경로가 없는지 확인 |
 | `.python-version` | Python 버전 지정 | 해당 없음 |
 | `pyproject.toml` | Python 프로젝트 메타데이터 | 해당 없음 |
 | `uv.lock` | uv 의존성 잠금 | 해당 없음 |
@@ -41,14 +41,14 @@ AI가 파일을 추가·이동·삭제하면 이 파일의 행도 함께 고친�
 | `about.html` | 블랙·레드 프로필·기술 태그·이력 소개 화면 | Chrome 1440·390px 캡처·가로 넘침·이메일 복사·홈 복귀 확인 |
 | `portfolio.html` | 원문을 보존한 프로젝트 여섯 개의 01~06 번호 목록 화면 | D 시안 배치·원문 대조와 Chrome 1440·390px 스크롤·홈 복귀 확인 |
 | `script.js` | 홈 줌 및 공통 인터랙션 | 로컬 정적 서버 브라우저 확인 |
-| `README.md` | 프로젝트 소개 및 구조 | 문서와 실제 파일 대조 |
+| `README.md` | 블랙·레드 테마·기존 배경 유지 결정·시안과 재생성 프롬프트 경로 및 프로젝트 구조 | 문서와 실제 배경·파일 경로·포트폴리오 번호 목록 대조 |
 | `MANDARIN_GAME_PLAN.md` | 만다린 게임 기획 문서 | 해당 없음 |
 | `common.js` | Supabase와 공통 표시 유틸 | `tests/static-site.test.mjs` |
 | `guestbook.js` | 방명록 조회·작성 ES 모듈 | `tests/static-site.test.mjs` |
 | `guestbook.html` | 방명록 화면과 모듈 로딩 | 로컬 정적 서버 브라우저 확인 |
 | `game.js` | 게임 상태·수명 주기 진입 모듈 | `tests/static-site.test.mjs` |
-| `game.html` | 게임 화면과 모듈 로딩 | 로컬 정적 서버 브라우저 확인 |
-| `style.css` | 블랙·레드 공통 테마·확대 재그리기·반응형 | 다섯 페이지 데스크톱·모바일 비교와 홈 확대 정지 will-change auto 확인 |
+| `game.html` | 블랙·레드 게임 화면·테마 안내 푸터와 모듈 로딩 | Chrome 1440·390px 캡처·게임 시작·홈 복귀 확인 |
+| `style.css` | 블랙·레드 공통 테마·빨간 카드 테두리와 버튼 그림자·확대 재그리기·반응형 | 다섯 페이지 12장 캡처·가로 넘침·탭 이동·홈 복귀·ESC 및 CSS 구문 확인 |
 
 ## css
 
@@ -114,6 +114,24 @@ AI가 파일을 추가·이동·삭제하면 이 파일의 행도 함께 고친�
 | `.scratch/noir-remodel/step2-portfolio-end-1440.png` | 데스크톱 프로젝트 제목 hover 강조 캡처 | 빨간 제목과 그림자 없는 목록 확인 |
 | `.scratch/noir-remodel/step2-portfolio-end-390.png` | 390px 프로젝트 제목 강조 캡처 | 빨간 제목과 화면 내부 배치 확인 |
 | `.scratch/noir-remodel/step2-results.json` | 2단계 브라우저 측정과 예외·대비 검사 결과 | 41개 통과와 변경하지 않은 style.css의 WebKit 속성 미지원 1건을 구분 |
+| `.scratch/noir-remodel/step4-capture.mjs` | 4단계 전체 화면·이동·색 검증기 | 승인된 CSS 전환 대기·Chrome 종료 이벤트와 PID 부재 확인 및 로컬 헤드리스 Chrome 실행 |
+| `.scratch/noir-remodel/step4-results.json` | 4단계 화면·이동·색·대비 측정 결과 | 각 검사와 12장 캡처 결과 확인 |
+| `.scratch/noir-remodel/step4-capture.log` | 4단계 캡처·검증 실행 기록 | 측정 결과와 종료 여부 확인 |
+| `.scratch/noir-remodel/step4-capture-error.log` | 4단계 캡처 오류 기록 | 실행 오류 유무 확인 |
+| `.scratch/noir-remodel/step4-exit-code.txt` | 4단계 재검증 종료 코드 | 백그라운드 Node 실행의 실제 종료 코드 확인 |
+| `.scratch/noir-remodel/step4-cleanup.json` | 프로필 삭제 정책 차단 이력과 사용자 정리 인계·보존 현황 | 누적 정책 차단 3회(세 번째는 승인 계획·앱 인계 기록)·이번 삭제 시도 0회·폴더별 파일 수·바이트·Chrome 사용 프로세스 확인 |
+| `.scratch/noir-remodel/step4-home-desk-1440.png` | 데스크톱 축소 홈 최종 캡처 | 기존 배경 유지와 가로 넘침 확인 |
+| `.scratch/noir-remodel/step4-home-zoom-1440.png` | 데스크톱 확대 홈 최종 캡처 | 타이틀바·본문의 모니터 내부 배치 확인 |
+| `.scratch/noir-remodel/step4-home-desk-390.png` | 모바일 축소 홈 최종 캡처 | 기존 배경 유지와 가로 넘침 확인 |
+| `.scratch/noir-remodel/step4-home-zoom-390.png` | 모바일 확대 홈 최종 캡처 | 타이틀바·본문의 모니터 내부 배치 확인 |
+| `.scratch/noir-remodel/step4-about-1440.png` | 데스크톱 소개 최종 캡처 | 블랙·레드 테마와 가로 넘침 확인 |
+| `.scratch/noir-remodel/step4-about-390.png` | 모바일 소개 최종 캡처 | 프로필 줄바꿈과 가로 넘침 확인 |
+| `.scratch/noir-remodel/step4-portfolio-1440.png` | 데스크톱 포트폴리오 최종 캡처 | 90px 번호 열과 가로 넘침 확인 |
+| `.scratch/noir-remodel/step4-portfolio-390.png` | 모바일 포트폴리오 최종 캡처 | 36px 번호 열과 가로 넘침 확인 |
+| `.scratch/noir-remodel/step4-guestbook-1440.png` | 데스크톱 방명록 최종 캡처 | 폼·목록 테마와 가로 넘침 확인 |
+| `.scratch/noir-remodel/step4-guestbook-390.png` | 모바일 방명록 최종 캡처 | 폼·목록 배치와 가로 넘침 확인 |
+| `.scratch/noir-remodel/step4-game-1440.png` | 데스크톱 게임 최종 캡처 | HUD·랭킹·보드 테마와 가로 넘침 확인 |
+| `.scratch/noir-remodel/step4-game-390.png` | 모바일 게임 최종 캡처 | HUD·보드 배치와 가로 넘침 확인 |
 
 ## src/algethi97_github_io
 
@@ -155,6 +173,18 @@ AI가 파일을 추가·이동·삭제하면 이 파일의 행도 함께 고친�
 | `.scratch/mockup-b/portfolio-390.png` | 포트폴리오 모바일 화면 | Chrome 스크린샷 |
 | `.scratch/mockup-b/capture.log` | 방향 B 캡처 실행 기록 | 해당 없음 |
 | `.scratch/mockup-b/capture-error.log` | 방향 B 캡처 오류 기록 | 해당 없음 |
+
+## .scratch/noir-remodel/step4-chrome-profile-jLb3uY
+
+| 경로 | 기능 | 관련 테스트 |
+| --- | --- | --- |
+| `.scratch/noir-remodel/step4-chrome-profile-jLb3uY/` | Git 추적에서 제외하고 사용자가 직접 정리할 이전 Chrome 임시 프로필 | 삭제 재시도 없이 존재·파일 수·바이트·Chrome 사용 프로세스와 제외 규칙 확인 |
+
+## .scratch/noir-remodel/step4-chrome-profile-K5funl
+
+| 경로 | 기능 | 관련 테스트 |
+| --- | --- | --- |
+| `.scratch/noir-remodel/step4-chrome-profile-K5funl/` | Git 추적에서 제외하고 사용자가 직접 정리할 재검증 Chrome 임시 프로필 | 삭제 재시도 없이 존재·파일 수·바이트·Chrome 사용 프로세스와 제외 규칙 확인 |
 
 ## .scratch
 

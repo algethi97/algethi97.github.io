@@ -1,0 +1,38 @@
+{
+    "approved_path":  "C:\\Projects\\algethi97.github.io\\.scratch\\noir-remodel\\step4-chrome-profile-jLb3uY",
+    "using_chrome_processes_before_delete":  0,
+    "validated_files":  1501,
+    "validated_bytes":  107001660,
+    "deletion_attempts":  3,
+    "deletion_attempts_this_run":  0,
+    "third_attempt":  {
+                          "result":  "blocked by policy",
+                          "source":  "2026-11-11 승인 계획과 앱 인계 기록에서 세 번째 정책 차단을 확인했습니다.",
+                          "executed_this_run":  false
+                      },
+    "deletion_executed":  false,
+    "blocked_reason":  "blocked by policy",
+    "exists_after_attempts":  true,
+    "cleanup_owner":  "TAEKONG",
+    "agent_deletion_disabled":  true,
+    "cleanup_decision":  "실행 AI는 삭제를 재시도하거나 다른 셸·도구·스크립트로 우회하지 않습니다. TAEKONG님이 두 폴더를 쓰는 Chrome 프로세스가 없는지 확인한 뒤 직접 정리합니다.",
+    "ignore_rule":  ".scratch/noir-remodel/step4-chrome-profile-*/",
+    "measured_at":  "2026-11-11T15:27:39.4367928+09:00",
+    "matching_processes":  0,
+    "retained_profiles":  [
+                              {
+                                  "path":  "C:\\Projects\\algethi97.github.io\\.scratch\\noir-remodel\\step4-chrome-profile-jLb3uY",
+                                  "exists":  true,
+                                  "files":  1501,
+                                  "bytes":  107001660,
+                                  "matching_processes":  0
+                              },
+                              {
+                                  "path":  "C:\\Projects\\algethi97.github.io\\.scratch\\noir-remodel\\step4-chrome-profile-K5funl",
+                                  "exists":  true,
+                                  "files":  1501,
+                                  "bytes":  107010075,
+                                  "matching_processes":  0
+                              }
+                          ]
+}

@@ -37,7 +37,7 @@ D 시안은 `design/mockups/d-editorial-noir/`에 있는 별도 파일이라 실
 - 방명록·게임 HTML의 요소 `id`와 JS가 쓰는 클래스(`desk-viewport`, `desk-canvas`, `monitor-screen`, `monitor-hint-overlay`, `desk-zoomout-btn`, `monitor-scrollable`, `screen-warp-overlay`, `is-zoomed`, `warp-in`, `instant-zoomed`, `standalone-page`, `page-entering`, `page-leaving`, `toast-container`, `toast`, `show`, `fade-in`, `visible`, `tab-item`, `empty-tab`, `copy-badge`, `project-card`, `quick-link-card`, `hero-section`, `page-header`, `card`)는 유지한다.
 - `script.js`, `common.js`, `guestbook.js`, `game.js`, `game/*.js`는 고치지 않는다. 디자인 변경은 HTML 마크업과 CSS로만 한다. 꼭 고쳐야 하면 멈추고 `status=question`으로 이유를 보고한다.
 - Supabase 테이블 이름·조회 형식과 CDN 스크립트 주소는 바꾸지 않는다.
-- 파일은 지우지 않는다. `images/GPT_Gen.png`도 남겨 둔다(D2에서 B를 고르면 계속 쓴다).
+- 파일은 지우지 않는다. `images/GPT_Gen.png`도 남겨 둔다(D2에서 B를 고르면 계속 쓴다). 예외는 사용자가 2026-11-11에 승인한 4단계 임시 Chrome 프로필 폴더 `.scratch/noir-remodel/step4-chrome-profile-jLb3uY` 하나뿐이다.
 - 모니터 화면 좌표(left 29.49%, top 23.91%, width 40.91%, height 39.53%), 확대 중심축(49.91% 41.5%), 배율 2.22는 바꾸지 않는다. D 시안 배경도 같은 좌표로 그려져 있다.
 - 기존 모바일 탭 글자 크기 규칙(`style.css`의 `@media (max-width: 768px)`·`@media (max-width: 640px)`)은 크기를 유지하고 색만 바꾼다.
 - 키보드 포커스 표시(`:focus-visible`)를 없애지 않는다. `prefers-reduced-motion`에서 확대 전환을 끄는 D 시안 규칙을 반영한다.
@@ -100,12 +100,25 @@ D 시안은 `design/mockups/d-editorial-noir/`에 있는 별도 파일이라 실
   - 1~3단계에서 생긴 색·간격 불일치(예: 페이지마다 다른 빨강, 남은 오렌지색)를 찾아 해당 CSS에서 고친다. `grep -n "ea580c\|c2410c\|fff7ed\|78350f" style.css css/*.css *.html`로 남은 옛 오렌지·우드 색을 확인하고, 게임 판정 표시처럼 일부러 남긴 것은 보고에 적는다.
   - `README.md`의 테마 설명과 파일 구조(65행 `GPT_Gen.png` 설명 부근)에 새 배경 `images/desk-bg-noir.svg`와 블랙·레드 테마를 반영한다. 배경 재생성 프롬프트는 `design/mockups/d-editorial-noir/bg-prompt.md`에 있다고 적는다.
   - 맵 `## .` 절의 `README.md` 행과 이 단계에서 고친 파일 행을 갱신한다.
-- 완료 기준: `node --test tests/static-site.test.mjs` 9개 통과, 동봉 검증기(`--task desk`) 통과. 12장 캡처 모두 가로 넘침이 없고, 페이지 이동·홈 복귀·ESC 동작을 확인한 결과를 보고한다. 남은 옛 오렌지색 목록과 남긴 이유를 보고한다.
-- 읽을 파일: README.md, style.css, css/pages.css, css/guestbook.css, css/game.css, index.html, about.html, portfolio.html, guestbook.html, game.html, script.js, adk/mapping.adesk.md
-- 고칠 파일: README.md, style.css, css/pages.css, css/guestbook.css, css/game.css, index.html, about.html, portfolio.html, guestbook.html, game.html, adk/mapping.adesk.md
+  - (사용자 승인 2026-11-11, 검사 보완 1) 임시 검사 스크립트 `.scratch/noir-remodel/step4-capture.mjs`의 비활성 버튼 검사(`disabled-primary-button`)는 버튼을 비활성으로 바꾼 뒤 CSS 전환이 끝날 때까지 기다린 다음 그림자를 다시 읽는다. 기대값은 그대로 `disabled=true`, `cursor=not-allowed`, `box-shadow=none`이며 기대값을 낮추지 않는다. 전환이 끝난 뒤에도 그림자가 `none`이 아니면 검사 문제가 아니라 CSS 문제이므로 해당 CSS를 고치거나 `status=question`으로 보고한다.
+  - (사용자 승인 2026-11-11, 검사 보완 2) 같은 스크립트의 프로세스 종료 검사(`temporary-processes-stopped`)는 `exitCode` 값만 보지 않고, Chrome 프로세스의 종료 이벤트(`exit` 또는 `close`)를 기다린 뒤 해당 PID의 프로세스가 실제로 없는지 확인해 판정한다. 로컬 서버가 닫혔는지 확인하는 조건은 그대로 둔다.
+  - (2026-11-11 변경, 임시 폴더 정리) 실행 AI는 임시 Chrome 프로필 폴더를 삭제하지 않는다. `step4-chrome-profile-jLb3uY` 삭제는 실행 환경의 자동 승인 정책에 세 차례 `blocked by policy`로 막혔으므로 다시 시도하지 않고, 다른 셸·도구·스크립트로 우회하지도 않는다. 대신 루트 `.gitignore`의 맨 끝에 `.scratch/noir-remodel/step4-chrome-profile-*/` 한 줄을 주석과 함께 추가해 두 프로필 폴더(약 107MB씩)가 실수로 커밋되지 않게 한다. 다른 `.gitignore` 줄은 고치지 않는다.
+  - `.scratch/noir-remodel/step4-cleanup.json`에 세 번째 차단 결과, 실행 AI가 삭제를 맡지 않기로 바뀐 사실, 현재 남은 프로필 폴더의 경로·파일 수·바이트를 다시 측정해 기록한다. 실행 시점에 사용자가 이미 폴더를 지웠다면 지워진 사실만 기록한다.
+  - 보고 끝에 사용자가 직접 실행할 삭제 명령을 안내한다: 두 폴더를 쓰는 Chrome 프로세스가 없는지 확인한 뒤 PowerShell에서 `Remove-Item -LiteralPath 'C:\Projects\algethi97.github.io\.scratch\noir-remodel\step4-chrome-profile-jLb3uY' -Recurse -Force`(필요하면 `step4-chrome-profile-K5funl`도 같은 방식)를 실행한다. 이 명령을 실행 AI가 대신 실행하지 않는다.
+  - 사이트 파일이나 `step4-capture.mjs`에 추가 변경이 없으면 Chrome 검사를 다시 돌리지 않는다. 새 프로필 폴더가 또 생기지 않게 하기 위해서다. 캡처 12장, 로그, 결과 파일과 그 밖의 파일은 지우지 않는다.
+- 완료 기준: `node --test tests/static-site.test.mjs` 9개 통과, 동봉 검증기(`--task desk`) 통과. 12장 캡처 모두 가로 넘침이 없고, 페이지 이동·홈 복귀·ESC 동작을 확인한 결과를 보고한다(이전 실행의 `step4-results.json` 결과를 근거로 쓰고, 재실행하지 않았으면 그렇게 적는다). 남은 옛 오렌지색 목록과 남긴 이유를 보고한다. `git status --porcelain`에 `step4-chrome-profile-` 경로가 더 이상 나오지 않는다. `step4-cleanup.json`에 남은 폴더 현황이 기록되어 있고, 사용자용 삭제 안내가 보고에 있다. 프로필 폴더가 남아 있어도 이 단계의 실패로 보지 않는다.
+- 읽을 파일: README.md, .gitignore, style.css, css/pages.css, css/guestbook.css, css/game.css, index.html, about.html, portfolio.html, guestbook.html, game.html, script.js, .scratch/noir-remodel/step4-capture.mjs, .scratch/noir-remodel/step4-results.json, .scratch/noir-remodel/step4-cleanup.json, adk/mapping.adesk.md
+- 고칠 파일: .gitignore, .scratch/noir-remodel/step4-cleanup.json, README.md, style.css, css/pages.css, css/guestbook.css, css/game.css, index.html, about.html, portfolio.html, guestbook.html, game.html, adk/mapping.adesk.md
 - 지킬 테스트: tests/static-site.test.mjs
-- 난이도: standard
+- 난이도: small
 - 선행 단계: 2, 3
+
+## 재개 조건
+
+- 사용자 요청(2026-11-11, 15:13 재요청): ADesk가 4단계 후속 실행을 Codex `gpt-6.1-sol`, 추론 강도 `xhigh`로 시작하도록 지정한다. 직전 재개는 추론 강도 `max`로 시작되어 사용자가 취소했으며, 그 시도에서는 파일 변경이 없었다. `max`로 실행하지 않는다. 이는 실행 모델 요청이며, 이 문서 저장만으로 실제 모델이 전환되었다고 판단하지 않는다. 실행 AI는 앱이 전달한 모델 정보를 확인하고 확인할 수 없으면 미확인으로 보고한다. 다른 모델로 임의 대체하거나 전역 Codex 설정을 바꾸지 않는다.
+- 1~3단계 완료 결과와 4단계의 기존 구현·검사 보완(README, CSS, `step4-capture.mjs`, 캡처 12장, `step4-results.json`)을 보존한다. 이전 시도의 변경을 버리거나 커밋을 되돌리지 않는다.
+- 4단계는 프로필 폴더 삭제만 남은 상태에서 세 번째 시도(2026-11-11)도 같은 `Remove-Item` 명령이 통과되지 않아 실패했다. 같은 오류가 반복되었으므로 삭제 책임을 실행 AI에서 사용자로 옮긴다. 실행 AI는 위 4단계 작업대로 `.gitignore` 추가, 정리 기록 갱신, 맵 행 갱신, 테스트 9개와 `--task desk` 검증만 진행한다.
+- 브라우저 검사 73개 통과는 이전 실행 결과이며, 다시 실행하지 않았다면 재검증한 결과로 표현하지 않는다.
 
 ## 결정
 

@@ -29,3 +29,6 @@ adk/chat/runtime/
 adk/chat/attachments/
 adk/chat/*.lock*
 adk/*.lock
+
+# 4단계 화면 검증용 Chrome 임시 프로필 (사용자가 직접 정리)
+.scratch/noir-remodel/step4-chrome-profile-*/

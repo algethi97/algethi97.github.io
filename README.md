@@ -1,7 +1,7 @@
 # 🖥️ algethi97.github.io | Personal Deskterior Space
 
 > **감각적인 공간과 사용자 경험을 탐구하는 algethi97의 포트폴리오 & 인터랙티브 웹 플랫폼입니다.**  
-> 16:9 데스크테리어 캔버스와 웜 모더니스트(Warm Minimalist Aesthetic) 디자인, 시네마틱 줌인 인터랙션, 실시간 방명록 및 Supabase 연동 웹 퍼즐 게임을 제공합니다.
+> 16:9 데스크테리어 캔버스와 종이색·검정·빨강의 에디토리얼 블랙·레드(Editorial Noir) 디자인, 시네마틱 줌인 인터랙션, 실시간 방명록 및 Supabase 연동 웹 퍼즐 게임을 제공합니다.
 
 - **라이브 사이트**: [https://algethi97.github.io](https://algethi97.github.io)
 - **최신 버전**: `v1.6.1`
@@ -11,7 +11,7 @@
 ## ✨ 핵심 기능 및 페이지 구성
 
 ### 1. 🖥️ 메인 데스크테리어 뷰포트 (`index.html`)
-- **16:9 비율 데스크테리어 캔버스**: 웜 우드 & 오렌지 키캡 감성의 일러스트 룸 연출
+- **16:9 비율 데스크테리어 캔버스**: 기존 우드 책상·오렌지 키캡 일러스트 배경(`images/GPT_Gen.png`)을 유지하고, 모니터 안 화면에 블랙·레드 테마를 적용했습니다.
 - **시네마틱 모니터 줌인**: 모니터 화면 클릭 시 부드럽게 확대(`scale 2.22`)되며 브라우저 속으로 빨려 들어가는 시네마틱 워프(Warp-in) 전환
 - **ESC / 줌아웃 복귀 버튼**: 모니터 뷰에서 전체 방 뷰로 직관적인 전환 가능
 - **바로가기 카드 그리드**: 자기소개, 포트폴리오, 만다린 게임, 방명록으로 빠르게 이동할 수 있는 미니멀 카드 섹션
@@ -21,7 +21,7 @@
 - 보유 기술 스택(Core Stack) 및 협업 철학 소개
 
 ### 3. 💼 프로젝트 포트폴리오 (`portfolio.html`)
-엄선된 6개의 주요 프로젝트를 카드 형태로 소개하며, 각 저장소 및 게임 플레이 링크를 제공합니다:
+엄선된 6개의 주요 프로젝트를 01~06 번호 목록으로 소개하며, 각 저장소 및 게임 플레이 링크를 제공합니다:
 1. **🌐 Personal Portfolio Website**: HTML5, CSS3, JavaScript만을 활용하여 구현한 데스크테리어 반응형 웹사이트
 2. **🛡️ SafeJeonse (세이프전세)**: 공공데이터(실거래가 8종·건축물대장·공시가격) 실시간 교차 검증 및 매물 탐색부터 계약, 거주, 만기·퇴거까지 8 Core Moments 임대차 전 생애주기를 보호하는 청년 주거 안심 통합 플랫폼 (`Python`, `Streamlit`, `SQLite`, `Pandas`, `Folium`, `Plotly`, `OpenAI API`)
 3. **🍊 만다린 게임 (Mandarin Puzzle)**: 사과게임(Fruit Box)을 모티브로 제작한 17×10 드래그 웹 퍼즐 게임. Web Audio API 기반 Pop 사운드 신디사이저, 120초 타이머, Supabase Cloud DB 연동 실시간 Top 5 명예의 전당 (`HTML5`, `CSS3`, `JavaScript`, `Web Audio API`, `Supabase`)
@@ -41,13 +41,22 @@
 
 ---
 
+## 🎨 테마와 배경
+
+- 다섯 페이지는 종이색 `#faf8f4`, 검정 `#111111`, 장식용 빨강 `#f22a18`을 사용합니다. 작은 빨간 글자는 대비를 확보한 짙은 빨강 `#c8102e`를 사용합니다.
+- 현재 홈 배경은 승인된 배경 유지 결정(D2=B)에 따라 `images/GPT_Gen.png`를 계속 사용합니다. 게임의 귤 이미지·보드·선택 영역·합계 10 판정 표시는 기존 색을 유지합니다.
+- 블랙·레드 배경 시안은 [design/mockups/d-editorial-noir/desk-bg.svg](design/mockups/d-editorial-noir/desk-bg.svg)에 있습니다. 교체 후보 경로인 `images/desk-bg-noir.svg`는 현재 생성하거나 적용하지 않았습니다.
+- 배경 재생성 프롬프트와 모니터 좌표 확인 방법은 [design/mockups/d-editorial-noir/bg-prompt.md](design/mockups/d-editorial-noir/bg-prompt.md)에 있습니다.
+
+---
+
 ## 📁 프로젝트 구조
 
 ```plaintext
 algethi97.github.io/
 ├── index.html                 # 메인 홈 (16:9 데스크테리어 캔버스 & 모니터 뷰)
 ├── about.html                 # 자기소개 페이지
-├── portfolio.html             # 프로젝트 포트폴리오 (6개 프로젝트 명세)
+├── portfolio.html             # 프로젝트 포트폴리오 (01~06 번호 목록)
 ├── guestbook.html             # 실시간 방명록 페이지
 ├── game.html                  # 만다린 퍼즐 웹게임 페이지
 ├── script.js                  # 공통 인터랙션 (데스크 줌인/줌아웃, 시네마틱 워프)
@@ -55,14 +64,15 @@ algethi97.github.io/
 ├── guestbook.js               # 방명록 Supabase 통신 및 렌더링 모듈
 ├── game.js                    # 만다린 게임 상태 및 생명주기 진입 모듈
 ├── game/                      # 보드·입력·사운드·랭킹·UI 모듈
-├── style.css                  # 공통 테마·레이아웃 스타일시트
+├── style.css                  # 종이색·블랙·레드 공통 테마와 줌·반응형 스타일
 ├── css/                       # 페이지별 스타일시트
 ├── tests/                     # Node 내장 회귀 테스트
 ├── pyproject.toml, uv.lock    # Python 프로젝트 및 uv 잠금 파일
 ├── .python-version, src/      # Python 버전 및 패키지 골격
 ├── MANDARIN_GAME_PLAN.md      # 만다린 게임 종합 기획/설계 문서
+├── design/mockups/d-editorial-noir/ # 블랙·레드 시안과 배경 재생성 프롬프트
 ├── images/                    # 비주얼 에셋 디렉토리
-│   ├── GPT_Gen.png            # 데스크테리어 배경 원본 캔버스
+│   ├── GPT_Gen.png            # 현재 홈에 사용하는 데스크테리어 배경
 │   ├── mandarin.png           # 만다린 퍼즐 귤 일러스트
 │   └── mandarin_slice_bg.png  # 보존 중인 감귤 이미지
 └── README.md                  # 프로젝트 종합 가이드 문서

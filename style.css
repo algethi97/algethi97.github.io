@@ -316,7 +316,7 @@ body.page-leaving {
 }
 
 /* ==========================================================================
-   5. 네비게이션 헤더 (Warm Minimal Header & Tabs)
+   5. 네비게이션 헤더 (Editorial Noir Header & Tabs)
    ========================================================================== */
 .nav-header {
   position: sticky;
@@ -419,7 +419,7 @@ body.page-leaving {
 }
 
 /* ==========================================================================
-   6. 본문 콘텐츠 레이아웃 (Warm & Editorial Content)
+   6. 본문 콘텐츠 레이아웃 (Editorial Noir Content)
    ========================================================================== */
 .main-content {
   max-width: 780px;
@@ -492,7 +492,7 @@ body.page-leaving {
 }
 
 .card:hover {
-  border-color: rgba(234, 88, 12, 0.4);
+  border-color: rgba(200, 16, 46, 0.4);
   box-shadow: 0 8px 25px rgba(41, 37, 36, 0.06);
 }
 
@@ -723,14 +723,14 @@ body.page-leaving {
   background-color: var(--accent-orange);
   color: #ffffff;
   border: 1px solid var(--accent-orange);
-  box-shadow: 0 4px 12px rgba(234, 88, 12, 0.25);
+  box-shadow: 0 4px 12px rgba(200, 16, 46, 0.25);
 }
 
 .btn-primary:hover:not(:disabled) {
   background-color: var(--accent-orange-hover);
   border-color: var(--accent-orange-hover);
   transform: translateY(-2px);
-  box-shadow: 0 6px 16px rgba(234, 88, 12, 0.35);
+  box-shadow: 0 6px 16px rgba(200, 16, 46, 0.35);
 }
 
 .btn:disabled {
