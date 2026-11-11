@@ -38,8 +38,8 @@ AI가 파일을 추가·이동·삭제하면 이 파일의 행도 함께 고친�
 | `pyproject.toml` | Python 프로젝트 메타데이터 | 해당 없음 |
 | `uv.lock` | uv 의존성 잠금 | 해당 없음 |
 | `index.html` | 블랙·레드 홈 화면과 진입점 | 로컬 정적 서버 브라우저 확인 |
-| `about.html` | 자기소개 화면 | 로컬 정적 서버 브라우저 확인 |
-| `portfolio.html` | 프로젝트 카드 화면 | 로컬 정적 서버 브라우저 확인 |
+| `about.html` | 블랙·레드 프로필·기술 태그·이력 소개 화면 | Chrome 1440·390px 캡처·가로 넘침·이메일 복사·홈 복귀 확인 |
+| `portfolio.html` | 원문을 보존한 프로젝트 여섯 개의 01~06 번호 목록 화면 | D 시안 배치·원문 대조와 Chrome 1440·390px 스크롤·홈 복귀 확인 |
 | `script.js` | 홈 줌 및 공통 인터랙션 | 로컬 정적 서버 브라우저 확인 |
 | `README.md` | 프로젝트 소개 및 구조 | 문서와 실제 파일 대조 |
 | `MANDARIN_GAME_PLAN.md` | 만다린 게임 기획 문서 | 해당 없음 |
@@ -54,7 +54,7 @@ AI가 파일을 추가·이동·삭제하면 이 파일의 행도 함께 고친�
 
 | 경로 | 기능 | 관련 테스트 |
 | --- | --- | --- |
-| `css/pages.css` | 에디토리얼 홈·소개·포트폴리오 스타일 | 세 페이지 데스크톱·모바일 브라우저 비교 |
+| `css/pages.css` | 에디토리얼 홈·소개 카드·포트폴리오 번호 목록과 90px·36px 번호 열 스타일 | Chrome CSS 구문·소개·포트폴리오 반응형·번호 열·대비 확인 |
 | `css/guestbook.css` | 방명록 폼·목록·로딩 스타일 | 방명록 데스크톱·모바일 브라우저 비교 |
 | `css/game.css` | 게임 보드·HUD·랭킹 스타일 | 게임 데스크톱·모바일 브라우저 비교 |
 
@@ -104,6 +104,16 @@ AI가 파일을 추가·이동·삭제하면 이 파일의 행도 함께 고친�
 | `.scratch/noir-remodel/home-cards-390.png` | 모바일 바로가기 카드 캡처 | 한 열 배치와 스크롤 확인 |
 | `.scratch/noir-remodel/home-footer-1440.png` | 데스크톱 푸터 캡처 | 검은 띠와 축약 문구 확인 |
 | `.scratch/noir-remodel/home-footer-390.png` | 모바일 푸터 캡처 | 검은 띠와 축약 문구 확인 |
+| `.scratch/noir-remodel/step2-original.json` | 2단계 수정 전 소개·포트폴리오 원문 스냅샷 | 실행 없이 현재 마크업의 문구·프로젝트·링크와 대조 |
+| `.scratch/noir-remodel/step2-checks.inc` | 승인에 따라 모션 대상과 실제 클릭·토스트 대기를 보완한 2단계 브라우저 검증 본문 | 원문·번호 열·스크롤 표시·복사 예외·홈 복귀 검증 |
+| `.scratch/noir-remodel/step2-capture.mjs` | 로컬 서버와 헤드리스 Chrome을 실행·정리하는 2단계 검증기 | Node 구문 검사와 브라우저 42개 검사 중 41개 통과, 기존 WebKit 전용 속성 1건은 Chrome 미지원 |
+| `.scratch/noir-remodel/step2-about-1440.png` | 데스크톱 소개 페이지 캡처 | 검은 카드 윗선·프로필·기술 태그 배치 확인 |
+| `.scratch/noir-remodel/step2-about-390.png` | 모바일 소개 페이지 캡처 | 프로필 줄바꿈과 가로 넘침 확인 |
+| `.scratch/noir-remodel/step2-portfolio-1440.png` | 데스크톱 90px 번호 열 포트폴리오 캡처 | D 시안 번호 목록 배치와 직접 비교 |
+| `.scratch/noir-remodel/step2-portfolio-390.png` | 모바일 36px 번호 열 포트폴리오 캡처 | D 시안 번호 목록 배치·줄바꿈과 직접 비교 |
+| `.scratch/noir-remodel/step2-portfolio-end-1440.png` | 데스크톱 프로젝트 제목 hover 강조 캡처 | 빨간 제목과 그림자 없는 목록 확인 |
+| `.scratch/noir-remodel/step2-portfolio-end-390.png` | 390px 프로젝트 제목 강조 캡처 | 빨간 제목과 화면 내부 배치 확인 |
+| `.scratch/noir-remodel/step2-results.json` | 2단계 브라우저 측정과 예외·대비 검사 결과 | 41개 통과와 변경하지 않은 style.css의 WebKit 속성 미지원 1건을 구분 |
 
 ## src/algethi97_github_io
 
