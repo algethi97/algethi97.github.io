@@ -47,9 +47,9 @@
   },
   "context_boundary_id": "92a7e651392e4fc2b3e37ee0f97ba6d4",
   "unread": 0,
-  "_order": 1,
+  "_order": 2,
   "_storage": {
-    "transaction": "859b013508cb4a39bdde4f8602d18a92",
+    "transaction": "1f9e26bb58aa4532a620597a79234ef6",
     "previous": {
       "id": "80ad30c7cfa74f009f0ff46416095f50",
       "title": "정적 사이트 리팩토링 계획",
@@ -99,7 +99,7 @@
       },
       "context_boundary_id": "92a7e651392e4fc2b3e37ee0f97ba6d4",
       "unread": 0,
-      "_order": 0
+      "_order": 3
     }
   }
 }
