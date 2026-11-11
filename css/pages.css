@@ -5,40 +5,61 @@
 
 /* 히어로 섹션 */
 .hero-section {
-  text-align: center;
-  padding: 2.2rem 1.2rem 1.8rem;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.9) 0%, rgba(247, 244, 238, 0.6) 100%);
-  border-radius: 16px;
-  border: 1px solid var(--border-color);
-  margin-bottom: 1.6rem;
-  box-shadow: 0 4px 20px -2px rgba(41, 37, 36, 0.05);
+  text-align: left;
+  padding-bottom: 3em;
+  border-bottom: 1px solid var(--black);
+  margin-bottom: 3em;
 }
-
 .hero-tag {
   display: inline-block;
-  padding: 0.28rem 0.75rem;
-  font-size: 0.75rem;
-  font-weight: 700;
-  letter-spacing: 0.05em;
+  padding: 0.15em 0.7em;
+  margin-bottom: 1.5em;
+  background: var(--black);
+  color: #fff;
+  font-size: 0.85em;
+  font-weight: 650;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--accent-orange);
-  background-color: var(--accent-orange-light);
-  border: 1px solid rgba(234, 88, 12, 0.25);
-  border-radius: 9999px;
-  margin-bottom: 0.85rem;
 }
-
-/* 바로가기 카드 그리드 */
+.hero-section .page-title {
+  color: var(--black);
+  font-weight: 800;
+  line-height: 1.16;
+  letter-spacing: -0.05em;
+  overflow-wrap: anywhere;
+}
+.hero-section .page-title::after {
+  content: "";
+  display: block;
+  width: 2.2em;
+  height: 0.12em;
+  margin-top: 0.3em;
+  background: var(--accent);
+}
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75em;
+  margin-top: 1.6em;
+}
 .home-links-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 1.25rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2em;
 }
-
 .quick-link-card h2 {
-  font-size: 1.25rem;
-  color: var(--text-main);
-  margin-bottom: 0.5rem;
+  font-size: 1.3em;
+  font-weight: 650;
+  color: var(--black);
+}
+.quick-link-description {
+  color: var(--muted);
+  margin-top: 0.7em;
+  line-height: 1.75;
+}
+@media (max-width: 768px) {
+  .home-links-grid { grid-template-columns: minmax(0, 1fr); }
+  .hero-tag { margin-bottom: 0.7em; }
 }
 
 /* 프로필 영역 */
@@ -91,24 +112,19 @@
 .copy-badge {
   display: inline-flex;
   align-items: center;
-  gap: 0.45rem;
-  background-color: var(--surface-card);
-  border: 1px solid var(--border-color);
-  color: var(--text-sub);
-  padding: 0.45rem 0.85rem;
-  border-radius: 8px;
-  font-size: 0.85rem;
-  font-weight: 500;
-  cursor: pointer;
+  gap: 0.45em;
+  padding: 0.5em 0;
+  background: transparent;
+  border-bottom: 2px solid var(--accent);
+  color: var(--accent-text);
+  font-size: inherit;
+  font-weight: 600;
   transition: var(--transition-smooth);
   user-select: none;
 }
-
 .copy-badge:hover {
-  background-color: var(--accent-orange-light);
-  border-color: var(--accent-orange);
-  color: var(--accent-orange);
-  transform: translateY(-1px);
+  color: var(--black);
+  border-color: var(--black);
 }
 
 /* 포트폴리오 프로젝트 그리드 */

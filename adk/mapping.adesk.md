@@ -37,7 +37,7 @@ AI가 파일을 추가·이동·삭제하면 이 파일의 행도 함께 고친�
 | `.python-version` | Python 버전 지정 | 해당 없음 |
 | `pyproject.toml` | Python 프로젝트 메타데이터 | 해당 없음 |
 | `uv.lock` | uv 의존성 잠금 | 해당 없음 |
-| `index.html` | 홈 화면과 진입점 | 로컬 정적 서버 브라우저 확인 |
+| `index.html` | 블랙·레드 홈 화면과 진입점 | 로컬 정적 서버 브라우저 확인 |
 | `about.html` | 자기소개 화면 | 로컬 정적 서버 브라우저 확인 |
 | `portfolio.html` | 프로젝트 카드 화면 | 로컬 정적 서버 브라우저 확인 |
 | `script.js` | 홈 줌 및 공통 인터랙션 | 로컬 정적 서버 브라우저 확인 |
@@ -48,13 +48,13 @@ AI가 파일을 추가·이동·삭제하면 이 파일의 행도 함께 고친�
 | `guestbook.html` | 방명록 화면과 모듈 로딩 | 로컬 정적 서버 브라우저 확인 |
 | `game.js` | 게임 상태·수명 주기 진입 모듈 | `tests/static-site.test.mjs` |
 | `game.html` | 게임 화면과 모듈 로딩 | 로컬 정적 서버 브라우저 확인 |
-| `style.css` | 공통 레이아웃·전환·반응형 스타일 | 다섯 페이지 데스크톱·모바일 브라우저 비교 |
+| `style.css` | 블랙·레드 공통 테마·전환·반응형 | 다섯 페이지 데스크톱·모바일 브라우저 비교 |
 
 ## css
 
 | 경로 | 기능 | 관련 테스트 |
 | --- | --- | --- |
-| `css/pages.css` | 홈·소개·포트폴리오 전용 스타일 | 세 페이지 데스크톱·모바일 브라우저 비교 |
+| `css/pages.css` | 에디토리얼 홈·소개·포트폴리오 스타일 | 세 페이지 데스크톱·모바일 브라우저 비교 |
 | `css/guestbook.css` | 방명록 폼·목록·로딩 스타일 | 방명록 데스크톱·모바일 브라우저 비교 |
 | `css/game.css` | 게임 보드·HUD·랭킹 스타일 | 게임 데스크톱·모바일 브라우저 비교 |
 
@@ -87,6 +87,23 @@ AI가 파일을 추가·이동·삭제하면 이 파일의 행도 함께 고친�
 | `images/GPT_Gen.png` | 데스크테리어 배경 이미지 | 홈 화면 브라우저 확인 |
 | `images/mandarin.png` | 게임 감귤 타일 이미지 | 게임 화면 브라우저 확인 |
 | `images/mandarin_slice_bg.png` | 보존 중인 감귤 이미지 | 해당 없음 |
+
+## .scratch/noir-remodel
+
+| 경로 | 기능 | 관련 테스트 |
+| --- | --- | --- |
+| `.scratch/noir-remodel/capture.mjs` | 1단계 홈 캡처·배치·동작 검증기 | Node 구문 검사와 로컬 헤드리스 Chrome 실행 |
+| `.scratch/noir-remodel/results.json` | 홈 배치·동작·대비 검증 결과 | 모든 passed 값 확인 |
+| `.scratch/noir-remodel/home-desk-1440.png` | 데스크톱 축소 홈 캡처 | D 시안과 직접 비교 |
+| `.scratch/noir-remodel/home-zoom-1440.png` | 데스크톱 확대 홈 캡처 | 모니터 내부 배치 확인 |
+| `.scratch/noir-remodel/home-desk-390.png` | 모바일 축소 홈 캡처 | D 시안과 직접 비교 |
+| `.scratch/noir-remodel/home-zoom-390.png` | 모바일 확대 홈 캡처 | 모니터 내부 배치 확인 |
+| `.scratch/noir-remodel/home-toast-1440.png` | 데스크톱 이메일 복사 토스트 | 검은 바탕과 빨간 왼쪽 선 확인 |
+| `.scratch/noir-remodel/home-toast-390.png` | 모바일 이메일 복사 토스트 | 줄바꿈과 화면 내부 배치 확인 |
+| `.scratch/noir-remodel/home-cards-1440.png` | 데스크톱 바로가기 카드 캡처 | 검은 윗선과 두 열 배치 확인 |
+| `.scratch/noir-remodel/home-cards-390.png` | 모바일 바로가기 카드 캡처 | 한 열 배치와 스크롤 확인 |
+| `.scratch/noir-remodel/home-footer-1440.png` | 데스크톱 푸터 캡처 | 검은 띠와 축약 문구 확인 |
+| `.scratch/noir-remodel/home-footer-390.png` | 모바일 푸터 캡처 | 검은 띠와 축약 문구 확인 |
 
 ## src/algethi97_github_io
 
@@ -181,12 +198,22 @@ AI가 파일을 추가·이동·삭제하면 이 파일의 행도 함께 고친�
 | `.scratch/tab-verify/index-400.png` | 홈 확대 400px 렌더링 | Chrome 스크린샷 |
 | `.scratch/tab-verify/index-700.png` | 홈 확대 700px 렌더링 | Chrome 스크린샷 |
 
+## design/mockups/d-editorial-noir
+
+| 경로 | 기능 | 관련 테스트 |
+| --- | --- | --- |
+| `design/mockups/d-editorial-noir/index.html` | 방향 D(B 기반 블랙·레드) 홈과 모니터 확대·축소 및 이메일 복사 시안 | Chrome 1440·390px 확대·축소와 복사 동작 확인 |
+| `design/mockups/d-editorial-noir/portfolio.html` | 방향 D 프로젝트 여섯 개의 번호 목록형 시안 | Chrome 1440·390px 반응형과 원문 대조 |
+| `design/mockups/d-editorial-noir/style.css` | 종이색·검정·빨강 변수와 굵은 선·검은 띠 강조 스타일 | 홈·포트폴리오 가로 넘침과 화면 내부 배치 측정 |
+| `design/mockups/d-editorial-noir/desk-bg.svg` | 검은 모니터·빨간 액자·빨간 책이 있는 밝은 작업 공간 배경 | 모니터 좌표와 축소·확대 스크린샷 확인 |
+| `design/mockups/d-editorial-noir/bg-prompt.md` | 방향 D 배경 재생성 한영 프롬프트와 좌표 확인 방법 | 승인된 구도·좌표·중심축 대조 |
+
 ## design/mockups
 
 | 경로 | 기능 | 관련 테스트 |
 | --- | --- | --- |
-| `design/mockups/index.html` | 세 방향 시안과 대표 화면 비교 | 링크·이미지 파일과 1440·390px 확인 |
-| `design/mockups/capture.mjs` | 로컬 Chrome 18화면 캡처 | Node 구문·캡처·가로 넘침 측정 |
+| `design/mockups/index.html` | 네 방향 시안과 대표 화면 비교 | 링크·이미지 파일과 1440·390px 확인 |
+| `design/mockups/capture.mjs` | 로컬 Chrome 24화면 캡처 | Node 구문·캡처·가로 넘침 측정 |
 
 ## design/mockups/screenshots
 
@@ -210,4 +237,10 @@ AI가 파일을 추가·이동·삭제하면 이 파일의 행도 함께 고친�
 | `design/mockups/screenshots/c-terminal-desk-390.png` | C 홈 축소 390px 화면 | Chrome 캡처와 가로 넘침 측정 |
 | `design/mockups/screenshots/c-terminal-zoom-390.png` | C 홈 확대 390px 화면 | Chrome 캡처와 가로 넘침 측정 |
 | `design/mockups/screenshots/c-terminal-portfolio-390.png` | C 포트폴리오 390px 화면 | Chrome 캡처와 가로 넘침 측정 |
-| `design/mockups/screenshots/results.json` | 18화면 폭과 넘침 측정 결과 | scrollWidth와 innerWidth 대조 |
+| `design/mockups/screenshots/d-editorial-noir-desk-1440.png` | D 홈 축소 1440px 화면 | Chrome 캡처와 가로 넘침 측정 |
+| `design/mockups/screenshots/d-editorial-noir-zoom-1440.png` | D 홈 확대 1440px 화면 | Chrome 캡처와 가로 넘침 측정 |
+| `design/mockups/screenshots/d-editorial-noir-portfolio-1440.png` | D 포트폴리오 1440px 화면 | Chrome 캡처와 가로 넘침 측정 |
+| `design/mockups/screenshots/d-editorial-noir-desk-390.png` | D 홈 축소 390px 화면 | Chrome 캡처와 가로 넘침 측정 |
+| `design/mockups/screenshots/d-editorial-noir-zoom-390.png` | D 홈 확대 390px 화면 | Chrome 캡처와 가로 넘침 측정 |
+| `design/mockups/screenshots/d-editorial-noir-portfolio-390.png` | D 포트폴리오 390px 화면 | Chrome 캡처와 가로 넘침 측정 |
+| `design/mockups/screenshots/results.json` | 24화면 폭과 넘침 측정 결과 | scrollWidth와 innerWidth 대조 |

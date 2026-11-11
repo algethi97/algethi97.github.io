@@ -1,0 +1,225 @@
+{
+  "rows": [
+    {
+      "screen": "desk",
+      "width": 1440,
+      "height": 900,
+      "screenshot": "home-desk-1440.png",
+      "scrollWidth": 1440,
+      "innerWidth": 1440,
+      "monitor": {
+        "x": 424.640625,
+        "y": 238.546875,
+        "right": 1013.734375,
+        "bottom": 558.90625,
+        "width": 589.09375,
+        "height": 320.359375
+      },
+      "titlebar": {
+        "x": 424.640625,
+        "y": 238.546875,
+        "right": 1013.734375,
+        "bottom": 255.890625,
+        "width": 589.09375,
+        "height": 17.34375
+      },
+      "body": {
+        "x": 424.640625,
+        "y": 255.890625,
+        "right": 1013.734375,
+        "bottom": 558.90625,
+        "width": 589.09375,
+        "height": 303.015625
+      },
+      "contained": true,
+      "bodyOverflow": true,
+      "tabFont": "9.216px",
+      "titleFont": "35.0208px",
+      "bodyFont": "9.216px",
+      "passed": true
+    },
+    {
+      "screen": "zoom",
+      "width": 1440,
+      "height": 900,
+      "screenshot": "home-zoom-1440.png",
+      "scrollWidth": 1440,
+      "innerWidth": 1440,
+      "monitor": {
+        "x": 65.88336181640625,
+        "y": 64.62435913085938,
+        "right": 1373.6714477539062,
+        "bottom": 775.8222351074219,
+        "width": 1307.7880859375,
+        "height": 711.1978759765625
+      },
+      "titlebar": {
+        "x": 65.88336181640625,
+        "y": 64.62435913085938,
+        "right": 1373.6714477539062,
+        "bottom": 103.12747192382812,
+        "width": 1307.7880859375,
+        "height": 38.50311279296875
+      },
+      "body": {
+        "x": 65.88336181640625,
+        "y": 103.12747192382812,
+        "right": 1373.6714477539062,
+        "bottom": 775.8221740722656,
+        "width": 1307.7880859375,
+        "height": 672.6947021484375
+      },
+      "contained": true,
+      "bodyOverflow": true,
+      "tabFont": "9.216px",
+      "titleFont": "35.0208px",
+      "bodyFont": "9.216px",
+      "passed": true
+    },
+    {
+      "screen": "copy-toast",
+      "width": 1440,
+      "text": "✅이메일 주소(algethi97@gmail.com)가 복사되었습니다!",
+      "background": "rgb(17, 17, 17)",
+      "border": "rgb(242, 42, 24)",
+      "borderWidth": "4px",
+      "color": "rgb(250, 248, 244)",
+      "passed": true
+    },
+    {
+      "screen": "escape",
+      "width": 1440,
+      "passed": true
+    },
+    {
+      "screen": "zoomout-button",
+      "width": 1440,
+      "passed": true
+    },
+    {
+      "screen": "desk",
+      "width": 390,
+      "height": 844,
+      "screenshot": "home-desk-390.png",
+      "scrollWidth": 390,
+      "innerWidth": 390,
+      "monitor": {
+        "x": 115,
+        "y": 364.71875,
+        "right": 274.546875,
+        "bottom": 451.46875,
+        "width": 159.546875,
+        "height": 86.75
+      },
+      "titlebar": {
+        "x": 115,
+        "y": 364.71875,
+        "right": 274.546875,
+        "bottom": 379.71875,
+        "width": 159.546875,
+        "height": 15
+      },
+      "body": {
+        "x": 115,
+        "y": 379.71875,
+        "right": 274.546875,
+        "bottom": 451.46875,
+        "width": 159.546875,
+        "height": 71.75
+      },
+      "contained": true,
+      "bodyOverflow": true,
+      "tabFont": "5.6px",
+      "titleFont": "14.4px",
+      "bodyFont": "6px",
+      "passed": true
+    },
+    {
+      "screen": "zoom",
+      "width": 390,
+      "height": 844,
+      "screenshot": "home-zoom-390.png",
+      "scrollWidth": 390,
+      "innerWidth": 390,
+      "monitor": {
+        "x": 17.828216552734375,
+        "y": 317.6056823730469,
+        "right": 372.02227783203125,
+        "bottom": 510.1907043457031,
+        "width": 354.1940612792969,
+        "height": 192.58502197265625
+      },
+      "titlebar": {
+        "x": 17.828216552734375,
+        "y": 317.6056823730469,
+        "right": 372.02227783203125,
+        "bottom": 350.90570068359375,
+        "width": 354.1940612792969,
+        "height": 33.300018310546875
+      },
+      "body": {
+        "x": 17.828216552734375,
+        "y": 350.90570068359375,
+        "right": 372.02227783203125,
+        "bottom": 510.1907043457031,
+        "width": 354.1940612792969,
+        "height": 159.28500366210938
+      },
+      "contained": true,
+      "bodyOverflow": true,
+      "tabFont": "5.6px",
+      "titleFont": "14.4px",
+      "bodyFont": "6px",
+      "passed": true
+    },
+    {
+      "screen": "copy-toast",
+      "width": 390,
+      "text": "✅이메일 주소(algethi97@gmail.com)가 복사되었습니다!",
+      "background": "rgb(17, 17, 17)",
+      "border": "rgb(242, 42, 24)",
+      "borderWidth": "4px",
+      "color": "rgb(250, 248, 244)",
+      "passed": true
+    },
+    {
+      "screen": "escape",
+      "width": 390,
+      "passed": true
+    },
+    {
+      "screen": "zoomout-button",
+      "width": 390,
+      "passed": true
+    },
+    {
+      "screen": "reduced-motion",
+      "passed": true
+    },
+    {
+      "screen": "runtime-exceptions",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "path": "style.css",
+      "opening": 113,
+      "closing": 113,
+      "parsed": 113,
+      "passed": true
+    },
+    {
+      "path": "css/pages.css",
+      "opening": 23,
+      "closing": 23,
+      "parsed": 23,
+      "passed": true
+    },
+    {
+      "screen": "red-text-contrast",
+      "contrast": 5.54655383449854,
+      "passed": true
+    }
+  ],
+  "passed": true
+}

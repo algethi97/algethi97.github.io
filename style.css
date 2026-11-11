@@ -1,33 +1,31 @@
 /* ==========================================================================
-   WARM MINIMALIST & DESKTERIOR THEME (데스크테리어 웜 모던 테마)
+   EDITORIAL NOIR & DESKTERIOR THEME (블랙·레드 데스크테리어 테마)
    ========================================================================== */
 :root {
-  /* 따뜻한 데스크테리어 감성 컬러 팔레트 */
-  --bg-main: #f5f2eb;
-  --bg-desk: #1c1917;
-  --surface-card: #ffffff;
-  --surface-subtle: #fcfbf9;
-  --surface-hover: #f7f4ee;
-  --border-color: #e7e2d9;
-  --border-subtle: #eeeae3;
-  
-  /* 텍스트 컬러 */
-  --text-main: #292524;
-  --text-sub: #57534e;
-  --text-muted: #8c827a;
-  
-  /* 포인트 컬러 (키보드 오렌지 키캡 & 감성 우드 톤) */
-  --accent-orange: #ea580c;
-  --accent-orange-light: #fff7ed;
-  --accent-orange-hover: #c2410c;
-  --accent-wood: #78350f;
-  
-  /* 모니터 OS 윈도우 스타일 */
-  --window-bg: #faf8f5;
-  --window-bar: #ede9e1;
-  --window-shadow: 0 25px 60px -15px rgba(41, 37, 36, 0.25);
-  
-  /* 공통 transition */
+  --paper: #faf8f4;
+  --ink: #141414;
+  --black: #111111;
+  --muted: #5c5856;
+  --line: #dcd8d2;
+  --accent: #f22a18;
+  --accent-text: #c8102e;
+  --bg-main: var(--paper);
+  --bg-desk: #ebe8e3;
+  --surface-card: var(--paper);
+  --surface-subtle: #f2efea;
+  --surface-hover: #eeeae4;
+  --border-color: var(--line);
+  --border-subtle: var(--line);
+  --text-main: var(--ink);
+  --text-sub: var(--muted);
+  --text-muted: var(--muted);
+  --accent-orange: var(--accent-text);
+  --accent-orange-light: #fff0ed;
+  --accent-orange-hover: #a50d26;
+  --accent-wood: var(--black);
+  --window-bg: var(--paper);
+  --window-bar: var(--black);
+  --window-shadow: 0 25px 60px -15px rgba(0, 0, 0, 0.25);
   --transition-smooth: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
   --zoom-transition: transform 1.05s cubic-bezier(0.2, 0.9, 0.1, 1);
 }
@@ -43,7 +41,7 @@ html, body {
   height: 100%;
   font-family: -apple-system, BlinkMacSystemFont, "Pretendard Variable", Pretendard, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   color: var(--text-main);
-  background-color: #12100e;
+  background-color: var(--bg-desk);
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
 }
@@ -71,7 +69,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #1a1715;
+  background-color: var(--bg-desk);
 }
 
 /* 16:9 비율의 배경 캔버스 (GPT_Gen.png 기준: 1672x941) */
@@ -187,11 +185,12 @@ body.page-leaving {
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  border-radius: 4px;
+  font-size: clamp(6px, 0.64vw, 10px);
+  border-radius: 0;
   box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.35);
 }
 
-/* 줌아웃(방 전체 뷰) 상태일 때: 모니터 화면을 꺼진 모니터 액정 같은 깊은 검은색으로 표시 */
+/* 줌아웃 상태에서는 종이색 반투명 안내 화면을 표시한다. */
 .monitor-hint-overlay {
   position: absolute;
   inset: 0;
@@ -200,7 +199,7 @@ body.page-leaving {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: radial-gradient(circle at 50% 35%, #1c1917 0%, #0c0a09 100%);
+  background: #faf8f4ed;
   cursor: zoom-in;
   opacity: 1;
   visibility: visible;
@@ -208,7 +207,7 @@ body.page-leaving {
   user-select: none;
 }
 
-/* 줌인 시: 검은 화면이 걷히며 모니터 전원이 켜지듯 홈페이지가 부드럽게 밝아짐 */
+/* 줌인 시 안내 화면이 걷히며 홈페이지가 나타난다. */
 .desk-viewport.is-zoomed .monitor-hint-overlay {
   opacity: 0;
   visibility: hidden;
@@ -218,22 +217,12 @@ body.page-leaving {
 .hint-pill {
   display: inline-flex;
   align-items: center;
-  gap: 0.6rem;
-  padding: 0.75rem 1.4rem;
-  background-color: rgba(184, 184, 184, 0.75);
-  backdrop-filter: blur(15px);
-  color: #151515;
-  border: 1px solid rgba(234, 88, 12, 0.6);
-  border-radius: 9999px;
-  font-size: 0.95rem;
-  font-weight: 600;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4), 0 0 15px rgba(234, 88, 12, 0.3);
-  animation: pulse-glow 2s infinite ease-in-out;
-}
-
-@keyframes pulse-glow {
-  0%, 100% { transform: scale(1); box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4), 0 0 15px rgba(234, 88, 12, 0.25); }
-  50% { transform: scale(1.03); box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5), 0 0 22px rgba(234, 88, 12, 0.5); }
+  gap: 0.6em;
+  padding: 0.8em 0;
+  color: var(--ink);
+  border-bottom: 3px solid var(--accent);
+  font-size: 1.1em;
+  font-weight: 650;
 }
 
 /* ==========================================================================
@@ -248,11 +237,10 @@ body.page-leaving {
   align-items: center;
   gap: 0.5rem;
   padding: 0.65rem 1.15rem;
-  background-color: rgba(184, 184, 184, 0.75);
-  backdrop-filter: blur(12px);
-  color: #151515;
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  border-radius: 9999px;
+  background-color: var(--black);
+  color: #fff;
+  border: 1px solid var(--black);
+  border-radius: 0;
   font-size: 0.85rem;
   font-weight: 600;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
@@ -263,9 +251,8 @@ body.page-leaving {
 }
 
 .desk-zoomout-btn:hover {
-  background-color: rgba(234, 88, 12, 0.9);
-  border-color: var(--accent-orange);
-  transform: translateY(-12px);
+  background-color: var(--accent-text);
+  border-color: var(--accent-text);
 }
 
 .desk-viewport.is-zoomed .desk-zoomout-btn {
@@ -281,42 +268,27 @@ body.page-leaving {
 .window-titlebar {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 0.45rem 0.9rem;
-  background-color: var(--window-bar);
-  border-bottom: 1px solid var(--border-color);
   flex-shrink: 0;
+  padding: 0.5em 1.5em;
+  background-color: var(--window-bar);
+  color: #f2efea;
+  font-size: 0.8em;
+  letter-spacing: 0.04em;
   user-select: none;
 }
 
-.window-dots {
-  display: flex;
-  align-items: center;
-  gap: 0.4rem;
+.window-titlebar::before {
+  content: "";
+  width: 0.7em;
+  height: 0.7em;
+  margin-right: 0.7em;
+  background: var(--accent);
+  flex: none;
 }
 
-.dot {
-  width: 9px;
-  height: 9px;
-  border-radius: 50%;
-}
-.dot-red { background-color: #ef4444; }
-.dot-yellow { background-color: #f59e0b; }
-.dot-green { background-color: #10b981; }
-
-.window-url {
-  font-size: 0.72rem;
-  color: var(--text-muted);
-  background-color: rgba(255, 255, 255, 0.7);
-  padding: 0.2rem 1.2rem;
-  border-radius: 6px;
-  border: 1px solid var(--border-subtle);
-  font-family: monospace;
-}
-
-/* 모니터 내부 스크롤 가능한 본문 영역 */
 .monitor-scrollable {
   flex: 1;
+  min-height: 0;
   overflow-y: auto;
   overflow-x: hidden;
   background-color: var(--window-bg);
@@ -351,9 +323,9 @@ body.page-leaving {
   position: sticky;
   top: 0;
   z-index: 50;
-  background-color: rgba(250, 248, 245, 0.92);
+  background-color: var(--paper);
   backdrop-filter: blur(12px);
-  border-bottom: 1px solid var(--border-color);
+  border-bottom: 3px solid var(--black);
 }
 
 .nav-inner {
@@ -372,13 +344,12 @@ body.page-leaving {
   justify-content: center;
   width: 40px;
   height: 40px;
-  background-color: var(--surface-card);
-  border: 1px solid var(--border-color);
-  border-radius: 10px;
+  background-color: transparent;
+  border: 0;
+  border-radius: 0;
   color: var(--text-main);
   transition: var(--transition-smooth);
   flex-shrink: 0;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.03);
 }
 
 .home-button .home-icon {
@@ -419,16 +390,15 @@ body.page-leaving {
   align-items: center;
   justify-content: center;
   padding: 0.65rem 0.85rem;
-  border-radius: 10px;
+  border-radius: 0;
   font-size: 0.9rem;
   font-weight: 600;
   text-align: center;
-  background-color: var(--surface-card);
-  border: 1px solid var(--border-color);
+  background-color: transparent;
+  border: 0;
   color: var(--text-sub);
   transition: var(--transition-smooth);
   user-select: none;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
 }
 
 /* :not(.empty-tab)은 활성 탭 hover가 .tab-item.active보다 우선하도록 명시도를 유지한다 */
@@ -441,10 +411,12 @@ body.page-leaving {
 
 /* 활성 탭 */
 .tab-item.active {
-  background: var(--text-main);
-  color: #ffffff;
-  border-color: var(--text-main);
-  box-shadow: 0 3px 10px rgba(41, 37, 36, 0.2);
+  background: transparent;
+  color: var(--accent-text);
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 0.5em;
+  font-weight: 650;
 }
 
 /* ==========================================================================
@@ -474,40 +446,36 @@ body.page-leaving {
 /* 홈 바로가기 카드: script.js가 붙이는 .fade-in·.fade-in.visible이 transition·transform을
    덮어쓰는 순서를 지키기 위해 공통 스타일의 .fade-in보다 앞에 둔다 */
 .quick-link-card {
-  background-color: var(--surface-card);
-  border: 1px solid var(--border-color);
-  border-radius: 16px;
-  padding: 1.8rem;
+  padding: 1.5em 0 0;
+  border-top: 2px solid var(--black);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  box-shadow: 0 4px 15px rgba(41, 37, 36, 0.03);
   transition: var(--transition-smooth);
 }
 
 .quick-link-card:hover {
-  border-color: var(--accent-orange);
-  transform: translateY(-3px);
-  box-shadow: 0 10px 25px -3px rgba(41, 37, 36, 0.08);
+  border-color: var(--accent);
 }
 
 .btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 0.7rem 1.3rem;
-  font-size: 0.9rem;
+  padding: 0.5em 0;
+  background: transparent;
+  color: var(--black);
+  border-bottom: 2px solid var(--accent);
+  margin-top: 1.2em;
+  font-size: inherit;
   font-weight: 600;
-  border-radius: 8px;
-  background-color: var(--text-main);
-  color: #ffffff;
-  margin-top: 1.4rem;
+  align-self: flex-start;
   transition: var(--transition-smooth);
 }
 
 .btn:hover {
-  background-color: var(--accent-orange);
-  color: #ffffff;
+  background: transparent;
+  color: var(--accent-text);
 }
 
 /* ==========================================================================
@@ -551,8 +519,8 @@ body.page-leaving {
 .site-footer {
   text-align: center;
   padding: 1.8rem 1rem;
-  border-top: 1px solid var(--border-color);
-  color: var(--text-muted);
+  background: var(--black);
+  color: #cfcac4;
   font-size: 0.8rem;
   margin-top: auto;
 }
@@ -585,13 +553,12 @@ body.page-leaving {
   display: flex;
   align-items: center;
   gap: 0.65rem;
-  background-color: rgba(200, 200, 200, 0.75);
-  backdrop-filter: blur(12px);
-  color: #151515;
-  border: 1px solid rgba(234, 88, 12, 0.5);
+  background-color: var(--black);
+  color: var(--paper);
+  border-left: 4px solid var(--accent);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
   padding: 0.75rem 1.3rem;
-  border-radius: 9999px;
+  border-radius: 0;
   font-size: 0.88rem;
   font-weight: 600;
   opacity: 0;
@@ -610,12 +577,6 @@ body.page-leaving {
    9. 반응형 미디어 쿼리 (Mobile & Tablet)
    ========================================================================== */
 @media (max-width: 768px) {
-  /* 모바일 환경: 모니터 내부 메인 본문 숨김 (주소창 & 네비게이션 탭 위주로 노출) */
-  .monitor-scrollable .main-content,
-  .monitor-scrollable .site-footer {
-    display: none;
-  }
-
   /* 모바일 주소창(타이틀바): 작고 단정하게 배율 축소 및 중앙 정렬 */
   .window-titlebar {
     position: relative;
@@ -624,38 +585,11 @@ body.page-leaving {
     display: flex;
     align-items: center;
   }
-  .window-dots {
-    position: absolute;
-    left: 0.5rem;
-    top: 50%;
-    transform: translateY(-50%);
-    display: flex;
-    align-items: center;
-    gap: 4px;
-    z-index: 2;
-  }
-  .dot {
-    width: 3px;
-    height: 3px;
-  }
-  .window-url {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-35%, -50%);
-    display: inline-flex;       /* 👈 추가: 플렉스 컨테이너 */
-    align-items: center;        /* 👈 추가: 글자 세로 정중앙 정렬 */
-    line-height: 1;             /* 👈 추가: 위아래 남는 행간 여백 제거 */
-    font-size: 0.4rem;
-    padding: 0.12rem 0.8rem;
-    white-space: nowrap;
-    z-index: 1;
-  }
 
-  /* 모니터 내부 스크롤 영역: 상하 스크롤 방지 */
+  /* 작은 모니터 안에서도 홈 본문을 스크롤할 수 있다. */
   .monitor-scrollable {
     zoom: 0.8;
-    overflow-y: hidden;
+    overflow-y: auto;
     overflow-x: hidden;
   }
 
@@ -728,8 +662,8 @@ body.page-leaving {
     font-size: 1.6rem;
   }
   .hint-pill {
-    padding: 0.6rem 1rem;
-    font-size: 0.82rem;
+    padding: 0.8em 0;
+    font-size: 1.1em;
   }
   .desk-zoomout-btn {
     top: 0.8rem;
@@ -776,16 +710,8 @@ body.page-leaving {
 
 /* 공통 버튼 스타일 (.btn) */
 .btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
   gap: 0.5rem;
-  padding: 0.7rem 1.4rem;
-  font-size: 0.92rem;
-  font-weight: 600;
-  border-radius: 10px;
   cursor: pointer;
-  transition: var(--transition-smooth);
   user-select: none;
 }
 
@@ -858,4 +784,27 @@ body.page-leaving {
     gap: 0.25rem;
   }
 
+}
+
+/* 확대 전 모니터 크기로 본문 비례를 맞추고 모바일 탭 글자 크기는 유지한다. */
+@media (min-width: 769px) {
+  .monitor-scrollable .nav-inner { padding: 1.2em 2.2em; gap: 1.5em; }
+  .monitor-scrollable .home-button { width: 2.4em; height: 2.4em; }
+  .monitor-scrollable .home-icon { width: 1.7em; height: 1.7em; }
+  .monitor-scrollable .tab-item { font-size: 1em; padding: 0.4em 0; }
+}
+.monitor-scrollable .main-content { padding: 3.8em 3em; }
+.monitor-scrollable .page-title { font-size: 3.8em; }
+.monitor-scrollable .page-subtitle { margin-top: 1.5em; font-size: 1em; }
+.monitor-scrollable .site-footer { padding: 2em; font-size: 0.8em; }
+@media (max-width: 768px) {
+  .monitor-scrollable .main-content { padding: 1.5em 2em; }
+  .monitor-scrollable .page-title { font-size: 2.4em; }
+}
+a:focus-visible, button:focus-visible {
+  outline: 2px solid var(--accent-text);
+  outline-offset: 3px;
+}
+@media (prefers-reduced-motion: reduce) {
+  .desk-canvas, .desk-viewport.warp-in .desk-canvas { transition: none !important; }
 }
