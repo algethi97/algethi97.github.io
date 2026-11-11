@@ -88,7 +88,6 @@ button {
   /* 모니터 중심축 기준 (GPT_Gen.png 측정: X 49.91%, Y 43.62%) */
   transform-origin: 49.91% 41.5%;
   transition: var(--zoom-transition);
-  will-change: transform;
 }
 
 /* 줌 아웃(기본 데스크 뷰) 상태일 때 커서: 방 전체 캔버스는 기본 화살표 커서 */
@@ -538,6 +537,11 @@ body.page-leaving {
 .fade-in.visible {
   opacity: 1;
   transform: translateY(0);
+}
+
+/* 확대된 홈 본문도 원래 크기의 합성 레이어를 계속 늘려 쓰지 않게 한다. */
+.monitor-scrollable .fade-in.visible {
+  will-change: auto;
 }
 
 .toast-container {

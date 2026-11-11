@@ -48,7 +48,7 @@ AI가 파일을 추가·이동·삭제하면 이 파일의 행도 함께 고친�
 | `guestbook.html` | 방명록 화면과 모듈 로딩 | 로컬 정적 서버 브라우저 확인 |
 | `game.js` | 게임 상태·수명 주기 진입 모듈 | `tests/static-site.test.mjs` |
 | `game.html` | 게임 화면과 모듈 로딩 | 로컬 정적 서버 브라우저 확인 |
-| `style.css` | 블랙·레드 공통 테마·전환·반응형 | 다섯 페이지 데스크톱·모바일 브라우저 비교 |
+| `style.css` | 블랙·레드 공통 테마·확대 재그리기·반응형 | 다섯 페이지 데스크톱·모바일 비교와 홈 확대 정지 will-change auto 확인 |
 
 ## css
 
@@ -254,3 +254,54 @@ AI가 파일을 추가·이동·삭제하면 이 파일의 행도 함께 고친�
 | `design/mockups/screenshots/d-editorial-noir-zoom-390.png` | D 홈 확대 390px 화면 | Chrome 캡처와 가로 넘침 측정 |
 | `design/mockups/screenshots/d-editorial-noir-portfolio-390.png` | D 포트폴리오 390px 화면 | Chrome 캡처와 가로 넘침 측정 |
 | `design/mockups/screenshots/results.json` | 24화면 폭과 넘침 측정 결과 | scrollWidth와 innerWidth 대조 |
+
+## .scratch/zoom-blur
+
+| 경로 | 기능 | 관련 테스트 |
+| --- | --- | --- |
+| `.scratch/zoom-blur/capture.mjs` | 홈 확대 흐림 재현·비교 도구 | Node 구문 검사와 Chrome 실제 클릭·계산 스타일·선명도 비교 |
+| `.scratch/zoom-blur/results.json` | 수정 전·후 화면·동작·선명도 결과 | 모바일 배율 3·데스크톱 배율 1의 다섯 확대 표본과 C 경로 축소 화면 확인 |
+| `.scratch/zoom-blur/before.log` | 수정 전 캡처 실행 기록 | 수정 전 결과 JSON과 대조 |
+| `.scratch/zoom-blur/before-error.log` | 수정 전 캡처 오류 기록 | 실행 오류 여부 확인 |
+| `.scratch/zoom-blur/after.log` | 수정 후 캡처 실행 기록 | 수정 후 결과 JSON과 대조 |
+| `.scratch/zoom-blur/after-error.log` | 수정 후 캡처 오류 기록 | 실행 오류 여부 확인 |
+| `.scratch/zoom-blur/before-a-mobile.png` | 수정 전 A 모바일 확대 화면 | 390×844·배율 3 전체 화면 비교 |
+| `.scratch/zoom-blur/before-a-mobile-tabs.png` | 수정 전 A 모바일 탭 영역 | 원본 픽셀 선명도 측정과 육안 비교 |
+| `.scratch/zoom-blur/after-a-mobile.png` | 수정 후 A 모바일 확대 화면 | 390×844·배율 3 전체 화면 비교 |
+| `.scratch/zoom-blur/after-a-mobile-tabs.png` | 수정 후 A 모바일 탭 영역 | 원본 픽셀 선명도 측정과 육안 비교 |
+| `.scratch/zoom-blur/before-a-desktop.png` | 수정 전 A 데스크톱 확대 화면 | 1440×900·배율 1 전체 화면 비교 |
+| `.scratch/zoom-blur/before-a-desktop-tabs.png` | 수정 전 A 데스크톱 탭 영역 | 원본 픽셀 선명도 측정과 육안 비교 |
+| `.scratch/zoom-blur/after-a-desktop.png` | 수정 후 A 데스크톱 확대 화면 | 1440×900·배율 1 전체 화면 비교 |
+| `.scratch/zoom-blur/after-a-desktop-tabs.png` | 수정 후 A 데스크톱 탭 영역 | 원본 픽셀 선명도 측정과 육안 비교 |
+| `.scratch/zoom-blur/before-b-mobile.png` | 수정 전 B 모바일 홈 복귀 화면 | 소개 페이지 홈 버튼 실제 클릭 결과 비교 |
+| `.scratch/zoom-blur/before-b-mobile-tabs.png` | 수정 전 B 모바일 복귀 탭 영역 | 원본 픽셀 선명도 측정과 육안 비교 |
+| `.scratch/zoom-blur/after-b-mobile.png` | 수정 후 B 모바일 홈 복귀 화면 | 소개 페이지 홈 버튼 실제 클릭 결과 비교 |
+| `.scratch/zoom-blur/after-b-mobile-tabs.png` | 수정 후 B 모바일 복귀 탭 영역 | 원본 픽셀 선명도 측정과 육안 비교 |
+| `.scratch/zoom-blur/before-b-desktop.png` | 수정 전 B 데스크톱 홈 복귀 화면 | 소개 페이지 홈 버튼 실제 클릭 결과 비교 |
+| `.scratch/zoom-blur/before-b-desktop-tabs.png` | 수정 전 B 데스크톱 복귀 탭 영역 | 원본 픽셀 선명도 측정과 육안 비교 |
+| `.scratch/zoom-blur/after-b-desktop.png` | 수정 후 B 데스크톱 홈 복귀 화면 | 소개 페이지 홈 버튼 실제 클릭 결과 비교 |
+| `.scratch/zoom-blur/after-b-desktop-tabs.png` | 수정 후 B 데스크톱 복귀 탭 영역 | 원본 픽셀 선명도 측정과 육안 비교 |
+| `.scratch/zoom-blur/before-c-desktop-reloaded-desk.png` | 수정 전 C 홈 버튼 뒤 축소 화면 | 결정 A의 새 문서·축소 상태 유지 확인 |
+| `.scratch/zoom-blur/before-c-desktop-reloaded-desk-tabs.png` | 수정 전 C 축소 화면 탭 영역 | 확대 선명도 비교에서 제외하는 보조 캡처 |
+| `.scratch/zoom-blur/after-c-desktop-reloaded-desk.png` | 수정 후 C 홈 버튼 뒤 축소 화면 | 결정 A의 새 문서·축소 상태 유지 확인 |
+| `.scratch/zoom-blur/after-c-desktop-reloaded-desk-tabs.png` | 수정 후 C 축소 화면 탭 영역 | 확대 선명도 비교에서 제외하는 보조 캡처 |
+| `.scratch/zoom-blur/before-c-desktop-rezoom.png` | 수정 전 C 재확대 화면 | 홈 버튼 재로딩 후 다시 확대하여 비교 |
+| `.scratch/zoom-blur/before-c-desktop-rezoom-tabs.png` | 수정 전 C 재확대 탭 영역 | 원본 픽셀 선명도 측정과 육안 비교 |
+| `.scratch/zoom-blur/after-c-desktop-rezoom.png` | 수정 후 C 재확대 화면 | 홈 버튼 재로딩 후 다시 확대하여 비교 |
+| `.scratch/zoom-blur/after-c-desktop-rezoom-tabs.png` | 수정 후 C 재확대 탭 영역 | 원본 픽셀 선명도 측정과 육안 비교 |
+| `.scratch/zoom-blur/diagnostic-body-before.png` | 첫 수정 뒤 남은 본문 흐림 | 홈 fade-in 합성 힌트 원인 확인 |
+| `.scratch/zoom-blur/diagnostic-body-after.png` | 런타임 힌트 해제 뒤 본문 | 소스 수정 전 같은 화면의 선명도 육안 비교 |
+| `.scratch/zoom-blur/attempt1-after.log` | 첫 수정 검증 실행 기록 | 탭 개선과 본문 잔여 흐림의 진행 근거 |
+| `.scratch/zoom-blur/attempt1-after-error.log` | 첫 수정 검증 오류 기록 | 실행 오류 여부 확인 |
+| `.scratch/zoom-blur/attempt1-after-a-mobile.png` | 첫 수정 A 모바일 확대 화면 | 최종 수정 전 증거 보존 |
+| `.scratch/zoom-blur/attempt1-after-a-mobile-tabs.png` | 첫 수정 A 모바일 탭 영역 | 첫 수정 선명도 측정 근거 보존 |
+| `.scratch/zoom-blur/attempt1-after-a-desktop.png` | 첫 수정 A 데스크톱 확대 화면 | 본문 잔여 흐림과 최종 결과 비교 |
+| `.scratch/zoom-blur/attempt1-after-a-desktop-tabs.png` | 첫 수정 A 데스크톱 탭 영역 | 첫 수정 선명도 측정 근거 보존 |
+| `.scratch/zoom-blur/attempt1-after-b-mobile.png` | 첫 수정 B 모바일 홈 복귀 | 최종 수정 전 증거 보존 |
+| `.scratch/zoom-blur/attempt1-after-b-mobile-tabs.png` | 첫 수정 B 모바일 복귀 탭 | 첫 수정 선명도 측정 근거 보존 |
+| `.scratch/zoom-blur/attempt1-after-b-desktop.png` | 첫 수정 B 데스크톱 홈 복귀 | 최종 수정 전 증거 보존 |
+| `.scratch/zoom-blur/attempt1-after-b-desktop-tabs.png` | 첫 수정 B 데스크톱 복귀 탭 | 첫 수정 선명도 측정 근거 보존 |
+| `.scratch/zoom-blur/attempt1-after-c-desktop-reloaded-desk.png` | 첫 수정 C 홈 버튼 뒤 축소 | 결정 A 유지 확인 근거 보존 |
+| `.scratch/zoom-blur/attempt1-after-c-desktop-reloaded-desk-tabs.png` | 첫 수정 C 축소 화면 탭 | 확대 선명도 비교 대상 밖 보조 증거 |
+| `.scratch/zoom-blur/attempt1-after-c-desktop-rezoom.png` | 첫 수정 C 재확대 화면 | 본문 잔여 흐림과 최종 결과 비교 |
+| `.scratch/zoom-blur/attempt1-after-c-desktop-rezoom-tabs.png` | 첫 수정 C 재확대 탭 영역 | 첫 수정 선명도 측정 근거 보존 |

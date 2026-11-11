@@ -1,0 +1,2410 @@
+{
+  "metric": {
+    "name": "mean horizontal adjacent-pixel brightness difference",
+    "brightness": "0.2126 R + 0.7152 G + 0.0722 B (8-bit screenshot channels)",
+    "denominator": "(crop.width - 1) * crop.height",
+    "crop": "Outward-rounded .tabs-grid bounds in native screenshot pixels; no resizing."
+  },
+  "before": {
+    "capturedAt": "2026-11-11T04:49:57.485Z",
+    "rows": [
+      {
+        "id": "a-mobile",
+        "role": "zoomed",
+        "device": {
+          "name": "mobile",
+          "width": 390,
+          "height": 844,
+          "deviceScaleFactor": 3,
+          "mobile": true
+        },
+        "screenshot": ".scratch/zoom-blur/before-a-mobile.png",
+        "tabsScreenshot": ".scratch/zoom-blur/before-a-mobile-tabs.png",
+        "zoomed": true,
+        "instant": false,
+        "willChange": "transform",
+        "transform": "matrix(2.22, 0, 0, 2.22, 0, 0)",
+        "transitionDuration": "0s",
+        "transformOrigin": "194.649px 91.086px",
+        "devicePixelRatio": 3,
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "tabs": {
+          "x": 98.75416564941406,
+          "y": 372.37725830078125,
+          "width": 247.35655212402344,
+          "height": 32.259368896484375
+        },
+        "probe": {
+          "initial": {
+            "instant": false,
+            "transform": "none",
+            "duration": "0s"
+          },
+          "transitions": [],
+          "clicks": [
+            {
+              "trusted": true,
+              "target": "monitor-hint-overlay"
+            }
+          ]
+        },
+        "crop": {
+          "x": 296,
+          "y": 1117,
+          "width": 743,
+          "height": 97,
+          "scale": 3,
+          "pairs": 71974,
+          "sharpness": 3.2418594659183397
+        }
+      },
+      {
+        "id": "b-mobile",
+        "role": "zoomed",
+        "device": {
+          "name": "mobile",
+          "width": 390,
+          "height": 844,
+          "deviceScaleFactor": 3,
+          "mobile": true
+        },
+        "screenshot": ".scratch/zoom-blur/before-b-mobile.png",
+        "tabsScreenshot": ".scratch/zoom-blur/before-b-mobile-tabs.png",
+        "zoomed": true,
+        "instant": false,
+        "willChange": "transform",
+        "transform": "matrix(2.22, 0, 0, 2.22, 0, 0)",
+        "transitionDuration": "0s",
+        "transformOrigin": "194.649px 91.086px",
+        "devicePixelRatio": 3,
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "tabs": {
+          "x": 98.75416564941406,
+          "y": 372.37725830078125,
+          "width": 247.35655212402344,
+          "height": 32.259368896484375
+        },
+        "probe": {
+          "initial": {
+            "instant": true,
+            "transform": "matrix(2.22, 0, 0, 2.22, 0, 0)",
+            "duration": "0s"
+          },
+          "transitions": [],
+          "clicks": []
+        },
+        "crop": {
+          "x": 296,
+          "y": 1117,
+          "width": 743,
+          "height": 97,
+          "scale": 3,
+          "pairs": 71974,
+          "sharpness": 3.2418594659183397
+        }
+      },
+      {
+        "id": "a-desktop",
+        "role": "zoomed",
+        "device": {
+          "name": "desktop",
+          "width": 1440,
+          "height": 900,
+          "deviceScaleFactor": 1,
+          "mobile": false
+        },
+        "screenshot": ".scratch/zoom-blur/before-a-desktop.png",
+        "tabsScreenshot": ".scratch/zoom-blur/before-a-desktop-tabs.png",
+        "zoomed": true,
+        "instant": false,
+        "willChange": "transform",
+        "transform": "matrix(2.22, 0, 0, 2.22, 0, 0)",
+        "transitionDuration": "0s",
+        "transformOrigin": "718.704px 336.325px",
+        "devicePixelRatio": 1,
+        "viewport": {
+          "width": 1440,
+          "height": 900
+        },
+        "tabs": {
+          "x": 190.61962890625,
+          "y": 128.48403930664062,
+          "width": 1124.7421875,
+          "height": 47.383148193359375
+        },
+        "probe": {
+          "initial": {
+            "instant": false,
+            "transform": "none",
+            "duration": "0s"
+          },
+          "transitions": [],
+          "clicks": [
+            {
+              "trusted": true,
+              "target": "monitor-hint-overlay"
+            }
+          ]
+        },
+        "crop": {
+          "x": 190,
+          "y": 128,
+          "width": 1126,
+          "height": 48,
+          "scale": 1,
+          "pairs": 54000,
+          "sharpness": 2.311338866666714
+        }
+      },
+      {
+        "id": "b-desktop",
+        "role": "zoomed",
+        "device": {
+          "name": "desktop",
+          "width": 1440,
+          "height": 900,
+          "deviceScaleFactor": 1,
+          "mobile": false
+        },
+        "screenshot": ".scratch/zoom-blur/before-b-desktop.png",
+        "tabsScreenshot": ".scratch/zoom-blur/before-b-desktop-tabs.png",
+        "zoomed": true,
+        "instant": false,
+        "willChange": "transform",
+        "transform": "matrix(2.22, 0, 0, 2.22, 0, 0)",
+        "transitionDuration": "0s",
+        "transformOrigin": "718.704px 336.325px",
+        "devicePixelRatio": 1,
+        "viewport": {
+          "width": 1440,
+          "height": 900
+        },
+        "tabs": {
+          "x": 190.61962890625,
+          "y": 128.48403930664062,
+          "width": 1124.7421875,
+          "height": 47.383148193359375
+        },
+        "probe": {
+          "initial": {
+            "instant": true,
+            "transform": "matrix(2.22, 0, 0, 2.22, 0, 0)",
+            "duration": "0s"
+          },
+          "transitions": [],
+          "clicks": []
+        },
+        "crop": {
+          "x": 190,
+          "y": 128,
+          "width": 1126,
+          "height": 48,
+          "scale": 1,
+          "pairs": 54000,
+          "sharpness": 3.364594451851911
+        }
+      },
+      {
+        "id": "c-desktop-reloaded-desk",
+        "role": "reloaded-desk",
+        "device": {
+          "name": "desktop",
+          "width": 1440,
+          "height": 900,
+          "deviceScaleFactor": 1,
+          "mobile": false
+        },
+        "screenshot": ".scratch/zoom-blur/before-c-desktop-reloaded-desk.png",
+        "tabsScreenshot": ".scratch/zoom-blur/before-c-desktop-reloaded-desk-tabs.png",
+        "zoomed": false,
+        "instant": false,
+        "willChange": "transform",
+        "transform": "none",
+        "transitionDuration": "0s",
+        "transformOrigin": "718.704px 336.325px",
+        "devicePixelRatio": 1,
+        "viewport": {
+          "width": 1440,
+          "height": 900
+        },
+        "tabs": {
+          "x": 480.828125,
+          "y": 267.3125,
+          "width": 506.640625,
+          "height": 21.34375
+        },
+        "probe": {
+          "initial": {
+            "instant": false,
+            "transform": "none",
+            "duration": "0s"
+          },
+          "transitions": [],
+          "clicks": []
+        },
+        "crop": {
+          "x": 480,
+          "y": 267,
+          "width": 508,
+          "height": 22,
+          "scale": 1,
+          "pairs": 11154,
+          "sharpness": 0.41093874843105627
+        }
+      },
+      {
+        "id": "c-desktop-rezoom",
+        "role": "zoomed",
+        "device": {
+          "name": "desktop",
+          "width": 1440,
+          "height": 900,
+          "deviceScaleFactor": 1,
+          "mobile": false
+        },
+        "screenshot": ".scratch/zoom-blur/before-c-desktop-rezoom.png",
+        "tabsScreenshot": ".scratch/zoom-blur/before-c-desktop-rezoom-tabs.png",
+        "zoomed": true,
+        "instant": false,
+        "willChange": "transform",
+        "transform": "matrix(2.22, 0, 0, 2.22, 0, 0)",
+        "transitionDuration": "0s",
+        "transformOrigin": "718.704px 336.325px",
+        "devicePixelRatio": 1,
+        "viewport": {
+          "width": 1440,
+          "height": 900
+        },
+        "tabs": {
+          "x": 190.61962890625,
+          "y": 128.48403930664062,
+          "width": 1124.7421875,
+          "height": 47.383148193359375
+        },
+        "probe": {
+          "initial": {
+            "instant": false,
+            "transform": "none",
+            "duration": "0s"
+          },
+          "transitions": [],
+          "clicks": [
+            {
+              "trusted": true,
+              "target": "monitor-hint-overlay"
+            }
+          ]
+        },
+        "crop": {
+          "x": 190,
+          "y": 128,
+          "width": 1126,
+          "height": 48,
+          "scale": 1,
+          "pairs": 54000,
+          "sharpness": 2.311338866666714
+        }
+      }
+    ],
+    "checks": [
+      {
+        "name": "a-mobile: viewport",
+        "passed": true,
+        "detail": {
+          "width": 390,
+          "height": 844
+        }
+      },
+      {
+        "name": "a-mobile: zoom state",
+        "passed": true,
+        "detail": {
+          "zoomed": true,
+          "instant": false,
+          "willChange": "transform",
+          "transform": "matrix(2.22, 0, 0, 2.22, 0, 0)",
+          "transitionDuration": "0s",
+          "transformOrigin": "194.649px 91.086px",
+          "devicePixelRatio": 3,
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "tabs": {
+            "x": 98.75416564941406,
+            "y": 372.37725830078125,
+            "width": 247.35655212402344,
+            "height": 32.259368896484375
+          },
+          "probe": {
+            "initial": {
+              "instant": false,
+              "transform": "none",
+              "duration": "0s"
+            },
+            "transitions": [],
+            "clicks": [
+              {
+                "trusted": true,
+                "target": "monitor-hint-overlay"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "name": "a-mobile: settled will-change",
+        "passed": true,
+        "detail": "transform"
+      },
+      {
+        "name": "a-mobile: zoom scale",
+        "passed": true,
+        "detail": "matrix(2.22, 0, 0, 2.22, 0, 0)"
+      },
+      {
+        "name": "mobile: zoom-out button",
+        "passed": true,
+        "detail": "Actual button click returns to desk."
+      },
+      {
+        "name": "mobile: Escape",
+        "passed": true,
+        "detail": "Escape returns to desk."
+      },
+      {
+        "name": "mobile: warp-in",
+        "passed": true,
+        "detail": "Actual tab click starts warp-in."
+      },
+      {
+        "name": "mobile: instant home return",
+        "passed": true,
+        "detail": {
+          "initial": {
+            "instant": true,
+            "transform": "matrix(2.22, 0, 0, 2.22, 0, 0)",
+            "duration": "0s"
+          },
+          "transitions": [],
+          "clicks": []
+        }
+      },
+      {
+        "name": "b-mobile: viewport",
+        "passed": true,
+        "detail": {
+          "width": 390,
+          "height": 844
+        }
+      },
+      {
+        "name": "b-mobile: zoom state",
+        "passed": true,
+        "detail": {
+          "zoomed": true,
+          "instant": false,
+          "willChange": "transform",
+          "transform": "matrix(2.22, 0, 0, 2.22, 0, 0)",
+          "transitionDuration": "0s",
+          "transformOrigin": "194.649px 91.086px",
+          "devicePixelRatio": 3,
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "tabs": {
+            "x": 98.75416564941406,
+            "y": 372.37725830078125,
+            "width": 247.35655212402344,
+            "height": 32.259368896484375
+          },
+          "probe": {
+            "initial": {
+              "instant": true,
+              "transform": "matrix(2.22, 0, 0, 2.22, 0, 0)",
+              "duration": "0s"
+            },
+            "transitions": [],
+            "clicks": []
+          }
+        }
+      },
+      {
+        "name": "b-mobile: settled will-change",
+        "passed": true,
+        "detail": "transform"
+      },
+      {
+        "name": "b-mobile: zoom scale",
+        "passed": true,
+        "detail": "matrix(2.22, 0, 0, 2.22, 0, 0)"
+      },
+      {
+        "name": "a-desktop: viewport",
+        "passed": true,
+        "detail": {
+          "width": 1440,
+          "height": 900
+        }
+      },
+      {
+        "name": "a-desktop: zoom state",
+        "passed": true,
+        "detail": {
+          "zoomed": true,
+          "instant": false,
+          "willChange": "transform",
+          "transform": "matrix(2.22, 0, 0, 2.22, 0, 0)",
+          "transitionDuration": "0s",
+          "transformOrigin": "718.704px 336.325px",
+          "devicePixelRatio": 1,
+          "viewport": {
+            "width": 1440,
+            "height": 900
+          },
+          "tabs": {
+            "x": 190.61962890625,
+            "y": 128.48403930664062,
+            "width": 1124.7421875,
+            "height": 47.383148193359375
+          },
+          "probe": {
+            "initial": {
+              "instant": false,
+              "transform": "none",
+              "duration": "0s"
+            },
+            "transitions": [],
+            "clicks": [
+              {
+                "trusted": true,
+                "target": "monitor-hint-overlay"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "name": "a-desktop: settled will-change",
+        "passed": true,
+        "detail": "transform"
+      },
+      {
+        "name": "a-desktop: zoom scale",
+        "passed": true,
+        "detail": "matrix(2.22, 0, 0, 2.22, 0, 0)"
+      },
+      {
+        "name": "desktop: zoom-out button",
+        "passed": true,
+        "detail": "Actual button click returns to desk."
+      },
+      {
+        "name": "desktop: Escape",
+        "passed": true,
+        "detail": "Escape returns to desk."
+      },
+      {
+        "name": "desktop: warp-in",
+        "passed": true,
+        "detail": "Actual tab click starts warp-in."
+      },
+      {
+        "name": "desktop: instant home return",
+        "passed": true,
+        "detail": {
+          "initial": {
+            "instant": true,
+            "transform": "matrix(2.22, 0, 0, 2.22, 0, 0)",
+            "duration": "0s"
+          },
+          "transitions": [],
+          "clicks": []
+        }
+      },
+      {
+        "name": "b-desktop: viewport",
+        "passed": true,
+        "detail": {
+          "width": 1440,
+          "height": 900
+        }
+      },
+      {
+        "name": "b-desktop: zoom state",
+        "passed": true,
+        "detail": {
+          "zoomed": true,
+          "instant": false,
+          "willChange": "transform",
+          "transform": "matrix(2.22, 0, 0, 2.22, 0, 0)",
+          "transitionDuration": "0s",
+          "transformOrigin": "718.704px 336.325px",
+          "devicePixelRatio": 1,
+          "viewport": {
+            "width": 1440,
+            "height": 900
+          },
+          "tabs": {
+            "x": 190.61962890625,
+            "y": 128.48403930664062,
+            "width": 1124.7421875,
+            "height": 47.383148193359375
+          },
+          "probe": {
+            "initial": {
+              "instant": true,
+              "transform": "matrix(2.22, 0, 0, 2.22, 0, 0)",
+              "duration": "0s"
+            },
+            "transitions": [],
+            "clicks": []
+          }
+        }
+      },
+      {
+        "name": "b-desktop: settled will-change",
+        "passed": true,
+        "detail": "transform"
+      },
+      {
+        "name": "b-desktop: zoom scale",
+        "passed": true,
+        "detail": "matrix(2.22, 0, 0, 2.22, 0, 0)"
+      },
+      {
+        "name": "c-desktop-reloaded-desk: viewport",
+        "passed": true,
+        "detail": {
+          "width": 1440,
+          "height": 900
+        }
+      },
+      {
+        "name": "c-desktop-reloaded-desk: zoom state",
+        "passed": true,
+        "detail": {
+          "zoomed": false,
+          "instant": false,
+          "willChange": "transform",
+          "transform": "none",
+          "transitionDuration": "0s",
+          "transformOrigin": "718.704px 336.325px",
+          "devicePixelRatio": 1,
+          "viewport": {
+            "width": 1440,
+            "height": 900
+          },
+          "tabs": {
+            "x": 480.828125,
+            "y": 267.3125,
+            "width": 506.640625,
+            "height": 21.34375
+          },
+          "probe": {
+            "initial": {
+              "instant": false,
+              "transform": "none",
+              "duration": "0s"
+            },
+            "transitions": [],
+            "clicks": []
+          }
+        }
+      },
+      {
+        "name": "C: decision A preserved",
+        "passed": true,
+        "detail": "Home button reloads the unzoomed desk."
+      },
+      {
+        "name": "c-desktop-rezoom: viewport",
+        "passed": true,
+        "detail": {
+          "width": 1440,
+          "height": 900
+        }
+      },
+      {
+        "name": "c-desktop-rezoom: zoom state",
+        "passed": true,
+        "detail": {
+          "zoomed": true,
+          "instant": false,
+          "willChange": "transform",
+          "transform": "matrix(2.22, 0, 0, 2.22, 0, 0)",
+          "transitionDuration": "0s",
+          "transformOrigin": "718.704px 336.325px",
+          "devicePixelRatio": 1,
+          "viewport": {
+            "width": 1440,
+            "height": 900
+          },
+          "tabs": {
+            "x": 190.61962890625,
+            "y": 128.48403930664062,
+            "width": 1124.7421875,
+            "height": 47.383148193359375
+          },
+          "probe": {
+            "initial": {
+              "instant": false,
+              "transform": "none",
+              "duration": "0s"
+            },
+            "transitions": [],
+            "clicks": [
+              {
+                "trusted": true,
+                "target": "monitor-hint-overlay"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "name": "c-desktop-rezoom: settled will-change",
+        "passed": true,
+        "detail": "transform"
+      },
+      {
+        "name": "c-desktop-rezoom: zoom scale",
+        "passed": true,
+        "detail": "matrix(2.22, 0, 0, 2.22, 0, 0)"
+      },
+      {
+        "name": "reduced motion",
+        "passed": true,
+        "detail": "Zoom transition is disabled when reduced motion is requested."
+      },
+      {
+        "name": "style.css: CSS rule syntax",
+        "passed": true,
+        "detail": {
+          "path": "style.css",
+          "opening": 113,
+          "closing": 113,
+          "parsed": 113
+        }
+      },
+      {
+        "name": "css/pages.css: CSS rule syntax",
+        "passed": true,
+        "detail": {
+          "path": "css/pages.css",
+          "opening": 48,
+          "closing": 48,
+          "parsed": 48
+        }
+      },
+      {
+        "name": "runtime exceptions",
+        "passed": true,
+        "detail": []
+      }
+    ],
+    "errors": [],
+    "passed": true,
+    "sources": {
+      "style.css": "331cedebf2e6465a4bc31c82737f29a0fad92d4daf008bff4f3d769118a6b2ff",
+      "script.js": "7c855ee01f444f1e8879d2209a3d4096bf92f0cae02c6a81b54df8d097f3bf10",
+      "index.html": "e2ebdd6fe87f33b6dd608a6f8963910c89108a7f97c1e4f611a451ef3476cf11",
+      "about.html": "397449e36d46861b5d26d85533e085c4adeb18ffb5112d588ed3c925feaad783",
+      "css/pages.css": "db6b91dd9fe2d458c24c44c54cc6de0f50eea82881dacffeee383ce5956c5c84"
+    },
+    "browser": {
+      "protocolVersion": "1.3",
+      "product": "Chrome/156.0.8078.80",
+      "revision": "@fb096c0011f9d50f0a264a9376420cdea9c421e3",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+      "jsVersion": "15.6.75.27"
+    }
+  },
+  "attempts": [
+    {
+      "key": "canvas-only",
+      "reason": "Tabs improved, but the separate permanent fade-in layer still blurred the home body. Preserve the first attempt before the final approved-path capture.",
+      "run": {
+        "capturedAt": "2026-11-11T04:51:40.371Z",
+        "rows": [
+          {
+            "id": "a-mobile",
+            "role": "zoomed",
+            "device": {
+              "name": "mobile",
+              "width": 390,
+              "height": 844,
+              "deviceScaleFactor": 3,
+              "mobile": true
+            },
+            "screenshot": ".scratch/zoom-blur/attempt1-after-a-mobile.png",
+            "tabsScreenshot": ".scratch/zoom-blur/attempt1-after-a-mobile-tabs.png",
+            "zoomed": true,
+            "instant": false,
+            "willChange": "auto",
+            "transform": "matrix(2.22, 0, 0, 2.22, 0, 0)",
+            "transitionDuration": "0s",
+            "transformOrigin": "194.649px 91.086px",
+            "devicePixelRatio": 3,
+            "viewport": {
+              "width": 390,
+              "height": 844
+            },
+            "tabs": {
+              "x": 98.75416564941406,
+              "y": 372.37725830078125,
+              "width": 247.35655212402344,
+              "height": 32.259368896484375
+            },
+            "probe": {
+              "initial": {
+                "instant": false,
+                "transform": "none",
+                "duration": "0s"
+              },
+              "transitions": [],
+              "clicks": [
+                {
+                  "trusted": true,
+                  "target": "monitor-hint-overlay"
+                }
+              ]
+            },
+            "crop": {
+              "x": 296,
+              "y": 1117,
+              "width": 743,
+              "height": 97,
+              "scale": 3,
+              "pairs": 71974,
+              "sharpness": 3.256795137132831
+            }
+          },
+          {
+            "id": "b-mobile",
+            "role": "zoomed",
+            "device": {
+              "name": "mobile",
+              "width": 390,
+              "height": 844,
+              "deviceScaleFactor": 3,
+              "mobile": true
+            },
+            "screenshot": ".scratch/zoom-blur/attempt1-after-b-mobile.png",
+            "tabsScreenshot": ".scratch/zoom-blur/attempt1-after-b-mobile-tabs.png",
+            "zoomed": true,
+            "instant": false,
+            "willChange": "auto",
+            "transform": "matrix(2.22, 0, 0, 2.22, 0, 0)",
+            "transitionDuration": "0s",
+            "transformOrigin": "194.649px 91.086px",
+            "devicePixelRatio": 3,
+            "viewport": {
+              "width": 390,
+              "height": 844
+            },
+            "tabs": {
+              "x": 98.75416564941406,
+              "y": 372.37725830078125,
+              "width": 247.35655212402344,
+              "height": 32.259368896484375
+            },
+            "probe": {
+              "initial": {
+                "instant": true,
+                "transform": "matrix(2.22, 0, 0, 2.22, 0, 0)",
+                "duration": "0s"
+              },
+              "transitions": [],
+              "clicks": []
+            },
+            "crop": {
+              "x": 296,
+              "y": 1117,
+              "width": 743,
+              "height": 97,
+              "scale": 3,
+              "pairs": 71974,
+              "sharpness": 3.256795137132831
+            }
+          },
+          {
+            "id": "a-desktop",
+            "role": "zoomed",
+            "device": {
+              "name": "desktop",
+              "width": 1440,
+              "height": 900,
+              "deviceScaleFactor": 1,
+              "mobile": false
+            },
+            "screenshot": ".scratch/zoom-blur/attempt1-after-a-desktop.png",
+            "tabsScreenshot": ".scratch/zoom-blur/attempt1-after-a-desktop-tabs.png",
+            "zoomed": true,
+            "instant": false,
+            "willChange": "auto",
+            "transform": "matrix(2.22, 0, 0, 2.22, 0, 0)",
+            "transitionDuration": "0s",
+            "transformOrigin": "718.704px 336.325px",
+            "devicePixelRatio": 1,
+            "viewport": {
+              "width": 1440,
+              "height": 900
+            },
+            "tabs": {
+              "x": 190.61962890625,
+              "y": 128.48403930664062,
+              "width": 1124.7421875,
+              "height": 47.383148193359375
+            },
+            "probe": {
+              "initial": {
+                "instant": false,
+                "transform": "none",
+                "duration": "0s"
+              },
+              "transitions": [],
+              "clicks": [
+                {
+                  "trusted": true,
+                  "target": "monitor-hint-overlay"
+                }
+              ]
+            },
+            "crop": {
+              "x": 190,
+              "y": 128,
+              "width": 1126,
+              "height": 48,
+              "scale": 1,
+              "pairs": 54000,
+              "sharpness": 3.3895761629629484
+            }
+          },
+          {
+            "id": "b-desktop",
+            "role": "zoomed",
+            "device": {
+              "name": "desktop",
+              "width": 1440,
+              "height": 900,
+              "deviceScaleFactor": 1,
+              "mobile": false
+            },
+            "screenshot": ".scratch/zoom-blur/attempt1-after-b-desktop.png",
+            "tabsScreenshot": ".scratch/zoom-blur/attempt1-after-b-desktop-tabs.png",
+            "zoomed": true,
+            "instant": false,
+            "willChange": "auto",
+            "transform": "matrix(2.22, 0, 0, 2.22, 0, 0)",
+            "transitionDuration": "0s",
+            "transformOrigin": "718.704px 336.325px",
+            "devicePixelRatio": 1,
+            "viewport": {
+              "width": 1440,
+              "height": 900
+            },
+            "tabs": {
+              "x": 190.61962890625,
+              "y": 128.48403930664062,
+              "width": 1124.7421875,
+              "height": 47.383148193359375
+            },
+            "probe": {
+              "initial": {
+                "instant": true,
+                "transform": "matrix(2.22, 0, 0, 2.22, 0, 0)",
+                "duration": "0s"
+              },
+              "transitions": [],
+              "clicks": []
+            },
+            "crop": {
+              "x": 190,
+              "y": 128,
+              "width": 1126,
+              "height": 48,
+              "scale": 1,
+              "pairs": 54000,
+              "sharpness": 3.3895761629629484
+            }
+          },
+          {
+            "id": "c-desktop-reloaded-desk",
+            "role": "reloaded-desk",
+            "device": {
+              "name": "desktop",
+              "width": 1440,
+              "height": 900,
+              "deviceScaleFactor": 1,
+              "mobile": false
+            },
+            "screenshot": ".scratch/zoom-blur/attempt1-after-c-desktop-reloaded-desk.png",
+            "tabsScreenshot": ".scratch/zoom-blur/attempt1-after-c-desktop-reloaded-desk-tabs.png",
+            "zoomed": false,
+            "instant": false,
+            "willChange": "auto",
+            "transform": "none",
+            "transitionDuration": "0s",
+            "transformOrigin": "718.704px 336.325px",
+            "devicePixelRatio": 1,
+            "viewport": {
+              "width": 1440,
+              "height": 900
+            },
+            "tabs": {
+              "x": 480.828125,
+              "y": 267.3125,
+              "width": 506.640625,
+              "height": 21.34375
+            },
+            "probe": {
+              "initial": {
+                "instant": false,
+                "transform": "none",
+                "duration": "0s"
+              },
+              "transitions": [],
+              "clicks": []
+            },
+            "crop": {
+              "x": 480,
+              "y": 267,
+              "width": 508,
+              "height": 22,
+              "scale": 1,
+              "pairs": 11154,
+              "sharpness": 0.45507469965931663
+            }
+          },
+          {
+            "id": "c-desktop-rezoom",
+            "role": "zoomed",
+            "device": {
+              "name": "desktop",
+              "width": 1440,
+              "height": 900,
+              "deviceScaleFactor": 1,
+              "mobile": false
+            },
+            "screenshot": ".scratch/zoom-blur/attempt1-after-c-desktop-rezoom.png",
+            "tabsScreenshot": ".scratch/zoom-blur/attempt1-after-c-desktop-rezoom-tabs.png",
+            "zoomed": true,
+            "instant": false,
+            "willChange": "auto",
+            "transform": "matrix(2.22, 0, 0, 2.22, 0, 0)",
+            "transitionDuration": "0s",
+            "transformOrigin": "718.704px 336.325px",
+            "devicePixelRatio": 1,
+            "viewport": {
+              "width": 1440,
+              "height": 900
+            },
+            "tabs": {
+              "x": 190.61962890625,
+              "y": 128.48403930664062,
+              "width": 1124.7421875,
+              "height": 47.383148193359375
+            },
+            "probe": {
+              "initial": {
+                "instant": false,
+                "transform": "none",
+                "duration": "0s"
+              },
+              "transitions": [],
+              "clicks": [
+                {
+                  "trusted": true,
+                  "target": "monitor-hint-overlay"
+                }
+              ]
+            },
+            "crop": {
+              "x": 190,
+              "y": 128,
+              "width": 1126,
+              "height": 48,
+              "scale": 1,
+              "pairs": 54000,
+              "sharpness": 3.3895761629629484
+            }
+          }
+        ],
+        "checks": [
+          {
+            "name": "a-mobile: viewport",
+            "passed": true,
+            "detail": {
+              "width": 390,
+              "height": 844
+            }
+          },
+          {
+            "name": "a-mobile: zoom state",
+            "passed": true,
+            "detail": {
+              "zoomed": true,
+              "instant": false,
+              "willChange": "auto",
+              "transform": "matrix(2.22, 0, 0, 2.22, 0, 0)",
+              "transitionDuration": "0s",
+              "transformOrigin": "194.649px 91.086px",
+              "devicePixelRatio": 3,
+              "viewport": {
+                "width": 390,
+                "height": 844
+              },
+              "tabs": {
+                "x": 98.75416564941406,
+                "y": 372.37725830078125,
+                "width": 247.35655212402344,
+                "height": 32.259368896484375
+              },
+              "probe": {
+                "initial": {
+                  "instant": false,
+                  "transform": "none",
+                  "duration": "0s"
+                },
+                "transitions": [],
+                "clicks": [
+                  {
+                    "trusted": true,
+                    "target": "monitor-hint-overlay"
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "name": "a-mobile: settled will-change",
+            "passed": true,
+            "detail": "auto"
+          },
+          {
+            "name": "a-mobile: zoom scale",
+            "passed": true,
+            "detail": "matrix(2.22, 0, 0, 2.22, 0, 0)"
+          },
+          {
+            "name": "mobile: zoom-out button",
+            "passed": true,
+            "detail": "Actual button click returns to desk."
+          },
+          {
+            "name": "mobile: Escape",
+            "passed": true,
+            "detail": "Escape returns to desk."
+          },
+          {
+            "name": "mobile: warp-in",
+            "passed": true,
+            "detail": "Actual tab click starts warp-in."
+          },
+          {
+            "name": "mobile: instant home return",
+            "passed": true,
+            "detail": {
+              "initial": {
+                "instant": true,
+                "transform": "matrix(2.22, 0, 0, 2.22, 0, 0)",
+                "duration": "0s"
+              },
+              "transitions": [],
+              "clicks": []
+            }
+          },
+          {
+            "name": "b-mobile: viewport",
+            "passed": true,
+            "detail": {
+              "width": 390,
+              "height": 844
+            }
+          },
+          {
+            "name": "b-mobile: zoom state",
+            "passed": true,
+            "detail": {
+              "zoomed": true,
+              "instant": false,
+              "willChange": "auto",
+              "transform": "matrix(2.22, 0, 0, 2.22, 0, 0)",
+              "transitionDuration": "0s",
+              "transformOrigin": "194.649px 91.086px",
+              "devicePixelRatio": 3,
+              "viewport": {
+                "width": 390,
+                "height": 844
+              },
+              "tabs": {
+                "x": 98.75416564941406,
+                "y": 372.37725830078125,
+                "width": 247.35655212402344,
+                "height": 32.259368896484375
+              },
+              "probe": {
+                "initial": {
+                  "instant": true,
+                  "transform": "matrix(2.22, 0, 0, 2.22, 0, 0)",
+                  "duration": "0s"
+                },
+                "transitions": [],
+                "clicks": []
+              }
+            }
+          },
+          {
+            "name": "b-mobile: settled will-change",
+            "passed": true,
+            "detail": "auto"
+          },
+          {
+            "name": "b-mobile: zoom scale",
+            "passed": true,
+            "detail": "matrix(2.22, 0, 0, 2.22, 0, 0)"
+          },
+          {
+            "name": "a-desktop: viewport",
+            "passed": true,
+            "detail": {
+              "width": 1440,
+              "height": 900
+            }
+          },
+          {
+            "name": "a-desktop: zoom state",
+            "passed": true,
+            "detail": {
+              "zoomed": true,
+              "instant": false,
+              "willChange": "auto",
+              "transform": "matrix(2.22, 0, 0, 2.22, 0, 0)",
+              "transitionDuration": "0s",
+              "transformOrigin": "718.704px 336.325px",
+              "devicePixelRatio": 1,
+              "viewport": {
+                "width": 1440,
+                "height": 900
+              },
+              "tabs": {
+                "x": 190.61962890625,
+                "y": 128.48403930664062,
+                "width": 1124.7421875,
+                "height": 47.383148193359375
+              },
+              "probe": {
+                "initial": {
+                  "instant": false,
+                  "transform": "none",
+                  "duration": "0s"
+                },
+                "transitions": [],
+                "clicks": [
+                  {
+                    "trusted": true,
+                    "target": "monitor-hint-overlay"
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "name": "a-desktop: settled will-change",
+            "passed": true,
+            "detail": "auto"
+          },
+          {
+            "name": "a-desktop: zoom scale",
+            "passed": true,
+            "detail": "matrix(2.22, 0, 0, 2.22, 0, 0)"
+          },
+          {
+            "name": "desktop: zoom-out button",
+            "passed": true,
+            "detail": "Actual button click returns to desk."
+          },
+          {
+            "name": "desktop: Escape",
+            "passed": true,
+            "detail": "Escape returns to desk."
+          },
+          {
+            "name": "desktop: warp-in",
+            "passed": true,
+            "detail": "Actual tab click starts warp-in."
+          },
+          {
+            "name": "desktop: instant home return",
+            "passed": true,
+            "detail": {
+              "initial": {
+                "instant": true,
+                "transform": "matrix(2.22, 0, 0, 2.22, 0, 0)",
+                "duration": "0s"
+              },
+              "transitions": [],
+              "clicks": []
+            }
+          },
+          {
+            "name": "b-desktop: viewport",
+            "passed": true,
+            "detail": {
+              "width": 1440,
+              "height": 900
+            }
+          },
+          {
+            "name": "b-desktop: zoom state",
+            "passed": true,
+            "detail": {
+              "zoomed": true,
+              "instant": false,
+              "willChange": "auto",
+              "transform": "matrix(2.22, 0, 0, 2.22, 0, 0)",
+              "transitionDuration": "0s",
+              "transformOrigin": "718.704px 336.325px",
+              "devicePixelRatio": 1,
+              "viewport": {
+                "width": 1440,
+                "height": 900
+              },
+              "tabs": {
+                "x": 190.61962890625,
+                "y": 128.48403930664062,
+                "width": 1124.7421875,
+                "height": 47.383148193359375
+              },
+              "probe": {
+                "initial": {
+                  "instant": true,
+                  "transform": "matrix(2.22, 0, 0, 2.22, 0, 0)",
+                  "duration": "0s"
+                },
+                "transitions": [],
+                "clicks": []
+              }
+            }
+          },
+          {
+            "name": "b-desktop: settled will-change",
+            "passed": true,
+            "detail": "auto"
+          },
+          {
+            "name": "b-desktop: zoom scale",
+            "passed": true,
+            "detail": "matrix(2.22, 0, 0, 2.22, 0, 0)"
+          },
+          {
+            "name": "c-desktop-reloaded-desk: viewport",
+            "passed": true,
+            "detail": {
+              "width": 1440,
+              "height": 900
+            }
+          },
+          {
+            "name": "c-desktop-reloaded-desk: zoom state",
+            "passed": true,
+            "detail": {
+              "zoomed": false,
+              "instant": false,
+              "willChange": "auto",
+              "transform": "none",
+              "transitionDuration": "0s",
+              "transformOrigin": "718.704px 336.325px",
+              "devicePixelRatio": 1,
+              "viewport": {
+                "width": 1440,
+                "height": 900
+              },
+              "tabs": {
+                "x": 480.828125,
+                "y": 267.3125,
+                "width": 506.640625,
+                "height": 21.34375
+              },
+              "probe": {
+                "initial": {
+                  "instant": false,
+                  "transform": "none",
+                  "duration": "0s"
+                },
+                "transitions": [],
+                "clicks": []
+              }
+            }
+          },
+          {
+            "name": "C: decision A preserved",
+            "passed": true,
+            "detail": "Home button reloads the unzoomed desk."
+          },
+          {
+            "name": "c-desktop-rezoom: viewport",
+            "passed": true,
+            "detail": {
+              "width": 1440,
+              "height": 900
+            }
+          },
+          {
+            "name": "c-desktop-rezoom: zoom state",
+            "passed": true,
+            "detail": {
+              "zoomed": true,
+              "instant": false,
+              "willChange": "auto",
+              "transform": "matrix(2.22, 0, 0, 2.22, 0, 0)",
+              "transitionDuration": "0s",
+              "transformOrigin": "718.704px 336.325px",
+              "devicePixelRatio": 1,
+              "viewport": {
+                "width": 1440,
+                "height": 900
+              },
+              "tabs": {
+                "x": 190.61962890625,
+                "y": 128.48403930664062,
+                "width": 1124.7421875,
+                "height": 47.383148193359375
+              },
+              "probe": {
+                "initial": {
+                  "instant": false,
+                  "transform": "none",
+                  "duration": "0s"
+                },
+                "transitions": [],
+                "clicks": [
+                  {
+                    "trusted": true,
+                    "target": "monitor-hint-overlay"
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "name": "c-desktop-rezoom: settled will-change",
+            "passed": true,
+            "detail": "auto"
+          },
+          {
+            "name": "c-desktop-rezoom: zoom scale",
+            "passed": true,
+            "detail": "matrix(2.22, 0, 0, 2.22, 0, 0)"
+          },
+          {
+            "name": "reduced motion",
+            "passed": true,
+            "detail": "Zoom transition is disabled when reduced motion is requested."
+          },
+          {
+            "name": "style.css: CSS rule syntax",
+            "passed": true,
+            "detail": {
+              "path": "style.css",
+              "opening": 113,
+              "closing": 113,
+              "parsed": 113
+            }
+          },
+          {
+            "name": "css/pages.css: CSS rule syntax",
+            "passed": true,
+            "detail": {
+              "path": "css/pages.css",
+              "opening": 48,
+              "closing": 48,
+              "parsed": 48
+            }
+          },
+          {
+            "name": "runtime exceptions",
+            "passed": true,
+            "detail": []
+          },
+          {
+            "name": "sharpness comparison",
+            "passed": true,
+            "detail": [
+              {
+                "id": "a-mobile",
+                "before": 3.2418594659183397,
+                "after": 3.256795137132831,
+                "delta": 0.014935671214491464,
+                "comparable": true,
+                "passed": true,
+                "outcome": "improved"
+              },
+              {
+                "id": "b-mobile",
+                "before": 3.2418594659183397,
+                "after": 3.256795137132831,
+                "delta": 0.014935671214491464,
+                "comparable": true,
+                "passed": true,
+                "outcome": "improved"
+              },
+              {
+                "id": "a-desktop",
+                "before": 2.311338866666714,
+                "after": 3.3895761629629484,
+                "delta": 1.0782372962962343,
+                "comparable": true,
+                "passed": true,
+                "outcome": "improved"
+              },
+              {
+                "id": "b-desktop",
+                "before": 3.364594451851911,
+                "after": 3.3895761629629484,
+                "delta": 0.02498171111103753,
+                "comparable": true,
+                "passed": true,
+                "outcome": "improved"
+              },
+              {
+                "id": "c-desktop-rezoom",
+                "before": 2.311338866666714,
+                "after": 3.3895761629629484,
+                "delta": 1.0782372962962343,
+                "comparable": true,
+                "passed": true,
+                "outcome": "improved"
+              }
+            ]
+          }
+        ],
+        "errors": [],
+        "passed": true,
+        "sources": {
+          "style.css": "8dc5d57f14de6a6ff236af92185acc2675a83323cf953cc0c9abb97addde83c8",
+          "script.js": "7c855ee01f444f1e8879d2209a3d4096bf92f0cae02c6a81b54df8d097f3bf10",
+          "index.html": "e2ebdd6fe87f33b6dd608a6f8963910c89108a7f97c1e4f611a451ef3476cf11",
+          "about.html": "397449e36d46861b5d26d85533e085c4adeb18ffb5112d588ed3c925feaad783",
+          "css/pages.css": "db6b91dd9fe2d458c24c44c54cc6de0f50eea82881dacffeee383ce5956c5c84"
+        },
+        "browser": {
+          "protocolVersion": "1.3",
+          "product": "Chrome/156.0.8078.80",
+          "revision": "@fb096c0011f9d50f0a264a9376420cdea9c421e3",
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+          "jsVersion": "15.6.75.27"
+        }
+      },
+      "comparisons": [
+        {
+          "id": "a-mobile",
+          "before": 3.2418594659183397,
+          "after": 3.256795137132831,
+          "delta": 0.014935671214491464,
+          "comparable": true,
+          "passed": true,
+          "outcome": "improved"
+        },
+        {
+          "id": "b-mobile",
+          "before": 3.2418594659183397,
+          "after": 3.256795137132831,
+          "delta": 0.014935671214491464,
+          "comparable": true,
+          "passed": true,
+          "outcome": "improved"
+        },
+        {
+          "id": "a-desktop",
+          "before": 2.311338866666714,
+          "after": 3.3895761629629484,
+          "delta": 1.0782372962962343,
+          "comparable": true,
+          "passed": true,
+          "outcome": "improved"
+        },
+        {
+          "id": "b-desktop",
+          "before": 3.364594451851911,
+          "after": 3.3895761629629484,
+          "delta": 0.02498171111103753,
+          "comparable": true,
+          "passed": true,
+          "outcome": "improved"
+        },
+        {
+          "id": "c-desktop-rezoom",
+          "before": 2.311338866666714,
+          "after": 3.3895761629629484,
+          "delta": 1.0782372962962343,
+          "comparable": true,
+          "passed": true,
+          "outcome": "improved"
+        }
+      ]
+    }
+  ],
+  "diagnostic": {
+    "beforeScreenshot": ".scratch/zoom-blur/diagnostic-body-before.png",
+    "afterScreenshot": ".scratch/zoom-blur/diagnostic-body-after.png",
+    "beforeBodyWillChange": "opacity, transform",
+    "afterRuntimeOverrideBodyWillChange": "auto",
+    "observation": "Runtime-only .monitor-scrollable .fade-in.visible override cleared the body text blur without changing layout, zoom, or motion duration.",
+    "appliedRule": ".monitor-scrollable .fade-in.visible { will-change: auto; }"
+  },
+  "comparisons": [
+    {
+      "id": "a-mobile",
+      "before": 3.2418594659183397,
+      "after": 3.256795137132831,
+      "delta": 0.014935671214491464,
+      "comparable": true,
+      "passed": true,
+      "outcome": "improved"
+    },
+    {
+      "id": "b-mobile",
+      "before": 3.2418594659183397,
+      "after": 3.256795137132831,
+      "delta": 0.014935671214491464,
+      "comparable": true,
+      "passed": true,
+      "outcome": "improved"
+    },
+    {
+      "id": "a-desktop",
+      "before": 2.311338866666714,
+      "after": 3.3895761629629484,
+      "delta": 1.0782372962962343,
+      "comparable": true,
+      "passed": true,
+      "outcome": "improved"
+    },
+    {
+      "id": "b-desktop",
+      "before": 3.364594451851911,
+      "after": 3.3895761629629484,
+      "delta": 0.02498171111103753,
+      "comparable": true,
+      "passed": true,
+      "outcome": "improved"
+    },
+    {
+      "id": "c-desktop-rezoom",
+      "before": 2.311338866666714,
+      "after": 3.3895761629629484,
+      "delta": 1.0782372962962343,
+      "comparable": true,
+      "passed": true,
+      "outcome": "improved"
+    }
+  ],
+  "after": {
+    "capturedAt": "2026-11-11T04:55:28.572Z",
+    "rows": [
+      {
+        "id": "a-mobile",
+        "role": "zoomed",
+        "device": {
+          "name": "mobile",
+          "width": 390,
+          "height": 844,
+          "deviceScaleFactor": 3,
+          "mobile": true
+        },
+        "screenshot": ".scratch/zoom-blur/after-a-mobile.png",
+        "tabsScreenshot": ".scratch/zoom-blur/after-a-mobile-tabs.png",
+        "zoomed": true,
+        "instant": false,
+        "willChange": "auto",
+        "transform": "matrix(2.22, 0, 0, 2.22, 0, 0)",
+        "transitionDuration": "0s",
+        "transformOrigin": "194.649px 91.086px",
+        "devicePixelRatio": 3,
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "tabs": {
+          "x": 98.75416564941406,
+          "y": 372.37725830078125,
+          "width": 247.35655212402344,
+          "height": 32.259368896484375
+        },
+        "probe": {
+          "initial": {
+            "instant": false,
+            "transform": "none",
+            "duration": "0s"
+          },
+          "transitions": [],
+          "clicks": [
+            {
+              "trusted": true,
+              "target": "monitor-hint-overlay"
+            }
+          ]
+        },
+        "crop": {
+          "x": 296,
+          "y": 1117,
+          "width": 743,
+          "height": 97,
+          "scale": 3,
+          "pairs": 71974,
+          "sharpness": 3.256795137132831
+        }
+      },
+      {
+        "id": "b-mobile",
+        "role": "zoomed",
+        "device": {
+          "name": "mobile",
+          "width": 390,
+          "height": 844,
+          "deviceScaleFactor": 3,
+          "mobile": true
+        },
+        "screenshot": ".scratch/zoom-blur/after-b-mobile.png",
+        "tabsScreenshot": ".scratch/zoom-blur/after-b-mobile-tabs.png",
+        "zoomed": true,
+        "instant": false,
+        "willChange": "auto",
+        "transform": "matrix(2.22, 0, 0, 2.22, 0, 0)",
+        "transitionDuration": "0s",
+        "transformOrigin": "194.649px 91.086px",
+        "devicePixelRatio": 3,
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "tabs": {
+          "x": 98.75416564941406,
+          "y": 372.37725830078125,
+          "width": 247.35655212402344,
+          "height": 32.259368896484375
+        },
+        "probe": {
+          "initial": {
+            "instant": true,
+            "transform": "matrix(2.22, 0, 0, 2.22, 0, 0)",
+            "duration": "0s"
+          },
+          "transitions": [],
+          "clicks": []
+        },
+        "crop": {
+          "x": 296,
+          "y": 1117,
+          "width": 743,
+          "height": 97,
+          "scale": 3,
+          "pairs": 71974,
+          "sharpness": 3.256795137132831
+        }
+      },
+      {
+        "id": "a-desktop",
+        "role": "zoomed",
+        "device": {
+          "name": "desktop",
+          "width": 1440,
+          "height": 900,
+          "deviceScaleFactor": 1,
+          "mobile": false
+        },
+        "screenshot": ".scratch/zoom-blur/after-a-desktop.png",
+        "tabsScreenshot": ".scratch/zoom-blur/after-a-desktop-tabs.png",
+        "zoomed": true,
+        "instant": false,
+        "willChange": "auto",
+        "transform": "matrix(2.22, 0, 0, 2.22, 0, 0)",
+        "transitionDuration": "0s",
+        "transformOrigin": "718.704px 336.325px",
+        "devicePixelRatio": 1,
+        "viewport": {
+          "width": 1440,
+          "height": 900
+        },
+        "tabs": {
+          "x": 190.61962890625,
+          "y": 128.48403930664062,
+          "width": 1124.7421875,
+          "height": 47.383148193359375
+        },
+        "probe": {
+          "initial": {
+            "instant": false,
+            "transform": "none",
+            "duration": "0s"
+          },
+          "transitions": [],
+          "clicks": [
+            {
+              "trusted": true,
+              "target": "monitor-hint-overlay"
+            }
+          ]
+        },
+        "crop": {
+          "x": 190,
+          "y": 128,
+          "width": 1126,
+          "height": 48,
+          "scale": 1,
+          "pairs": 54000,
+          "sharpness": 3.3895761629629484
+        }
+      },
+      {
+        "id": "b-desktop",
+        "role": "zoomed",
+        "device": {
+          "name": "desktop",
+          "width": 1440,
+          "height": 900,
+          "deviceScaleFactor": 1,
+          "mobile": false
+        },
+        "screenshot": ".scratch/zoom-blur/after-b-desktop.png",
+        "tabsScreenshot": ".scratch/zoom-blur/after-b-desktop-tabs.png",
+        "zoomed": true,
+        "instant": false,
+        "willChange": "auto",
+        "transform": "matrix(2.22, 0, 0, 2.22, 0, 0)",
+        "transitionDuration": "0s",
+        "transformOrigin": "718.704px 336.325px",
+        "devicePixelRatio": 1,
+        "viewport": {
+          "width": 1440,
+          "height": 900
+        },
+        "tabs": {
+          "x": 190.61962890625,
+          "y": 128.48403930664062,
+          "width": 1124.7421875,
+          "height": 47.383148193359375
+        },
+        "probe": {
+          "initial": {
+            "instant": true,
+            "transform": "matrix(2.22, 0, 0, 2.22, 0, 0)",
+            "duration": "0s"
+          },
+          "transitions": [],
+          "clicks": []
+        },
+        "crop": {
+          "x": 190,
+          "y": 128,
+          "width": 1126,
+          "height": 48,
+          "scale": 1,
+          "pairs": 54000,
+          "sharpness": 3.3895761629629484
+        }
+      },
+      {
+        "id": "c-desktop-reloaded-desk",
+        "role": "reloaded-desk",
+        "device": {
+          "name": "desktop",
+          "width": 1440,
+          "height": 900,
+          "deviceScaleFactor": 1,
+          "mobile": false
+        },
+        "screenshot": ".scratch/zoom-blur/after-c-desktop-reloaded-desk.png",
+        "tabsScreenshot": ".scratch/zoom-blur/after-c-desktop-reloaded-desk-tabs.png",
+        "zoomed": false,
+        "instant": false,
+        "willChange": "auto",
+        "transform": "none",
+        "transitionDuration": "0s",
+        "transformOrigin": "718.704px 336.325px",
+        "devicePixelRatio": 1,
+        "viewport": {
+          "width": 1440,
+          "height": 900
+        },
+        "tabs": {
+          "x": 480.828125,
+          "y": 267.3125,
+          "width": 506.640625,
+          "height": 21.34375
+        },
+        "probe": {
+          "initial": {
+            "instant": false,
+            "transform": "none",
+            "duration": "0s"
+          },
+          "transitions": [],
+          "clicks": []
+        },
+        "crop": {
+          "x": 480,
+          "y": 267,
+          "width": 508,
+          "height": 22,
+          "scale": 1,
+          "pairs": 11154,
+          "sharpness": 0.45507469965931663
+        }
+      },
+      {
+        "id": "c-desktop-rezoom",
+        "role": "zoomed",
+        "device": {
+          "name": "desktop",
+          "width": 1440,
+          "height": 900,
+          "deviceScaleFactor": 1,
+          "mobile": false
+        },
+        "screenshot": ".scratch/zoom-blur/after-c-desktop-rezoom.png",
+        "tabsScreenshot": ".scratch/zoom-blur/after-c-desktop-rezoom-tabs.png",
+        "zoomed": true,
+        "instant": false,
+        "willChange": "auto",
+        "transform": "matrix(2.22, 0, 0, 2.22, 0, 0)",
+        "transitionDuration": "0s",
+        "transformOrigin": "718.704px 336.325px",
+        "devicePixelRatio": 1,
+        "viewport": {
+          "width": 1440,
+          "height": 900
+        },
+        "tabs": {
+          "x": 190.61962890625,
+          "y": 128.48403930664062,
+          "width": 1124.7421875,
+          "height": 47.383148193359375
+        },
+        "probe": {
+          "initial": {
+            "instant": false,
+            "transform": "none",
+            "duration": "0s"
+          },
+          "transitions": [],
+          "clicks": [
+            {
+              "trusted": true,
+              "target": "monitor-hint-overlay"
+            }
+          ]
+        },
+        "crop": {
+          "x": 190,
+          "y": 128,
+          "width": 1126,
+          "height": 48,
+          "scale": 1,
+          "pairs": 54000,
+          "sharpness": 3.3895761629629484
+        }
+      }
+    ],
+    "checks": [
+      {
+        "name": "a-mobile: viewport",
+        "passed": true,
+        "detail": {
+          "width": 390,
+          "height": 844
+        }
+      },
+      {
+        "name": "a-mobile: zoom state",
+        "passed": true,
+        "detail": {
+          "zoomed": true,
+          "instant": false,
+          "willChange": "auto",
+          "transform": "matrix(2.22, 0, 0, 2.22, 0, 0)",
+          "transitionDuration": "0s",
+          "transformOrigin": "194.649px 91.086px",
+          "devicePixelRatio": 3,
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "tabs": {
+            "x": 98.75416564941406,
+            "y": 372.37725830078125,
+            "width": 247.35655212402344,
+            "height": 32.259368896484375
+          },
+          "probe": {
+            "initial": {
+              "instant": false,
+              "transform": "none",
+              "duration": "0s"
+            },
+            "transitions": [],
+            "clicks": [
+              {
+                "trusted": true,
+                "target": "monitor-hint-overlay"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "name": "a-mobile: settled will-change",
+        "passed": true,
+        "detail": "auto"
+      },
+      {
+        "name": "a-mobile: zoom scale",
+        "passed": true,
+        "detail": "matrix(2.22, 0, 0, 2.22, 0, 0)"
+      },
+      {
+        "name": "mobile: zoom-out button",
+        "passed": true,
+        "detail": "Actual button click returns to desk."
+      },
+      {
+        "name": "mobile: Escape",
+        "passed": true,
+        "detail": "Escape returns to desk."
+      },
+      {
+        "name": "mobile: warp-in",
+        "passed": true,
+        "detail": "Actual tab click starts warp-in."
+      },
+      {
+        "name": "mobile: instant home return",
+        "passed": true,
+        "detail": {
+          "initial": {
+            "instant": true,
+            "transform": "matrix(2.22, 0, 0, 2.22, 0, 0)",
+            "duration": "0s"
+          },
+          "transitions": [],
+          "clicks": []
+        }
+      },
+      {
+        "name": "b-mobile: viewport",
+        "passed": true,
+        "detail": {
+          "width": 390,
+          "height": 844
+        }
+      },
+      {
+        "name": "b-mobile: zoom state",
+        "passed": true,
+        "detail": {
+          "zoomed": true,
+          "instant": false,
+          "willChange": "auto",
+          "transform": "matrix(2.22, 0, 0, 2.22, 0, 0)",
+          "transitionDuration": "0s",
+          "transformOrigin": "194.649px 91.086px",
+          "devicePixelRatio": 3,
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "tabs": {
+            "x": 98.75416564941406,
+            "y": 372.37725830078125,
+            "width": 247.35655212402344,
+            "height": 32.259368896484375
+          },
+          "probe": {
+            "initial": {
+              "instant": true,
+              "transform": "matrix(2.22, 0, 0, 2.22, 0, 0)",
+              "duration": "0s"
+            },
+            "transitions": [],
+            "clicks": []
+          }
+        }
+      },
+      {
+        "name": "b-mobile: settled will-change",
+        "passed": true,
+        "detail": "auto"
+      },
+      {
+        "name": "b-mobile: zoom scale",
+        "passed": true,
+        "detail": "matrix(2.22, 0, 0, 2.22, 0, 0)"
+      },
+      {
+        "name": "a-desktop: viewport",
+        "passed": true,
+        "detail": {
+          "width": 1440,
+          "height": 900
+        }
+      },
+      {
+        "name": "a-desktop: zoom state",
+        "passed": true,
+        "detail": {
+          "zoomed": true,
+          "instant": false,
+          "willChange": "auto",
+          "transform": "matrix(2.22, 0, 0, 2.22, 0, 0)",
+          "transitionDuration": "0s",
+          "transformOrigin": "718.704px 336.325px",
+          "devicePixelRatio": 1,
+          "viewport": {
+            "width": 1440,
+            "height": 900
+          },
+          "tabs": {
+            "x": 190.61962890625,
+            "y": 128.48403930664062,
+            "width": 1124.7421875,
+            "height": 47.383148193359375
+          },
+          "probe": {
+            "initial": {
+              "instant": false,
+              "transform": "none",
+              "duration": "0s"
+            },
+            "transitions": [],
+            "clicks": [
+              {
+                "trusted": true,
+                "target": "monitor-hint-overlay"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "name": "a-desktop: settled will-change",
+        "passed": true,
+        "detail": "auto"
+      },
+      {
+        "name": "a-desktop: zoom scale",
+        "passed": true,
+        "detail": "matrix(2.22, 0, 0, 2.22, 0, 0)"
+      },
+      {
+        "name": "desktop: zoom-out button",
+        "passed": true,
+        "detail": "Actual button click returns to desk."
+      },
+      {
+        "name": "desktop: Escape",
+        "passed": true,
+        "detail": "Escape returns to desk."
+      },
+      {
+        "name": "desktop: warp-in",
+        "passed": true,
+        "detail": "Actual tab click starts warp-in."
+      },
+      {
+        "name": "desktop: instant home return",
+        "passed": true,
+        "detail": {
+          "initial": {
+            "instant": true,
+            "transform": "matrix(2.22, 0, 0, 2.22, 0, 0)",
+            "duration": "0s"
+          },
+          "transitions": [],
+          "clicks": []
+        }
+      },
+      {
+        "name": "b-desktop: viewport",
+        "passed": true,
+        "detail": {
+          "width": 1440,
+          "height": 900
+        }
+      },
+      {
+        "name": "b-desktop: zoom state",
+        "passed": true,
+        "detail": {
+          "zoomed": true,
+          "instant": false,
+          "willChange": "auto",
+          "transform": "matrix(2.22, 0, 0, 2.22, 0, 0)",
+          "transitionDuration": "0s",
+          "transformOrigin": "718.704px 336.325px",
+          "devicePixelRatio": 1,
+          "viewport": {
+            "width": 1440,
+            "height": 900
+          },
+          "tabs": {
+            "x": 190.61962890625,
+            "y": 128.48403930664062,
+            "width": 1124.7421875,
+            "height": 47.383148193359375
+          },
+          "probe": {
+            "initial": {
+              "instant": true,
+              "transform": "matrix(2.22, 0, 0, 2.22, 0, 0)",
+              "duration": "0s"
+            },
+            "transitions": [],
+            "clicks": []
+          }
+        }
+      },
+      {
+        "name": "b-desktop: settled will-change",
+        "passed": true,
+        "detail": "auto"
+      },
+      {
+        "name": "b-desktop: zoom scale",
+        "passed": true,
+        "detail": "matrix(2.22, 0, 0, 2.22, 0, 0)"
+      },
+      {
+        "name": "c-desktop-reloaded-desk: viewport",
+        "passed": true,
+        "detail": {
+          "width": 1440,
+          "height": 900
+        }
+      },
+      {
+        "name": "c-desktop-reloaded-desk: zoom state",
+        "passed": true,
+        "detail": {
+          "zoomed": false,
+          "instant": false,
+          "willChange": "auto",
+          "transform": "none",
+          "transitionDuration": "0s",
+          "transformOrigin": "718.704px 336.325px",
+          "devicePixelRatio": 1,
+          "viewport": {
+            "width": 1440,
+            "height": 900
+          },
+          "tabs": {
+            "x": 480.828125,
+            "y": 267.3125,
+            "width": 506.640625,
+            "height": 21.34375
+          },
+          "probe": {
+            "initial": {
+              "instant": false,
+              "transform": "none",
+              "duration": "0s"
+            },
+            "transitions": [],
+            "clicks": []
+          }
+        }
+      },
+      {
+        "name": "C: decision A preserved",
+        "passed": true,
+        "detail": "Home button reloads the unzoomed desk."
+      },
+      {
+        "name": "c-desktop-rezoom: viewport",
+        "passed": true,
+        "detail": {
+          "width": 1440,
+          "height": 900
+        }
+      },
+      {
+        "name": "c-desktop-rezoom: zoom state",
+        "passed": true,
+        "detail": {
+          "zoomed": true,
+          "instant": false,
+          "willChange": "auto",
+          "transform": "matrix(2.22, 0, 0, 2.22, 0, 0)",
+          "transitionDuration": "0s",
+          "transformOrigin": "718.704px 336.325px",
+          "devicePixelRatio": 1,
+          "viewport": {
+            "width": 1440,
+            "height": 900
+          },
+          "tabs": {
+            "x": 190.61962890625,
+            "y": 128.48403930664062,
+            "width": 1124.7421875,
+            "height": 47.383148193359375
+          },
+          "probe": {
+            "initial": {
+              "instant": false,
+              "transform": "none",
+              "duration": "0s"
+            },
+            "transitions": [],
+            "clicks": [
+              {
+                "trusted": true,
+                "target": "monitor-hint-overlay"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "name": "c-desktop-rezoom: settled will-change",
+        "passed": true,
+        "detail": "auto"
+      },
+      {
+        "name": "c-desktop-rezoom: zoom scale",
+        "passed": true,
+        "detail": "matrix(2.22, 0, 0, 2.22, 0, 0)"
+      },
+      {
+        "name": "reduced motion",
+        "passed": true,
+        "detail": "Zoom transition is disabled when reduced motion is requested."
+      },
+      {
+        "name": "style.css: CSS rule syntax",
+        "passed": true,
+        "detail": {
+          "path": "style.css",
+          "opening": 114,
+          "closing": 114,
+          "parsed": 114
+        }
+      },
+      {
+        "name": "css/pages.css: CSS rule syntax",
+        "passed": true,
+        "detail": {
+          "path": "css/pages.css",
+          "opening": 48,
+          "closing": 48,
+          "parsed": 48
+        }
+      },
+      {
+        "name": "runtime exceptions",
+        "passed": true,
+        "detail": []
+      },
+      {
+        "name": "sharpness comparison",
+        "passed": true,
+        "detail": [
+          {
+            "id": "a-mobile",
+            "before": 3.2418594659183397,
+            "after": 3.256795137132831,
+            "delta": 0.014935671214491464,
+            "comparable": true,
+            "passed": true,
+            "outcome": "improved"
+          },
+          {
+            "id": "b-mobile",
+            "before": 3.2418594659183397,
+            "after": 3.256795137132831,
+            "delta": 0.014935671214491464,
+            "comparable": true,
+            "passed": true,
+            "outcome": "improved"
+          },
+          {
+            "id": "a-desktop",
+            "before": 2.311338866666714,
+            "after": 3.3895761629629484,
+            "delta": 1.0782372962962343,
+            "comparable": true,
+            "passed": true,
+            "outcome": "improved"
+          },
+          {
+            "id": "b-desktop",
+            "before": 3.364594451851911,
+            "after": 3.3895761629629484,
+            "delta": 0.02498171111103753,
+            "comparable": true,
+            "passed": true,
+            "outcome": "improved"
+          },
+          {
+            "id": "c-desktop-rezoom",
+            "before": 2.311338866666714,
+            "after": 3.3895761629629484,
+            "delta": 1.0782372962962343,
+            "comparable": true,
+            "passed": true,
+            "outcome": "improved"
+          }
+        ]
+      }
+    ],
+    "errors": [],
+    "passed": true,
+    "sources": {
+      "style.css": "40198168a5511275af0e36efd86eb765f6c27c132d41781ddeba41549c90fa42",
+      "script.js": "7c855ee01f444f1e8879d2209a3d4096bf92f0cae02c6a81b54df8d097f3bf10",
+      "index.html": "e2ebdd6fe87f33b6dd608a6f8963910c89108a7f97c1e4f611a451ef3476cf11",
+      "about.html": "397449e36d46861b5d26d85533e085c4adeb18ffb5112d588ed3c925feaad783",
+      "css/pages.css": "db6b91dd9fe2d458c24c44c54cc6de0f50eea82881dacffeee383ce5956c5c84"
+    },
+    "browser": {
+      "protocolVersion": "1.3",
+      "product": "Chrome/156.0.8078.80",
+      "revision": "@fb096c0011f9d50f0a264a9376420cdea9c421e3",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+      "jsVersion": "15.6.75.27"
+    }
+  },
+  "visualReview": [
+    {
+      "id": "a-mobile",
+      "observation": "The strong physical-phone blur was not reproduced in headless Chrome. Tab edges changed slightly; the approved sharpness metric increased."
+    },
+    {
+      "id": "b-mobile",
+      "observation": "The strong physical-phone blur was not reproduced on the about-to-home route. Tabs remain legible and the approved metric increased slightly."
+    },
+    {
+      "id": "a-desktop",
+      "observation": "The baseline tab and body text were visibly blurred. Final tab, heading, and body edges are clearly defined after releasing both persistent hints."
+    },
+    {
+      "id": "b-desktop",
+      "observation": "The baseline instant-return view was already relatively sharp. Final tabs and body remain clear; the approved metric increased slightly."
+    },
+    {
+      "id": "c-desktop-rezoom",
+      "observation": "The baseline rezoom reproduced the initial desktop blur. The final rezoom has clear tabs, heading, and body text. The home-button reload still returns to the desk."
+    }
+  ],
+  "limitations": [
+    "Headless Chrome does not establish physical-phone rendering or perceived animation smoothness. These are human QA items.",
+    "The enlarged background bitmap remains softer than the live text; the background image was not changed."
+  ]
+}
