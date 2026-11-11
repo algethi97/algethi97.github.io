@@ -41,14 +41,14 @@ AI가 파일을 추가·이동·삭제하면 이 파일의 행도 함께 고친�
 | `about.html` | 블랙·레드 프로필·기술 태그·이력 소개 화면 | Chrome 1440·390px 캡처·가로 넘침·이메일 복사·홈 복귀 확인 |
 | `portfolio.html` | 원문을 보존한 프로젝트 여섯 개의 01~06 번호 목록 화면 | D 시안 배치·원문 대조와 Chrome 1440·390px 스크롤·홈 복귀 확인 |
 | `script.js` | 홈 줌 및 공통 인터랙션 | 로컬 정적 서버 브라우저 확인 |
-| `README.md` | 블랙·레드 테마·기존 배경 유지 결정·시안과 재생성 프롬프트 경로 및 프로젝트 구조 | 문서와 실제 배경·파일 경로·포트폴리오 번호 목록 대조 |
+| `README.md` | 블랙·레드 테마·실사풍 홈 배경 `desk-bg-noir.png`와 보존 배경·시안·재생성 프롬프트 경로 및 프로젝트 구조 | 문서와 실제 배경·파일 경로·포트폴리오 번호 목록 대조 |
 | `MANDARIN_GAME_PLAN.md` | 만다린 게임 기획 문서 | 해당 없음 |
 | `common.js` | Supabase와 공통 표시 유틸 | `tests/static-site.test.mjs` |
 | `guestbook.js` | 방명록 조회·작성 ES 모듈 | `tests/static-site.test.mjs` |
 | `guestbook.html` | 방명록 화면과 모듈 로딩 | 로컬 정적 서버 브라우저 확인 |
 | `game.js` | 게임 상태·수명 주기 진입 모듈 | `tests/static-site.test.mjs` |
 | `game.html` | 블랙·레드 게임 화면·테마 안내 푸터와 모듈 로딩 | Chrome 1440·390px 캡처·게임 시작·홈 복귀 확인 |
-| `style.css` | 블랙·레드 공통 테마·빨간 카드 테두리와 버튼 그림자·확대 재그리기·반응형 | 다섯 페이지 12장 캡처·가로 넘침·탭 이동·홈 복귀·ESC 및 CSS 구문 확인 |
+| `style.css` | 블랙·레드 공통 테마·`.desk-canvas`의 `desk-bg-noir.png` 배경과 `--bg-desk` 여백색·빨간 카드 테두리와 버튼 그림자·확대 재그리기·반응형 | 다섯 페이지 12장 캡처·가로 넘침·탭 이동·홈 복귀·ESC 및 CSS 구문 확인 |
 
 ## css
 
@@ -84,8 +84,8 @@ AI가 파일을 추가·이동·삭제하면 이 파일의 행도 함께 고친�
 
 | 경로 | 기능 | 관련 테스트 |
 | --- | --- | --- |
-| `images/GPT_Gen.png` | 데스크테리어 배경 이미지 | 홈 화면 브라우저 확인 |
-| `images/desk-bg-noir.svg` | 음영을 보강한 블랙·레드 책상 배경 | Chrome 1672×941 래스터·화면 네 경계 2px 이내·빈 화면 확인 |
+| `images/GPT_Gen.png` | 보존 중인 이전 데스크테리어 배경(홈에서 사용하지 않음) | 해시 불변 확인 |
+| `images/desk-bg-noir.svg` | 미사용 벡터 시안(블랙·레드 책상 배경) | Chrome 1672×941 래스터·화면 네 경계 2px 이내·빈 화면 확인 |
 | `images/desk-bg-noir-source.png` | TAEKONG님이 이미지 생성 AI로 만든 실사풍 블랙·레드 배경 원본(수정 금지) | `.scratch/noir-bg/fit.mjs` 크기·화면 경계 측정 |
 | `images/desk-bg-noir.png` | 화면 좌표를 맞춘 실사풍 블랙·레드 홈 배경(1672×941) | `.scratch/noir-bg/measure-png.mjs` 네 경계 2px 이내·빈 화면 확인 |
 | `images/mandarin.png` | 게임 감귤 타일 이미지 | 게임 화면 브라우저 확인 |
@@ -103,6 +103,10 @@ AI가 파일을 추가·이동·삭제하면 이 파일의 행도 함께 고친�
 | `.scratch/noir-bg/fit.json` | 원본 측정 경계·기울기·저장 판정 기록 | 네 경계 2px 이내·기울기 3px 이하 확인 |
 | `.scratch/noir-bg/measure-png.mjs` | 최종 PNG 크기·화면 경계·화면 내부·색상 분포 측정기(`measure.mjs` 복사본) | Node 구문 검사와 로컬 헤드리스 Chrome 실행 |
 | `.scratch/noir-bg/measure-png.json` | 최종 PNG 측정 결과 | 1672×941 크기·네 경계 차이·런타임 오류 확인 |
+| `.scratch/noir-bg/capture.mjs` | 2단계 홈 캡처·배치·동작 검증기(`.scratch/noir-remodel/capture.mjs` 복사본, 출력 폴더만 변경) | Node 구문 검사와 로컬 헤드리스 Chrome 실행 |
+| `.scratch/noir-bg/results.json` | 2단계 캡처·측정 결과(15개 항목) | 모든 passed true·런타임 예외 0건 |
+| `.scratch/noir-bg/edge.mjs` | 최종 PNG 맨 아래 가장자리 평균색 계산기(`--bg-desk` 판단용) | Node 실행 |
+| `.scratch/noir-bg/home-desk-1440.png` 외 캡처 9장 | 1440×900·390×844 홈 축소·확대·알림·카드·푸터 캡처 | 새 배경 표시와 모니터 화면 포함 육안 확인 |
 
 ## .scratch/noir-remodel
 

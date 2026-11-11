@@ -11,7 +11,7 @@
 ## ✨ 핵심 기능 및 페이지 구성
 
 ### 1. 🖥️ 메인 데스크테리어 뷰포트 (`index.html`)
-- **16:9 비율 데스크테리어 캔버스**: 기존 우드 책상·오렌지 키캡 일러스트 배경(`images/GPT_Gen.png`)을 유지하고, 모니터 안 화면에 블랙·레드 테마를 적용했습니다.
+- **16:9 비율 데스크테리어 캔버스**: 종이색 벽·흰 책상·검은 모니터·빨간 포인트 소품의 실사풍 블랙·레드 배경(`images/desk-bg-noir.png`) 위 모니터 화면에 블랙·레드 테마를 적용했습니다.
 - **시네마틱 모니터 줌인**: 모니터 화면 클릭 시 부드럽게 확대(`scale 2.22`)되며 브라우저 속으로 빨려 들어가는 시네마틱 워프(Warp-in) 전환
 - **ESC / 줌아웃 복귀 버튼**: 모니터 뷰에서 전체 방 뷰로 직관적인 전환 가능
 - **바로가기 카드 그리드**: 자기소개, 포트폴리오, 만다린 게임, 방명록으로 빠르게 이동할 수 있는 미니멀 카드 섹션
@@ -44,8 +44,8 @@
 ## 🎨 테마와 배경
 
 - 다섯 페이지는 종이색 `#faf8f4`, 검정 `#111111`, 장식용 빨강 `#f22a18`을 사용합니다. 작은 빨간 글자는 대비를 확보한 짙은 빨강 `#c8102e`를 사용합니다.
-- 현재 홈 배경은 승인된 배경 유지 결정(D2=B)에 따라 `images/GPT_Gen.png`를 계속 사용합니다. 게임의 귤 이미지·보드·선택 영역·합계 10 판정 표시는 기존 색을 유지합니다.
-- 블랙·레드 배경 시안은 [design/mockups/d-editorial-noir/desk-bg.svg](design/mockups/d-editorial-noir/desk-bg.svg)에 있습니다. 교체 후보 경로인 `images/desk-bg-noir.svg`는 현재 생성하거나 적용하지 않았습니다.
+- 현재 홈 배경은 실사풍 블랙·레드 이미지 `images/desk-bg-noir.png`(1672×941)입니다. 이미지 생성 AI로 만든 원본 `images/desk-bg-noir-source.png`를 모니터 화면 좌표에 맞춰 처리한 결과이며, 기존 `images/GPT_Gen.png`는 보존 중인 이전 데스크테리어 배경, `images/desk-bg-noir.svg`는 사용하지 않는 벡터 시안입니다. 게임의 귤 이미지·보드·선택 영역·합계 10 판정 표시는 기존 색을 유지합니다.
+- 블랙·레드 배경 시안은 [design/mockups/d-editorial-noir/desk-bg.svg](design/mockups/d-editorial-noir/desk-bg.svg)에 있습니다.
 - 배경 재생성 프롬프트와 모니터 좌표 확인 방법은 [design/mockups/d-editorial-noir/bg-prompt.md](design/mockups/d-editorial-noir/bg-prompt.md)에 있습니다.
 
 ---
@@ -72,7 +72,10 @@ algethi97.github.io/
 ├── MANDARIN_GAME_PLAN.md      # 만다린 게임 종합 기획/설계 문서
 ├── design/mockups/d-editorial-noir/ # 블랙·레드 시안과 배경 재생성 프롬프트
 ├── images/                    # 비주얼 에셋 디렉토리
-│   ├── GPT_Gen.png            # 현재 홈에 사용하는 데스크테리어 배경
+│   ├── desk-bg-noir.png       # 현재 홈에 사용하는 실사풍 블랙·레드 배경(1672×941)
+│   ├── desk-bg-noir-source.png # 이미지 생성 AI로 만든 배경 생성 원본
+│   ├── desk-bg-noir.svg       # 사용하지 않는 벡터 시안
+│   ├── GPT_Gen.png            # 보존 중인 이전 데스크테리어 배경
 │   ├── mandarin.png           # 만다린 퍼즐 귤 일러스트
 │   └── mandarin_slice_bg.png  # 보존 중인 감귤 이미지
 └── README.md                  # 프로젝트 종합 가이드 문서

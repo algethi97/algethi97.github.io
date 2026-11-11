@@ -10,7 +10,7 @@
   --accent: #f22a18;
   --accent-text: #c8102e;
   --bg-main: var(--paper);
-  --bg-desk: #ebe8e3;
+  --bg-desk: #9f938a;
   --surface-card: var(--paper);
   --surface-subtle: #f2efea;
   --surface-hover: #eeeae4;
@@ -72,7 +72,7 @@ button {
   background-color: var(--bg-desk);
 }
 
-/* 16:9 비율의 배경 캔버스 (GPT_Gen.png 기준: 1672x941) */
+/* 16:9 비율의 배경 캔버스 (desk-bg-noir.png 기준: 1672x941) */
 .desk-canvas {
   position: relative;
   width: 100vw;
@@ -80,12 +80,12 @@ button {
   max-height: 100vh;
   max-width: calc(100vh * (1672 / 941));
   aspect-ratio: 1672 / 941;
-  background-image: url('images/GPT_Gen.png');
+  background-image: url('images/desk-bg-noir.png');
   background-size: 100% 100%;
   background-position: center;
   background-repeat: no-repeat;
   
-  /* 모니터 중심축 기준 (GPT_Gen.png 측정: X 49.91%, Y 43.62%) */
+  /* 모니터 중심축 기준 (desk-bg-noir.png 측정: X 49.91%, Y 43.62%) */
   transform-origin: 49.91% 41.5%;
   transition: var(--zoom-transition);
 }
@@ -174,7 +174,7 @@ body.page-leaving {
    ========================================================================== */
 .monitor-screen {
   position: absolute;
-  /* GPT_Gen.png 속 정밀 모니터 화면 좌표 (Left: 29.49%, Top: 23.91%, Width: 40.91%, Height: 39.53%) */
+  /* desk-bg-noir.png 속 정밀 모니터 화면 좌표 (Left: 29.49%, Top: 23.91%, Width: 40.91%, Height: 39.53%) */
   left: 29.49%;
   top: 23.91%;
   width: 40.91%;

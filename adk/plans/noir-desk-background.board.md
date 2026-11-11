@@ -9,10 +9,10 @@
 - `GPT_Gen.png`, 시안 폴더의 파일, `script.js`, 홈 HTML 구조는 고치지 않습니다.
 
 ### 현재 작업
-단계 1. 실사풍 블랙·레드 PNG 준비와 화면 좌표 맞춤 · 완료
+단계 2. 홈 배경 교체와 확대·축소 검증, README 정리 · 완료
 
 ## AI
-1단계(key=1)를 완료했습니다. TAEKONG님이 만든 실사 원본 images/desk-bg-noir-source.png는 1672×941이고, 화면 안쪽 경계는 left 494, top 225, right 1176, bottom 596px입니다. 기준과의 차이는 최대 1.088px로 허용 오차 2px 안에 있고, 기울기는 0px입니다. 그래서 늘리거나 옮기지 않고 원본을 그대로 images/desk-bg-noir.png로 저장했습니다(SHA256 동일). 화면 안에 글자나 UI 픽셀은 0개이고, 주황 계열 픽셀은 1개뿐이며, 소품 배치는 SVG 시안과 같습니다. 측정 결과는 .scratch/noir-bg/measure-png.json과 fit.json에 기록했습니다. GPT_Gen.png와 desk-bg-noir.svg의 해시는 바뀌지 않았습니다. 회귀 테스트 9개와 ADesk 검증이 통과했습니다. 다음은 2단계로, style.css를 새 PNG에 연결하고 확대·축소를 검증합니다.
+2단계 완료: style.css의 .desk-canvas가 images/desk-bg-noir.png를 쓰고 GPT_Gen.png 참조는 CSS에서 제거됐습니다. --bg-desk는 PNG 하단 가장자리 평균 RGB(159,147,138)에 맞춰 #ebe8e3에서 #9f938a로 바꿨습니다. 1440×900과 390×844 캡처 15개 항목, 런타임 예외 0건, 정적 테스트 9개가 모두 통과했습니다. README와 맵은 GPT_Gen.png를 보존 중인 이전 배경, desk-bg-noir.svg를 미사용 시안으로 정리했습니다. 남은 확인: 여백색 #9f938a가 위쪽 밝은 벽과 이루는 경계가 어색한지 사람이 판단해야 합니다.
 
 ### 진행 상태
 
