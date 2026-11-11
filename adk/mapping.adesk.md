@@ -1,5 +1,30 @@
 # 프로젝트 매핑
 
+## design/mockups/c-terminal
+
+| 경로 | 기능 | 관련 테스트 |
+| --- | --- | --- |
+| `design/mockups/c-terminal/index.html` | 방향 C 홈과 확대·축소·이메일 복사 시안 | Chrome 1440·390px 화면과 복사 예외 확인 |
+| `design/mockups/c-terminal/portfolio.html` | 방향 C 프로젝트 여섯 카드 시안 | Chrome 1440·390px 반응형과 원문 대조 |
+| `design/mockups/c-terminal/style.css` | 터미널 색·글꼴·반응형·움직임 감소 스타일 | 가로 넘침·대비·모션 설정 확인 |
+| `design/mockups/c-terminal/desk-bg.svg` | 야간 모니터와 백라이트 키보드 배경 | 화면 좌표와 확대·축소 캡처 확인 |
+| `design/mockups/c-terminal/bg-prompt.md` | 방향 C 배경 재생성 한영 프롬프트 | 구도·좌표 확인 방법 대조 |
+
+## .scratch/mockup-c
+
+| 경로 | 기능 | 관련 테스트 |
+| --- | --- | --- |
+| `.scratch/mockup-c/measure.mjs` | 방향 C 임시 브라우저 측정과 캡처 도구 | Node 내장 모듈과 로컬 헤드리스 Chrome |
+| `.scratch/mockup-c/results.json` | 방향 C 화면·콘텐츠·동작 측정 결과 | 1440·390px 확대·축소·복사·모션 확인 |
+| `.scratch/mockup-c/desk-1440.png` | 홈 데스크톱 축소 화면 | Chrome 스크린샷 |
+| `.scratch/mockup-c/zoom-1440.png` | 홈 데스크톱 확대 화면 | Chrome 스크린샷 |
+| `.scratch/mockup-c/portfolio-1440.png` | 포트폴리오 데스크톱 화면 | Chrome 스크린샷 |
+| `.scratch/mockup-c/desk-390.png` | 홈 모바일 축소 화면 | Chrome 스크린샷 |
+| `.scratch/mockup-c/zoom-390.png` | 홈 모바일 확대 화면 | Chrome 스크린샷 |
+| `.scratch/mockup-c/portfolio-390.png` | 포트폴리오 모바일 화면 | Chrome 스크린샷 |
+| `.scratch/mockup-c/capture.log` | 방향 C 캡처 실행 기록 | 해당 없음 |
+| `.scratch/mockup-c/capture-error.log` | 방향 C 캡처 오류 기록 | 해당 없음 |
+
 AI가 파일을 추가·이동·삭제하면 이 파일의 행도 함께 고친다. 폴더마다 `## <폴더 경로>` 절을 두고 그 폴더의 파일만 적는다. 루트 파일은 `## .` 절에 둔다.
 
 표의 첫 열은 `경로`(백틱으로 감싼 프로젝트 상대 경로), 둘째 열은 `기능`(20자 안팎)이다. 셋째 열부터는 프로젝트가 정한다.

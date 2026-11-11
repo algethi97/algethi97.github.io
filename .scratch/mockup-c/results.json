@@ -1,0 +1,367 @@
+{
+  "rows": [
+    {
+      "page": "index",
+      "state": "desk",
+      "width": 1440,
+      "screenshot": "desk-1440.png",
+      "passed": true,
+      "contentPreserved": true,
+      "innerWidth": 1440,
+      "scrollWidth": 1440,
+      "zoomed": false,
+      "cards": 0,
+      "links": [
+        "index.html",
+        "../../../about.html",
+        "portfolio.html",
+        "../../../guestbook.html",
+        "../../../game.html",
+        "../../../about.html",
+        "portfolio.html",
+        "../../../game.html",
+        "../../../guestbook.html"
+      ],
+      "headings": [],
+      "descriptions": [
+        "감각적인 공간과 사용자 경험을 탐구하는 algethi97의 포트폴리오입니다. 상단 탭을 통해 자기소개, 프로젝트, 미니게임을 둘러보세요.",
+        "공간과 코드를 잇는 시각, 보유한 기술 스택과 성장 과정을 확인해 보세요.",
+        "웹 서비스, 데이터 분석, 인터랙티브 프로젝트 등 다양한 작업물을 소개합니다.",
+        "합이 10이 되도록 귤을 터뜨리는 상큼한 퍼즐! 120초 동안 실시간 Top 5 랭킹에 도전해 보세요.",
+        "방문 기념 한마디를 남겨주세요. 남겨주신 소중한 메시지는 큰 힘이 됩니다."
+      ],
+      "mainWidth": 579,
+      "mainClientWidth": 579,
+      "screen": {
+        "left": 424.640625,
+        "top": 238.546875,
+        "right": 1013.734375,
+        "bottom": 558.90625,
+        "width": 589.09375,
+        "height": 320.359375
+      },
+      "content": {
+        "left": 424.640625,
+        "top": 259.796875,
+        "right": 1013.734375,
+        "bottom": 558.90625,
+        "width": 589.09375,
+        "height": 299.109375
+      },
+      "contained": true,
+      "internalOverflow": false,
+      "inert": true,
+      "character": false
+    },
+    {
+      "page": "index",
+      "state": "zoom",
+      "width": 1440,
+      "screenshot": "zoom-1440.png",
+      "passed": true,
+      "contentPreserved": true,
+      "innerWidth": 1440,
+      "scrollWidth": 1440,
+      "zoomed": true,
+      "cards": 0,
+      "links": [
+        "index.html",
+        "../../../about.html",
+        "portfolio.html",
+        "../../../guestbook.html",
+        "../../../game.html",
+        "../../../about.html",
+        "portfolio.html",
+        "../../../game.html",
+        "../../../guestbook.html"
+      ],
+      "headings": [],
+      "descriptions": [
+        "감각적인 공간과 사용자 경험을 탐구하는 algethi97의 포트폴리오입니다. 상단 탭을 통해 자기소개, 프로젝트, 미니게임을 둘러보세요.",
+        "공간과 코드를 잇는 시각, 보유한 기술 스택과 성장 과정을 확인해 보세요.",
+        "웹 서비스, 데이터 분석, 인터랙티브 프로젝트 등 다양한 작업물을 소개합니다.",
+        "합이 10이 되도록 귤을 터뜨리는 상큼한 퍼즐! 120초 동안 실시간 Top 5 랭킹에 도전해 보세요.",
+        "방문 기념 한마디를 남겨주세요. 남겨주신 소중한 메시지는 큰 힘이 됩니다."
+      ],
+      "mainWidth": 579,
+      "mainClientWidth": 579,
+      "screen": {
+        "left": 65.88336181640625,
+        "top": 64.62435913085938,
+        "right": 1373.6714477539062,
+        "bottom": 775.8222351074219,
+        "width": 1307.7880859375,
+        "height": 711.1978759765625
+      },
+      "content": {
+        "left": 65.88336181640625,
+        "top": 111.79934692382812,
+        "right": 1373.6714477539062,
+        "bottom": 775.8221740722656,
+        "width": 1307.7880859375,
+        "height": 664.0228271484375
+      },
+      "contained": true,
+      "internalOverflow": false,
+      "inert": false,
+      "character": false
+    },
+    {
+      "clipboard": {
+        "width": 1440,
+        "copied": "algethi97@gmail.com",
+        "copyToast": true,
+        "fallbackCopied": "algethi97@gmail.com",
+        "fallback": true,
+        "failureHandled": true,
+        "passed": true
+      },
+      "passed": true
+    },
+    {
+      "interactions": {
+        "width": 1440,
+        "scrolls": true,
+        "escaped": true,
+        "keyboardOpened": true,
+        "buttonClosed": true,
+        "passed": true
+      },
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "reducedMotion": true,
+      "passed": true
+    },
+    {
+      "page": "portfolio",
+      "state": "portfolio",
+      "width": 1440,
+      "screenshot": "portfolio-1440.png",
+      "passed": true,
+      "contentPreserved": true,
+      "innerWidth": 1440,
+      "scrollWidth": 1425,
+      "zoomed": false,
+      "cards": 6,
+      "links": [
+        "index.html",
+        "../../../about.html",
+        "portfolio.html",
+        "../../../guestbook.html",
+        "../../../game.html",
+        "https://github.com/algethi97/algethi97.github.io",
+        "https://github.com/algethi97/AIoT-7th_Project-1",
+        "../../../game.html",
+        "https://github.com/algethi97/baseball_AI-breifing_project",
+        "https://github.com/algethi97/localhost_webpage_1",
+        "https://github.com/algethi97/streamlit-basic",
+        "index.html"
+      ],
+      "headings": [
+        "Personal Portfolio Website",
+        "SafeJeonse (세이프전세)",
+        "만다린 게임 (Mandarin Puzzle)",
+        "KBO 야구 AI 브리핑 & 구장 기상 분석",
+        "NaJakHome - 풀스택 반응형 웹 서비스",
+        "Ocean AI Chat - 오션 테마 Streamlit 챗봇"
+      ],
+      "descriptions": [
+        "직접 기획하고 개발한 주요 프로젝트들을 소개합니다.",
+        "HTML, CSS, JavaScript만을 사용하여 제작한 미니멀하고 반응형인 개인 포트폴리오 웹사이트입니다.",
+        "공공데이터(실거래가 8종·건축물대장·공시가격) 실시간 교차 검증 및 매물 탐색부터 계약, 거주, 만기·퇴거까지 8 Core Moments 임대차 전 생애주기를 보호하는 청년 주거 안심 통합 플랫폼입니다.",
+        "사과게임(Fruit Box)을 모티브로 제작한 17×10 반응형 드래그 퍼즐 웹게임입니다. 합이 10이 되는 상자를 만들어 귤을 터뜨리며, Web Audio API 기반 Pop 사운드 신디사이저, 120초 타이머, Supabase Cloud DB 연동 실시간 Top 5 명예의 전당 및 5중 보안 체계(IIFE 은닉, XSS 차단, 봇 방어)를 구현했습니다.",
+        "네이버 스포츠 뉴스 실시간 수집 및 OpenAI LLM 기반 심층 브리핑 보고서 자동 생성, 기상청 API 연동 전국 11개 구장 기상 관측 및 우천 취소 지수 분석 데스크톱 플랫폼입니다.",
+        "FastAPI와 ngrok 기반의 풀스택 웹 플랫폼입니다. 비동기 실시간 방명록(SQLite & 허니팟 스팸 차단), 개인정보 보호 사진 갤러리(EXIF GPS 위치 영구 삭제 & 2048px 고품질 리사이징), Supabase 연동 만다린 퍼즐 게임(Web Audio Pop 사운드 & 실시간 Top 5) 및 원클릭 런처 환경을 제공합니다.",
+        "Streamlit과 OpenAI 최신 모델(GPT-5.6)을 연동한 감성 오션 테마 챗봇 플랫폼입니다. 해수면↔심해 어비스 원클릭 테마 전환, 20개 S자 곡선 상승 기포(Bubbles) 파티클 및 글래스모피즘 연출, API 키 세션 메모리 전용 격리 보안, SQLite 기반 멀티세션 FIFO 큐 관리를 지원합니다."
+      ],
+      "mainWidth": 1120,
+      "mainClientWidth": 1120
+    },
+    {
+      "page": "index",
+      "state": "desk",
+      "width": 390,
+      "screenshot": "desk-390.png",
+      "passed": true,
+      "contentPreserved": true,
+      "innerWidth": 390,
+      "scrollWidth": 390,
+      "zoomed": false,
+      "cards": 0,
+      "links": [
+        "index.html",
+        "../../../about.html",
+        "portfolio.html",
+        "../../../guestbook.html",
+        "../../../game.html",
+        "../../../about.html",
+        "portfolio.html",
+        "../../../game.html",
+        "../../../guestbook.html"
+      ],
+      "headings": [],
+      "descriptions": [
+        "감각적인 공간과 사용자 경험을 탐구하는 algethi97의 포트폴리오입니다. 상단 탭을 통해 자기소개, 프로젝트, 미니게임을 둘러보세요.",
+        "공간과 코드를 잇는 시각, 보유한 기술 스택과 성장 과정을 확인해 보세요.",
+        "웹 서비스, 데이터 분석, 인터랙티브 프로젝트 등 다양한 작업물을 소개합니다.",
+        "합이 10이 되도록 귤을 터뜨리는 상큼한 퍼즐! 120초 동안 실시간 Top 5 랭킹에 도전해 보세요.",
+        "방문 기념 한마디를 남겨주세요. 남겨주신 소중한 메시지는 큰 힘이 됩니다."
+      ],
+      "mainWidth": 160,
+      "mainClientWidth": 160,
+      "screen": {
+        "left": 115,
+        "top": 364.71875,
+        "right": 274.546875,
+        "bottom": 451.46875,
+        "width": 159.546875,
+        "height": 86.75
+      },
+      "content": {
+        "left": 115,
+        "top": 378.890625,
+        "right": 274.546875,
+        "bottom": 451.46875,
+        "width": 159.546875,
+        "height": 72.578125
+      },
+      "contained": true,
+      "internalOverflow": false,
+      "inert": true,
+      "character": false
+    },
+    {
+      "page": "index",
+      "state": "zoom",
+      "width": 390,
+      "screenshot": "zoom-390.png",
+      "passed": true,
+      "contentPreserved": true,
+      "innerWidth": 390,
+      "scrollWidth": 390,
+      "zoomed": true,
+      "cards": 0,
+      "links": [
+        "index.html",
+        "../../../about.html",
+        "portfolio.html",
+        "../../../guestbook.html",
+        "../../../game.html",
+        "../../../about.html",
+        "portfolio.html",
+        "../../../game.html",
+        "../../../guestbook.html"
+      ],
+      "headings": [],
+      "descriptions": [
+        "감각적인 공간과 사용자 경험을 탐구하는 algethi97의 포트폴리오입니다. 상단 탭을 통해 자기소개, 프로젝트, 미니게임을 둘러보세요.",
+        "공간과 코드를 잇는 시각, 보유한 기술 스택과 성장 과정을 확인해 보세요.",
+        "웹 서비스, 데이터 분석, 인터랙티브 프로젝트 등 다양한 작업물을 소개합니다.",
+        "합이 10이 되도록 귤을 터뜨리는 상큼한 퍼즐! 120초 동안 실시간 Top 5 랭킹에 도전해 보세요.",
+        "방문 기념 한마디를 남겨주세요. 남겨주신 소중한 메시지는 큰 힘이 됩니다."
+      ],
+      "mainWidth": 160,
+      "mainClientWidth": 160,
+      "screen": {
+        "left": 17.828216552734375,
+        "top": 317.6056823730469,
+        "right": 372.02227783203125,
+        "bottom": 510.1907043457031,
+        "width": 354.1940612792969,
+        "height": 192.58502197265625
+      },
+      "content": {
+        "left": 17.828216552734375,
+        "top": 349.0672607421875,
+        "right": 372.02227783203125,
+        "bottom": 510.1907043457031,
+        "width": 354.1940612792969,
+        "height": 161.12344360351562
+      },
+      "contained": true,
+      "internalOverflow": false,
+      "inert": false,
+      "character": false
+    },
+    {
+      "clipboard": {
+        "width": 390,
+        "copied": "algethi97@gmail.com",
+        "copyToast": true,
+        "fallbackCopied": "algethi97@gmail.com",
+        "fallback": true,
+        "failureHandled": true,
+        "passed": true
+      },
+      "passed": true
+    },
+    {
+      "interactions": {
+        "width": 390,
+        "scrolls": true,
+        "escaped": true,
+        "keyboardOpened": true,
+        "buttonClosed": true,
+        "passed": true
+      },
+      "passed": true
+    },
+    {
+      "width": 390,
+      "reducedMotion": true,
+      "passed": true
+    },
+    {
+      "page": "portfolio",
+      "state": "portfolio",
+      "width": 390,
+      "screenshot": "portfolio-390.png",
+      "passed": true,
+      "contentPreserved": true,
+      "innerWidth": 390,
+      "scrollWidth": 390,
+      "zoomed": false,
+      "cards": 6,
+      "links": [
+        "index.html",
+        "../../../about.html",
+        "portfolio.html",
+        "../../../guestbook.html",
+        "../../../game.html",
+        "https://github.com/algethi97/algethi97.github.io",
+        "https://github.com/algethi97/AIoT-7th_Project-1",
+        "../../../game.html",
+        "https://github.com/algethi97/baseball_AI-breifing_project",
+        "https://github.com/algethi97/localhost_webpage_1",
+        "https://github.com/algethi97/streamlit-basic",
+        "index.html"
+      ],
+      "headings": [
+        "Personal Portfolio Website",
+        "SafeJeonse (세이프전세)",
+        "만다린 게임 (Mandarin Puzzle)",
+        "KBO 야구 AI 브리핑 & 구장 기상 분석",
+        "NaJakHome - 풀스택 반응형 웹 서비스",
+        "Ocean AI Chat - 오션 테마 Streamlit 챗봇"
+      ],
+      "descriptions": [
+        "직접 기획하고 개발한 주요 프로젝트들을 소개합니다.",
+        "HTML, CSS, JavaScript만을 사용하여 제작한 미니멀하고 반응형인 개인 포트폴리오 웹사이트입니다.",
+        "공공데이터(실거래가 8종·건축물대장·공시가격) 실시간 교차 검증 및 매물 탐색부터 계약, 거주, 만기·퇴거까지 8 Core Moments 임대차 전 생애주기를 보호하는 청년 주거 안심 통합 플랫폼입니다.",
+        "사과게임(Fruit Box)을 모티브로 제작한 17×10 반응형 드래그 퍼즐 웹게임입니다. 합이 10이 되는 상자를 만들어 귤을 터뜨리며, Web Audio API 기반 Pop 사운드 신디사이저, 120초 타이머, Supabase Cloud DB 연동 실시간 Top 5 명예의 전당 및 5중 보안 체계(IIFE 은닉, XSS 차단, 봇 방어)를 구현했습니다.",
+        "네이버 스포츠 뉴스 실시간 수집 및 OpenAI LLM 기반 심층 브리핑 보고서 자동 생성, 기상청 API 연동 전국 11개 구장 기상 관측 및 우천 취소 지수 분석 데스크톱 플랫폼입니다.",
+        "FastAPI와 ngrok 기반의 풀스택 웹 플랫폼입니다. 비동기 실시간 방명록(SQLite & 허니팟 스팸 차단), 개인정보 보호 사진 갤러리(EXIF GPS 위치 영구 삭제 & 2048px 고품질 리사이징), Supabase 연동 만다린 퍼즐 게임(Web Audio Pop 사운드 & 실시간 Top 5) 및 원클릭 런처 환경을 제공합니다.",
+        "Streamlit과 OpenAI 최신 모델(GPT-5.6)을 연동한 감성 오션 테마 챗봇 플랫폼입니다. 해수면↔심해 어비스 원클릭 테마 전환, 20개 S자 곡선 상승 기포(Bubbles) 파티클 및 글래스모피즘 연출, API 키 세션 메모리 전용 격리 보안, SQLite 기반 멀티세션 FIFO 큐 관리를 지원합니다."
+      ],
+      "mainWidth": 390,
+      "mainClientWidth": 390
+    },
+    {
+      "runtimeErrors": [],
+      "passed": true
+    }
+  ],
+  "passed": true
+}
