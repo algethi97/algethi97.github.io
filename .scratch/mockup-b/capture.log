@@ -1,0 +1,10 @@
+{"state":"desk","width":1440,"passed":true,"scrollWidth":1440,"innerWidth":1440,"contained":true,"contentPreserved":true}
+{"state":"zoom","width":1440,"passed":true,"scrollWidth":1440,"innerWidth":1440,"contained":true,"contentPreserved":true}
+{"width":1440,"copied":"algethi97@gmail.com","copyToast":true,"fallbackCopied":"algethi97@gmail.com","fallback":true,"failureHandled":true,"passed":true}
+{"width":1440,"scrolls":true,"escaped":true,"keyboardOpened":true,"buttonClosed":true,"passed":true}
+{"state":"portfolio","width":1440,"passed":true,"scrollWidth":1425,"innerWidth":1440,"contentPreserved":true}
+{"state":"desk","width":390,"passed":true,"scrollWidth":390,"innerWidth":390,"contained":true,"contentPreserved":true}
+{"state":"zoom","width":390,"passed":true,"scrollWidth":390,"innerWidth":390,"contained":true,"contentPreserved":true}
+{"width":390,"copied":"algethi97@gmail.com","copyToast":true,"fallbackCopied":"algethi97@gmail.com","fallback":true,"failureHandled":true,"passed":true}
+{"width":390,"scrolls":true,"escaped":true,"keyboardOpened":true,"buttonClosed":true,"passed":true}
+{"state":"portfolio","width":390,"passed":true,"scrollWidth":390,"innerWidth":390,"contentPreserved":true}

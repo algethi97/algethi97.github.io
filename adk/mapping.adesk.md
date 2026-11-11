@@ -79,6 +79,31 @@ AI가 파일을 추가·이동·삭제하면 이 파일의 행도 함께 고친�
 | `design/mockups/a-deskterior/desk-bg.svg` | 우드 책상과 귤 캐릭터 배경 | 화면 좌표 및 축소·확대 스크린샷 확인 |
 | `design/mockups/a-deskterior/bg-prompt.md` | 배경 재생성 한영 프롬프트 | 구도·좌표 확인 방법 대조 |
 
+## design/mockups/b-editorial
+
+| 경로 | 기능 | 관련 테스트 |
+| --- | --- | --- |
+| `design/mockups/b-editorial/index.html` | 방향 B 홈과 모니터 확대·축소 및 이메일 복사 시안 | Chrome 1440·390px 확대·축소와 복사 동작 확인 |
+| `design/mockups/b-editorial/portfolio.html` | 방향 B 프로젝트 여섯 개의 번호 목록형 시안 | Chrome 1440·390px 반응형과 원문 대조 |
+| `design/mockups/b-editorial/style.css` | 종이색·청록색 변수와 에디토리얼 전용 스타일 | 홈·포트폴리오 가로 넘침과 화면 내부 배치 측정 |
+| `design/mockups/b-editorial/desk-bg.svg` | 자연광·흰 책상·모니터·책·액자 배경 | 모니터 좌표와 축소·확대 스크린샷 확인 |
+| `design/mockups/b-editorial/bg-prompt.md` | 방향 B 배경 재생성 한영 프롬프트와 좌표 확인 방법 | 승인된 구도·좌표·중심축 대조 |
+
+## .scratch/mockup-b
+
+| 경로 | 기능 | 관련 테스트 |
+| --- | --- | --- |
+| `.scratch/mockup-b/measure.mjs` | 방향 B 임시 브라우저 측정과 캡처 도구 | Node 내장 모듈과 로컬 헤드리스 Chrome |
+| `.scratch/mockup-b/results.json` | 방향 B 화면·콘텐츠·복사·확대 측정 결과 | 1440·390px 화면과 동작 확인 |
+| `.scratch/mockup-b/desk-1440.png` | 홈 데스크톱 축소 화면 | Chrome 스크린샷 |
+| `.scratch/mockup-b/zoom-1440.png` | 홈 데스크톱 확대 화면 | Chrome 스크린샷 |
+| `.scratch/mockup-b/portfolio-1440.png` | 포트폴리오 데스크톱 화면 | Chrome 스크린샷 |
+| `.scratch/mockup-b/desk-390.png` | 홈 모바일 축소 화면 | Chrome 스크린샷 |
+| `.scratch/mockup-b/zoom-390.png` | 홈 모바일 확대 화면 | Chrome 스크린샷 |
+| `.scratch/mockup-b/portfolio-390.png` | 포트폴리오 모바일 화면 | Chrome 스크린샷 |
+| `.scratch/mockup-b/capture.log` | 방향 B 캡처 실행 기록 | 해당 없음 |
+| `.scratch/mockup-b/capture-error.log` | 방향 B 캡처 오류 기록 | 해당 없음 |
+
 ## .scratch
 
 | 경로 | 기능 | 관련 테스트 |
