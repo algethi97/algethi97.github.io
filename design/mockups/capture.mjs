@@ -7,7 +7,7 @@ import { once } from 'node:events';
 
 const root = dirname(fileURLToPath(import.meta.url));
 const output = resolve(root, 'screenshots');
-const directions = ['a-deskterior', 'b-editorial', 'c-terminal'];
+const directions = ['a-deskterior', 'b-editorial', 'c-terminal', 'd-editorial-noir'];
 const sizes = [{ width: 1440, height: 900 }, { width: 390, height: 844 }];
 const delay = ms => new Promise(resolve => setTimeout(resolve, ms));
 const server = createServer(async (req, res) => {

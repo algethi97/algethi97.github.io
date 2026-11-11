@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1672" height="941" viewBox="0 0 1672 941" role="img" aria-labelledby="title desc">
+  <title id="title">자연광이 드는 밝은 작업 공간(블랙·레드 포인트)</title>
+  <desc id="desc">흰 책상과 검은 모니터, 회색 장패드 위의 검은 프레임에 흰 키캡과 빨간 포인트가 있는 키보드와 흰 휠의 검은 마우스, 빨간 책이 섞인 책 더미와 빨간 추상화 액자가 있는 낮의 작업 공간이다.</desc>
+  <defs>
+    <linearGradient id="wall" x2="0.9" y2="1">
+      <stop stop-color="#fcfbf8"/><stop offset="1" stop-color="#e8e5e0"/>
+    </linearGradient>
+    <linearGradient id="desk" x2="0" y2="1">
+      <stop stop-color="#ffffff"/><stop offset="1" stop-color="#ebe8e4"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="180%">
+      <feGaussianBlur stdDeviation="14"/>
+    </filter>
+  </defs>
+  <path fill="url(#wall)" d="M0 0h1672v941H0z"/>
+  <path fill="#fff" opacity=".55" d="M0 70 360 0h185L174 700H0zM610 0h135L377 700H236z"/>
+  <g fill="none" stroke="#ddd9d3" stroke-width="3">
+    <path d="M0 166h192M0 350h96M192 0v166"/>
+  </g>
+  <path fill="#cfcac4" opacity=".5" filter="url(#shadow)" d="m509 264 689 0 45 373H536z"/>
+  <path fill="url(#desk)" d="M0 705h1672v191H0z"/>
+  <path fill="#d8d4ce" d="M0 896h1672v15H0z"/>
+  <path fill="#eeebe6" d="M0 911h1672v30H0z"/>
+  <path fill="#2a2a2a" d="M70 911h28v30H70zM1574 911h28v30h-28z"/>
+  <ellipse cx="839" cy="730" rx="220" ry="18" fill="#ccc7c1" opacity=".6" filter="url(#shadow)"/>
+  <path fill="#1c1c1c" d="M802 605h66l13 105h-92z"/>
+  <rect x="732" y="704" width="206" height="12" rx="5" fill="#1c1c1c"/>
+  <rect x="484" y="216" width="702" height="390" rx="8" fill="#141414"/>
+  <!-- 1672×941 기준 승인된 화면 내부 사각형이다. -->
+  <rect x="493.0728" y="224.9931" width="684.0152" height="371.9773" fill="#faf8f4"/>
+  <g transform="translate(197 414)">
+    <rect width="182" height="282" fill="#141414"/>
+    <rect x="7" y="7" width="168" height="268" fill="#fffef9"/>
+    <rect x="25" y="25" width="132" height="232" fill="#efebe5"/>
+    <path d="M43 222V127a49 49 0 0 1 98 0v95z" fill="#F22A18"/>
+    <path d="M64 222v-95a28 28 0 0 1 56 0v95" fill="#141414"/>
+  </g>
+  <g stroke="#bdb7b0" stroke-width="2">
+    <rect x="1275" y="677" width="235" height="25" fill="#fbfcf6"/>
+    <rect x="1291" y="650" width="211" height="26" fill="#F22A18"/>
+    <rect x="1268" y="626" width="224" height="23" fill="#fbfcf6"/>
+    <path d="M1295 686h193M1284 635h188"/>
+  </g>
+  <!-- 키보드와 마우스를 함께 받치는 회색 장패드 -->
+  <rect x="610" y="745" width="535" height="112" rx="12" fill="#BABABA"/>
+  <!-- 검은 프레임 키보드: 흰 키캡과 빨간 Esc·Enter 포인트 -->
+  <rect x="640" y="770" width="355" height="59" rx="7" fill="#d6d1cb"/>
+  <rect x="644" y="766" width="347" height="54" rx="6" fill="#141414"/>
+  <rect x="644" y="766" width="347" height="3" rx="1.5" fill="#F22A18"/>
+  <g>
+    <rect x="652.0" y="773" width="22.7" height="10" rx="1.5" fill="#F22A18"/>
+    <rect x="677.7" y="773" width="22.7" height="10" rx="1.5" fill="#fbfaf7"/>
+    <rect x="703.4" y="773" width="22.7" height="10" rx="1.5" fill="#fbfaf7"/>
+    <rect x="729.1" y="773" width="22.7" height="10" rx="1.5" fill="#fbfaf7"/>
+    <rect x="754.8" y="773" width="22.7" height="10" rx="1.5" fill="#fbfaf7"/>
+    <rect x="780.5" y="773" width="22.7" height="10" rx="1.5" fill="#fbfaf7"/>
+    <rect x="806.2" y="773" width="22.7" height="10" rx="1.5" fill="#fbfaf7"/>
+    <rect x="831.8" y="773" width="22.7" height="10" rx="1.5" fill="#fbfaf7"/>
+    <rect x="857.5" y="773" width="22.7" height="10" rx="1.5" fill="#fbfaf7"/>
+    <rect x="883.2" y="773" width="22.7" height="10" rx="1.5" fill="#fbfaf7"/>
+    <rect x="908.9" y="773" width="22.7" height="10" rx="1.5" fill="#fbfaf7"/>
+    <rect x="934.6" y="773" width="22.7" height="10" rx="1.5" fill="#fbfaf7"/>
+    <rect x="960.3" y="773" width="22.7" height="10" rx="1.5" fill="#fbfaf7"/>
+    <rect x="652.0" y="786" width="23.8" height="10" rx="1.5" fill="#fbfaf7"/>
+    <rect x="678.8" y="786" width="23.8" height="10" rx="1.5" fill="#fbfaf7"/>
+    <rect x="705.6" y="786" width="23.8" height="10" rx="1.5" fill="#fbfaf7"/>
+    <rect x="732.4" y="786" width="23.8" height="10" rx="1.5" fill="#fbfaf7"/>
+    <rect x="759.2" y="786" width="23.8" height="10" rx="1.5" fill="#fbfaf7"/>
+    <rect x="786.0" y="786" width="23.8" height="10" rx="1.5" fill="#fbfaf7"/>
+    <rect x="812.7" y="786" width="23.8" height="10" rx="1.5" fill="#fbfaf7"/>
+    <rect x="839.5" y="786" width="23.8" height="10" rx="1.5" fill="#fbfaf7"/>
+    <rect x="866.3" y="786" width="23.8" height="10" rx="1.5" fill="#fbfaf7"/>
+    <rect x="893.1" y="786" width="23.8" height="10" rx="1.5" fill="#fbfaf7"/>
+    <rect x="919.9" y="786" width="23.8" height="10" rx="1.5" fill="#fbfaf7"/>
+    <rect x="946.7" y="786" width="36.3" height="10" rx="1.5" fill="#F22A18"/>
+    <rect x="652.0" y="799" width="33.2" height="11" rx="1.5" fill="#fbfaf7"/>
+    <rect x="688.2" y="799" width="33.2" height="11" rx="1.5" fill="#fbfaf7"/>
+    <rect x="724.4" y="799" width="33.2" height="11" rx="1.5" fill="#fbfaf7"/>
+    <rect x="760.6" y="799" width="150.0" height="11" rx="1.5" fill="#fbfaf7"/>
+    <rect x="913.6" y="799" width="33.2" height="11" rx="1.5" fill="#fbfaf7"/>
+    <rect x="949.8" y="799" width="33.2" height="11" rx="1.5" fill="#fbfaf7"/>
+  </g>
+  <!-- 검은 몸체 마우스와 흰 휠 -->
+  <rect x="1066" y="771" width="44" height="64" rx="22" fill="#141414"/>
+  <path d="M1088 771v26M1066 797h44" stroke="#3a3a3a" stroke-width="1.5"/>
+  <rect x="1085" y="779" width="6" height="14" rx="3" fill="#fbfaf7"/>
+</svg>

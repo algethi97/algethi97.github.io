@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="light">
+  <title>에디토리얼 블랙·레드안 | algethi97</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="desk-viewport">
+    <button type="button" class="desk-zoomout-btn" hidden>데스크 뷰로 축소 (ESC)</button>
+    <div class="desk-canvas">
+      <div class="monitor-screen">
+        <button type="button" class="monitor-hint-overlay" aria-label="모니터 화면 확대" aria-expanded="false" aria-controls="monitor-content">
+          <span>화면을 클릭하여 모니터 켜기 ↗</span>
+        </button>
+        <div class="window-titlebar" aria-hidden="true">algethi97.github.io</div>
+        <div class="monitor-scrollable" id="monitor-content" inert>
+<header class="nav-header">
+            <div class="nav-inner">
+              <a href="index.html" class="home-button" aria-label="홈페이지로 돌아가기" title="홈페이지로 돌아가기">
+                <svg class="home-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                  <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                </svg>
+              </a>
+              <div class="tabs-container">
+                <nav class="tabs-grid four-tabs">
+                  <a href="../../../about.html" class="tab-item" id="tab-about">
+                    <span class="tab-emoji">👤</span> 자기소개
+                  </a>
+                  <a href="portfolio.html" class="tab-item" id="tab-portfolio">
+                    <span class="tab-emoji">💼</span> 포트폴리오
+                  </a>
+                  <a href="../../../guestbook.html" class="tab-item" id="tab-guestbook">
+                    <span class="tab-emoji">📝</span> 방명록
+                  </a>
+                  <a href="../../../game.html" class="tab-item" id="tab-game">
+                    <span class="tab-emoji">🍊</span> 만다린 게임
+                  </a>
+                </nav>
+              </div>
+            </div>
+          </header>
+<main class="main-content">
+            <section class="hero-section">
+              <span class="hero-tag">Architect & Developer</span>
+              <h1 class="page-title">Welcome to My Space ✨</h1>
+              <p class="page-subtitle">
+                감각적인 공간과 사용자 경험을 탐구하는 algethi97의 포트폴리오입니다.<br>
+                상단 탭을 통해 자기소개, 프로젝트, 미니게임을 둘러보세요.
+              </p>
+              <div>
+                <button type="button" class="copy-badge" data-copy="algethi97@gmail.com" data-message="이메일 주소(algethi97@gmail.com)가 복사되었습니다!" title="클릭하여 이메일 주소 복사">
+                  📧 algethi97@gmail.com <span class="copy-icon">📋</span>
+                </button>
+              </div>
+            </section>
+            <section class="home-links-grid">
+              <div class="quick-link-card">
+                <div>
+                  <h2>👤 자기소개</h2>
+                  <p>
+                    공간과 코드를 잇는 시각, 보유한 기술 스택과 성장 과정을 확인해 보세요.
+                  </p>
+                </div>
+                <a href="../../../about.html" class="btn">자기소개 보러가기 &rarr;</a>
+              </div>
+              <div class="quick-link-card">
+                <div>
+                  <h2>💼 포트폴리오</h2>
+                  <p>
+                    웹 서비스, 데이터 분석, 인터랙티브 프로젝트 등 다양한 작업물을 소개합니다.
+                  </p>
+                </div>
+                <a href="portfolio.html" class="btn">프로젝트 둘러보기 &rarr;</a>
+              </div>
+              <div class="quick-link-card">
+                <div>
+                  <h2>🍊 만다린 게임</h2>
+                  <p>
+                    합이 10이 되도록 귤을 터뜨리는 상큼한 퍼즐! 120초 동안 실시간 Top 5 랭킹에 도전해 보세요.
+                  </p>
+                </div>
+                <a href="../../../game.html" class="btn">게임 플레이하기 &rarr;</a>
+              </div>
+              <div class="quick-link-card">
+                <div>
+                  <h2>📝 방명록</h2>
+                  <p>
+                    방문 기념 한마디를 남겨주세요. 남겨주신 소중한 메시지는 큰 힘이 됩니다.
+                  </p>
+                </div>
+                <a href="../../../guestbook.html" class="btn">방명록 남기기 &rarr;</a>
+              </div>
+            </section>
+          </main>
+<footer class="site-footer">© 2026 algethi97.</footer>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="toast" role="status" aria-live="polite" hidden></div>
+  <script>
+    const viewport = document.querySelector('.desk-viewport');
+    const openButton = document.querySelector('.monitor-hint-overlay');
+    const closeButton = document.querySelector('.desk-zoomout-btn');
+    const content = document.querySelector('.monitor-scrollable');
+    const copyButton = document.querySelector('.copy-badge');
+    const toast = document.querySelector('.toast');
+    let toastTimeout;
+
+    function setZoom(zoomed) {
+      viewport.classList.toggle('is-zoomed', zoomed);
+      openButton.setAttribute('aria-expanded', String(zoomed));
+      openButton.hidden = zoomed;
+      closeButton.hidden = !zoomed;
+      content.inert = !zoomed;
+      (zoomed ? closeButton : openButton).focus({ preventScroll: true });
+    }
+
+    openButton.addEventListener('click', () => setZoom(true));
+    closeButton.addEventListener('click', () => setZoom(false));
+    document.addEventListener('keydown', event => {
+      if (event.key === 'Escape' && viewport.classList.contains('is-zoomed')) {
+        setZoom(false);
+      }
+    });
+
+    function fallbackCopy(text) {
+      const field = document.createElement('textarea');
+      field.value = text;
+      field.style.cssText = 'position:fixed;opacity:0;';
+      field.setAttribute('aria-label', '복사할 이메일 주소');
+      document.body.appendChild(field);
+      try {
+        field.focus();
+        field.select();
+        return document.execCommand('copy');
+      } finally {
+        field.remove();
+        copyButton.focus({ preventScroll: true });
+      }
+    }
+
+    copyButton.addEventListener('click', async () => {
+      let copied = false;
+      try {
+        await navigator.clipboard.writeText(copyButton.dataset.copy);
+        copied = true;
+      } catch {
+        try {
+          copied = fallbackCopy(copyButton.dataset.copy);
+        } catch {
+          copied = false;
+        }
+      }
+      toast.textContent = copied ? copyButton.dataset.message : '복사에 실패했습니다. 다시 시도해 주세요.';
+      toast.hidden = false;
+      clearTimeout(toastTimeout);
+      toastTimeout = setTimeout(() => { toast.hidden = true; }, 3000);
+    });
+  </script>
+</body>
+</html>
