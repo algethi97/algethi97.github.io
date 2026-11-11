@@ -85,8 +85,17 @@ AI가 파일을 추가·이동·삭제하면 이 파일의 행도 함께 고친�
 | 경로 | 기능 | 관련 테스트 |
 | --- | --- | --- |
 | `images/GPT_Gen.png` | 데스크테리어 배경 이미지 | 홈 화면 브라우저 확인 |
+| `images/desk-bg-noir.svg` | 음영을 보강한 블랙·레드 책상 배경 | Chrome 1672×941 래스터·화면 네 경계 2px 이내·빈 화면 확인 |
 | `images/mandarin.png` | 게임 감귤 타일 이미지 | 게임 화면 브라우저 확인 |
 | `images/mandarin_slice_bg.png` | 보존 중인 감귤 이미지 | 해당 없음 |
+
+## .scratch/noir-bg
+
+| 경로 | 기능 | 관련 테스트 |
+| --- | --- | --- |
+| `.scratch/noir-bg/measure.mjs` | 배경 래스터 생성·화면 경계 측정기 | Node 구문 검사와 로컬 헤드리스 Chrome 실행 |
+| `.scratch/noir-bg/measure.json` | SVG 좌표·래스터 경계 측정 결과 | 1672×941 크기·네 경계 차이·런타임 오류 확인 |
+| `.scratch/noir-bg/bg-raster.png` | 원본 크기 블랙·레드 배경 캡처 | 빈 모니터·소품·음영 육안 확인 |
 
 ## .scratch/noir-remodel
 

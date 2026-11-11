@@ -1,0 +1,328 @@
+{
+  "source": "images/desk-bg-noir.svg",
+  "sourceBytes": 9433,
+  "sourceSha256": "bb4afdb6bc214acd47fd094723cb5323fe500e59a4321abff68f29a4fb41a16b",
+  "sizeGoal": {
+    "description": "Provisional target of 60KB or less; exceeding it requires explanation, not rejection.",
+    "bytes": 9433
+  },
+  "syntaxValidation": "xmllint and common Node XML parsers are unavailable; Chrome DOMParser and error-free raster rendering substitute as permitted by stage 1.",
+  "browser": "Chrome/156.0.8078.80",
+  "raster": ".scratch/noir-bg/bg-raster.png",
+  "rasterSize": {
+    "width": 1672,
+    "height": 941
+  },
+  "measurement": {
+    "method": "Scan the captured PNG at 25%, 50%, and 75% of each screen axis. Classify pixels by the nearer squared RGB distance to paper #faf8f4 or bezel #141414. Right and bottom use the exclusive edge of the paper run.",
+    "tolerancePx": 2,
+    "expected": {
+      "left": 493.0728,
+      "top": 224.9931,
+      "right": 1177.088,
+      "bottom": 596.9704
+    },
+    "svg": {
+      "left": {
+        "actual": 493.0728,
+        "expected": 493.0728,
+        "deltaPx": 0,
+        "passed": true
+      },
+      "top": {
+        "actual": 224.9931,
+        "expected": 224.9931,
+        "deltaPx": 0,
+        "passed": true
+      },
+      "right": {
+        "actual": 1177.088,
+        "expected": 1177.088,
+        "deltaPx": 0,
+        "passed": true
+      },
+      "bottom": {
+        "actual": 596.9704,
+        "expected": 596.9704,
+        "deltaPx": 0,
+        "passed": true
+      }
+    },
+    "raster": [
+      {
+        "row": 317,
+        "column": 664,
+        "edges": {
+          "left": {
+            "actual": 493,
+            "expected": 493.0728,
+            "deltaPx": -0.0728,
+            "passed": true
+          },
+          "top": {
+            "actual": 225,
+            "expected": 224.9931,
+            "deltaPx": 0.0069,
+            "passed": true
+          },
+          "right": {
+            "actual": 1177,
+            "expected": 1177.088,
+            "deltaPx": -0.088,
+            "passed": true
+          },
+          "bottom": {
+            "actual": 597,
+            "expected": 596.9704,
+            "deltaPx": 0.0296,
+            "passed": true
+          }
+        }
+      },
+      {
+        "row": 410,
+        "column": 835,
+        "edges": {
+          "left": {
+            "actual": 493,
+            "expected": 493.0728,
+            "deltaPx": -0.0728,
+            "passed": true
+          },
+          "top": {
+            "actual": 225,
+            "expected": 224.9931,
+            "deltaPx": 0.0069,
+            "passed": true
+          },
+          "right": {
+            "actual": 1177,
+            "expected": 1177.088,
+            "deltaPx": -0.088,
+            "passed": true
+          },
+          "bottom": {
+            "actual": 597,
+            "expected": 596.9704,
+            "deltaPx": 0.0296,
+            "passed": true
+          }
+        }
+      },
+      {
+        "row": 503,
+        "column": 1006,
+        "edges": {
+          "left": {
+            "actual": 493,
+            "expected": 493.0728,
+            "deltaPx": -0.0728,
+            "passed": true
+          },
+          "top": {
+            "actual": 225,
+            "expected": 224.9931,
+            "deltaPx": 0.0069,
+            "passed": true
+          },
+          "right": {
+            "actual": 1177,
+            "expected": 1177.088,
+            "deltaPx": -0.088,
+            "passed": true
+          },
+          "bottom": {
+            "actual": 597,
+            "expected": 596.9704,
+            "deltaPx": 0.0296,
+            "passed": true
+          }
+        }
+      }
+    ]
+  },
+  "checks": [
+    {
+      "name": "SVG and raster dimensions",
+      "passed": true,
+      "detail": {
+        "svg": {
+          "width": 1672,
+          "height": 941,
+          "viewBox": "0 0 1672 941"
+        },
+        "raster": {
+          "width": 1672,
+          "height": 941
+        }
+      }
+    },
+    {
+      "name": "SVG screen boundaries within 2px",
+      "passed": true,
+      "detail": {
+        "left": {
+          "actual": 493.0728,
+          "expected": 493.0728,
+          "deltaPx": 0,
+          "passed": true
+        },
+        "top": {
+          "actual": 224.9931,
+          "expected": 224.9931,
+          "deltaPx": 0,
+          "passed": true
+        },
+        "right": {
+          "actual": 1177.088,
+          "expected": 1177.088,
+          "deltaPx": 0,
+          "passed": true
+        },
+        "bottom": {
+          "actual": 596.9704,
+          "expected": 596.9704,
+          "deltaPx": 0,
+          "passed": true
+        }
+      }
+    },
+    {
+      "name": "Approved bezel coordinates",
+      "passed": true,
+      "detail": {
+        "x": 484,
+        "y": 216,
+        "width": 702,
+        "height": 390
+      }
+    },
+    {
+      "name": "Raster screen boundaries within 2px",
+      "passed": true,
+      "detail": [
+        {
+          "row": 317,
+          "column": 664,
+          "edges": {
+            "left": {
+              "actual": 493,
+              "expected": 493.0728,
+              "deltaPx": -0.0728,
+              "passed": true
+            },
+            "top": {
+              "actual": 225,
+              "expected": 224.9931,
+              "deltaPx": 0.0069,
+              "passed": true
+            },
+            "right": {
+              "actual": 1177,
+              "expected": 1177.088,
+              "deltaPx": -0.088,
+              "passed": true
+            },
+            "bottom": {
+              "actual": 597,
+              "expected": 596.9704,
+              "deltaPx": 0.0296,
+              "passed": true
+            }
+          }
+        },
+        {
+          "row": 410,
+          "column": 835,
+          "edges": {
+            "left": {
+              "actual": 493,
+              "expected": 493.0728,
+              "deltaPx": -0.0728,
+              "passed": true
+            },
+            "top": {
+              "actual": 225,
+              "expected": 224.9931,
+              "deltaPx": 0.0069,
+              "passed": true
+            },
+            "right": {
+              "actual": 1177,
+              "expected": 1177.088,
+              "deltaPx": -0.088,
+              "passed": true
+            },
+            "bottom": {
+              "actual": 597,
+              "expected": 596.9704,
+              "deltaPx": 0.0296,
+              "passed": true
+            }
+          }
+        },
+        {
+          "row": 503,
+          "column": 1006,
+          "edges": {
+            "left": {
+              "actual": 493,
+              "expected": 493.0728,
+              "deltaPx": -0.0728,
+              "passed": true
+            },
+            "top": {
+              "actual": 225,
+              "expected": 224.9931,
+              "deltaPx": 0.0069,
+              "passed": true
+            },
+            "right": {
+              "actual": 1177,
+              "expected": 1177.088,
+              "deltaPx": -0.088,
+              "passed": true
+            },
+            "bottom": {
+              "actual": 597,
+              "expected": 596.9704,
+              "deltaPx": 0.0296,
+              "passed": true
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Blank paper screen",
+      "passed": true,
+      "detail": {
+        "blankPixels": 251289,
+        "otherPixels": 0
+      }
+    },
+    {
+      "name": "Self-contained static SVG",
+      "passed": true,
+      "detail": {
+        "prohibitedElements": [],
+        "externalReferences": [],
+        "filterPrimitives": [
+          "feGaussianBlur",
+          "feGaussianBlur",
+          "feGaussianBlur"
+        ]
+      }
+    },
+    {
+      "name": "Chrome XML parsing and runtime",
+      "passed": true,
+      "detail": {
+        "xmlErrors": [],
+        "renderedXmlErrors": [],
+        "runtimeErrors": []
+      }
+    }
+  ],
+  "passed": true
+}
