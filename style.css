@@ -323,7 +323,6 @@ body.page-leaving {
   top: 0;
   z-index: 50;
   background-color: var(--paper);
-  backdrop-filter: blur(12px);
   border-bottom: 3px solid var(--black);
 }
 
@@ -372,8 +371,8 @@ body.page-leaving {
   flex: 1;
 }
 
-/* 이모지 래퍼가 데스크톱 탭의 문자 흐름을 나누지 않도록 유지 */
-.monitor-scrollable .tab-emoji {
+/* 이모지 래퍼가 탭의 문자 흐름을 나누지 않도록 유지 */
+.tab-emoji {
   display: contents;
 }
 
@@ -788,6 +787,20 @@ body.page-leaving {
     gap: 0.25rem;
   }
 
+}
+
+/* 좁은 휴대폰에서는 탭 아이콘을 숨겨 탭 이름이 두 줄로 나뉘지 않게 한다. */
+@media (max-width: 480px) {
+  .tab-emoji {
+    display: none;
+  }
+}
+
+/* 360px대 휴대폰에서도 '만다린 게임'이 한 줄에 들어가도록 탭 글자를 조금 줄인다. */
+@media (max-width: 400px) {
+  .tab-item {
+    font-size: 0.72rem;
+  }
 }
 
 /* 확대 전 모니터 크기로 본문 비례를 맞추고 모바일 탭 글자 크기는 유지한다. */
