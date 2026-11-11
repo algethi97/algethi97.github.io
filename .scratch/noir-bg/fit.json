@@ -1,0 +1,101 @@
+{
+  "source": "images/desk-bg-noir-source.png",
+  "sourceSize": {
+    "width": 1672,
+    "height": 941
+  },
+  "coverScale": 1,
+  "scan": {
+    "screenColor": [
+      250.4,
+      244.8,
+      236.2
+    ],
+    "bezelColor": [
+      18.4,
+      18.1,
+      17.8
+    ],
+    "rows": [
+      {
+        "axis": "row",
+        "fixed": 317,
+        "start": 494,
+        "end": 1176
+      },
+      {
+        "axis": "row",
+        "fixed": 410,
+        "start": 494,
+        "end": 1176
+      },
+      {
+        "axis": "row",
+        "fixed": 503,
+        "start": 494,
+        "end": 1176
+      }
+    ],
+    "columns": [
+      {
+        "axis": "column",
+        "fixed": 664,
+        "start": 225,
+        "end": 596
+      },
+      {
+        "axis": "column",
+        "fixed": 835,
+        "start": 225,
+        "end": 596
+      },
+      {
+        "axis": "column",
+        "fixed": 1006,
+        "start": 225,
+        "end": 596
+      }
+    ]
+  },
+  "measured": {
+    "left": 494,
+    "right": 1176,
+    "top": 225,
+    "bottom": 596
+  },
+  "edgeSpreadPx": {
+    "left": 0,
+    "right": 0,
+    "top": 0,
+    "bottom": 0
+  },
+  "tilted": false,
+  "comparison": {
+    "left": {
+      "actual": 494,
+      "expected": 493.0728,
+      "deltaPx": 0.9272,
+      "passed": true
+    },
+    "top": {
+      "actual": 225,
+      "expected": 224.9931,
+      "deltaPx": 0.0069,
+      "passed": true
+    },
+    "right": {
+      "actual": 1176,
+      "expected": 1177.088,
+      "deltaPx": -1.088,
+      "passed": true
+    },
+    "bottom": {
+      "actual": 596,
+      "expected": 596.9704,
+      "deltaPx": -0.9704,
+      "passed": true
+    }
+  },
+  "runtimeErrors": [],
+  "decision": "saved: within tolerance, source already 1672x941, copied byte-for-byte"
+}

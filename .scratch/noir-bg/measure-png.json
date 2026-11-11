@@ -1,0 +1,271 @@
+{
+  "source": "images/desk-bg-noir.png",
+  "sourceBytes": 1615625,
+  "sourceSha256": "35e7f9f8a2933703359d4053063e0a25d2e5bd34b501e7c1faf9fe8b6052173c",
+  "browser": "Chrome/156.0.8078.80",
+  "raster": ".scratch/noir-bg/bg-raster.png (byte copy of the final PNG)",
+  "rasterSize": {
+    "width": 1672,
+    "height": 941
+  },
+  "measurement": {
+    "method": "Decode the PNG in a Chrome canvas and scan at 25%, 50%, and 75% of each screen axis. Classify pixels by the nearer squared RGB distance to the screen color (9x9 average around the screen center) or the bezel color (average of points 6px outside the expected boundaries). Right and bottom use the exclusive edge of the screen run.",
+    "tolerancePx": 2,
+    "expected": {
+      "left": 493.0728,
+      "top": 224.9931,
+      "right": 1177.088,
+      "bottom": 596.9704
+    },
+    "screenColor": [
+      250.4,
+      244.8,
+      236.2
+    ],
+    "bezelColor": [
+      18.4,
+      18.1,
+      17.8
+    ],
+    "raster": [
+      {
+        "row": 317,
+        "column": 664,
+        "edges": {
+          "left": {
+            "actual": 494,
+            "expected": 493.0728,
+            "deltaPx": 0.9272,
+            "passed": true
+          },
+          "top": {
+            "actual": 225,
+            "expected": 224.9931,
+            "deltaPx": 0.0069,
+            "passed": true
+          },
+          "right": {
+            "actual": 1176,
+            "expected": 1177.088,
+            "deltaPx": -1.088,
+            "passed": true
+          },
+          "bottom": {
+            "actual": 596,
+            "expected": 596.9704,
+            "deltaPx": -0.9704,
+            "passed": true
+          }
+        }
+      },
+      {
+        "row": 410,
+        "column": 835,
+        "edges": {
+          "left": {
+            "actual": 494,
+            "expected": 493.0728,
+            "deltaPx": 0.9272,
+            "passed": true
+          },
+          "top": {
+            "actual": 225,
+            "expected": 224.9931,
+            "deltaPx": 0.0069,
+            "passed": true
+          },
+          "right": {
+            "actual": 1176,
+            "expected": 1177.088,
+            "deltaPx": -1.088,
+            "passed": true
+          },
+          "bottom": {
+            "actual": 596,
+            "expected": 596.9704,
+            "deltaPx": -0.9704,
+            "passed": true
+          }
+        }
+      },
+      {
+        "row": 503,
+        "column": 1006,
+        "edges": {
+          "left": {
+            "actual": 494,
+            "expected": 493.0728,
+            "deltaPx": 0.9272,
+            "passed": true
+          },
+          "top": {
+            "actual": 225,
+            "expected": 224.9931,
+            "deltaPx": 0.0069,
+            "passed": true
+          },
+          "right": {
+            "actual": 1176,
+            "expected": 1177.088,
+            "deltaPx": -1.088,
+            "passed": true
+          },
+          "bottom": {
+            "actual": 596,
+            "expected": 596.9704,
+            "deltaPx": -0.9704,
+            "passed": true
+          }
+        }
+      }
+    ],
+    "edgeSpreadPx": {
+      "left": 0,
+      "top": 0,
+      "right": 0,
+      "bottom": 0
+    }
+  },
+  "saturatedHueCounts": {
+    "note": "Pixels with saturation >= 0.45 and value >= 0.35 grouped by hue: red 345-15, orange 15-45, yellow 45-70 degrees. Informational; orange absence is judged by eye.",
+    "red": 14950,
+    "orange": 1,
+    "yellow": 0,
+    "other": 0
+  },
+  "checks": [
+    {
+      "name": "PNG dimensions",
+      "passed": true,
+      "detail": {
+        "width": 1672,
+        "height": 941
+      }
+    },
+    {
+      "name": "Raster screen boundaries within 2px",
+      "passed": true,
+      "detail": [
+        {
+          "row": 317,
+          "column": 664,
+          "edges": {
+            "left": {
+              "actual": 494,
+              "expected": 493.0728,
+              "deltaPx": 0.9272,
+              "passed": true
+            },
+            "top": {
+              "actual": 225,
+              "expected": 224.9931,
+              "deltaPx": 0.0069,
+              "passed": true
+            },
+            "right": {
+              "actual": 1176,
+              "expected": 1177.088,
+              "deltaPx": -1.088,
+              "passed": true
+            },
+            "bottom": {
+              "actual": 596,
+              "expected": 596.9704,
+              "deltaPx": -0.9704,
+              "passed": true
+            }
+          }
+        },
+        {
+          "row": 410,
+          "column": 835,
+          "edges": {
+            "left": {
+              "actual": 494,
+              "expected": 493.0728,
+              "deltaPx": 0.9272,
+              "passed": true
+            },
+            "top": {
+              "actual": 225,
+              "expected": 224.9931,
+              "deltaPx": 0.0069,
+              "passed": true
+            },
+            "right": {
+              "actual": 1176,
+              "expected": 1177.088,
+              "deltaPx": -1.088,
+              "passed": true
+            },
+            "bottom": {
+              "actual": 596,
+              "expected": 596.9704,
+              "deltaPx": -0.9704,
+              "passed": true
+            }
+          }
+        },
+        {
+          "row": 503,
+          "column": 1006,
+          "edges": {
+            "left": {
+              "actual": 494,
+              "expected": 493.0728,
+              "deltaPx": 0.9272,
+              "passed": true
+            },
+            "top": {
+              "actual": 225,
+              "expected": 224.9931,
+              "deltaPx": 0.0069,
+              "passed": true
+            },
+            "right": {
+              "actual": 1176,
+              "expected": 1177.088,
+              "deltaPx": -1.088,
+              "passed": true
+            },
+            "bottom": {
+              "actual": 596,
+              "expected": 596.9704,
+              "deltaPx": -0.9704,
+              "passed": true
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Screen not tilted (edge spread <= 3px)",
+      "passed": true,
+      "detail": {
+        "left": 0,
+        "top": 0,
+        "right": 0,
+        "bottom": 0
+      }
+    },
+    {
+      "name": "No bezel-colored (text/UI) pixels inside screen",
+      "passed": true,
+      "detail": {
+        "pixels": 247105,
+        "bezelLike": 0,
+        "offPaperOver24": 0,
+        "minLuma": 240.3,
+        "maxLuma": 248.1
+      }
+    },
+    {
+      "name": "Chrome runtime",
+      "passed": true,
+      "detail": {
+        "runtimeErrors": []
+      }
+    }
+  ],
+  "passed": true
+}
