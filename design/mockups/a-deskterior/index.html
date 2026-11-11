@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="light">
+  <title>데스크테리어 개선안 | algethi97</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="desk-viewport">
+    <button type="button" class="desk-zoomout-btn" hidden>데스크 뷰로 축소 (ESC)</button>
+    <div class="desk-canvas">
+      <div class="monitor-screen">
+        <button type="button" class="monitor-hint-overlay" aria-label="모니터 화면 확대" aria-expanded="false" aria-controls="monitor-content">
+          <span>화면을 클릭하여 모니터 켜기 <span aria-hidden="true">↗</span></span>
+        </button>
+        <div class="window-titlebar" aria-hidden="true">
+          <div class="window-dots"><i></i><i></i><i></i></div>
+          <span>algethi97.github.io</span>
+        </div>
+        <div class="monitor-scrollable" id="monitor-content" inert>
+<header class="nav-header">
+            <div class="nav-inner">
+              <a href="index.html" class="home-button" aria-label="홈페이지로 돌아가기" title="홈페이지로 돌아가기">
+                <svg class="home-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                  <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                </svg>
+              </a>
+              <div class="tabs-container">
+                <nav class="tabs-grid four-tabs">
+                  <a href="../../../about.html" class="tab-item" id="tab-about">
+                    <span class="tab-emoji">👤</span> 자기소개
+                  </a>
+                  <a href="portfolio.html" class="tab-item" id="tab-portfolio">
+                    <span class="tab-emoji">💼</span> 포트폴리오
+                  </a>
+                  <a href="../../../guestbook.html" class="tab-item" id="tab-guestbook">
+                    <span class="tab-emoji">📝</span> 방명록
+                  </a>
+                  <a href="../../../game.html" class="tab-item" id="tab-game">
+                    <span class="tab-emoji">🍊</span> 만다린 게임
+                  </a>
+                </nav>
+              </div>
+            </div>
+          </header>
+<main class="main-content">
+            <section class="hero-section">
+              <svg class="mandarin" viewBox="0 0 100 90" role="img" aria-label="웃는 귤 캐릭터">
+  <path d="M51 22Q47 6 66 5Q76 16 55 23" fill="#657948"/>
+  <path d="M48 25Q16 14 12 49Q9 82 48 84Q87 85 88 51Q88 18 55 25" fill="#ec913e" stroke="#ad592d" stroke-width="3"/>
+  <path d="M22 42Q27 30 38 31" fill="none" stroke="#ffd49a" stroke-width="5" stroke-linecap="round"/>
+  <g fill="#513329"><circle cx="36" cy="51" r="3"/><circle cx="65" cy="51" r="3"/></g>
+  <path d="M43 61Q50 69 58 61" fill="none" stroke="#513329" stroke-width="3" stroke-linecap="round"/>
+  <g fill="#d9733b"><ellipse cx="28" cy="59" rx="6" ry="3"/><ellipse cx="73" cy="59" rx="6" ry="3"/></g>
+</svg>
+              <span class="hero-tag">Architect & Developer</span>
+              <h1 class="page-title">Welcome to My Space ✨</h1>
+              <p class="page-subtitle">
+                감각적인 공간과 사용자 경험을 탐구하는 algethi97의 포트폴리오입니다.<br>
+                상단 탭을 통해 자기소개, 프로젝트, 미니게임을 둘러보세요.
+              </p>
+              <div>
+                <a class="contact-link" href="mailto:algethi97@gmail.com">📧 algethi97@gmail.com</a>
+              </div>
+            </section>
+            <section class="home-links-grid">
+              <div class="quick-link-card">
+                <div>
+                  <h2>👤 자기소개</h2>
+                  <p>
+                    공간과 코드를 잇는 시각, 보유한 기술 스택과 성장 과정을 확인해 보세요.
+                  </p>
+                </div>
+                <a href="../../../about.html" class="btn">자기소개 보러가기 &rarr;</a>
+              </div>
+
+              <div class="quick-link-card">
+                <div>
+                  <h2>💼 포트폴리오</h2>
+                  <p>
+                    웹 서비스, 데이터 분석, 인터랙티브 프로젝트 등 다양한 작업물을 소개합니다.
+                  </p>
+                </div>
+                <a href="portfolio.html" class="btn">프로젝트 둘러보기 &rarr;</a>
+              </div>
+
+              <div class="quick-link-card">
+                <div>
+                  <h2>🍊 만다린 게임</h2>
+                  <p>
+                    합이 10이 되도록 귤을 터뜨리는 상큼한 퍼즐! 120초 동안 실시간 Top 5 랭킹에 도전해 보세요.
+                  </p>
+                </div>
+                <a href="../../../game.html" class="btn">게임 플레이하기 &rarr;</a>
+              </div>
+
+              <div class="quick-link-card">
+                <div>
+                  <h2>📝 방명록</h2>
+                  <p>
+                    방문 기념 한마디를 남겨주세요. 남겨주신 소중한 메시지는 큰 힘이 됩니다.
+                  </p>
+                </div>
+                <a href="../../../guestbook.html" class="btn">방명록 남기기 &rarr;</a>
+              </div>
+            </section>
+          </main>
+          <footer class="site-footer">© 2026 algethi97.</footer>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    const viewport = document.querySelector('.desk-viewport');
+    const openButton = document.querySelector('.monitor-hint-overlay');
+    const closeButton = document.querySelector('.desk-zoomout-btn');
+    const content = document.querySelector('.monitor-scrollable');
+
+    function setZoom(zoomed) {
+      viewport.classList.toggle('is-zoomed', zoomed);
+      openButton.setAttribute('aria-expanded', String(zoomed));
+      openButton.hidden = zoomed;
+      closeButton.hidden = !zoomed;
+      content.inert = !zoomed;
+      (zoomed ? closeButton : openButton).focus({ preventScroll: true });
+    }
+
+    openButton.addEventListener('click', () => setZoom(true));
+    closeButton.addEventListener('click', () => setZoom(false));
+    document.addEventListener('keydown', event => {
+      if (event.key === 'Escape' && viewport.classList.contains('is-zoomed')) {
+        setZoom(false);
+      }
+    });
+  </script>
+</body>
+</html>
