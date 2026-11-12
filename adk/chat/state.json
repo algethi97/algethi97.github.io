@@ -1,8 +1,8 @@
 {
   "schema_version": 5,
-  "revision": 1668,
+  "revision": 1802,
   "path_format": 1,
-  "active_room_id": "206dc4fe05b44db8b33fda8ed16e2458",
+  "active_room_id": "7f0ce84e17464266829873ba72c4646a",
   "locks": [],
   "proposals": [
     {
@@ -4060,18 +4060,162 @@
         "usage_warning": null,
         "text": "단계 1 완료, 다음 단계 대기 — 사유: Auto 꺼짐 · 5시간 남은 양 23% / 기준 5% (재설정 2026-11-11T10:19:00+00:00) · 주간 남은 양 81% / 기준 5% (재설정 2026-11-13T09:59:00+00:00)"
       }
+    },
+    {
+      "id": "7213808f1fb74677b9389b9b81918b59",
+      "room_id": "7f0ce84e17464266829873ba72c4646a",
+      "agent_id": "Claude(3d967f8d199c05d72b009fd0c016a6edc3ba32ba5afa9db98c83d5d6dd22d63c)",
+      "project_root": ".",
+      "plan_path": "adk/plans/monitor-header-poweron-zoom.md",
+      "card_hash": "69e8a59337a8b0e5ab9cf45e886d046f4649c3d342fbfcde7848289e579b18b7",
+      "execution_plan_hash": "23f24f25a011b6780d7679f8b751c92320772ee8718209340b3239cac70c67f6",
+      "status": "completed",
+      "plan_file": {
+        "status": "cleaned",
+        "error": null
+      },
+      "approval_id": "36c2682f14014d8598249a4f3f86f644",
+      "run_id": "c52944e453ad440a96a1dc7d9ebd2302",
+      "executor": {
+        "choice": "first",
+        "reason": "1순위",
+        "source": "벤치 추천",
+        "cli": "claude",
+        "model": "claude-opus-5-5",
+        "effort": "medium"
+      },
+      "error": null,
+      "created_at": "2026-11-12T00:18:20.055811+00:00",
+      "updated_at": "2026-11-12T00:27:25.251718+00:00",
+      "retain_plan_file": false,
+      "model": "claude-opus-5-5",
+      "effort": "medium",
+      "verification": "verified",
+      "source_message_id": "387d0b0bad1e4fd4a301dd70caee5a03",
+      "executor_pick": {
+        "difficulty": "standard",
+        "first": {
+          "cli": "claude",
+          "model": "claude-opus-5-5",
+          "effort": "medium",
+          "context_cap": null
+        },
+        "second": {
+          "cli": "codex",
+          "model": "gpt-6.1-sol",
+          "effort": "medium",
+          "context_cap": null
+        },
+        "chosen": "first",
+        "reason": "J $0.05 = $1.70 × 0.03 × 1.00 · 1순위",
+        "source": "벤치 추천",
+        "fetched_at": "2026-11-10T10:43:01+00:00"
+      },
+      "plan_step_reviews": [
+        {
+          "key": "1",
+          "number": "1",
+          "warnings": [],
+          "executor_pick": {
+            "difficulty": "standard",
+            "first": {
+              "cli": "claude",
+              "model": "claude-opus-5-5",
+              "effort": "medium",
+              "context_cap": null
+            },
+            "second": {
+              "cli": "codex",
+              "model": "gpt-6.1-sol",
+              "effort": "medium",
+              "context_cap": null
+            },
+            "chosen": "first",
+            "reason": "J $0.05 = $1.70 × 0.03 × 1.00 · 1순위",
+            "source": "벤치 추천",
+            "fetched_at": "2026-11-10T10:43:01+00:00"
+          }
+        }
+      ],
+      "approval_note": "",
+      "approved_at": "2026-11-12T00:18:52.303284+00:00",
+      "board_preparation": {
+        "approval_id": "36c2682f14014d8598249a4f3f86f644",
+        "execution_plan_hash": "23f24f25a011b6780d7679f8b751c92320772ee8718209340b3239cac70c67f6",
+        "state": "ready",
+        "request_id": "85f2f05b736944d6b341e777e6b5fe24",
+        "message_id": "daa182670e984cc98bd2e4f6b13eed20",
+        "error": null
+      },
+      "plan_progress": {
+        "format_version": 1,
+        "execution_plan_hash": "23f24f25a011b6780d7679f8b751c92320772ee8718209340b3239cac70c67f6",
+        "sequence": 4,
+        "binding": {
+          "project_root": "c:\\projects\\algethi97.github.io",
+          "proposal_id": "7213808f1fb74677b9389b9b81918b59",
+          "request_id": "0ba6b3b4726b4c4ea052b8afab89d551",
+          "run_id": "c52944e453ad440a96a1dc7d9ebd2302",
+          "approval_id": "36c2682f14014d8598249a4f3f86f644",
+          "execution_plan_hash": "23f24f25a011b6780d7679f8b751c92320772ee8718209340b3239cac70c67f6"
+        },
+        "steps": {
+          "1": {
+            "state": "verified",
+            "note": "단계 1 구현·검증 완료 후 보고",
+            "checks": [
+              {
+                "name": "상단 탭 고정(1440x900·390x844, scrollTop 4곳)",
+                "passed": true,
+                "detail": "header top과 titlebar bottom 차이 0px, 네 위치 간 차이 0px"
+              },
+              {
+                "name": "켜짐 연출·ESC·축소 버튼·연출 중 ESC 취소·움직임 줄이기·instant-zoomed",
+                "passed": true,
+                "detail": "Chrome 헤드리스 DevTools 측정"
+              },
+              {
+                "name": "node --test tests/static-site.test.mjs",
+                "passed": true,
+                "detail": "9개 통과"
+              },
+              {
+                "name": "동봉 검증기(--task 7213808f..., --task desk)",
+                "passed": true,
+                "detail": "javascript-syntax·static-site-tests 통과"
+              }
+            ],
+            "review_message_id": "4076f547d6b8465baf630865e98f095f",
+            "reviewed_at": "2026-11-12T00:27:25.523361+00:00"
+          }
+        },
+        "issues": [],
+        "report_error": null,
+        "last_report_at": "2026-11-12T00:26:28.349437+00:00",
+        "execution": "completed",
+        "target_step": "1"
+      },
+      "plan_sessions": [
+        {
+          "engine": "Claude",
+          "session_id": "479b2b9a-689e-4b77-b669-f1e77e469311",
+          "pc_id": "6aa4385c164240ba",
+          "shared": false
+        }
+      ],
+      "board_editor": {
+        "confirmed_by": "auto"
+      },
+      "plan_lifecycle": {
+        "state": "completed",
+        "at": "2026-11-12T00:27:26.760280+00:00",
+        "accepted_message_id": "4076f547d6b8465baf630865e98f095f"
+      }
     }
   ],
   "settings": {
     "project_root": ".",
-    "ui_prefs": {
-      "left_collapsed": false,
-      "right_collapsed": false,
-      "plan_hide_closed": false
-    },
     "plan_file_retention": {},
-    "assertion_judge_enabled": true,
-    "test_enabled": false,
     "qa_recorded": {
       "reports": {
         "dd4ada285f5f48edb3c75af07469c1d8": "a775f79f1d4a89a39841ed4d8c2c3711479d1e2f",
@@ -4086,9 +4230,17 @@
         "f2302155fbc94355a20554574a3aa6ea": "134c1b437a5485990cef523f767ac430468403d2",
         "8ea9ed92ef06452eb4acd47292a06a4d": "cab973b17c1864eaa017055b7e6ddfb5c681ca38",
         "3222ab46b0994c7e818bd3887f543b73": "64e5f6faabba3592a9e02147512afa68296ffb43",
-        "0472d067771e417d99884b4bf651bf31": "e686d734dd524f04a531543fb6afa49f8a86423b"
+        "0472d067771e417d99884b4bf651bf31": "e686d734dd524f04a531543fb6afa49f8a86423b",
+        "4076f547d6b8465baf630865e98f095f": "b6d34a115fa9b983fd28a949d8c35de7a06a6021"
       },
       "plans": {}
+    },
+    "test_enabled": true,
+    "assertion_judge_enabled": false,
+    "ui_prefs": {
+      "left_collapsed": false,
+      "right_collapsed": false,
+      "plan_hide_closed": false
     }
   },
   "runs": [
@@ -4654,8 +4806,8 @@
       "session_cwd": "c:\\projects\\algethi97.github.io"
     },
     {
-      "id": "b8d9f316745044f49457d0373227b7f1",
-      "room_id": "206dc4fe05b44db8b33fda8ed16e2458",
+      "id": "2c239416a19646f8ba87b62758f1cf39",
+      "room_id": "7f0ce84e17464266829873ba72c4646a",
       "status": "running",
       "mode": "mention",
       "kind": "mention",
@@ -4673,7 +4825,7 @@
           "effort": "high"
         }
       },
-      "context_boundary_id": "c660df6b4e0c4112bb5806e18e523a85",
+      "context_boundary_id": "8733c9ad3ace4303996e2995ec9e63c7",
       "participants": [
         "Antigravity(c6a78b821a839db06bca3805e74c3c9fec35677f0f3191e30d32060ba83e9b17)"
       ],
@@ -4682,11 +4834,11 @@
       "stage_index": null,
       "root_text": "@안티 커밋해줘",
       "followup": null,
-      "created_at": "2026-11-11T08:44:50.973107+00:00",
-      "updated_at": "2026-11-11T08:44:51.126165+00:00",
+      "created_at": "2026-11-12T01:08:37.413230+00:00",
+      "updated_at": "2026-11-12T01:08:37.590418+00:00",
       "pending_request_id": null,
       "target": "ALL",
-      "client_message_id": "msg-92350025-1bc5-46a5-934b-9f456eeb0691",
+      "client_message_id": "msg-f4173639-f070-4d28-b586-40301773c558",
       "live_input_mode": "same_turn"
     }
   ],
@@ -7722,36 +7874,36 @@
       }
     },
     {
-      "id": "d60650a8c4d347d1a012932699518369",
-      "run_id": "b8d9f316745044f49457d0373227b7f1",
-      "room_id": "206dc4fe05b44db8b33fda8ed16e2458",
+      "id": "0cd3187a132f47dca1f3e8ef285d6c07",
+      "run_id": "2c239416a19646f8ba87b62758f1cf39",
+      "room_id": "7f0ce84e17464266829873ba72c4646a",
       "agent_id": "Antigravity(c6a78b821a839db06bca3805e74c3c9fec35677f0f3191e30d32060ba83e9b17)",
       "turn": 1,
       "model": "gemini-3.8-flash",
       "effort": "high",
       "stage": null,
       "kind": "mention",
-      "context_boundary_id": "c660df6b4e0c4112bb5806e18e523a85",
+      "context_boundary_id": "8733c9ad3ace4303996e2995ec9e63c7",
       "status": "running",
-      "pid": 25276,
-      "created_at": "2026-11-11T08:44:51.126165+00:00",
+      "pid": 26536,
+      "created_at": "2026-11-12T01:08:37.590418+00:00",
       "error": null,
       "user_message_ids": [
-        "8dce52f47ad64a0ba31ba32015d86cde"
+        "803ae0f7ab55434aabe149d1639e0242"
       ],
-      "user_message_id": "8dce52f47ad64a0ba31ba32015d86cde",
+      "user_message_id": "803ae0f7ab55434aabe149d1639e0242",
       "input_started": true,
       "implementation_task_request_id": null,
       "process_owner": {
-        "pid": 25276,
-        "created_at": 1794386692.159829,
+        "pid": 26536,
+        "created_at": 1794445719.0436492,
         "executable": "C:\\Users\\Admin\\AppData\\Local\\agy\\bin\\agy.EXE",
-        "work_dir": "C:\\Projects\\algethi97.github.io\\adk\\chat\\runtime\\6703f81e94884caf534e\\d60650a8c4d347d1a012932699518369",
+        "work_dir": "C:\\Projects\\algethi97.github.io\\adk\\chat\\runtime\\6703f81e94884caf534e\\0cd3187a132f47dca1f3e8ef285d6c07",
         "cleanup_status": "running",
-        "scope_id": "dfec9c43951c411e8aee32581515a505",
+        "scope_id": "0708bb9cc7c24190bb07ace8f7348819",
         "pc_id": "6aa4385c164240ba"
       }
     }
   ],
-  "storage_commit": "79759349749b4ab6b5d8f9a9b672f4e6"
+  "storage_commit": "c6042b19ba234fe78ab239f91e0f27ec"
 }
