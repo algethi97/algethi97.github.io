@@ -111,15 +111,36 @@ function initDeskZoom() {
   const zoomoutBtn = document.querySelector('.desk-zoomout-btn');
   const scrollable = document.querySelector('.monitor-scrollable');
 
-  // 줌인 함수
-  function zoomIn() {
-    if (viewport.classList.contains('is-zoomed') || viewport.classList.contains('warp-in')) return;
+  // 화면 켜짐 연출 타이머 (연출 중 축소하면 취소한다)
+  let powerOnTimer = null;
+
+  function finishZoomIn() {
     viewport.classList.add('is-zoomed');
     showToast('모니터 화면에 진입했습니다. 탭을 눌러 이동해보세요!', '🖥️');
   }
 
+  // 줌인 함수: 꺼진 화면이 켜지는 짧은 연출 뒤 확대한다 (움직임 줄이기 설정이면 바로 확대)
+  function zoomIn() {
+    if (viewport.classList.contains('is-zoomed') || viewport.classList.contains('warp-in') || viewport.classList.contains('powering-on')) return;
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      finishZoomIn();
+      return;
+    }
+    viewport.classList.add('powering-on');
+    powerOnTimer = setTimeout(() => {
+      powerOnTimer = null;
+      viewport.classList.remove('powering-on');
+      finishZoomIn();
+    }, 300);
+  }
+
   // 줌아웃 함수
   function zoomOut() {
+    if (powerOnTimer) {
+      clearTimeout(powerOnTimer);
+      powerOnTimer = null;
+      viewport.classList.remove('powering-on');
+    }
     if (!viewport.classList.contains('is-zoomed')) return;
     viewport.classList.remove('is-zoomed');
     viewport.classList.remove('warp-in');
@@ -156,7 +177,7 @@ function initDeskZoom() {
 
   // ESC 키 누르면 데스크 뷰로 줌아웃
   window.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape' && viewport.classList.contains('is-zoomed')) {
+    if (e.key === 'Escape' && (viewport.classList.contains('is-zoomed') || viewport.classList.contains('powering-on'))) {
       zoomOut();
     }
   });

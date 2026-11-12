@@ -37,10 +37,10 @@ AI가 파일을 추가·이동·삭제하면 이 파일의 행도 함께 고친�
 | `.python-version` | Python 버전 지정 | 해당 없음 |
 | `pyproject.toml` | Python 프로젝트 메타데이터 | 해당 없음 |
 | `uv.lock` | uv 의존성 잠금 | 해당 없음 |
-| `index.html` | 블랙·레드 홈 화면과 진입점 | 로컬 정적 서버 브라우저 확인 |
+| `index.html` | 블랙·레드 홈 화면과 진입점·모니터 상단 탭을 타이틀바와 스크롤 영역 사이 고정 행으로 배치 | 로컬 정적 서버 브라우저 확인 |
 | `about.html` | 블랙·레드 프로필·기술 태그·이력 소개 화면 | Chrome 1440·390px 캡처·가로 넘침·이메일 복사·홈 복귀 확인 |
 | `portfolio.html` | 원문을 보존한 프로젝트 여섯 개의 01~06 번호 목록 화면 | D 시안 배치·원문 대조와 Chrome 1440·390px 스크롤·홈 복귀 확인 |
-| `script.js` | 홈 줌 및 공통 인터랙션 | 로컬 정적 서버 브라우저 확인 |
+| `script.js` | 홈 줌(화면 켜짐 `powering-on` 연출 뒤 `is-zoomed`, 움직임 줄이기 시 즉시 확대, ESC·축소 시 연출 취소) 및 공통 인터랙션 | 로컬 정적 서버 브라우저 확인 |
 | `README.md` | 블랙·레드 테마·실사풍 홈 배경 `desk-bg-noir.png`와 보존 배경·시안·재생성 프롬프트 경로 및 프로젝트 구조 | 문서와 실제 배경·파일 경로·포트폴리오 번호 목록 대조 |
 | `MANDARIN_GAME_PLAN.md` | 만다린 게임 기획 문서 | 해당 없음 |
 | `common.js` | Supabase와 공통 표시 유틸 | `tests/static-site.test.mjs` |
@@ -48,7 +48,7 @@ AI가 파일을 추가·이동·삭제하면 이 파일의 행도 함께 고친�
 | `guestbook.html` | 방명록 화면과 모듈 로딩 | 로컬 정적 서버 브라우저 확인 |
 | `game.js` | 게임 상태·수명 주기 진입 모듈 | `tests/static-site.test.mjs` |
 | `game.html` | 블랙·레드 게임 화면·테마 안내 푸터와 모듈 로딩 | Chrome 1440·390px 캡처·게임 시작·홈 복귀 확인 |
-| `style.css` | 블랙·레드 공통 테마·`.desk-canvas`의 `desk-bg-noir.png` 배경과 `--bg-desk` 여백색·빨간 카드 테두리와 버튼 그림자·확대 재그리기·반응형 | 다섯 페이지 12장 캡처·가로 넘침·탭 이동·홈 복귀·ESC 및 CSS 구문 확인 |
+| `style.css` | 블랙·레드 공통 테마·`.desk-canvas`의 `desk-bg-noir.png` 배경과 `--bg-desk` 여백색·빨간 카드 테두리와 버튼 그림자·확대 재그리기·홈 모니터 상단 탭 고정 행(`.monitor-screen .nav-header`)·화면 켜짐 가로줄 연출(`.monitor-hint-overlay::after`)·반응형 | 다섯 페이지 12장 캡처·가로 넘침·탭 이동·홈 복귀·ESC 및 CSS 구문 확인 |
 
 ## css
 
