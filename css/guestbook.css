@@ -25,6 +25,8 @@
 }
 
 .guestbook-submit-btn {
+  /* 공통 .btn의 가로 여백 0을 덮어쓰고, 📝 이모지 좌측 내부 여백(약 4px)을 보정해 시각적 좌우 여백을 맞춘다. */
+  padding: 0.6rem 1.5rem 0.6rem 1.25rem;
   background-color: var(--accent-text);
   border-color: var(--accent-text);
   box-shadow: none;
